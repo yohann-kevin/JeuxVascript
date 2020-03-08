@@ -2,7 +2,7 @@
 
 <img src="app/public/images/screenshot/jvScreen.png">
 
-## Project Doucmentation
+## Project Documentation
 
 ### language used
 
