@@ -1,0 +1,16 @@
+{
+    "name": "kirua/final-project",
+    "description": "project mvc",
+    "authors": [
+        {
+            "name": "Perriguey",
+            "email": "yo44prg@icloud.com"
+        }
+    ],
+    "autoload": {
+       "psr-4" :{
+            "Project\\" : "./app/"
+        }
+    },
+    "require": {}
+}

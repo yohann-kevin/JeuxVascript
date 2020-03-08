@@ -1,0 +1,425 @@
+/* police d'écriture */
+@font-face {
+    font-family: 'videoGames';
+    src: url('../font/arcade/video_games-webfont.woff2') format('woff2'),
+        url('../font/arcade/video_games-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'arcadeInterlace';
+    src: url('../font/arcade/arcade_i-webfont.woff2') format('woff2'),
+        url('../font/arcade/arcade_i-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'arcadeNormal';
+    src: url('../font/arcade/arcade_n-webfont.woff2') format('woff2'),
+        url('../font/arcade/arcade_n-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'arcadeRounded';
+    src: url('../font/arcade/arcade_r-webfont.woff2') format('woff2'),
+        url('../font/arcade/arcade_r-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Mise en page global */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: fantasy;
+}
+
+#header {
+    position: fixed;
+    width: 100%;
+    height: 110px;
+    display: flex;
+    background-image: linear-gradient(to left, #f0a639, #f7a62d, #ff9d00, #ff9d00);
+}
+
+#logo {
+    width: 20%;
+}
+
+img {
+    margin-top: 10px;
+    width: 90%;
+    height: 100px;
+}
+
+/* Menu déroulant */
+
+nav {
+    width: 60%;
+    margin-top: 40px;
+    margin-left: 25px;
+    position: sticky;
+    top: 0px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    float: left;
+    width: 25%;
+    text-align: center;
+    position: relative;
+}
+
+nav ul::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav a {
+    font-size: 1.4rem;
+    display: block;
+    text-decoration: none;
+    color: white;
+    /* border-bottom: 2px solid transparent; */
+    padding: 10px 0px;
+}
+
+nav a:hover {
+    color: #545454;
+    border-bottom: 2px solid #545454;
+}
+
+.sous {
+    display: none;
+    box-shadow: 0px 1px 2px #cccccc;
+    background-color: #545445;
+    position: absolute;
+    width: 100%;
+    z-index: 500;
+}
+
+.sous a {
+    background-color: #545454;
+}
+
+.sous a:hover {
+    background-color: white;
+}
+
+nav>ul li:hover .sous {
+    display: block;
+}
+
+.sous li {
+    float: none;
+    width: 100%;
+    text-align: left;
+}
+
+.sous a {
+    font-size: 1rem;
+    padding: 10px;
+    border-bottom: none;
+}
+
+.sous a:hover {
+    border-bottom: none;
+    background-color: white;
+}
+
+.deroulant>a::after {
+    font-size: 12px;
+}
+
+#buttonHeader {
+    display: flex;
+    justify-content: space-around;
+    width: 20%;
+}
+
+#buttonHeader button {
+    margin: 10px;
+    width: 40%;
+    height: 35px;
+    background-color: transparent;
+    color: #545454;
+    font-size: 1.2rem;
+    border: none;
+}
+
+#buttonHeader button:hover {
+    cursor: pointer;
+    color: white;
+    transition: color 1000ms ease;
+    -webkit-transition: color 1000ms ease;
+    -moz-transition: color 1000ms ease;
+    -ms-transition: color 1000ms ease;
+    -o-transition: color 1000ms ease;
+    background-color: #545454;
+    transition: background-color 1000ms ease;
+    -webkit-transition: background-color 1000ms ease;
+    -moz-transition: background-color 1000ms ease;
+    -ms-transition: background-color 1000ms ease;
+    -o-transition: background-color 1000ms ease;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+/* home */
+
+#home {
+    padding-top: 140px;
+}
+
+.strong {
+    color: #ff9d00;
+    font-family: 'arcadeInterlace';
+}
+
+.strong2 {
+    color: #ff9d00;
+    font-family: 'arcadeRounded';
+}
+
+#sectionTitle {
+    width: 100%;
+    color: #545454;
+}
+
+#homeTitle {
+    font-size: 3rem;
+    font-family: 'arcadeInterlace';
+    margin-left: 30px;
+    margin-bottom: 50px;
+}
+
+#homeSubtitle {
+    font-family: 'arcadeInterlace';
+    font-size: 1.5rem;
+    margin-right: 30px;
+    text-align: right;
+}
+
+#homeSticky {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #efefef;
+    margin-top: 100px;
+    margin-bottom: 500px;
+}
+
+#homeStickyTitle {
+    width: 100%;
+    padding: 25px;
+}
+
+#homeStickyTitle h2 {
+    font-family: 'arcadeRounded';
+    font-size: 1rem;
+    color: #545454;
+}
+
+.article {
+    width: 30%;
+    padding: 10px;
+}
+
+.imgArticle {
+    width: 100%;
+    height: 150px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.articleTitle {
+    font-family: 'arcadeRounded' ;
+    font-size: 1rem;
+    padding: 5px;
+    color: #545454;
+}
+
+.para {
+    padding: 5px;
+}
+
+.article a {
+    float: right;
+}
+
+
+/* h1 {
+    padding: 100px 0;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+h1 {
+    color: white;
+}
+
+svg {
+    position: absolute;
+    bottom: 0;
+
+    width: 100%;
+    height: 50px;
+  
+}
+
+#svgPlop {
+    position: absolute;
+    top: 0;
+
+    width: 100%;
+    height: 50px;
+ 
+}
+
+section {
+    height: 450px;
+    margin-top: 55px;
+    margin-bottom: 55px;
+    position: relative;
+    background-color: #545454;
+}
+
+#section1 {
+    background-color: white;
+}
+
+#section4 {
+    background: url(../images/gameplay/spaceInvaders2.png);
+    margin-top: -55px;
+    margin-bottom: -55px;
+    height: 550px;
+    display: flex;
+}
+
+#section4:hover .content {
+    display: initial;
+}
+
+#spaceInvadersTitle {
+    margin-top: 600px;
+    margin-left: 25px;
+    width: 100%;
+}
+
+#spaceInvadersTitle h1 {
+    font-family: 'arcadeNormal';
+    font-size: 1.8rem;
+    padding: 0;
+    color: red;
+    text-align: right;
+    transform: rotate(-25deg);
+    -webkit-transform: rotate(-25deg);
+    -moz-transform: rotate(-25deg);
+    -ms-transform: rotate(-25deg);
+    -o-transform: rotate(-25deg);
+}
+
+.content {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(84, 84, 84, 0.7);
+}
+
+#para {
+    margin-top: 250px;
+    margin-left: 150px;
+    width: 50%;
+    color: black;
+}
+
+.playSpaceInvaders {
+    font-family: 'arcadeNormal';
+    font-size: 1.8rem;
+    margin-top: 250px;
+    margin-left: 550px;
+    width: 50%;
+    color: red;
+}
+
+#svgSection4 {
+    position: absolute;
+    top: 0;
+   
+    width: 100%;
+    height: 75px;
+  
+}
+
+#section5 {
+    background-color: #ff9d00;
+}
+
+#section5 h1 {
+    color: #545454;
+}
+
+footer {
+    margin-top: 55px;
+    position: relative;
+    background-color: #ff9d00;
+}
+
+#svgFooter {
+    position: absolute;
+    top: 0;
+    
+    width: 100%;
+    height: 75px; 
+
+}*/
+
+/* scrollbar */
+
+/* width */
+::-webkit-scrollbar {
+    width: 15px;
+    /* background-color: #ff9d00; */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #ff9d00;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #545454;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #545454;
+}
