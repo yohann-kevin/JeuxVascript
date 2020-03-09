@@ -7,6 +7,8 @@
     <!-- lien vers les feuilles de style -->
     <link rel="stylesheet" href="app/public/style/header.css">
     <link rel="stylesheet" href="app/public/style/home.css">
+    <!-- icône -->
+    <link rel="icon" href="app/public/images/logo/icone.png">
     <!-- Charge la bibliothèque jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <title>test</title>
@@ -19,6 +21,7 @@
     </div>
     <nav>
         <ul>
+            <li class="fromLeft"><a href="#">Accueil</a></li>
             <li class="deroulant fromLeft"><a href="#">Nos Jeux</a>
                 <ul class="sous">
                     <li><a href="#">Space Invaders</a></li>
@@ -38,6 +41,7 @@
     <div id="buttonHeader">
         <button>Connexion</button>
         <button>Inscription</button>
+        <input type="text" name="search" placeholder="Search.." id="search">
     </div>
     <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
         polygone angle droit 90°
