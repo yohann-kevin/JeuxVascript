@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- lien vers la feuille de style -->
-    <link rel="stylesheet" href="app/public/style/style.css">
+    <!-- lien vers les feuilles de style -->
+    <link rel="stylesheet" href="app/public/style/header.css">
+    <link rel="stylesheet" href="app/public/style/home.css">
     <!-- Charge la bibliothèque jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <title>test</title>
@@ -18,20 +19,20 @@
     </div>
     <nav>
         <ul>
-            <li class="deroulant"><a href="#">Nos Jeux</a>
+            <li class="deroulant fromLeft"><a href="#">Nos Jeux</a>
                 <ul class="sous">
                     <li><a href="#">Space Invaders</a></li>
                     <li><a href="#">Snake</a></li>
                 </ul>
             </li>
-            <li class="deroulant"><a href="#">Communauté</a>
+            <li class="deroulant fromLeft"><a href="#">Communauté</a>
                 <ul class="sous">
                     <li><a href="#">HighScore</a></li>
                     <li><a href="#">Blog</a></li>
                 </ul>
             </li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">A propos</a></li>
+            <li class="fromLeft"><a href="#">Contact</a></li>
+            <li class="fromLeft"><a href="#">A propos</a></li>
         </ul>
     </nav>
     <div id="buttonHeader">
