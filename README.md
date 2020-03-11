@@ -1,5 +1,7 @@
 # JeuxVascript
 
+<img src="app/public/images/logo/Jeuxvacsript2.png">
+
 <img src="app/public/images/screenshot/jvScreen.png">
 
 ## Project Documentation
