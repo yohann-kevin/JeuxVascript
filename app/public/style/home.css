@@ -2,6 +2,7 @@
 
 #home {
     padding-top: 155px;
+    background-color: rgba(239, 239, 239, 0.7);
 }
 
 .strong {
@@ -30,21 +31,78 @@
     font-family: 'arcadeInterlace';
     font-size: 1.5rem;
     margin-right: 30px;
+    padding-top: 25px;
     text-align: right;
+}
+
+#presentation {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 65px;
+    padding-top: 25px;
+    background-color: rgba(84, 84, 84, 0.4);
+}
+
+#presentationTitle {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    color: #545454;
+}
+
+#presentationTitle h3 {
+    font-family: 'arcadeRounded';
+}
+
+#presentationArticle {
+    width: 60%;
+    padding: 25px;
+    text-align: center;
+}
+
+#presentationArticle p{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-family: 'arcadeRounded';
+    font-size: 0.8rem;
+    color: #545454;
+}
+
+#presentationArticle h4{
+    font-family: 'arcadeRounded';
+    color: #545454;
+}
+
+#presentationImg {
+    width: 30%;
+    padding: 20px;
+}
+
+#presentationImg img {
+    width: 80%;
+    margin-left: 25px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 
 #homeSticky {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    background-color: #efefef;
-    margin-top: 100px;
-    margin-bottom: 500px;
+    background-color: rgba(84, 84, 84, 0.4);
+    padding-bottom: 25px;
 }
 
 #homeStickyTitle {
     width: 100%;
-    padding: 25px;
+    padding: 45px;
 }
 
 #homeStickyTitle h2 {
@@ -81,6 +139,95 @@
 
 .article a {
     float: right;
+}
+
+#homeQuote {
+    width: 100%;
+    color: #545454;
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+.quote { 
+    font-size: 3rem;
+    font-family: 'arcadeInterlace';
+    margin-left: 30px;
+    margin-bottom: 50px;
+}
+
+.author {
+    font-family: 'arcadeInterlace';
+    font-size: 1.5rem;
+    margin-right: 30px;
+    padding-top: 25px;
+    text-align: right;
+}
+
+#counter {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* background-color: #ff9d00; */
+    background-image: linear-gradient(to left, #f0a639, #f7a62d, #ff9d00, #ff9d00);
+}
+
+#counterTitle {
+    width: 100%;
+    text-align: center;
+    padding: 25px;
+    font-size: 2.5rem;
+    color: #545454;
+    font-family: 'arcadeRounded';
+}
+
+.counter {
+    width: 30%;
+    font-size: 1.7rem;
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 25px;
+    color: #545454;
+}
+
+.counter p {
+    font-family: 'arcadeRounded';
+}
+
+#c1, #c2, #c3 {
+    font-size: 2.5rem;
+    color: #efefef;
+    font-family: 'arcadeRounded';
+}
+
+#homeGame {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#homeGameTitle {
+    width: 100%;
+    text-align: center;
+}
+
+#spaceInvaders {
+    width: 100%;
+    text-align: center;
+}
+
+#snake {
+    width: 100%;
+    height: 250px;
+    background: url(../images/gameplay/snake.png) no-repeat;
+    text-align: center;
+}
+
+
+
+
+
+#test {
+    height: 500px;
 }
 
 
@@ -210,26 +357,3 @@ footer {
     height: 75px; 
 
 }*/
-
-/* scrollbar */
-
-/* width */
-::-webkit-scrollbar {
-    width: 15px;
-    /* background-color: #ff9d00; */
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px #ff9d00;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background: #545454;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background: #545454;
-}
