@@ -18,6 +18,10 @@ try{
              $controllerFront -> aboutFront();
         }elseif ($_GET['action'] == 'home') {
             $controllerFront -> home();
+        } elseif ($_GET['action'] == 'game') {
+            $controllerFront -> gameFront();
+        } elseif ($_GET['action'] == 'blog') {
+            $controllerFront -> blogFront();
         }
 
     } else {
