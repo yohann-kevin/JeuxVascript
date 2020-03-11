@@ -1,6 +1,5 @@
 <?php 
-require_once 'app/views/layouts/header.php';
-
+include_once 'app/views/front/layouts/header.php';
 ?>
 <body>
     <main id="home">
@@ -58,7 +57,7 @@ require_once 'app/views/layouts/header.php';
             </article>
         </section>
 
-        <section id="homeQuote">
+        <section class="homeQuote">
             <h1 class="quote">Le jeu est la forme <span class="strong"> la plus elevee de la recherche.</span></h1>
             <h2 class="author">Albert <span class="strong">Einstein</span></h2>
         </section>
@@ -81,30 +80,73 @@ require_once 'app/views/layouts/header.php';
                 <h3>Nos Jeux</h3>
             </header>
             <article id="spaceInvaders">
-                <h4>Space Invaders</h4>
+                <div class="gameTitle">
+                    <h4>Space Invaders</h4>
+                </div>
+                <div class="gameImg">
+                    <img src="app/public/images/gameplay/spaceInvaders2.png">
+                </div>
+                <div id="gameContent1">
+                <p class="gamePara">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Molestias deserunt nulla culpa!
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Molestias deserunt nulla culpa!
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Molestias deserunt nulla culpa!
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Molestias deserunt nulla culpa!
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Molestias deserunt nulla culpa!
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Molestias deserunt nulla culpa!
+                </p>
+                <a href="#" class="buttonPlayHome">Play</a>
+                </div>
             </article>
+
             <article id="snake">
-            <h4>Snake</h4>
+                <div class="gameTitle">
+                    <h4>Snake</h4>
+                </div>
+                <div class="gameImg">
+                    <img src="app/public/images/gameplay/snake.png">
+                </div>
+                <div id="gameContent2">
+                <p class="gamePara">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Molestias deserunt nulla culpa!
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Molestias deserunt nulla culpa!
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Molestias deserunt nulla culpa!
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Molestias deserunt nulla culpa!
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Molestias deserunt nulla culpa!
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Molestias deserunt nulla culpa!
+                </p>
+                <a href="#" class="buttonPlayHome">Play</a>
+                </div>
             </article>
         </section>
 
+        <section class="homeQuote">
+            <h1 class="quote">Les rudiments de la connaissance 
+                <span class="strong"> sont assimiles au fil des jeux.</span></h1>
+            <h2 class="author">Mahatma <span class="strong">Gandhi</span></h2>
+        </section>
 
+    
 
         <section id="test">
 
         </section>
 
     </main>
-</body>
 
-</html>
-
-
-
-
-
-
-
+<?php include_once 'app/views/front/layouts/footer.php'; ?>
 
 
 <!-- <h1>PLOP !!!</h1>
