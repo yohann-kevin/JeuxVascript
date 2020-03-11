@@ -1,3 +1,6 @@
+<?php
+require_once 'app/views/layouts/header.php';
+?>
 <h1>PLOP !!!</h1>
 <h2>Contact</h2>
 <nav>

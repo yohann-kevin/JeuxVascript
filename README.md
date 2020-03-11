@@ -2,7 +2,7 @@
 
 <img src="app/public/images/logo/Jeuxvacsript2.png">
 
-<img src="app/public/images/screenshot/jvScreen.png">
+<img src="app/public/images/screenshot/screen.png">
 
 ## Project Doucmentation
 

@@ -50,6 +50,15 @@
     font-family: fantasy;
 }
 
+body {
+    background: url(../images/background/background1.jpg) repeat-y;
+    background-attachment: fixed;
+    background-size: 100%;
+    overflow-y:scroll;
+    overflow: -moz-scrollbars-vertical; 
+    cursor: default;
+}
+
 #header {
     position: fixed;
     width: 100%;
@@ -242,7 +251,6 @@ nav>ul li:hover .sous {
     width: 100%;
 }
 
-
 /* #searchbar {
     width: 100%;
     display: flex;
@@ -263,6 +271,27 @@ nav>ul li:hover .sous {
     padding: 12px 20px 12px 40px;
     -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out;
+}*/
+
+ /* scrollbar */
+
+/* width */
+::-webkit-scrollbar {
+    width: 15px;
+    /* background-color: #ff9d00; */
 }
 
- */
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #ff9d00;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #545454;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #545454;
+}

@@ -16,6 +16,8 @@ try{
             $controllerFront -> contactFront();
         } elseif ($_GET['action'] == 'about') {
              $controllerFront -> aboutFront();
+        }elseif ($_GET['action'] == 'home') {
+            $controllerFront -> home();
         }
 
     } else {
