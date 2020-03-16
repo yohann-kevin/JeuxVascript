@@ -1,9 +1,95 @@
 #footer {
-    height: 150px;
     background-color: #545454;
 }
 
 #svgFooter {
     width: 100%;
     height: 50px;
+}
+
+#bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.link {
+    margin-top: 15px;
+    width: 30%;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.link li {
+    list-style-type: none;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.link a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+}
+
+.link a:hover {
+    color: #ff9d00;
+    transition: color 250ms ease-in-out;
+    -webkit-transition: color 250ms ease-in-out;
+    -moz-transition: color 250ms ease-in-out;
+    -ms-transition: color 250ms ease-in-out;
+    -o-transition: color 250ms ease-in-out;
+}
+
+.link li:after {
+    display: block;
+    content: '';
+    border-bottom: solid 3px #ff9d00;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+    -webkit-transition: transform 250ms ease-in-out;
+    -moz-transition: transform 250ms ease-in-out;
+    -ms-transition: transform 250ms ease-in-out;
+    -o-transition: transform 250ms ease-in-out;
+}
+
+.link li:hover:after {
+    transform: scaleX(1);
+}
+
+li.fromLeftLink:after {
+    transform-origin: 0% 50%;
+}
+
+.social {
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.social img {
+    margin-top: 45px;
+    width: 50px;
+    height: 35px;
+    transition: transform 500ms ease;
+    -webkit-transition: transform 500ms ease;
+    -moz-transition: transform 500ms ease;
+    -ms-transition: transform 500ms ease;
+    -o-transition: transform 500ms ease;
+}
+
+.social img:hover {
+    transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    -o-transform: scale(1.3);
+}
+
+.mention {
+    padding: 20px;
+    margin-top: 10px;
+    text-align: center;
+    color: #ff9d00;
 }
