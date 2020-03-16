@@ -1,6 +1,6 @@
 <?php
 
-//imoortant pour la ssécurité de nos scripts : les sessions
+//imoortant pour la sécurité de nos scripts : les sessions
 // Démarre la session
 session_start();
 
