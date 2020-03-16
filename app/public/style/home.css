@@ -1,5 +1,4 @@
 /* page home */
-
 #home {
     padding-top: 155px;
     background-color: rgba(239, 239, 239, 0.7);
@@ -319,7 +318,59 @@
     font-family: 'arcadeNormal';
 }
 
-#test {
-    height: 500px;
-    background-color: #ff9d00;
+#advert {
+    width: 100%;
+    background-color: #efefef;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
+
+#headerAdvert {
+    width: 100%;
+    text-align: center;
+    color: #545454;
+}
+
+#headerAdvert h2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: 'arcadeNormal';
+}
+
+.advert {
+    width: 30%;
+    margin-bottom: 15px;
+}
+
+.advertTitle {
+    margin-top: 20px;
+    text-align: center;
+    color: #ff9d00;
+    font-family: 'arcadeNormal';
+}
+
+.advertImg {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+}
+
+.advert img{
+    width: 80%;
+    height: 110px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.advertPara {
+    padding-top: 10px;
+    color: #545454;
+    font-family: 'arcadeRounded';
+    font-size: 0.8rem;
+}
+
+
