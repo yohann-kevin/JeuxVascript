@@ -63,7 +63,7 @@ body {
     position: fixed;
     z-index: 2000;
     width: 100%;
-    height: 110px;
+    min-height: 110px;
     display: flex;
     flex-wrap: wrap;
     background-image: linear-gradient(to left, #f0a639, #f7a62d, #ff9d00, #ff9d00);
@@ -87,6 +87,10 @@ nav {
     margin-left: 15px;
     position: sticky;
     top: 0px;
+}
+
+#smartphone{
+    display: none;
 }
 
 nav ul {

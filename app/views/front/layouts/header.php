@@ -23,7 +23,18 @@
             <img src="app/public/images/logo/Jeuxvacsript2.png" alt="Jeuxvacsript">
         </a>
     </div>
-    <nav>
+    <div id="smartphone">
+        <img src="app/public/images/logo/menu.png" onclick="displayMenu()">
+    </div>
+    <!-- script temporaire -->
+    <script type="text/javascript">   
+        function displayMenu() {
+            var menu = document.getElementById("nav");
+            menu.style.display = "block";
+        }
+    </script>
+    <nav id="nav">
+        <!-- <input type="checkbox" id="smartphone" role="button"> -->
         <ul>
             <li class="fromLeft"><a href="index.php?action=home">Accueil</a></li>
             <li class="deroulant fromLeft"><a href="index.php?action=game">Nos Jeux</a>

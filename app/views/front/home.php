@@ -195,13 +195,3 @@ include_once 'app/views/front/layouts/header.php';
 
     <?php include_once 'app/views/front/layouts/footer.php'; ?>
 
-
-    <!-- <h1>PLOP !!!</h1>
-<h2>Home</h2>
-<nav>
-    <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="index.php?action=about">About</a></li>
-        <li><a href="index.php?action=contact">Contact</a></li>
-    </ul>
-</nav> -->
