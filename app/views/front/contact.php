@@ -1,7 +1,71 @@
 <?php
 require_once 'app/views/front/layouts/header.php';
 ?>
-<h1>PLOP !!!</h1>
+
+
+<body>
+    <main id="contact">
+
+        <section class="pageTitle">
+            <h1 class="title">Vous avez quelques <span class="strong">choses a nous dire ?</span></h1>
+            <h2 class="subtitle">N'hesitez pas, <span class="strong">contacter nous.</span></h2>
+        </section>
+
+        <section id="sectionContact">
+            <p id="paraContact">Vous avez une suggestion à nous faire ? Ou alors vous avez trouver un bug dans un de nos jeux ?
+                 Ou bien vous voulez juste papoter comme ça entre deux partie de snake ! 
+                 Eh bien, allez-y envoyer nous votre message via le formulaire ci-dessous, 
+                 nous tacherons de vous répondre au plus vite !</p>
+
+            <form id="contactForm">
+                <div id="nameContact">
+                    <label from="firstNameContact">Votre prenom</label>
+                    <input id="firstNameContact" name="firstNameContact" type="text" placeholder="First name">
+                    <label from="emailContact">Votre email</label>
+                    <input id="emailContact" name="emailContact" type="text" placeholder="Email">
+                </div>
+                <div id="messageContact">
+                    <label from="message">Votre message</label>
+                    <input type="text" name="objetMessage" placeholder="objet" id="objetMessage">
+                    <textarea name="message" id="message"></textarea>
+                </div>
+                <div id="buttonContact">
+                    <button type="submit" id="btnSubContact">Envoyer</button>
+                    <button type="reset" id="btnResContact">Annuler</button>
+                </div>
+            </form>
+        </section>
+
+        <section id="findUs">
+            <header id="findUsTitle">
+                <h3>Nous trouver<h3>
+            </header>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2687.930240644158!2d-2.7743341808006945!3d47.646922423849475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48101c1e45bf9d89%3A0xf1b4ec0fcc4d768d!2s20%20Rue%20Winston%20Churchill%2C%2056000%20Vannes!5e0!3m2!1sfr!2sfr!4v1573737469116!5m2!1sfr!2sfr" 
+                width="600" height="350" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                <address id="address">
+                    <span id="titleProject">JeuxVascrirpt</span><br>
+                    20 rue Winston Churchill<br>
+                    56000 Vannes<br>
+                    <a href="tel:+33297466666">02 97 46 66 66 </a><br>
+                </address>
+        </section>
+
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <h1>PLOP !!!</h1>
 <h2>Contact</h2>
 <nav>
     <ul>
@@ -14,4 +78,9 @@ require_once 'app/views/front/layouts/header.php';
 <form action="">
     <label for="contact">Nom</label>
     <input type="text">
-</form>
+</form> -->
+
+
+
+
+<?php require_once 'app/views/front/layouts/footer.php'; ?>

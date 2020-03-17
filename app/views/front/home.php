@@ -5,9 +5,9 @@ include_once 'app/views/front/layouts/header.php';
 <body>
     <main id="home">
 
-        <section id="sectionTitle">
-            <h1 id="homeTitle">Bienvenue sur <span class="strong">JeuxVascript</span></h1>
-            <h2 id="homeSubtitle">Le site pour les joueurs 100% <span class="strong">JavaScript</span></h2>
+        <section class="pageTitle">
+            <h1 class="title">Bienvenue sur <span class="strong">JeuxVascript</span></h1>
+            <h2 class="subtitle">Le site pour les joueurs 100% <span class="strong">JavaScript</span></h2>
         </section>
 
         <section id="presentation">
