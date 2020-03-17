@@ -22,6 +22,8 @@ try{
             $controllerFront -> gameFront();
         } elseif ($_GET['action'] == 'blog') {
             $controllerFront -> blogFront();
+        } elseif ($_GET['action'] == 'snake') {
+            $controllerFront -> snakeFront();
         }
 
     } else {

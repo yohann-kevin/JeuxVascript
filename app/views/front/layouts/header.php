@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="app/public/style/footer.css">
     <link rel="stylesheet" href="app/public/style/mediaQueries.css">
     <link rel="stylesheet" href="app/public/style/contact.css">
+    <link rel="stylesheet" href="app/public/style/snake.css">
     <!-- icône -->
     <link rel="icon" href="app/public/images/logo/icone.png">
     <!-- Charge la bibliothèque jquery -->
@@ -41,7 +42,7 @@
             <li class="deroulant fromLeft"><a href="index.php?action=game">Nos Jeux</a>
                 <ul class="sous">
                     <li><a href="#">Space Invaders</a></li>
-                    <li><a href="#">Snake</a></li>
+                    <li><a href="index.php?action=snake">Snake</a></li>
                 </ul>
             </li>
             <li class="deroulant fromLeft"><a href="index.php?action=blog">Communauté</a>
