@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="app/public/style/home.css">
     <link rel="stylesheet" href="app/public/style/footer.css">
     <link rel="stylesheet" href="app/public/style/mediaQueries.css">
+    <link rel="stylesheet" href="app/public/style/contact.css">
     <!-- icône -->
     <link rel="icon" href="app/public/images/logo/icone.png">
     <!-- Charge la bibliothèque jquery -->
