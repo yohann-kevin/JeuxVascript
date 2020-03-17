@@ -31,5 +31,6 @@
 <footer>
 
 </body>
+    <script type="text/javascript" src="app/public/script/snake.js"></script>
 
 </html>

@@ -139,7 +139,7 @@ include_once 'app/views/front/layouts/header.php';
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                         Molestias deserunt nulla culpa!
                     </p>
-                    <a href="#" class="buttonPlayHome">Play</a>
+                    <a href="index.php?action=snake" class="buttonPlayHome">Play</a>
                 </div>
             </article>
         </section>
