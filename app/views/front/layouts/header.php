@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- token google for google connect -->
+    <meta name="google-signin-client_id" content="991297201856-i8t0ekurllat0825dfs4tdlr6f5qbqn1.apps.googleusercontent.com">
     <!-- lien vers les feuilles de style -->
     <link rel="stylesheet" href="app/public/style/header.css">
     <link rel="stylesheet" href="app/public/style/home.css">
@@ -68,6 +70,7 @@
                     <input id="pseudoConnect" name="pseudoConnect" type="text" placeholder="Pseudo">
                     <label from="passwordConnect">Votre mot de passe</label>
                     <input id="passwordConnect" name="passwordConnect" type="password" placeholder="password">
+                    <div id="btnGoogle" class="g-signin2" data-onsuccess="onSignIn"></div>
                     <div id="buttonConnect">
                         <button type="submit" id="btnSubConnect">Envoyer</button>
                         <button type="reset" id="btnResConnect">Annuler</button>

@@ -353,8 +353,16 @@ nav>ul li:hover .sous {
     -o-transition: transform 250ms ease;
 }
 
+#btnGoogle {
+    width: 80%;
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
 #buttonConnect {
-    margin-top: 55px;
+    margin-top: 35px;
     width: 60%;
     display: flex;
     justify-content: space-around;
