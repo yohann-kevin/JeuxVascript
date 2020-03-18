@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="app/public/style/contact.css">
     <link rel="stylesheet" href="app/public/style/snake.css">
     <link rel="stylesheet" href="app/public/style/register.css">
+    <link rel="stylesheet" href="app/public/style/news.css">
     <!-- icône -->
     <link rel="icon" href="app/public/images/logo/icone.png">
     <!-- Charge la bibliothèque jquery -->
@@ -47,10 +48,10 @@
                     <li><a href="index.php?action=snake">Snake</a></li>
                 </ul>
             </li>
-            <li class="deroulant fromLeft"><a href="index.php?action=blog">Communauté</a>
+            <li class="deroulant fromLeft"><a href="index.php?action=news">Communauté</a>
                 <ul class="sous">
                     <li><a href="#">Best Score</a></li>
-                    <li><a href="#">Article</a></li>
+                    <li><a href="index.php?action=news">Article</a></li>
                 </ul>
             </li>
             <li class="fromLeft"><a href="index.php?action=about">A propos</a></li>

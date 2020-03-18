@@ -20,8 +20,8 @@ try{
             $controllerFront -> home();
         } elseif ($_GET['action'] == 'game') {
             $controllerFront -> gameFront();
-        } elseif ($_GET['action'] == 'blog') {
-            $controllerFront -> blogFront();
+        } elseif ($_GET['action'] == 'news') {
+            $controllerFront -> newsFront();
         } elseif ($_GET['action'] == 'snake') {
             $controllerFront -> snakeFront();
         } elseif ($_GET['action'] == 'register') {

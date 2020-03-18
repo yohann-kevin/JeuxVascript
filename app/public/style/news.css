@@ -1,0 +1,97 @@
+#news {
+    padding-top: 155px;
+    background-color: rgba(239, 239, 239, 0.7);
+}
+
+#articleNews {
+    background-color: #efefef;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 45px;
+}
+
+#newsTitle {
+    width: 100%;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: 1.4rem;
+}
+
+.newsArticle {
+    width: 35%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.newsArticle img {
+    width: 35%;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.newsTitle {
+    width: 60%;
+    text-align: center;
+    font-size: 1.2rem;
+    padding-top: 35px;
+    margin-right: 15px;
+}
+
+.newsContent {
+    width: 80%;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.buttonNews {
+    /* display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; */
+    width: 100%;
+    text-align: right;
+    padding-right: 50px;
+}
+
+.buttonNews a {
+    margin-top: 10px;
+    margin-right: 15px;
+    padding: 7px;
+    width: 40%;
+    height: 40px;
+    background-color: transparent;
+    color: #545454;
+    font-size: 1rem;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+}
+
+.buttonNews a:hover {
+    cursor: pointer;
+    color: white;
+    transition: color 1000ms ease;
+    -webkit-transition: color 1000ms ease;
+    -moz-transition: color 1000ms ease;
+    -ms-transition: color 1000ms ease;
+    -o-transition: color 1000ms ease;
+    background-color: #545454;
+    transition: background-color 1000ms ease;
+    -webkit-transition: background-color 1000ms ease;
+    -moz-transition: background-color 1000ms ease;
+    -ms-transition: background-color 1000ms ease;
+    -o-transition: background-color 1000ms ease;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
