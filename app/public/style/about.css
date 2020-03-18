@@ -1,0 +1,99 @@
+#about {
+    padding-top: 155px;
+    background-color: rgba(239, 239, 239, 0.7);
+}
+
+#sectionAbout {
+    background-color: #efefef;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#aboutTitle {
+    width: 100%;
+}
+
+
+
+.articleAbout{
+    width: 70%;
+}
+
+.headerArticleAbout {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    position: relative;
+}
+
+.articleAboutTitle {
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+.articleAbout img {
+    width: 20px;
+    height: 20px;
+}
+
+.imgAbout1 {
+    position: absolute;
+    margin-right: 75px;
+    right: 0;
+    z-index: 0;
+}
+
+.imgAbout1:hover {
+    cursor: pointer;
+}
+
+.imgAbout2 {
+    position: absolute;
+    margin-right: 75px;
+    right: 0;
+    z-index: 1;
+    display: none;
+}
+
+.imgAbout2:hover {
+    cursor: pointer;
+}
+
+.imgAbout3 {
+    position: absolute;
+    margin-right: 75px;
+    right: 0;
+    z-index: 0;
+}
+
+.imgAbout3:hover {
+    cursor: pointer;
+}
+
+.imgAbout4 {
+    position: absolute;
+    margin-right: 75px;
+    right: 0;
+    z-index: 1;
+    display: none;
+}
+
+.imgAbout4:hover {
+    cursor: pointer;
+}
+
+
+
+/* .header {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    position: relative;
+}
+
+img {
+   width: 20px;
+   height: 20px; 
+}  */

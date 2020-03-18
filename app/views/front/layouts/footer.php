@@ -33,6 +33,7 @@
 </body>
     <script type="text/javascript" src="app/public/script/jquery.js"></script>
     <script type="text/javascript" src="app/public/script/snake.js"></script>
+    <script type="text/javascript" src="app/public/script/about.js"></script>
     <!-- script api google connect -->
     <script src="https://apis.google.com/js/platform.js" async defer></script>
 
