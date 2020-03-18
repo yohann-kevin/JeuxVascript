@@ -117,7 +117,7 @@ include_once 'app/views/front/layouts/header.php';
                 </div>
             </article>
 
-            <article id="snake">
+            <article id="articleSnake">
                 <div class="gameTitle">
                     <h4>Snake</h4>
                 </div>

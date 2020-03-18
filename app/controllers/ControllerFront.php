@@ -36,5 +36,10 @@ class ControllerFront {
         require 'app/views/front/snake.php';
     }
 
+    function registerFront() {
+
+        require 'app/views/front/register.php';
+    }
+
     
 } 
