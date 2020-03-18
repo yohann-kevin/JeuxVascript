@@ -56,7 +56,25 @@
         </ul>
     </nav>
     <div id="buttonHeader">
-        <a>Connexion</a>
+        <a id="btnModalConnect">Connexion</a>
+        <!-- The Modal -->
+        <div id="modalConnect">
+            <!-- Modal content -->
+            <div id="modalContent">
+                <span id="closeConnect">&times;</span>
+                <h1 id="modalConnectTitle">De retour parmi nous ?</h1>
+                <form id="idConnect">
+                    <label from="pseudoConnect">Votre pseudo</label>
+                    <input id="pseudoConnect" name="pseudoConnect" type="text" placeholder="Pseudo">
+                    <label from="passwordConnect">Votre mot de passe</label>
+                    <input id="passwordConnect" name="passwordConnect" type="password" placeholder="password">
+                    <div id="buttonConnect">
+                        <button type="submit" id="btnSubConnect">Envoyer</button>
+                        <button type="reset" id="btnResConnect">Annuler</button>
+                    </div>
+                </form>
+            </div>
+        </div>
         <a href="index.php?action=register">Inscription</a>
         <input type="text" name="search" placeholder="Search.." id="search">
     </div>
