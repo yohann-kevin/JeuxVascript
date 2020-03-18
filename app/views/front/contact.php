@@ -27,7 +27,7 @@ require_once 'app/views/front/layouts/header.php';
                 <div id="messageContact">
                     <label from="message">Votre message</label>
                     <input type="text" name="objetMessage" placeholder="objet" id="objetMessage">
-                    <textarea name="message" id="message"></textarea>
+                    <textarea name="message" id="message" placeholder="Your message..."></textarea>
                 </div>
                 <div id="buttonContact">
                     <button type="submit" id="btnSubContact">Envoyer</button>
@@ -51,36 +51,5 @@ require_once 'app/views/front/layouts/header.php';
         </section>
 
     </main>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- <h1>PLOP !!!</h1>
-<h2>Contact</h2>
-<nav>
-    <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="index.php?action=about">About</a></li>
-        <li><a href="index.php?action=contact">Contact</a></li>
-    </ul>
-</nav>
-
-<form action="">
-    <label for="contact">Nom</label>
-    <input type="text">
-</form> -->
-
-
-
 
 <?php require_once 'app/views/front/layouts/footer.php'; ?>

@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="app/public/style/mediaQueries.css">
     <link rel="stylesheet" href="app/public/style/contact.css">
     <link rel="stylesheet" href="app/public/style/snake.css">
+    <link rel="stylesheet" href="app/public/style/register.css">
     <!-- icône -->
     <link rel="icon" href="app/public/images/logo/icone.png">
     <!-- Charge la bibliothèque jquery -->
@@ -36,7 +37,6 @@
         }
     </script>
     <nav id="nav">
-        <!-- <input type="checkbox" id="smartphone" role="button"> -->
         <ul>
             <li class="fromLeft"><a href="index.php?action=home">Accueil</a></li>
             <li class="deroulant fromLeft"><a href="index.php?action=game">Nos Jeux</a>
@@ -56,12 +56,8 @@
         </ul>
     </nav>
     <div id="buttonHeader">
-        <button>Connexion</button>
-        <button>Inscription</button>
+        <a>Connexion</a>
+        <a href="index.php?action=register">Inscription</a>
         <input type="text" name="search" placeholder="Search.." id="search">
     </div>
-    <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-        polygone angle droit 90°
-        <polygon fill="white" points="0,100 100,0 100,100" />
-    </svg> -->
 </header>

@@ -1,0 +1,147 @@
+#register {
+    padding-top: 122px;
+    background-color: rgba(239, 239, 239, 0.7);
+}
+
+#sectionRegister {
+    width: 100%;
+    padding-bottom: 25px;
+    background-color: #efefef;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#paraRegister {
+    width: 80%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-align: center;
+    margin-left: 55px;
+}
+
+#registerForm {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#pseudoRegister {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#pseudoRegister label {
+    width: 100%;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#pseudoRegister input {
+    height: 35px;
+    width: 50%;
+    border: 1px solid #efefef;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+#pseudoRegister input:focus {
+    transform: scale(1.15);
+    -webkit-transform: scale(1.15);
+    -moz-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    -o-transform: scale(1.15);
+    transition: transform 250ms ease;
+    -webkit-transition: transform 250ms ease;
+    -moz-transition: transform 250ms ease;
+    -ms-transition: transform 250ms ease;
+    -o-transition: transform 250ms ease;
+}
+
+#passwordRegister {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#passwordRegister label {
+    width: 100%;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#passwordRegister input {
+    height: 35px;
+    width: 50%;
+    border: 1px solid #efefef;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+#passwordRegister input:focus {
+    transform: scale(1.15);
+    -webkit-transform: scale(1.15);
+    -moz-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    -o-transform: scale(1.15);
+    transition: transform 250ms ease;
+    -webkit-transition: transform 250ms ease;
+    -moz-transition: transform 250ms ease;
+    -ms-transition: transform 250ms ease;
+    -o-transition: transform 250ms ease;
+}
+
+#buttonRegister {
+    margin-top: 75px;
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#buttonRegister button {
+    width: 20%;
+    height: 30px;
+    border: 1px solid #efefef;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    background-color: #545454;
+    color: white;
+}
+
+#buttonRegister button:hover {
+    cursor: pointer;
+    color: #ff9d00;
+    transform: scale(1.15);
+    -webkit-transform: scale(1.15);
+    -moz-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    -o-transform: scale(1.15);
+    transition: color 250ms ease;
+    -webkit-transition: color 250ms ease;
+    -moz-transition: color 250ms ease;
+    -ms-transition: color 250ms ease;
+    -o-transition: color 250ms ease;
+    transition: transform 250ms ease;
+    -webkit-transition: transform 250ms ease;
+    -moz-transition: transform 250ms ease;
+    -ms-transition: transform 250ms ease;
+    -o-transition: transform 250ms ease;
+}

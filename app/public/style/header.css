@@ -204,17 +204,20 @@ nav>ul li:hover .sous {
     width: 20%;
 }
 
-#buttonHeader button {
+#buttonHeader a {
     margin-top: 10px;
+    padding-top: 5px;
     width: 40%;
-    height: 35px;
+    height: 30px;
     background-color: transparent;
     color: #545454;
     font-size: 1.2rem;
     border: none;
+    text-align: center;
+    text-decoration: none;
 }
 
-#buttonHeader button:hover {
+#buttonHeader a:hover{
     cursor: pointer;
     color: white;
     transition: color 1000ms ease;
@@ -236,6 +239,7 @@ nav>ul li:hover .sous {
 }
 
 #search {
+    margin-top: 10px;
     margin-bottom: 10px;
     width: 50%;
     height: 35px;
