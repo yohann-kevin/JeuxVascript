@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="app/public/style/snake.css">
     <link rel="stylesheet" href="app/public/style/register.css">
     <link rel="stylesheet" href="app/public/style/news.css">
+    <link rel="stylesheet" href="app/public/style/about.css">
     <!-- icône -->
     <link rel="icon" href="app/public/images/logo/icone.png">
     <!-- Charge la bibliothèque jquery -->
