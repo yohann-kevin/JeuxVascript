@@ -1,3 +1,21 @@
+// script pout la boite modal connect
+$("#btnModalConnect").click(function () {
+    $("#modalConnect").show(500, function () {
+        $("#modalConnect").css("display", "block")
+    });
+});
+
+$("#closeConnect").click(function () {
+    $("#modalConnect").hide(400, function () {
+        $("#modalConnect").css("display", "none")
+    });
+});
+
+
+
+
+
+
 // $(document).ready(function() {
 //     $('#header, #section1, #section2').hide(4000);
 // });

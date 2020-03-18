@@ -54,8 +54,8 @@ body {
     background: url(../images/background/background1.jpg) repeat-y;
     background-attachment: fixed;
     background-size: 100%;
-    overflow-y:scroll;
-    overflow: -moz-scrollbars-vertical; 
+    overflow-y: scroll;
+    overflow: -moz-scrollbars-vertical;
     cursor: default;
 }
 
@@ -89,7 +89,7 @@ nav {
     top: 0px;
 }
 
-#smartphone{
+#smartphone {
     display: none;
 }
 
@@ -217,7 +217,7 @@ nav>ul li:hover .sous {
     text-decoration: none;
 }
 
-#buttonHeader a:hover{
+#buttonHeader a:hover {
     cursor: pointer;
     color: white;
     transition: color 1000ms ease;
@@ -260,29 +260,142 @@ nav>ul li:hover .sous {
     width: 100%;
 }
 
-/* #searchbar {
+
+/* The Modal (background) */
+#modalConnect {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
     width: 100%;
-    display: flex;
-    justify-content: space-around;
-    margin-left: 50px;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
-#search {
-    width: 20%;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-    background-color: white;
-    background-image: url('../images/logo/search.png');
-    background-position: 10px 10px;
-    background-repeat: no-repeat;
-    padding: 12px 20px 12px 40px;
-    -webkit-transition: width 0.4s ease-in-out;
-    transition: width 0.4s ease-in-out;
-}*/
+/* Modal Content */
+#modalContent {
+    background-color: #efefef;
+    margin: auto;
+    padding: 20px;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
 
- /* scrollbar */
+/* The Close Button */
+#closeConnect {
+    color: #54545454;
+    text-align: right;
+    height: 28px;
+    width: 100%;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#closeConnect:hover,
+#closeConnect:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#modalConnectTitle {
+    text-align: center;
+}
+
+#idConnect {
+    width: 80%;
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#idConnect label {
+    width: 100%;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#idConnect input {
+    height: 35px;
+    width: 50%;
+    border: 1px solid #efefef;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+#idConnect input:focus {
+    transform: scale(1.15);
+    -webkit-transform: scale(1.15);
+    -moz-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    -o-transform: scale(1.15);
+    transition: transform 250ms ease;
+    -webkit-transition: transform 250ms ease;
+    -moz-transition: transform 250ms ease;
+    -ms-transition: transform 250ms ease;
+    -o-transition: transform 250ms ease;
+}
+
+#buttonConnect {
+    margin-top: 55px;
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#buttonConnect button {
+    width: 20%;
+    height: 30px;
+    border: 1px solid #efefef;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    background-color: #545454;
+    color: white;
+}
+
+#buttonConnect button:hover {
+    cursor: pointer;
+    color: #ff9d00;
+    transform: scale(1.15);
+    -webkit-transform: scale(1.15);
+    -moz-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    -o-transform: scale(1.15);
+    transition: color 250ms ease;
+    -webkit-transition: color 250ms ease;
+    -moz-transition: color 250ms ease;
+    -ms-transition: color 250ms ease;
+    -o-transition: color 250ms ease;
+    transition: transform 250ms ease;
+    -webkit-transition: transform 250ms ease;
+    -moz-transition: transform 250ms ease;
+    -ms-transition: transform 250ms ease;
+    -o-transition: transform 250ms ease;
+}
+
+
+/* scrollbar */
 
 /* width */
 ::-webkit-scrollbar {
