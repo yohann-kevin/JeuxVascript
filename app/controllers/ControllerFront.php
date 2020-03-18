@@ -16,9 +16,9 @@ class ControllerFront {
         require 'app/views/front/game.php';
     }
 
-    function blogFront() {
+    function newsFront() {
 
-        require 'app/views/front/blog.php';
+        require 'app/views/front/news.php';
     }
     
     function aboutFront() {
