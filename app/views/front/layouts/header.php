@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="app/public/style/register.css">
     <link rel="stylesheet" href="app/public/style/news.css">
     <link rel="stylesheet" href="app/public/style/about.css">
+    <link rel="stylesheet" href="app/public/style/article.css">
     <!-- icône -->
     <link rel="icon" href="app/public/images/logo/icone.png">
     <!-- Charge la bibliothèque jquery -->
@@ -53,6 +54,8 @@
                 <ul class="sous">
                     <li><a href="#">Best Score</a></li>
                     <li><a href="index.php?action=news">Article</a></li>
+                    <!-- lien temporaire vers page article.php -->
+                    <li><a href="index.php?action=article">article.php</a></li>
                 </ul>
             </li>
             <li class="fromLeft"><a href="index.php?action=about">A propos</a></li>

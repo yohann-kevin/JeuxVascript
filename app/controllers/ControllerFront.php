@@ -41,5 +41,10 @@ class ControllerFront {
         require 'app/views/front/register.php';
     }
 
+    function articleFront() {
+
+        require 'app/views/front/article.php';
+    }
+
     
 } 
