@@ -91,7 +91,7 @@ include_once 'app/views/front/layouts/header.php';
             <header id="homeGameTitle">
                 <h3>Nos Jeux</h3>
             </header>
-            <article id="spaceInvaders">
+            <article id="articleSpace">
                 <div class="gameTitle">
                     <h4>Space Invaders</h4>
                 </div>
