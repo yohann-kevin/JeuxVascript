@@ -1,0 +1,111 @@
+#games {
+    padding-top: 115px;
+    padding-bottom: 45px;
+    background-color: #efefef;
+}
+
+#pageGame {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #efefef;
+}
+
+#pageGameTitle {
+    width: 100%;
+    text-align: center;
+    font-size: 2.5rem;
+    color: #545454;
+    padding: 25px;
+}
+
+#pageGameTitle h3 {
+    font-family: 'arcadeInterlace';
+}
+
+.gameTitle {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    text-align: center;
+    padding-top: 220px;
+}
+
+.gameTitle h4 {
+    font-family: 'arcadeNormal';
+    font-size: 2.5rem;
+    color: #ff9d00;
+}
+
+.gameImg {
+    position: relative;
+    z-index: 0;
+}
+
+#articleSpaceGame {
+    width: 100%;
+    position: relative;
+    z-index: 0;
+    margin-bottom: 35px;
+}
+
+#articleSnake {
+    width: 100%;
+    position: relative;
+    z-index: 0;
+}
+
+#articleSpaceGame:hover #contentGame1 {
+    z-index: 2;
+    cursor: pointer;
+    opacity: 1;
+}
+
+#articleSnake:hover #contentGame2 {
+    z-index: 2;
+    cursor: pointer;
+    opacity: 1;
+}
+
+#articleSpaceGame img {
+    width: 100%;
+    height: 500px;
+}
+
+#articleSnake img {
+    width: 100%;
+    height: 500px;
+}
+
+#contentGame1,
+#contentGame2 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    background-color: rgba(239, 239, 239, 0.75);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    opacity: 0;
+    transition: opacity 500ms ease-in-out;
+    -webkit-transition: opacity 500ms ease-in-out;
+    -moz-transition: opacity 500ms ease-in-out;
+    -ms-transition: opacity 500ms ease-in-out;
+    -o-transition: opacity 500ms ease-in-out;
+}
+
+.gamePara {
+    width: 45%;
+    color: #545454;
+    font-family: 'arcadeRounded';
+    margin-top: 125px;
+}
+
+.buttonPlayGame {
+    width: 20%;
+    margin-top: 330px;
+    color: yellow;
+    font-size: 2rem;
+    font-family: 'arcadeNormal';
+}
