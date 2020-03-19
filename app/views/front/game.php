@@ -33,7 +33,7 @@
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                         Molestias deserunt nulla culpa!
                     </p>
-                    <a href="#" class="buttonPlayGame">Play</a>
+                    <a href="index.php?action=spaceInvaders" class="buttonPlayGame">Play</a>
                 </div>
             </article>
 
