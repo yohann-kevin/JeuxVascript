@@ -26,6 +26,8 @@ try{
             $controllerFront -> snakeFront();
         } elseif ($_GET['action'] == 'register') {
             $controllerFront -> registerFront();
+        } elseif ($_GET['action'] == 'article') {
+            $controllerFront -> articleFront();
         }
 
     } else {
