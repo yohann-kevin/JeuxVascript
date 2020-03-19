@@ -18,8 +18,10 @@
     <link rel="stylesheet" href="app/public/style/about.css">
     <link rel="stylesheet" href="app/public/style/article.css">
     <link rel="stylesheet" href="app/public/style/game.css">
+    <link rel="stylesheet" href="app/public/style/space.css">
     <!-- icône -->
     <link rel="icon" href="app/public/images/logo/icone.png">
+    
     <!-- Charge la bibliothèque jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <title>test</title>
@@ -47,7 +49,7 @@
             <li class="fromLeft"><a href="index.php?action=home">Accueil</a></li>
             <li class="deroulant fromLeft"><a href="index.php?action=game">Nos Jeux</a>
                 <ul class="sous">
-                    <li><a href="#">Space Invaders</a></li>
+                    <li><a href="index.php?action=spaceInvaders">Space Invaders</a></li>
                     <li><a href="index.php?action=snake">Snake</a></li>
                 </ul>
             </li>
