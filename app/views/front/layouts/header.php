@@ -63,6 +63,7 @@
                     <li><a href="index.php?action=article">article.php</a></li>
                     <li><a href="index.php?action=account">account.php</a></li>
                     <li><a href="index.php?action=usersArticle">usersArticle.php</a></li>
+                    <li><a href="index.php?action=userSettings">userSettings.php</a></li>
                 </ul>
             </li>
             <li class="fromLeft"><a href="index.php?action=about">A propos</a></li>

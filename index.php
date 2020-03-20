@@ -34,6 +34,8 @@ try{
             $controllerFront -> accountFront();
         } elseif ($_GET['action'] == 'usersArticle') {
             $controllerFront -> usersArticleFront();
+        } elseif ($_GET['action'] == 'userSettings') {
+            $controllerFront -> userSettingsFront();
         }
 
 
