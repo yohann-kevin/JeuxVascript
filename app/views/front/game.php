@@ -2,11 +2,6 @@
 <body>
     <main id="games">
 
-        <!-- <section class="pageTitle">
-            <h1 class="title">N'oublions pas le <span class="strong">le principal</span></h1>
-            <h2 class="subtitle">nous sommes ici <span class="strong">pour jouer</span></h2>
-        </section> -->
-
         <section id="pageGame">
             <header id="pageGameTitle">
                 <h3>Nos Jeux</h3>

@@ -51,5 +51,10 @@ class ControllerFront {
         require 'app/views/front/spaceInvaders.php';
     }
 
+    function accountFront() {
+
+        require 'app/views/front/account.php';
+    }
+
     
 } 
