@@ -32,6 +32,8 @@ try{
             $controllerFront -> spaceInvadersFront();
         } elseif ($_GET['action'] == 'account') {
             $controllerFront -> accountFront();
+        } elseif ($_GET['action'] == 'usersArticle') {
+            $controllerFront -> usersArticleFront();
         }
 
 
