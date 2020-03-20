@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="app/public/style/article.css">
     <link rel="stylesheet" href="app/public/style/game.css">
     <link rel="stylesheet" href="app/public/style/space.css">
+    <link rel="stylesheet" href="app/public/style/account.css">
     <!-- icône -->
     <link rel="icon" href="app/public/images/logo/icone.png">
     
@@ -59,6 +60,7 @@
                     <li><a href="index.php?action=news">Article</a></li>
                     <!-- lien temporaire vers page article.php -->
                     <li><a href="index.php?action=article">article.php</a></li>
+                    <li><a href="index.php?action=account">account.php</a></li>
                 </ul>
             </li>
             <li class="fromLeft"><a href="index.php?action=about">A propos</a></li>

@@ -30,7 +30,10 @@ try{
             $controllerFront -> articleFront();
         } elseif ($_GET['action'] == 'spaceInvaders') {
             $controllerFront -> spaceInvadersFront();
+        } elseif ($_GET['action'] == 'account') {
+            $controllerFront -> accountFront();
         }
+
 
     } else {
         $controllerFront -> home();
