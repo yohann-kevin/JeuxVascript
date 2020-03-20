@@ -21,6 +21,8 @@
     <link rel="stylesheet" href="app/public/style/space.css">
     <link rel="stylesheet" href="app/public/style/account.css">
     <link rel="stylesheet" href="app/public/style/usersArticle.css">
+    <link rel="stylesheet" href="app/public/style/userSettings.css">
+    <link rel="stylesheet" href="app/public/style/stats.css">
     <!-- icône -->
     <link rel="icon" href="app/public/images/logo/icone.png">
     
@@ -64,6 +66,7 @@
                     <li><a href="index.php?action=account">account.php</a></li>
                     <li><a href="index.php?action=usersArticle">usersArticle.php</a></li>
                     <li><a href="index.php?action=userSettings">userSettings.php</a></li>
+                    <li><a href="index.php?action=stats">stats.php</a></li>
                 </ul>
             </li>
             <li class="fromLeft"><a href="index.php?action=about">A propos</a></li>

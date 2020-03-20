@@ -36,6 +36,8 @@ try{
             $controllerFront -> usersArticleFront();
         } elseif ($_GET['action'] == 'userSettings') {
             $controllerFront -> userSettingsFront();
+        } elseif ($_GET['action'] == 'stats') {
+            $controllerFront -> statsFront();
         }
 
 
