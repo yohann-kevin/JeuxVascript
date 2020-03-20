@@ -1,4 +1,4 @@
-#usersArticle {
+#userSettings {
     padding-top: 155px;
     height: 600px;
     /* background-color: rgba(239, 239, 239, 0.7); */
@@ -8,10 +8,10 @@
     justify-content: space-around;
 }
 
-#pageUsersArticle {
+#pageUserSettings {
     width: 80%;
 }
 
-#usersAticleTitle {
+#userSettingsTitle {
     text-align: center;
 }
