@@ -56,5 +56,9 @@ class ControllerFront {
         require 'app/views/front/account.php';
     }
 
-    
+    function usersArticleFront() {
+
+        require 'app/views/front/usersArticle.php';
+    }
+
 } 

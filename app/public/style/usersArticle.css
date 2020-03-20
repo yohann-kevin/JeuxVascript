@@ -1,0 +1,17 @@
+#usersArticle {
+    padding-top: 155px;
+    height: 600px;
+    /* background-color: rgba(239, 239, 239, 0.7); */
+    background-color: #efefef;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#pageUsersArticle {
+    width: 80%;
+}
+
+#usersAticleTitle {
+    text-align: center;
+}
