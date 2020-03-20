@@ -61,4 +61,9 @@ class ControllerFront {
         require 'app/views/front/usersArticle.php';
     }
 
+    function userSettingsFront() {
+
+        require 'app/views/front/userSettings.php';
+    }
+
 } 
