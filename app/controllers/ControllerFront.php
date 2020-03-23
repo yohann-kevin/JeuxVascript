@@ -73,6 +73,4 @@ class ControllerFront {
         require 'app/views/front/stats.php';
     }
 
-    // fonction admin lien temporaire 
-
 } 
