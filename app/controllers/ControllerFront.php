@@ -51,6 +51,8 @@ class ControllerFront {
         require 'app/views/front/spaceInvaders.php';
     }
 
+    // fonction users lien temporaire
+
     function accountFront() {
 
         require 'app/views/front/account.php';
@@ -70,5 +72,7 @@ class ControllerFront {
 
         require 'app/views/front/stats.php';
     }
+
+    // fonction admin lien temporaire 
 
 } 
