@@ -25,7 +25,8 @@
     <link rel="stylesheet" href="app/public/style/stats.css">
     <!-- icône -->
     <link rel="icon" href="app/public/images/logo/icone.png">
-    
+    <!-- charge la biblitoheque chart js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.js"></script>
     <!-- Charge la bibliothèque jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <title>test</title>
