@@ -30,7 +30,9 @@ try{
             $controllerFront -> articleFront();
         } elseif ($_GET['action'] == 'spaceInvaders') {
             $controllerFront -> spaceInvadersFront();
-        } elseif ($_GET['action'] == 'account') {
+        } 
+        // users (temporaire)
+        elseif ($_GET['action'] == 'account') {
             $controllerFront -> accountFront();
         } elseif ($_GET['action'] == 'usersArticle') {
             $controllerFront -> usersArticleFront();
@@ -39,6 +41,7 @@ try{
         } elseif ($_GET['action'] == 'stats') {
             $controllerFront -> statsFront();
         }
+        // admin (temporaire)
 
 
     } else {

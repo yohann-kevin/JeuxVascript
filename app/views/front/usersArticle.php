@@ -3,7 +3,7 @@
 <body>
     <main id="usersArticle">
         <section id="pageUsersArticle">
-            <header id="usersAticleTitle">
+            <header id="usersArticleTitle">
                 <h3>Bientot vous pourrez rédiger des articles ici</h3>
                 <h3>Page en production</h3>
             </header>
