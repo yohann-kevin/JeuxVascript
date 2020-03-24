@@ -1,8 +1,6 @@
 <?php 
 include_once 'app/views/front/layouts/header.php';
 ?>
-
-<body>
     <main id="home">
 
         <section class="pageTitle">

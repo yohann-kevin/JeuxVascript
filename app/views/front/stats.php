@@ -1,6 +1,5 @@
 <?php include_once 'app/views/front/layouts/header.php'; ?>
 
-<body>
     <main id="stats">
         <section id="pageStats">
             <header id="statsTitle">

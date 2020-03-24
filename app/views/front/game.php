@@ -1,5 +1,4 @@
 <?php require_once 'app/views/front/layouts/header.php'; ?>
-<body>
     <main id="games">
 
         <section id="pageGame">

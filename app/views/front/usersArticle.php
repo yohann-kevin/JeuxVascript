@@ -1,6 +1,5 @@
 <?php include_once 'app/views/front/layouts/header.php'; ?>
 
-<body>
     <main id="usersArticle">
         <section id="pageUsersArticle">
             <header id="usersArticleTitle">
