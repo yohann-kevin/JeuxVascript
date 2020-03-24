@@ -1,6 +1,5 @@
 #admin {
     padding-top: 155px;
-    /* background-color: rgba(239, 239, 239, 0.7); */
     background-color: #efefef;
 }
 
@@ -56,6 +55,7 @@
     width: 100%;
     text-align: right;
     padding-right: 50px;
+    padding-top: 25px;
 }
 
 .buttonAdminArticle a {

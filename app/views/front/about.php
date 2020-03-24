@@ -1,6 +1,5 @@
 <?php require_once 'app/views/front/layouts/header.php'; ?>
 
-<body>
     <main id="about">
 
         <section class="pageTitle">

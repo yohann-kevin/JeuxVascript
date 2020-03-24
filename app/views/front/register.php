@@ -1,7 +1,5 @@
 <?php include_once 'app/views/front/layouts/header.php'; ?>
 
-
-<body>
     <main id="register">
 
         <section class="pageTitle">

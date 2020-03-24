@@ -10,7 +10,7 @@
         <section id="lastArticle"> 
             <article class="adminArticle">
                 <img src="app/public/images/image/space.png" alt="space invaders" class="adminImg">
-                <h4 class="adminTitle">Lorem ipsum dolor sit<h4>
+                <h4 class="adminTitle">Lorem ipsum dolor sit</h4>
                 <p class="adminContent">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
                     Similique ut nesciunt, dolores odio, 
                     earum quidem praesentium impedit nam 
@@ -23,7 +23,7 @@
             </article>
             <article class="adminArticle">
                 <img src="app/public/images/image/space.png" alt="space invaders" class="adminImg">
-                <h4 class="adminTitle">Lorem ipsum dolor sit<h4>
+                <h4 class="adminTitle">Lorem ipsum dolor sit</h4>
                 <p class="adminContent">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
                     Similique ut nesciunt, dolores odio, 
                     earum quidem praesentium impedit nam 
@@ -36,7 +36,7 @@
             </article>
             <article class="adminArticle">
                 <img src="app/public/images/image/space.png" alt="space invaders" class="adminImg">
-                <h4 class="adminTitle">Lorem ipsum dolor sit<h4>
+                <h4 class="adminTitle">Lorem ipsum dolor sit</h4>
                 <p class="adminContent">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
                     Similique ut nesciunt, dolores odio, 
                     earum quidem praesentium impedit nam 
@@ -49,7 +49,7 @@
             </article>
             <article class="adminArticle">
                 <img src="app/public/images/image/space.png" alt="space invaders" class="adminImg">
-                <h4 class="adminTitle">Lorem ipsum dolor sit<h4>
+                <h4 class="adminTitle">Lorem ipsum dolor sit</h4>
                 <p class="adminContent">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
                     Similique ut nesciunt, dolores odio, 
                     earum quidem praesentium impedit nam 
@@ -68,7 +68,7 @@
 
         <section id="adminCom"> 
             <article class="adminComment">
-                <h4 class="adminComTitle">posté par plop le 24 mars 2020<h4>
+                <h4 class="adminComTitle">posté par plop le 24 mars 2020</h4>
                 <p class="adminComContent">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, tempora? 
                     Reiciendis omnis cum assumenda hic tempora suscipit fuga provident nihil libero!</p>
                 <div class="buttonAdminArticle">
@@ -76,7 +76,7 @@
                 </div>
             </article>
             <article class="adminComment">
-                <h4 class="adminComTitle">posté par plop le 24 mars 2020<h4>
+                <h4 class="adminComTitle">posté par plop le 24 mars 2020</h4>
                 <p class="adminComContent">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, tempora? 
                     Reiciendis omnis cum assumenda hic tempora suscipit fuga provident nihil libero!</p>
                 <div class="buttonAdminArticle">
@@ -84,7 +84,7 @@
                 </div>
             </article>
             <article class="adminComment">
-                <h4 class="adminComTitle">posté par plop le 24 mars 2020<h4>
+                <h4 class="adminComTitle">posté par plop le 24 mars 2020</h4>
                 <p class="adminComContent">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, tempora? 
                     Reiciendis omnis cum assumenda hic tempora suscipit fuga provident nihil libero!</p>
                 <div class="buttonAdminArticle">
@@ -92,7 +92,7 @@
                 </div>
             </article>
             <article class="adminComment">
-                <h4 class="adminComTitle">posté par plop le 24 mars 2020<h4>
+                <h4 class="adminComTitle">posté par plop le 24 mars 2020</h4>
                 <p class="adminComContent">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, tempora? 
                     Reiciendis omnis cum assumenda hic tempora suscipit fuga provident nihil libero!</p>
                 <div class="buttonAdminArticle">
@@ -100,7 +100,7 @@
                 </div>
             </article>
             <article class="adminComment">
-                <h4 class="adminComTitle">posté par plop le 24 mars 2020<h4>
+                <h4 class="adminComTitle">posté par plop le 24 mars 2020</h4>
                 <p class="adminComContent">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, tempora? 
                     Reiciendis omnis cum assumenda hic tempora suscipit fuga provident nihil libero!</p>
                 <div class="buttonAdminArticle">
@@ -108,7 +108,7 @@
                 </div>
             </article>
             <article class="adminComment">
-                <h4 class="adminComTitle">posté par plop le 24 mars 2020<h4>
+                <h4 class="adminComTitle">posté par plop le 24 mars 2020</h4>
                 <p class="adminComContent">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, tempora? 
                     Reiciendis omnis cum assumenda hic tempora suscipit fuga provident nihil libero!</p>
                 <div class="buttonAdminArticle">
