@@ -39,7 +39,7 @@ require_once 'app/views/front/layouts/header.php';
                 <h3>Nous trouver<h3>
             </header>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2687.930240644158!2d-2.7743341808006945!3d47.646922423849475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48101c1e45bf9d89%3A0xf1b4ec0fcc4d768d!2s20%20Rue%20Winston%20Churchill%2C%2056000%20Vannes!5e0!3m2!1sfr!2sfr!4v1573737469116!5m2!1sfr!2sfr" 
-                width="600" height="350" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                width="600" height="350" frameborder="0" style="border:0;"></iframe>
                 <address id="address">
                     <span id="titleProject">JeuxVascrirpt</span><br>
                     20 rue Winston Churchill<br>
