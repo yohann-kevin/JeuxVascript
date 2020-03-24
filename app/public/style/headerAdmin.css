@@ -1,0 +1,18 @@
+#headerAdmin {
+    position: fixed;
+    z-index: 2000;
+    width: 100%;
+    min-height: 110px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-image: linear-gradient(to left, #f0a639, #f7a62d, #ff9d00, #ff9d00);
+}
+
+#navAdmin {
+    width: 40%;
+}
+
+#navAdmin li {
+    width: 30%;
+}

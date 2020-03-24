@@ -4,7 +4,7 @@
     </svg>
     <aside id="bottom">
 
-        <div class="link">
+        <!-- <div class="link">
             <ul>
                 <li class="fromLeftLink"><a href="#">A propos</a></li>
                 <li class="fromLeftLink"><a href="#">Nos jeux</a></li>
@@ -18,7 +18,7 @@
                 <li class="fromLeftLink"><a href="#">Mention légale</a></li>
                 <li class="fromLeftLink"><a href="#">Sitemap</a></li>
             </ul>
-        </div>
+        </div> -->
 
         <div class="social">
             <a href="https://www.facebook.com"><img src="app/public/images/logo/facebook.png"></a>
