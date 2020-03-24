@@ -1,0 +1,124 @@
+#admin {
+    padding-top: 155px;
+    /* background-color: rgba(239, 239, 239, 0.7); */
+    background-color: #efefef;
+}
+
+#lastArticle {
+    background-color: #efefef;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 45px;
+}
+
+.adminArticle {
+    padding: 20px;
+    width: 35%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    background-color: white;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.adminArticle img {
+    width: 35%;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.adminTitle {
+    width: 60%;
+    text-align: center;
+    font-size: 1.2rem;
+    padding-top: 35px;
+    margin-right: 15px;
+}
+
+.adminContent {
+    width: 80%;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.buttonAdminArticle {
+    width: 100%;
+    text-align: right;
+    padding-right: 50px;
+}
+
+.buttonAdminArticle a {
+    margin-top: 10px;
+    margin-right: 15px;
+    padding: 7px;
+    width: 40%;
+    height: 40px;
+    background-color: transparent;
+    color: #545454;
+    font-size: 1rem;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+}
+
+.buttonAdminArticle a:hover {
+    cursor: pointer;
+    color: white;
+    transition: color 1000ms ease;
+    -webkit-transition: color 1000ms ease;
+    -moz-transition: color 1000ms ease;
+    -ms-transition: color 1000ms ease;
+    -o-transition: color 1000ms ease;
+    background-color: #545454;
+    transition: background-color 1000ms ease;
+    -webkit-transition: background-color 1000ms ease;
+    -moz-transition: background-color 1000ms ease;
+    -ms-transition: background-color 1000ms ease;
+    -o-transition: background-color 1000ms ease;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+#adminCom {
+    width: 100%;
+    margin-top: 25px;
+    padding-bottom: 45px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.adminComment {
+    width: 25%;
+    padding: 25px;
+    margin-bottom: 45px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.adminComTitle {
+    font-size: 1.3rem;
+    padding-bottom: 15px;
+}
+
+.adminComContent {
+    padding-bottom: 15px;
+}
