@@ -10,3 +10,16 @@ class FrontManager extends Manager {
         return $req;
     }
 }
+
+class Users extends Manager {
+    public function usersRegister() {
+        $bdd = $this->dbConnect();
+        $req = $bdd->prepare('INSERT INTO users(pseudo, email, password) VALUES (:pseudo, :email, :password)');
+        $req->execute([
+            'pseudo' => htmlentities($pseudo),
+            'email' => htmlentities($email),
+            'password' => password_hash($password, PASSWORD_DEFAULT)
+        ]);
+        return $req;
+    }
+}

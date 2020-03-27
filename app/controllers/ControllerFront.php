@@ -3,6 +3,7 @@
 namespace Project\controllers;
 
 class ControllerFront {
+    // fonction liens
     function home() {
 
         $homeFront = new \Project\models\FrontManager();
@@ -71,6 +72,66 @@ class ControllerFront {
     function statsFront() {
 
         require 'app/views/front/stats.php';
+    }
+
+
+
+
+    function registerUsers() {
+        // $register = new \Project\models\Users();
+        // $usersRegister = $register->usersRegister();
+        global $bdd;
+
+        extract($_POST);
+
+        $validation = true;
+    
+        $errors = [];
+        
+        if(empty($pseudo) || empty($email) || empty($password) ){
+            $validation = false;
+            $errors[] = 'Tous les champs sont obligatoires !!!'; 
+        }
+    
+        // if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
+        //     $validation = false;
+        //     $errors[] = 'Adresse Email non valide !!!';
+        // }
+        
+        // if($emailconf != $email){
+        //     $validation = false;
+        //     $errors[] = 'adresse email de confirmation est incorrecte !!!';
+        // }
+    
+        // if($passwordconf != $password){
+        //     $validation = false;
+        //     $errors[] = 'le mot de passe de confirmation est incorrect !!!';
+        // }
+    
+        // if(pseudoCheck($pseudo)){
+        //     $validation = false;
+        //     $errors[] = 'Ce pseudo est déjà pris !';
+        // }
+    
+        if($validation){
+            
+        // $register = new \Project\models\Users();
+        // $usersRegister = $register->usersRegister();
+        
+        $register = $bdd->prepare('INSERT INTO users(pseudo, email, password) VALUES (:pseudo, :email, :password)');
+        $register->execute([
+            'pseudo' => htmlentities($pseudo),
+            'email' => htmlentities($email),
+            'password' => password_hash($password, PASSWORD_DEFAULT)
+        ]);
+
+        unset($_POST['pseudo']);
+        unset($_POST['email']);
+        // unset($_POST['emailconf']);
+        accountFront();
+        }
+    
+        return $errors;
     }
 
 } 

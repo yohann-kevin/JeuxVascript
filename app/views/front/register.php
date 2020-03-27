@@ -1,5 +1,12 @@
-<?php require_once 'app/views/front/layouts/head.php'; ?>
-<?php include_once 'app/views/front/layouts/header.php'; ?>
+<?php 
+    // session_start();
+    include_once 'app/views/front/layouts/head.php'; 
+    include_once 'app/views/front/layouts/header.php'; 
+    if(!empty($_POST)){
+        $register = new \Project\controllers\ControllerFront();
+        $errors = $register->registerUsers();
+    }
+?>
 
     <main id="register">
 
@@ -15,19 +22,32 @@
                 bien sûr vous aurez la possibilité de poster des articles sur notre espace blog de 
                 commenter les articles d'autres joueurs etc...<p>
 
-            <form id="registerForm">
+            <form method="post" action="" id="registerForm">
+                <?php
+                    if(isset($errors)) :
+                        if($errors):
+                    foreach($errors as $error) :
+                ?>
 
+                    <h3><?= $error ?><h3>
+                
+                <?php endforeach; else : ?>
+                
+                    <h3>youpi ça marche<h3>
+                
+                <?php endif; endif ?>
+                
                 <div id="pseudoRegister">
                     <label from="emailContact">Votre email</label>
-                    <input id="emailContact" name="emailContact" type="text" placeholder="Email">
+                    <input id="emailContact" name="email" type="email" placeholder="Email" values="<?php if(isset($_POST['email']))echo $_POST['email'] ?>">
                     <label from="firstNameContact">Votre pseudo</label>
-                    <input id="firstNameContact" name="firstNameContact" type="text" placeholder="First name">
+                    <input id="firstNameContact" name="pseudo" type="text" placeholder="First name" values="<?php if(isset($_POST['Pseudo']))echo $_POST['Pseudo'] ?>">
                    
                 </div>
 
                 <div id="passwordRegister">
                     <label from="passwordRegister">Votre mot de passe</label>
-                    <input id="passwordRegister" name="passwordRegister" type="password" placeholder="password">
+                    <input id="passwordRegister" name="password" type="password" placeholder="password">
                     <label from="verifyPasswordRegister">Confirmer votre mot de passe</label>
                     <input id="verifyPasswordRegister" name="verifyPasswordRegister" type="password" placeholder="password">
                 </div>
