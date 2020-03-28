@@ -78,9 +78,9 @@ class ControllerFront {
 
 
     function registerUsers() {
-        // $register = new \Project\models\Users();
+        
+        // $register = new \Project\models\FrontManager();
         // $usersRegister = $register->usersRegister();
-        global $bdd;
 
         extract($_POST);
 
@@ -115,20 +115,20 @@ class ControllerFront {
     
         if($validation){
             
-        // $register = new \Project\models\Users();
-        // $usersRegister = $register->usersRegister();
+        $register = new \Project\models\FrontManager();
+        $usersRegister = $register->usersRegister($pseudo,$email,$password);
         
-        $register = $bdd->prepare('INSERT INTO users(pseudo, email, password) VALUES (:pseudo, :email, :password)');
-        $register->execute([
-            'pseudo' => htmlentities($pseudo),
-            'email' => htmlentities($email),
-            'password' => password_hash($password, PASSWORD_DEFAULT)
-        ]);
+        // $register = $bdd->prepare('INSERT INTO users(pseudo, email, password) VALUES (:pseudo, :email, :password)');
+        // $register->execute([
+        //     'pseudo' => htmlentities($pseudo),
+        //     'email' => htmlentities($email),
+        //     'password' => password_hash($password, PASSWORD_DEFAULT)
+        // ]);
 
         unset($_POST['pseudo']);
         unset($_POST['email']);
         // unset($_POST['emailconf']);
-        accountFront();
+        // require 'app/views/front/account.php';
         }
     
         return $errors;
