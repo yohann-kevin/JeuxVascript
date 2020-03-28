@@ -74,13 +74,10 @@ class ControllerFront {
         require 'app/views/front/stats.php';
     }
 
-
+    
 
 
     function registerUsers() {
-        
-        // $register = new \Project\models\FrontManager();
-        // $usersRegister = $register->usersRegister();
 
         extract($_POST);
 
@@ -93,37 +90,34 @@ class ControllerFront {
             $errors[] = 'Tous les champs sont obligatoires !!!'; 
         }
     
-        // if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
-        //     $validation = false;
-        //     $errors[] = 'Adresse Email non valide !!!';
-        // }
+        if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
+            $validation = false;
+            $errors[] = 'Adresse Email non valide !!!';
+        }
         
         // if($emailconf != $email){
         //     $validation = false;
         //     $errors[] = 'adresse email de confirmation est incorrecte !!!';
         // }
     
-        // if($passwordconf != $password){
-        //     $validation = false;
-        //     $errors[] = 'le mot de passe de confirmation est incorrect !!!';
-        // }
-    
-        // if(pseudoCheck($pseudo)){
-        //     $validation = false;
-        //     $errors[] = 'Ce pseudo est déjà pris !';
-        // }
+        if($verifyPassword != $password){
+            $validation = false;
+            $errors[] = 'le mot de passe de confirmation est incorrect !!!';
+        }
+
+        if($pseudo) {
+            $testPseudo = new \Project\models\FrontManager();
+            $usersPseudo = $testPseudo->pseudoCheck($pseudo);
+            if($usersPseudo) {
+                 $validation = false;
+                $errors[] = 'Ce pseudo est déjà pris !';
+            }
+        }
     
         if($validation){
             
         $register = new \Project\models\FrontManager();
         $usersRegister = $register->usersRegister($pseudo,$email,$password);
-        
-        // $register = $bdd->prepare('INSERT INTO users(pseudo, email, password) VALUES (:pseudo, :email, :password)');
-        // $register->execute([
-        //     'pseudo' => htmlentities($pseudo),
-        //     'email' => htmlentities($email),
-        //     'password' => password_hash($password, PASSWORD_DEFAULT)
-        // ]);
 
         unset($_POST['pseudo']);
         unset($_POST['email']);
@@ -133,5 +127,7 @@ class ControllerFront {
     
         return $errors;
     }
+
+    
 
 } 
