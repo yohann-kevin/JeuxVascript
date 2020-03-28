@@ -49,7 +49,7 @@
                     <label from="passwordRegister">Votre mot de passe</label>
                     <input id="passwordRegister" name="password" type="password" placeholder="password">
                     <label from="verifyPasswordRegister">Confirmer votre mot de passe</label>
-                    <input id="verifyPasswordRegister" name="verifyPasswordRegister" type="password" placeholder="password">
+                    <input id="verifyPasswordRegister" name="verifyPassword" type="password" placeholder="password">
                 </div>
 
                 <div id="buttonRegister">

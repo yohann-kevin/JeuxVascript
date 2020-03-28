@@ -29,16 +29,3 @@ class FrontManager extends Manager {
         return $pseudoCheck;
     }
 }
-
-class Users extends Manager {
-    // public function usersRegister() {
-    //     $bdd = $this->dbConnect();
-    //     $register = $bdd->prepare('INSERT INTO users(pseudo, email, password) VALUES (:pseudo, :email, :password)');
-    //     $register->execute([
-    //         'pseudo' => htmlentities($pseudo),
-    //         'email' => htmlentities($email),
-    //         'password' => password_hash($password, PASSWORD_DEFAULT)
-    //     ]);
-    //     return $register;
-    // }
-}
