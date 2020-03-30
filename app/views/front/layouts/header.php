@@ -25,7 +25,7 @@
                         <li><a href="index.php?action=snake">Snake</a></li>
                     </ul>
                 </li>
-                <li class="deroulant fromLeft menu"><a href="index.php?action=news">Blog</a>
+                <li class="deroulant fromLeft menu"><a href="index.php?action=news">News</a>
                     <ul class="sous">
                         <li><a href="#">Best Score</a></li>
                         <li><a href="index.php?action=news">Article</a></li>

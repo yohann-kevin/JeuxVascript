@@ -23,9 +23,7 @@
                         obcaecati. Recusandae possimus fugiat veniam natus 
                         ipsum, itaque assumenda laborum molestias...</p>
                 <div>
-                
             </div>
-            
         </section>
     </main>
 
