@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="app/public/style/header.css">
     <link rel="stylesheet" href="app/public/style/home.css">
     <link rel="stylesheet" href="app/public/style/footer.css">
-    <link rel="stylesheet" href="app/public/style/mediaQueries.css">
     <link rel="stylesheet" href="app/public/style/contact.css">
     <link rel="stylesheet" href="app/public/style/snake.css">
     <link rel="stylesheet" href="app/public/style/register.css">
@@ -23,6 +22,7 @@
     <link rel="stylesheet" href="app/public/style/usersArticle.css">
     <link rel="stylesheet" href="app/public/style/userSettings.css">
     <link rel="stylesheet" href="app/public/style/stats.css">
+    <link rel="stylesheet" href="app/public/style/mediaQueries.css">
     <!-- icône -->
     <link rel="icon" href="app/public/images/logo/icone.png">
     <!-- charge la biblitoheque chart js -->

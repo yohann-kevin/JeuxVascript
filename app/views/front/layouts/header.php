@@ -17,15 +17,15 @@
             }
         </script>
         <nav id="nav">
-            <ul>
-                <li class="fromLeft"><a href="index.php?action=home">Accueil</a></li>
-                <li class="deroulant fromLeft"><a href="index.php?action=game">Nos Jeux</a>
+            <ul id="navBar">
+                <li class="fromLeft menu"><a href="index.php?action=home">Accueil</a></li>
+                <li class="deroulant fromLeft menu"><a href="index.php?action=game">Jeux</a>
                     <ul class="sous">
                         <li><a href="index.php?action=spaceInvaders">Space Invaders</a></li>
                         <li><a href="index.php?action=snake">Snake</a></li>
                     </ul>
                 </li>
-                <li class="deroulant fromLeft"><a href="index.php?action=news">Communauté</a>
+                <li class="deroulant fromLeft menu"><a href="index.php?action=news">Blog</a>
                     <ul class="sous">
                         <li><a href="#">Best Score</a></li>
                         <li><a href="index.php?action=news">Article</a></li>
@@ -37,8 +37,8 @@
                         <li><a href="index.php?action=stats">stats.php</a></li>
                     </ul>
                 </li>
-                <li class="fromLeft"><a href="index.php?action=about">A propos</a></li>
-                <li class="fromLeft"><a href="index.php?action=contact">Contact</a></li>
+                <li class="fromLeft menu"><a href="index.php?action=about">A propos</a></li>
+                <li class="fromLeft menu"><a href="index.php?action=contact">Contact</a></li>
             </ul>
         </nav>
         <div id="buttonHeader">
