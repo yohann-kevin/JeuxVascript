@@ -1,4 +1,4 @@
-@media screen and (min-width: 200px) and (max-width: 575px) {
+@media screen and (max-width: 768px) {
 
     /*  *****header*****  */
     #header {
@@ -197,8 +197,76 @@
     }
 }
 
-@media screen and (min-width: 575px) and (max-width: 900px) {}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    /* header */
+    #header {
+        position: initial;
+    }
 
-@media screen and (min-width: 900px) and (max-width: 1200px) {}
+    #home {
+        padding-top: 25px;
+    }
 
-@media screen and (min-width: 1200px) {}
+    #logo {
+        width: 25%;
+    }
+
+    #nav {
+        width: 70%;
+    }
+
+    #buttonHeader {
+        width: 100%;
+    }
+
+    /* home */
+    #presentationImg {
+        display: none;
+    }
+
+    .article {
+        width: 60%;
+    }
+
+    .gameParaHome {
+        font-family: fantasy;
+    }
+
+    /* game */
+    #games {
+        padding-top: 25px;
+    }
+
+    .gamePara {
+        font-family: fantasy;
+    }
+
+    /* news */
+    #news {
+        padding-top: 25px;
+    }
+
+    .newsArticle {
+        width: 70%;
+    }
+
+    /* page article */
+    #pageArticle {
+        padding-top: 25px;
+    }
+
+    /* about */
+    #about {
+        padding-top: 25px;
+    }
+
+    /* contact */
+    #contact {
+        padding-top: 25px;
+    }
+
+}
+
+
+
+@media screen and (min-width: 1200px) {} 
