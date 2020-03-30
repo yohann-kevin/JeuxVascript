@@ -115,7 +115,6 @@ class ControllerFront {
         }
     
         if($validation){
-            
         $register = new \Project\models\FrontManager();
         $usersRegister = $register->usersRegister($pseudo,$email,$password);
 

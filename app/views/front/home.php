@@ -98,7 +98,7 @@ include_once 'app/views/front/layouts/header.php';
                     <img src="app/public/images/gameplay/spaceInvaders2.png">
                 </div>
                 <div id="gameContent1">
-                    <p class="gamePara">
+                    <p class="gameParaHome">
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                         Molestias deserunt nulla culpa!
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -124,7 +124,7 @@ include_once 'app/views/front/layouts/header.php';
                     <img src="app/public/images/gameplay/snake.png">
                 </div>
                 <div id="gameContent2">
-                    <p class="gamePara">
+                    <p class="gameParaHome">
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                         Molestias deserunt nulla culpa!
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit.
