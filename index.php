@@ -52,6 +52,8 @@ try{
             $controllerFront -> userSettingsFront();
         } elseif ($_GET['action'] == 'stats') {
             $controllerFront -> statsFront();
+        } elseif ($_GET['action'] == 'usersWrite') {
+            $controllerFront -> usersWriteFront();
         }
 
     } else {

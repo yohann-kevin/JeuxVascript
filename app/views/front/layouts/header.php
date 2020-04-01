@@ -41,6 +41,7 @@
                         <li><a href="index.php?action=usersArticle">usersArticle.php</a></li>
                         <li><a href="index.php?action=userSettings">userSettings.php</a></li>
                         <li><a href="index.php?action=stats">stats.php</a></li>
+                        <li><a href="index.php?action=usersWrite">usersWrite.php</a></li>
                     </ul>
                 </li>
                 <li class="fromLeft menu"><a href="index.php?action=about">A propos</a></li>

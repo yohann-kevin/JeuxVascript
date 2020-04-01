@@ -74,6 +74,11 @@ class ControllerFront {
         require 'app/views/front/stats.php';
     }
 
+    function usersWriteFront() {
+
+        require 'app/views/front/usersWrite.php';
+    }
+
     
 
     // permet a l'utilisateur de se connecter

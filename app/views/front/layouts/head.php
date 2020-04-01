@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="app/public/style/usersArticle.css">
     <link rel="stylesheet" href="app/public/style/userSettings.css">
     <link rel="stylesheet" href="app/public/style/stats.css">
+    <link rel="stylesheet" href="app/public/style/usersWrite.css">
     <link rel="stylesheet" href="app/public/style/mediaQueries.css">
     <!-- icône -->
     <link rel="icon" href="app/public/images/logo/icone.png">
