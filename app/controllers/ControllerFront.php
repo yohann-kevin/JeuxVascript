@@ -137,6 +137,12 @@ class ControllerFront {
         }
     }
 
+    function logoutUsers() {
+        unset($_SESSION['user']);
+        session_destroy();
+        require 'app/views/front/home.php';
+    }
+
     
 
 } 

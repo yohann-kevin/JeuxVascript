@@ -48,7 +48,16 @@
             </ul>
         </nav>
         <div id="buttonHeader">
+
+            
+            <?php if(isset($_SESSION['user'])) : ?>
+            <a href="index.php?action=account">Mon compte</a>
+            <a href="index.php?action=disconnect">Déconnexion</a>
+            <?php else : ?>
             <a id="btnModalConnect">Connexion</a>
+            <a href="index.php?action=register">Inscription</a>
+            <?php endif ?>
+            <input type="text" name="search" placeholder="Search.." id="search">
             <!-- The Modal -->
             <div id="modalConnect">
                 <!-- Modal content -->
@@ -72,7 +81,7 @@
                     </form>
                 </div>
             </div>
-            <a href="index.php?action=register">Inscription</a>
-            <input type="text" name="search" placeholder="Search.." id="search">
+
+
         </div>
     </header>
