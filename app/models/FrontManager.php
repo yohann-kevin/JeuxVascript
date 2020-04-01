@@ -10,6 +10,7 @@ class FrontManager extends Manager {
         return $req;
     }
 
+    // enregistre un utilisateur
     public function usersRegister($pseudo,$email,$password) {
         $bdd = $this->dbConnect();
         $register = $bdd->prepare('INSERT INTO users(pseudo, email, password) VALUES (:pseudo, :email, :password)');
@@ -21,6 +22,7 @@ class FrontManager extends Manager {
         return $register;
     }
 
+    // vérifie si le pseudo n'est pas déja prit a la creation du compte
     public function pseudoCheck($pseudo){
         $bdd = $this->dbConnect();
         $pseudoCheck = $bdd->prepare('SELECT COUNT(*) FROM users WHERE pseudo = ? ');
@@ -29,6 +31,7 @@ class FrontManager extends Manager {
         return $pseudoCheck;
     }
 
+    // permet a l'utilisateur de se connecter
     public function usersLogin($pseudo,$password) {
         $bdd = $this->dbConnect();
         $login = $bdd->prepare('SELECT id, password FROM users WHERE pseudo = ?');
@@ -37,6 +40,7 @@ class FrontManager extends Manager {
         return $login;
     }
 
+    // récupere les informations de l'utilisateur
     public function usersInfo() {
         $bdd = $this->dbConnect();
         $infos = $bdd->prepare('SELECT email, pseudo FROM users WHERE id = ?');
