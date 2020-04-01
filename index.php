@@ -36,6 +36,8 @@ try{
             $controllerFront -> registerUsers();
         } elseif ($_GET['action'] == 'login') {
             $controllerFront -> loginUsers();
+        } elseif ($_GET['action'] == 'disconnect') {
+            $controllerFront -> logoutUsers();
         }
         
         
