@@ -1,3 +1,9 @@
+<?php
+// if(!empty($_POST)){
+//     $login = new \Project\controllers\ControllerFront();
+//     $errors = $login->loginUsers();
+// }
+?>
 <body>
     <header id="header">
         <!-- <img src="Jeuxvacsript.png" alt="Jeuxvacsript"> -->
@@ -49,11 +55,15 @@
                 <div id="modalContent">
                     <span id="closeConnect">&times;</span>
                     <h1 id="modalConnectTitle">De retour parmi nous ?</h1>
-                    <form id="idConnect">
+                    <form id="idConnect" method="post" action="index.php?action=login">
+                    <?php if(isset($error)) : ?>
+                    <?= $error ?>
+                    <?php endif ?>
                         <label from="pseudoConnect">Votre pseudo</label>
-                        <input id="pseudoConnect" name="pseudoConnect" type="text" placeholder="Pseudo">
+                        <input id="pseudoConnect" name="pseudo" type="text" placeholder="Pseudo">
                         <label from="passwordConnect">Votre mot de passe</label>
-                        <input id="passwordConnect" name="passwordConnect" type="password" placeholder="password">
+                        <input id="passwordConnect" name="password" type="password" placeholder="password"
+                            value='<?php if(isset($_POST['Pseudo']))echo $_POST['Pseudo'] ?>'>
                         <div id="btnGoogle" class="g-signin2" data-onsuccess="onSignIn"></div>
                         <div id="buttonConnect">
                             <button type="submit" id="btnSubConnect">Envoyer</button>

@@ -31,6 +31,16 @@ try{
         } elseif ($_GET['action'] == 'spaceInvaders') {
             $controllerFront -> spaceInvadersFront();
         } 
+        
+        elseif ($_GET['action'] == 'registerUsers') {
+            $controllerFront -> registerUsers();
+        } elseif ($_GET['action'] == 'login') {
+            $controllerFront -> loginUsers();
+        }
+        
+        
+        
+
         // users (temporaire)
         elseif ($_GET['action'] == 'account') {
             $controllerFront -> accountFront();
@@ -41,8 +51,6 @@ try{
         } elseif ($_GET['action'] == 'stats') {
             $controllerFront -> statsFront();
         }
-        // admin (temporaire)
-
 
     } else {
         $controllerFront -> home();
