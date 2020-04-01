@@ -36,4 +36,12 @@ class FrontManager extends Manager {
         $login = $login->fetch();
         return $login;
     }
+
+    public function usersInfo() {
+        $bdd = $this->dbConnect();
+        $infos = $bdd->prepare('SELECT email, pseudo FROM users WHERE id = ?');
+        $infos->execute([$_SESSION['user']]);
+        $infos = $infos->fetch();
+        return $infos;
+    }
 }
