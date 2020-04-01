@@ -1,8 +1,11 @@
 <?php require_once 'app/views/front/layouts/head.php'; ?>
-<?php
-require_once 'app/views/front/layouts/header.php';
+<?php require_once 'app/views/front/layouts/header.php'; ?>
+<?php 
+if(!empty($_POST)){
+    $contact = new \Project\controllers\ControllerFront();
+    $errors = $contact->contact();
+}
 ?>
-
     <main id="contact">
 
         <section class="pageTitle">
@@ -16,23 +19,48 @@ require_once 'app/views/front/layouts/header.php';
                  Eh bien, allez-y envoyer nous votre message via le formulaire ci-dessous, 
                  nous tacherons de vous répondre au plus vite !</p>
 
-            <form id="contactForm">
+            
+            
+            <form id="contactForm" method="post" action="">
+
+            <?php
+                if(isset($errors)) :
+                    if($errors):
+                foreach($errors as $error) :
+            ?>
+
+            <?= $error ?>
+
+            <?php endforeach; else : ?>
+
+            <p>votre message a bien été envoyer</p>
+
+            <?php endif; endif ?>
+
                 <div id="nameContact">
                     <label from="firstNameContact">Votre prenom</label>
-                    <input id="firstNameContact" name="firstNameContact" type="text" placeholder="First name">
+                    <input id="firstNameContact" name="name" type="text" placeholder="First name" 
+                        value='<?php if(isset($_POST['name']))echo $_POST['name'] ?>'>
                     <label from="emailContact">Votre email</label>
-                    <input id="emailContact" name="emailContact" type="text" placeholder="Email">
+                    <input id="emailContact" name="email" type="text" placeholder="Email"
+                        value='<?php if(isset($_POST['email']))echo $_POST['email'] ?>'>
                 </div>
                 <div id="messageContact">
                     <label from="message">Votre message</label>
                     <input type="text" name="objetMessage" placeholder="objet" id="objetMessage">
-                    <textarea name="message" id="message" placeholder="Your message..."></textarea>
+                    <textarea name="content" id="message" placeholder="Your message..."
+                        value='<?php if(isset($_POST['content']))echo $_POST['content'] ?>'></textarea>
                 </div>
                 <div id="buttonContact">
                     <button type="submit" id="btnSubContact">Envoyer</button>
                     <button type="reset" id="btnResContact">Annuler</button>
                 </div>
             </form>
+
+            
+
+
+
         </section>
 
         <section id="findUs">
