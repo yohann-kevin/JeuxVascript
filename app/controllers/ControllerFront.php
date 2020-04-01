@@ -94,11 +94,6 @@ class ControllerFront {
             $validation = false;
             $errors[] = 'Adresse Email non valide !!!';
         }
-        
-        // if($emailconf != $email){
-        //     $validation = false;
-        //     $errors[] = 'adresse email de confirmation est incorrecte !!!';
-        // }
     
         if($verifyPassword != $password){
             $validation = false;
@@ -120,11 +115,26 @@ class ControllerFront {
 
         unset($_POST['pseudo']);
         unset($_POST['email']);
-        // unset($_POST['emailconf']);
-        // require 'app/views/front/account.php';
+        require 'app/views/front/account.php';
         }
     
         return $errors;
+    }
+
+    // permet a l'utilisateur de se connecter
+    function loginUsers() {
+        extract($_POST);
+        $error = 'Les identifiants ne correspondent pas à nos enregistrements !';
+
+        $loginUsers = new \Project\models\FrontManager();
+        $login = $loginUsers->usersLogin($pseudo,$password);
+
+        if(password_verify($password, $login['password'])){
+            $_SESSION['user'] = $login['id'];
+            require 'app/views/front/account.php';
+        }else{
+            return $error;
+        }
     }
 
     

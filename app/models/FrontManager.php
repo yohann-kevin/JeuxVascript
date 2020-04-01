@@ -28,4 +28,12 @@ class FrontManager extends Manager {
         $pseudoCheck = $pseudoCheck->fetch()[0];
         return $pseudoCheck;
     }
+
+    public function usersLogin($pseudo,$password) {
+        $bdd = $this->dbConnect();
+        $login = $bdd->prepare('SELECT id, password FROM users WHERE pseudo = ?');
+        $login->execute([$pseudo]);
+        $login = $login->fetch();
+        return $login;
+    }
 }

@@ -1,11 +1,10 @@
-<?php 
-    // session_start();
+<?php
     include_once 'app/views/front/layouts/head.php'; 
     include_once 'app/views/front/layouts/header.php'; 
-    if(!empty($_POST)){
-        $register = new \Project\controllers\ControllerFront();
-        $errors = $register->registerUsers();
-    }
+    // if(!empty($_POST)){
+    //     $register = new \Project\controllers\ControllerFront();
+    //     $errors = $register->registerUsers();
+    // }
 ?>
 
     <main id="register">
@@ -22,7 +21,7 @@
                 bien sûr vous aurez la possibilité de poster des articles sur notre espace blog de 
                 commenter les articles d'autres joueurs etc...<p>
 
-            <form method="post" action="" id="registerForm">
+            <form method="post" action="index.php?action=registerUsers" id="registerForm">
                 <?php
                     if(isset($errors)) :
                         if($errors):
