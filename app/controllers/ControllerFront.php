@@ -156,6 +156,37 @@ class ControllerFront {
         return $infos;
     }
 
+
+    function contact() {
+        extract($_POST);
+        $validation = true;
+        $errors = [];
+    
+        if (empty($name) || empty($email) || empty($content)) {
+            $validation = false;
+            $errors[] = "tous les champs sont obligatoires !!";
+        }
+    
+        if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+            $validation = false;
+            $errors[] = "Cet email n'est pas valide !!";
+        }
+    
+        if ($validation) {
+            $to = 'yo44prg@icloud.com';
+            $object = 'Nouveau message de : ' .$name;
+            $message = '<h1>Nouveau message de '.$name .'</h1>
+                        <h2>Adresse Email: ' .$email .'</h2>
+                        <p>' .nl2br($content) . '</p>';
+            $headers = 'FROM' .$name .' <' .$email .'> '."\r\n";
+            $headers .= 'MIME-Version 1.0'."\r\n";
+            $headers .= 'Content-type: text/html; charset=utf-8'."\r\n";
+            mail($to, $object, $message, $headers);
+        }
+    
+    
+        return $errors;
+    }
     
 
 } 
