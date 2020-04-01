@@ -76,7 +76,7 @@ class ControllerFront {
 
     
 
-
+    // permet a l'utilisateur de se connecter
     function registerUsers() {
 
         extract($_POST);
@@ -137,10 +137,18 @@ class ControllerFront {
         }
     }
 
+    // déconnecte l'utilisateur
     function logoutUsers() {
         unset($_SESSION['user']);
         session_destroy();
         require 'app/views/front/home.php';
+    }
+
+    // affiche les info de l'utilisateur
+    function displayInfo() {
+        $usersInfo = new \Project\models\FrontManager();
+        $infos = $usersInfo->usersInfo();
+        return $infos;
     }
 
     
