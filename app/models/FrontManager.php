@@ -48,4 +48,13 @@ class FrontManager extends Manager {
         $infos = $infos->fetch();
         return $infos;
     }
+
+    // récupere les noms de category
+    public function category() {
+        $bdd = $this->dbConnect();
+        $category = $bdd->prepare('SELECT id, name FROM category');
+        $category->execute(array());
+        $category = $category->fetchAll();
+        return $category;
+    }
 }

@@ -183,9 +183,14 @@ class ControllerFront {
             $headers .= 'Content-type: text/html; charset=utf-8'."\r\n";
             mail($to, $object, $message, $headers);
         }
-    
-    
         return $errors;
+    }
+
+    // affiche les info de l'utilisateur
+    function displayCategory() {
+        $displayCategory = new \Project\models\FrontManager();
+        $categorys = $displayCategory->category();
+        return $categorys;
     }
     
 
