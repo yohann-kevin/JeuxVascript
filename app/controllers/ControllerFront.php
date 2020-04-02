@@ -192,6 +192,38 @@ class ControllerFront {
         $categorys = $displayCategory->category();
         return $categorys;
     }
+
+
+    function usersPostArticle(){
+        if(isset($_SESSION['user'])) {
+            extract($_POST);
+            $validation = true;
+            $errors = [];
+        
+            if(empty($title) || empty($content)){
+                $validation = false;
+                $errors[] = 'Tous les champs sont obligatoires !';
+            }
+        
+            if(empty($_FILES["file"]) || $_FILES['file']['error'] > 0){
+                $validation = false;
+                $errors[] = "L'image est obligatoire !";
+            }
+
+            if($validation){
+                $image = basename($_FILES['file']['name']);
+                
+                $postArticle = new \Project\models\FrontManager();
+                $articlePost = $postArticle->postArticle($title,$content,$image);
+                move_uploaded_file($_FILES['file']['tmp_name'],'app/public/images/articles/' .$image);
+                    
+                unset($_POST['title']);
+                unset($_POST['content']);   
+            }
+            return $errors; 
+        }
+        
+    }
     
 
 } 
