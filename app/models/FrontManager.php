@@ -57,4 +57,20 @@ class FrontManager extends Manager {
         $category = $category->fetchAll();
         return $category;
     }
+
+    public function postArticle($title,$content,$image) {
+        $bdd = $this->dbConnect();
+        // $id_category = (int)$_GET['id'];
+        $postArticle = $bdd->prepare("INSERT INTO articles(users_id, title, extract, content, images) VALUES (:users_id, :title, :extract, :content, :image)");
+        $postArticle->execute([
+            'users_id' => $_SESSION['user'],
+            // 'category_id' => $id_category,
+            "title" => htmlentities($title),
+            "extract" => substr(htmlentities($content),0 ,150),
+            "content" => htmlentities($content),
+            "image" => htmlentities($image)
+        ]);
+        $postArticle = $postArticle->fetch();
+        return $postArticle;
+    }
 }
