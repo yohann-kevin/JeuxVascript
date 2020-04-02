@@ -8,7 +8,7 @@
 ?>
 
     <main id="register">
-
+        
         <section class="pageTitle">
             <h1 class="title">Vous etes nouveaux <span class="strong">par ici</span></h1>
             <h2 class="subtitle"><span class="strong">Inscrivez-vous !</span></h2>
