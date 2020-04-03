@@ -156,6 +156,20 @@ class ControllerFront {
         return $infos;
     }
 
+    function welcome() {
+        date_default_timezone_set('Europe/Paris');
+        $time = date('H');
+        $welcome = '';
+        if($time >= 8 && $time <= 18) {
+            $welcome = 'Bonjour';
+        } elseif($time > 18 && $time <= 22) {
+            $welcome =  'Bonsoir';
+        } else {
+            $welcome = 'On geek tard le soir ? ';
+        }
+        return $welcome;
+    }
+
 
     function contact() {
         extract($_POST);
