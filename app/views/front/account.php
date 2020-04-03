@@ -3,6 +3,9 @@
 <?php 
 $usersInfo = new \Project\controllers\ControllerFront();
 $infos = $usersInfo->displayInfo();
+
+$welcomes = new \Project\controllers\ControllerFront();
+$welcome = $welcomes->welcome();
 ?>
     <main id="account">
         <section id="pageAccount">
@@ -15,7 +18,7 @@ $infos = $usersInfo->displayInfo();
             </aside>
 
             <article id="welcomeUsers">
-                <h3>Bonjour <?= $infos['pseudo']?></h3>
+                <h3><?= $welcome ?> <?= $infos['pseudo']?></h3>
             </article>
 
             <article id="lastArticle">
