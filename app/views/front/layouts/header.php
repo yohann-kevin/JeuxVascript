@@ -37,11 +37,11 @@
                         <li><a href="index.php?action=news">Article</a></li>
                         <!-- lien temporaire vers page article.php -->
                         <li><a href="index.php?action=article">article.php</a></li>
-                        <li><a href="index.php?action=account">account.php</a></li>
+                        <!-- <li><a href="index.php?action=account">account.php</a></li>
                         <li><a href="index.php?action=usersArticle">usersArticle.php</a></li>
                         <li><a href="index.php?action=userSettings">userSettings.php</a></li>
                         <li><a href="index.php?action=stats">stats.php</a></li>
-                        <li><a href="index.php?action=usersWrite">usersWrite.php</a></li>
+                        <li><a href="index.php?action=usersWrite">usersWrite.php</a></li> -->
                     </ul>
                 </li>
                 <li class="fromLeft menu"><a href="index.php?action=about">A propos</a></li>
