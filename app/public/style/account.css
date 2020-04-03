@@ -1,6 +1,5 @@
 #account {
     padding-top: 155px;
-    height: 600px;
     /* background-color: rgba(239, 239, 239, 0.7); */
     background-color: #efefef;
     display: flex;
@@ -12,6 +11,83 @@
     width: 80%;
 }
 
-#accountTitle {
+#pageAccount article {
+    margin: 5px;
+    padding: 5px;
+    background-color: white;
+    border: 1px solid #efefef;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+#usersLink {
+    width: 25%;
+    float: right;
+    min-height: 250px;
+    border: 1px solid #efefef;
+    background-color: #ffffff;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#navBarUsers {
+    width: 60%;
+    list-style-type: none;
     text-align: center;
 }
+
+#navBarUsers li {
+    padding-top: 35px;
+}
+
+.usersLink {
+    text-decoration: none;
+    color: #545454;
+    font-size: 1.3rem;
+}
+
+#welcomeUsers {
+    width: 70%;
+    min-height: 70px;  
+    text-align: center;
+    
+}
+
+#welcomeUsers h3 {
+    font-family: 'arcadeRounded';
+    margin-top: 25px;
+    color: #545454;
+}
+
+#lastArticle {
+    width: 70%;
+    min-height: 200px;  
+}
+
+#lastArticle h3 {
+    font-family: 'arcadeRounded';
+    font-size: 0.8rem;
+    margin-top: 25px;
+    color: #545454;
+}
+
+#lastComment {
+    width: 70%;
+    min-height: 200px;
+}
+
+#lastComment h3 {
+    font-family: 'arcadeRounded';
+    font-size: 0.8rem;
+    margin-top: 25px;
+    color: #545454;
+}
+
