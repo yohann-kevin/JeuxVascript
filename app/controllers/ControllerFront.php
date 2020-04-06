@@ -238,10 +238,22 @@ class ControllerFront {
         }
     }
 
+    // permet d'afficher tout les articles
     function displayArticles() {
         $displayArticles = new \Project\models\FrontManager();
         $articles = $displayArticles->getArticles();
         return $articles;
+    }
+
+    function article() {
+        // if(empty($article)) {
+        //     header("HTTP/1.0 404 Not Found");
+        //     exit( 0 );
+        // } else {
+            $displayArticle = new \Project\models\FrontManager();
+            $article = $displayArticle->getArticle();
+            return $article;
+        // }
     }
     
 

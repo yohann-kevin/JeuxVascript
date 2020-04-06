@@ -72,11 +72,21 @@ class FrontManager extends Manager {
         return $postArticle;
     }
 
+    // récuperes tout les articles en bdd
     public function getArticles() {
-        $bdd=$this->dbConnect();
-        $articles = $bdd->query("SELECT title, extract, content, images, created_date FROM articles");
-        // $articles->execute([$articles]);
+        $bdd = $this->dbConnect();
+        $articles = $bdd->query("SELECT id, title, extract, content, images, created_date FROM articles");
         $articles = $articles->fetchAll();
         return $articles;
+    }
+
+    //récupère un seul article
+    public function getArticle() {
+        $bdd = $this->dbConnect();
+        $id = (int)$_GET['id'];
+        $article = $bdd->prepare("SELECT id, title, extract, content, images, created_date FROM articles WHERE id = ? ");
+        $article->execute([$id]);
+        $article = $article->fetch();
+        return $article;
     }
 }

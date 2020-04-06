@@ -1,27 +1,20 @@
 <?php require_once 'app/views/front/layouts/head.php'; ?>
 <?php include_once 'app/views/front/layouts/header.php'; ?>
+<?php
+$singleArticle = new \Project\controllers\ControllerFront();
+$article = $singleArticle->article(); 
+?>
 
     <main id="pageArticle">
         <section>
             <header id="articleHeader">
-                <h2 id="articleTitle">Lorem ipsum dolor sit<h2>
+                <h2 id="articleTitle"><?= $article['title'] ?><h2>
             </header>
             <div id="article">
-                <img src="app/public/images/image/space.png" alt="space invaders" id="articleImg">
+                <img src="app/public/images/articles/<?= $article['images'] ?>" alt="<?= $article['images'] ?>" id="articleImg">
                 <div id="articleContent">
-                    <h4 id="articlePseudo">Rédigé par plop le 19 mars 2020</h4>
-                    <p id="articlePara">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                        Similique ut nesciunt, dolores odio, 
-                        earum quidem praesentium impedit nam 
-                        fugiat odit quasi nulla veritatis blanditiis 
-                        obcaecati. Recusandae possimus fugiat veniam natus 
-                        ipsum, itaque assumenda laborum molestias...
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                        Similique ut nesciunt, dolores odio, 
-                        earum quidem praesentium impedit nam 
-                        fugiat odit quasi nulla veritatis blanditiis 
-                        obcaecati. Recusandae possimus fugiat veniam natus 
-                        ipsum, itaque assumenda laborum molestias...</p>
+                    <h4 id="articlePseudo">Rédigé par plop le <?= $article['created_date'] ?></h4>
+                    <p id="articlePara"><?= $article['content'] ?></p>
                 <div>
             </div>
         </section>
