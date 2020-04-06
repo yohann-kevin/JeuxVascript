@@ -156,6 +156,7 @@ class ControllerFront {
         return $infos;
     }
 
+    //affiche un message de bienvenue en fonction de l'heure
     function welcome() {
         date_default_timezone_set('Europe/Paris');
         $time = date('H');
@@ -170,7 +171,7 @@ class ControllerFront {
         return $welcome;
     }
 
-
+    //permet d'envoyer un mail a l'admin
     function contact() {
         extract($_POST);
         $validation = true;
@@ -200,14 +201,14 @@ class ControllerFront {
         return $errors;
     }
 
-    // affiche les info de l'utilisateur
+    // affiche les info d'une catégories
     // function displayCategory() {
     //     $displayCategory = new \Project\models\FrontManager();
     //     $categorys = $displayCategory->category();
     //     return $categorys;
     // }
 
-
+    // permet a l'utilisateur de poster un articles
     function usersPostArticle(){
         if(isset($_SESSION['user'])) {
             extract($_POST);
@@ -235,7 +236,12 @@ class ControllerFront {
             }
             return $errors; 
         }
-        
+    }
+
+    function displayArticles() {
+        $displayArticles = new \Project\models\FrontManager();
+        $articles = $displayArticles->getArticles();
+        return $articles;
     }
     
 
