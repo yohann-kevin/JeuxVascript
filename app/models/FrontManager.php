@@ -58,19 +58,17 @@ class FrontManager extends Manager {
     //     return $category;
     // }
 
-    public function postArticle($title,$selectCategory,$content,$image) {
+    public function postArticle($title,$category_id,$content,$image) {
         $bdd = $this->dbConnect();
-        // $selectCategory = (int)$_GET['id'];
-        $postArticle = $bdd->prepare("INSERT INTO articles(users_id, title, extract, content, images, INNER JOIN category ON articles.category_id = category.id) VALUES (:users_id, :title, :selectCategory, :extract, :content, :image)");
+        $postArticle = $bdd->prepare("INSERT INTO articles(users_id, title, category_id, extract, content, images) VALUES (:users_id, :title, :category_id, :extract, :content, :image)");
         $postArticle->execute([
             'users_id' => $_SESSION['user'],
-            'category_id' => $selectCategory,
+            'category_id' => $category_id,
             "title" => htmlentities($title),
             "extract" => substr(htmlentities($content),0 ,150),
             "content" => htmlentities($content),
             "image" => htmlentities($image)
         ]);
-        // $postArticle = $postArticle->fetch();
         return $postArticle;
     }
 }

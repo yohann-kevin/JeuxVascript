@@ -214,7 +214,7 @@ class ControllerFront {
             $validation = true;
             $errors = [];
         
-            if(empty($title) || empty($selectCategory) || empty($content)){
+            if(empty($title) || empty($category_id) || empty($content)){
                 $validation = false;
                 $errors[] = 'Tous les champs sont obligatoires !';
             }
@@ -227,7 +227,7 @@ class ControllerFront {
             if($validation){
                 $image = basename($_FILES['file']['name']);
                 $postArticle = new \Project\models\FrontManager();
-                $articlePost = $postArticle->postArticle($title,$selectCategory,$content,$image);
+                $articlePost = $postArticle->postArticle($title,$category_id,$content,$image);
                 move_uploaded_file($_FILES['file']['tmp_name'],'app/public/images/articles/' .$image);
                     
                 unset($_POST['title']);
