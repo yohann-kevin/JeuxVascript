@@ -80,7 +80,7 @@ class FrontManager extends Manager {
         return $articles;
     }
 
-    //récupère un seul article
+    //récupère un seul article avec son id
     public function getArticle() {
         $bdd = $this->dbConnect();
         $id = (int)$_GET['id'];
