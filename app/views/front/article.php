@@ -3,6 +3,8 @@
 <?php
 $singleArticle = new \Project\controllers\ControllerFront();
 $article = $singleArticle->article(); 
+
+$date = new \Project\controllers\ControllerFront();
 ?>
 
     <main id="pageArticle">
@@ -13,7 +15,7 @@ $article = $singleArticle->article();
             <div id="article">
                 <img src="app/public/images/articles/<?= $article['images'] ?>" alt="<?= $article['images'] ?>" id="articleImg">
                 <div id="articleContent">
-                    <h4 id="articlePseudo">Rédigé par plop le <?= $article['created_date'] ?></h4>
+                    <h4 id="articlePseudo">Rédigé par plop le <?= $date->dateFormating($article['created_date'])?></h4>
                     <p id="articlePara"><?= $article['content'] ?></p>
                 <div>
             </div>

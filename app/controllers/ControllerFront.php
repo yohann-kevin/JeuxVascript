@@ -245,6 +245,7 @@ class ControllerFront {
         return $articles;
     }
 
+    //permet d'afficher un seul article
     function article() {
         // if(empty($article)) {
         //     header("HTTP/1.0 404 Not Found");
@@ -254,6 +255,14 @@ class ControllerFront {
             $article = $displayArticle->getArticle();
             return $article;
         // }
+    }
+
+    //met en forme la date
+    function dateFormating($publication) {
+        setlocale(LC_TIME,"fr_FR.utf-8");
+        $results = strftime("%A %d %B %G", strtotime($publication));
+
+        return $results;
     }
     
 

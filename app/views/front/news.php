@@ -3,6 +3,7 @@
 <?php
 $allArticles = new \Project\controllers\ControllerFront();
 $articles = $allArticles->displayArticles(); 
+
 ?>
         <main id="news">
 
