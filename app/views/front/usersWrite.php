@@ -38,7 +38,7 @@ if(!empty($_POST)){
         </div>
         <div id="usersSelectCategory">
             <label for="selectCategory">Choisisser une catégories:</label>
-            <select name="selectCategory" id="selectCategory">
+            <select name="category_id" id="selectCategory">
                 <option value="">--Choisisser une catégories--</option>
                 <option value="1">pixel-art</option>
                 <option value="2">monde de l'indé</option>
@@ -46,7 +46,7 @@ if(!empty($_POST)){
                 <option value="4">rétro</option>
                 <option value="5">au secours</option>
                 <option value="6">divers</option>
-                <?php if(isset($_POST['selectCategory'])) echo $_POST['selectCategory']; ?>
+                <?php if(isset($_POST['category_id'])) echo $_POST['category_id']; ?>
             </select>
         </div>
         <div id="usersSelectImg">
