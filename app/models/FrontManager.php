@@ -71,4 +71,12 @@ class FrontManager extends Manager {
         ]);
         return $postArticle;
     }
+
+    public function getArticles() {
+        $bdd=$this->dbConnect();
+        $articles = $bdd->query("SELECT title, extract, content, images, created_date FROM articles");
+        // $articles->execute([$articles]);
+        $articles = $articles->fetchAll();
+        return $articles;
+    }
 }
