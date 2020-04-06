@@ -50,27 +50,27 @@ class FrontManager extends Manager {
     }
 
     // récupere les noms de category
-    public function category() {
-        $bdd = $this->dbConnect();
-        $category = $bdd->prepare('SELECT id, name FROM category');
-        $category->execute(array());
-        $category = $category->fetchAll();
-        return $category;
-    }
+    // public function category() {
+    //     $bdd = $this->dbConnect();
+    //     $category = $bdd->prepare('SELECT id, name FROM category');
+    //     $category->execute(array());
+    //     $category = $category->fetchAll();
+    //     return $category;
+    // }
 
-    public function postArticle($title,$content,$image) {
+    public function postArticle($title,$selectCategory,$content,$image) {
         $bdd = $this->dbConnect();
-        // $id_category = (int)$_GET['id'];
-        $postArticle = $bdd->prepare("INSERT INTO articles(users_id, title, extract, content, images) VALUES (:users_id, :title, :extract, :content, :image)");
+        // $selectCategory = (int)$_GET['id'];
+        $postArticle = $bdd->prepare("INSERT INTO articles(users_id, title, extract, content, images, INNER JOIN category ON articles.category_id = category.id) VALUES (:users_id, :title, :selectCategory, :extract, :content, :image)");
         $postArticle->execute([
             'users_id' => $_SESSION['user'],
-            // 'category_id' => $id_category,
+            'category_id' => $selectCategory,
             "title" => htmlentities($title),
             "extract" => substr(htmlentities($content),0 ,150),
             "content" => htmlentities($content),
             "image" => htmlentities($image)
         ]);
-        $postArticle = $postArticle->fetch();
+        // $postArticle = $postArticle->fetch();
         return $postArticle;
     }
 }

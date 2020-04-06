@@ -1,8 +1,8 @@
 <?php 
 include_once 'app/views/front/layouts/head.php'; 
 include_once 'app/views/front/layouts/header.php'; 
-$usersCategory = new \Project\controllers\ControllerFront();
-$categorys = $usersCategory->displayCategory(); 
+// $usersCategory = new \Project\controllers\ControllerFront();
+// $categorys = $usersCategory->displayCategory(); 
 
 if(!empty($_POST)){ 
     $postArticle = new \Project\controllers\ControllerFront();
@@ -40,9 +40,13 @@ if(!empty($_POST)){
             <label for="selectCategory">Choisisser une catégories:</label>
             <select name="selectCategory" id="selectCategory">
                 <option value="">--Choisisser une catégories--</option>
-                <?php foreach ($categorys as $category): ?>
-                <option value="<?= $category['name'] ?>"><?= $category['name'] ?></option>
-                <?php endforeach; ?>
+                <option value="1">pixel-art</option>
+                <option value="2">monde de l'indé</option>
+                <option value="3">nouveaux jeux</option>
+                <option value="4">rétro</option>
+                <option value="5">au secours</option>
+                <option value="6">divers</option>
+                <?php if(isset($_POST['selectCategory'])) echo $_POST['selectCategory']; ?>
             </select>
         </div>
         <div id="usersSelectImg">

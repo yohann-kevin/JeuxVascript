@@ -160,13 +160,13 @@ class ControllerFront {
         date_default_timezone_set('Europe/Paris');
         $time = date('H');
         $welcome = '';
-        if($time >= 8 && $time <= 18) {
+        if($time >= 6 && $time <= 18) {
             $welcome = 'Bonjour';
-        } elseif($time > 18 && $time <= 22) {
+        } elseif($time >= 18 && $time <= 21) {
             $welcome =  'Bonsoir';
         } else {
             $welcome = 'On geek tard le soir ? ';
-        }
+        } 
         return $welcome;
     }
 
@@ -201,11 +201,11 @@ class ControllerFront {
     }
 
     // affiche les info de l'utilisateur
-    function displayCategory() {
-        $displayCategory = new \Project\models\FrontManager();
-        $categorys = $displayCategory->category();
-        return $categorys;
-    }
+    // function displayCategory() {
+    //     $displayCategory = new \Project\models\FrontManager();
+    //     $categorys = $displayCategory->category();
+    //     return $categorys;
+    // }
 
 
     function usersPostArticle(){
@@ -214,7 +214,7 @@ class ControllerFront {
             $validation = true;
             $errors = [];
         
-            if(empty($title) || empty($content)){
+            if(empty($title) || empty($selectCategory) || empty($content)){
                 $validation = false;
                 $errors[] = 'Tous les champs sont obligatoires !';
             }
@@ -226,9 +226,8 @@ class ControllerFront {
 
             if($validation){
                 $image = basename($_FILES['file']['name']);
-                
                 $postArticle = new \Project\models\FrontManager();
-                $articlePost = $postArticle->postArticle($title,$content,$image);
+                $articlePost = $postArticle->postArticle($title,$selectCategory,$content,$image);
                 move_uploaded_file($_FILES['file']['tmp_name'],'app/public/images/articles/' .$image);
                     
                 unset($_POST['title']);
