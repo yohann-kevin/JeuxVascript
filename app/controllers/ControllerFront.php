@@ -57,6 +57,11 @@ class ControllerFront {
         require 'app/views/front/legalNotice.php';
     }
 
+    function sitemap() {
+
+        require 'app/views/front/sitemap.php';
+    }
+
     // fonction users lien temporaire
 
     function accountFront() {

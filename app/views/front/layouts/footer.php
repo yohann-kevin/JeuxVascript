@@ -16,7 +16,7 @@
             <ul>
                 <li class="fromLeftLink"><a href="index.php?action=contact">Contact</a></li>
                 <li class="fromLeftLink"><a href="index.php?action=legalNotice">Mention légale</a></li>
-                <li class="fromLeftLink"><a href="#">Sitemap</a></li>
+                <li class="fromLeftLink"><a href="index.php?action=sitemap">Sitemap</a></li>
             </ul>
         </div>
 

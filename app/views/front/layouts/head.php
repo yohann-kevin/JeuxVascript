@@ -30,6 +30,7 @@
     <link rel="stylesheet" href="app/public/style/usersWrite.css">
     <link rel="stylesheet" href="app/public/style/error404.css">
     <link rel="stylesheet" href="app/public/style/legalNotice.css">
+    <link rel="stylesheet" href="app/public/style/sitemap.css">
     <link rel="stylesheet" href="app/public/style/mediaQueries.css">
     <!-- icône -->
     <link rel="icon" href="app/public/images/logo/icone.png">

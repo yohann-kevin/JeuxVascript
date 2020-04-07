@@ -1,0 +1,51 @@
+#sitemap {
+    padding-top: 155px;
+    padding-bottom: 45px;
+    background-color: #efefef;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+}
+
+#pageSitemap {
+    width: 50%;
+    text-align: center;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#sitemapTitle {
+    width: 100%;
+    padding: 20px;
+    font-size: 1.5rem;
+    color: #545454;
+}
+
+#sitemapList {
+    text-align: left;
+    width: 50%;
+    padding: 20px;
+    list-style-type: none;
+}
+
+#sitemapList li {
+    padding: 10px;
+    font-size: 1.4rem;
+    color: #545454;
+}
+
+#sitemapList a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: #545454;
+}
+
+.margin1 {
+    margin-left: 45px;
+}
+
+.margin2 {
+    margin-left: 90px;
+}
