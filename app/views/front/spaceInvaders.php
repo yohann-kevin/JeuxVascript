@@ -1,3 +1,8 @@
+<?php 
+$page = "";
+$title = "Space Invaders";
+$description = "jouer au célèbre jeux d'arcade Space Invaders";
+?>
 <?php require_once 'app/views/front/layouts/head.php'; ?>
 <?php include_once 'app/views/front/layouts/header.php' ?>
 

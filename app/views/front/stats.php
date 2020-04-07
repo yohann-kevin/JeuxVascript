@@ -1,3 +1,8 @@
+<?php 
+$page = "";
+$title = "Stats";
+$description = "Consulter vos statistiques et garder un oeil sur votre progréssion";
+?>
 <?php require_once 'app/views/front/layouts/head.php'; ?>
 <?php include_once 'app/views/front/layouts/header.php'; ?>
 

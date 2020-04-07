@@ -1,3 +1,8 @@
+<?php  
+$page = "";
+$title = "Settings";
+$description = "Modifier vos paramètres et personnaliser votre éxperience JeuxVascript";
+?>
 <?php require_once 'app/views/front/layouts/head.php'; ?>
 <?php include_once 'app/views/front/layouts/header.php'; ?>
 

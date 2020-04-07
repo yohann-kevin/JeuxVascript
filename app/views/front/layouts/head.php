@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <!--description-->
-     <meta name="description" content="JeuxVascript le jeux pour les joueurs 100% javascript,">
+     <meta name="description" content="<?= $description ?>">
     <!--mot clef-->
     <meta name="keywords" content="JeuxVascript,jeux,javascript,gratuit">
     <!-- token google for google connect -->
@@ -35,5 +35,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.js"></script>
     <!-- Charge la bibliothèque jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <title>Home</title>
+    <title>JeuxVascript | <?= $title ?> </title>
 </head>
