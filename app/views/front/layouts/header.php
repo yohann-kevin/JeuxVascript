@@ -37,8 +37,9 @@
                 <li class="deroulant fromLeft menu">
                     <a href="index.php?action=news"  class="<?= $page === 'news' ? 'active' : '' ?>">News</a>
                     <ul class="sous">
-                        <!-- lien temporaire vers page article.php -->
+                        <!-- lien temporaire  -->
                         <li><a href="index.php?action=article">article.php</a></li>
+                        <li><a href="index.php?action=error404">error404.php</a></li>
                     </ul>
                 </li>
                 <li class="fromLeft menu">

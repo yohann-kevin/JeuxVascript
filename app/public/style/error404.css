@@ -1,0 +1,22 @@
+#error404 {
+    padding-top: 155px;
+    background-color: #efefef;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#pageError404 {
+    width: 80%;
+    text-align: center;
+}
+
+#imgError404 {
+    height: 300px;
+    margin-bottom: 45px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
