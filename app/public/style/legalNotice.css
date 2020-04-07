@@ -1,0 +1,29 @@
+#legalNotice {
+    padding-top: 155px;
+    /* background-color: rgba(239, 239, 239, 0.7); */
+    background-color: #efefef;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#pagelegalNotice {
+    width: 80%;
+    text-align: center;
+    padding-bottom: 35px;
+}
+
+#pagelegalNotice h2 {
+    padding: 10px;
+    font-size: 1.8rem;
+}
+
+#pagelegalNotice h3 {
+    padding: 10px;
+    font-size: 1.5rem;
+}
+
+#pagelegalNotice p{
+    padding: 10px;
+    font-size: 1.2rem;
+}

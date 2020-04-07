@@ -36,6 +36,8 @@ try{
             $controllerFront -> loginUsers();
         } elseif ($_GET['action'] == 'disconnect') {
             $controllerFront -> logoutUsers();
+        } elseif ($_GET['action'] == 'legalNotice') {
+            $controllerFront -> legalNotice();
         }
         
         
