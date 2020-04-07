@@ -24,21 +24,29 @@
         </script>
         <nav id="nav">
             <ul id="navBar">
-                <li class="fromLeft menu"><a href="index.php?action=home">Accueil</a></li>
-                <li class="deroulant fromLeft menu"><a href="index.php?action=game">Jeux</a>
+                <li class="fromLeft menu">
+                    <a href="index.php?action=home" class="<?= $page === 'home' ? 'active' : '' ?>">Accueil</a>
+                </li>
+                <li class="deroulant fromLeft menu">
+                    <a href="index.php?action=game" class="<?= $page === 'game' ? 'active' : '' ?>">Jeux</a>
                     <ul class="sous">
-                        <li><a href="index.php?action=spaceInvaders">Space Invaders</a></li>
+                        <li><a href="index.php?action=spaceInvaders" >Space Invaders</a></li>
                         <li><a href="index.php?action=snake">Snake</a></li>
                     </ul>
                 </li>
-                <li class="deroulant fromLeft menu"><a href="index.php?action=news">News</a>
+                <li class="deroulant fromLeft menu">
+                    <a href="index.php?action=news"  class="<?= $page === 'news' ? 'active' : '' ?>">News</a>
                     <ul class="sous">
                         <!-- lien temporaire vers page article.php -->
                         <li><a href="index.php?action=article">article.php</a></li>
                     </ul>
                 </li>
-                <li class="fromLeft menu"><a href="index.php?action=about">A propos</a></li>
-                <li class="fromLeft menu"><a href="index.php?action=contact">Contact</a></li>
+                <li class="fromLeft menu">
+                    <a href="index.php?action=about"  class="<?= $page === 'about' ? 'active' : '' ?>">A propos</a>
+                </li>
+                <li class="fromLeft menu">
+                    <a href="index.php?action=contact"  class="<?= $page === 'contact' ? 'active' : '' ?>">Contact</a>
+                </li>
             </ul>
         </nav>
         <div id="buttonHeader">
