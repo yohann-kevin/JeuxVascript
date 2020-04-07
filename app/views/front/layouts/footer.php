@@ -6,16 +6,16 @@
 
         <div class="link">
             <ul>
-                <li class="fromLeftLink"><a href="#">A propos</a></li>
-                <li class="fromLeftLink"><a href="#">Nos jeux</a></li>
-                <li class="fromLeftLink"><a href="#">Blog</a></li>
+                <li class="fromLeftLink"><a href="index.php?action=about">A propos</a></li>
+                <li class="fromLeftLink"><a href="index.php?action=game">Nos jeux</a></li>
+                <li class="fromLeftLink"><a href="index.php?action=news">News</a></li>
             </ul>
         </div>
 
         <div class="link">
             <ul>
-                <li class="fromLeftLink"><a href="#">Contact</a></li>
-                <li class="fromLeftLink"><a href="#">Mention légale</a></li>
+                <li class="fromLeftLink"><a href="index.php?action=contact">Contact</a></li>
+                <li class="fromLeftLink"><a href="index.php?action=legalNotice">Mention légale</a></li>
                 <li class="fromLeftLink"><a href="#">Sitemap</a></li>
             </ul>
         </div>

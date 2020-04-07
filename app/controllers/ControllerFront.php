@@ -52,6 +52,11 @@ class ControllerFront {
         require 'app/views/front/spaceInvaders.php';
     }
 
+    function legalNotice() {
+
+        require 'app/views/front/legalNotice.php';
+    }
+
     // fonction users lien temporaire
 
     function accountFront() {
