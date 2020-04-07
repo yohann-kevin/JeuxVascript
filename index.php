@@ -38,6 +38,8 @@ try{
             $controllerFront -> logoutUsers();
         } elseif ($_GET['action'] == 'legalNotice') {
             $controllerFront -> legalNotice();
+        } elseif ($_GET['action'] == 'sitemap') {
+            $controllerFront -> sitemap();
         }
         
         
