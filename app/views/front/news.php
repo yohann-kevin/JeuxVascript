@@ -1,3 +1,4 @@
+<?php $page = 'news' ?>
 <?php require_once 'app/views/front/layouts/head.php'; ?>
 <?php require_once 'app/views/front/layouts/header.php'; ?>
 <?php
