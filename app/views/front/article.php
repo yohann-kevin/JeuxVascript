@@ -11,7 +11,7 @@ $article = $singleArticle->article();
 
 $date = new \Project\controllers\ControllerFront();
 ?>
-
+    <?php if(!empty($article)) : ?>
     <main id="pageArticle">
         <section>
             <header id="articleHeader">
@@ -26,5 +26,6 @@ $date = new \Project\controllers\ControllerFront();
             </div>
         </section>
     </main>
+    <?php endif ; ?>
 
 <?php include_once 'app/views/front/layouts/footer.php'; ?>

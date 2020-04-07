@@ -44,14 +44,17 @@ try{
         // users (temporaire)
         elseif ($_GET['action'] == 'account') {
             $controllerFront -> accountFront();
-        } elseif ($_GET['action'] == 'usersArticle') {
-            $controllerFront -> usersArticleFront();
         } elseif ($_GET['action'] == 'userSettings') {
             $controllerFront -> userSettingsFront();
         } elseif ($_GET['action'] == 'stats') {
             $controllerFront -> statsFront();
         } elseif ($_GET['action'] == 'usersWrite') {
             $controllerFront -> usersWriteFront();
+        }
+
+        //erreur 404 temporaire
+        elseif($_GET['action'] == 'error404') {
+            $controllerFront -> error404();
         }
 
     } else {

@@ -59,11 +59,6 @@ class ControllerFront {
         require 'app/views/front/account.php';
     }
 
-    function usersArticleFront() {
-
-        require 'app/views/front/usersArticle.php';
-    }
-
     function userSettingsFront() {
 
         require 'app/views/front/userSettings.php';
@@ -77,6 +72,13 @@ class ControllerFront {
     function usersWriteFront() {
 
         require 'app/views/front/usersWrite.php';
+    }
+
+
+    // erreur 404 temporaire
+    function error404() {
+
+        require 'app/views/front/error404.php';
     }
 
     
@@ -247,14 +249,17 @@ class ControllerFront {
 
     //permet d'afficher un seul article
     function article() {
-        // if(empty($article)) {
-        //     header("HTTP/1.0 404 Not Found");
-        //     exit( 0 );
-        // } else {
-            $displayArticle = new \Project\models\FrontManager();
-            $article = $displayArticle->getArticle();
+        $displayArticle = new \Project\models\FrontManager();
+        $article = $displayArticle->getArticle();
+        
+        if(empty($article)) { 
+            require 'app/views/front/error404.php';
+        } elseif(!empty($article)) {
             return $article;
-        // }
+        }
+        
+        // header("HTTP/1.0 404 Not Found");
+        // exit( 0 );
     }
 
     //met en forme la date
