@@ -84,9 +84,10 @@ class FrontManager extends Manager {
     public function getArticle() {
         $bdd = $this->dbConnect();
         $id = (int)$_GET['id'];
-        $article = $bdd->prepare("SELECT id, title, extract, content, images, created_date FROM articles WHERE id = ? ");
+        $article = $bdd->prepare("SELECT articles.*, users.pseudo FROM articles INNER JOIN users ON articles.users_id = users.id WHERE articles.id = ? ");
         $article->execute([$id]);
         $article = $article->fetch();
         return $article;
     }
+
 }

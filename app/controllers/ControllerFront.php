@@ -261,15 +261,12 @@ class ControllerFront {
     function article() {
         $displayArticle = new \Project\models\FrontManager();
         $article = $displayArticle->getArticle();
-        
+       
         if(empty($article)) { 
             require 'app/views/front/error404.php';
         } elseif(!empty($article)) {
-            return $article;
+            return $article;     
         }
-        
-        // header("HTTP/1.0 404 Not Found");
-        // exit( 0 );
     }
 
     //met en forme la date
@@ -279,6 +276,5 @@ class ControllerFront {
 
         return $results;
     }
-    
 
 } 
