@@ -30,7 +30,7 @@ $articleIndes = $displayArticleInde->displayArticleInde();
                     <span class="strong2">communautaire</span> vous avez la possibilite de commente des articles
                     les <span class="strong2">jeux</span> de laisse des <span class="strong2">notes</span> et meme de
                     poste des <span class="strong2">articles</span>, suffit
-                    juste de <a class="strong2" href="#">s'inscrire.</a></p>
+                    juste de <a class="strong2" href="index.php?action=register">s'inscrire.</a></p>
                 <h4>De l'actualite</h4>
                 <p>JeuxVascript est aussi une source <span class="strong2">d'information </span>sur l'actualite
                     du monde du jeux video <span class="strong2">independant</span> et de la programmation en
@@ -58,7 +58,7 @@ $articleIndes = $displayArticleInde->displayArticleInde();
                 <img src="app/public/images/articles/<?= $lastArticle['images'] ?>" alt="<?= $lastArticle['images'] ?>" class="imgArticle">
                 <h2 class="articleTitle"><?= $lastArticle['title'] ?></h2>
                 <p class="para"><?= $lastArticle['extract'] ?></p>
-                <a href="#">Read more...</a>
+                <a href="index.php?action=article&id=<?=$lastArticle['id'] ?>">Read more...</a>
             </article>
             <?php endforeach ; ?>
 
@@ -184,6 +184,7 @@ $articleIndes = $displayArticleInde->displayArticleInde();
                     <img src="app/public/images/articles/<?= $articleInde['images'] ?>" alt="<?= $articleInde['images'] ?>">
                 </div>
                 <p class="advertPara"><?= $articleInde['extract'] ?></p>
+                <a href="index.php?action=article&id=<?=$articleInde['id'] ?>">Read more...</a>
             </article>
             <?php endforeach ; ?>
 
