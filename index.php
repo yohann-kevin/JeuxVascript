@@ -40,6 +40,8 @@ try{
             $controllerFront -> legalNotice();
         } elseif ($_GET['action'] == 'sitemap') {
             $controllerFront -> sitemap();
+        } elseif ($_GET['action'] == 'deleteArticle') {
+            $controllerFront -> pageDeleteArticle();
         }
         
         

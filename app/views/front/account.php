@@ -41,7 +41,7 @@ $usersLastArticles = $lastArticleUsers->displayLastUsersArticle();
                     <div class="usersLastArticleOption">
                         <a href="index.php?action=article&id=<?=$usersLastArticle['id'] ?>">Voir plus...</a>
                         <a href="#">Modifier...</a>
-                        <a href="#">Supprimer...</a>
+                        <a href="index.php?action=deleteArticle&id=<?=$usersLastArticle['id'] ?>">Supprimer...</a>
                     </div>
                 </div>
                 <?php endforeach ; ?>
