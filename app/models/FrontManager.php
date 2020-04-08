@@ -90,4 +90,12 @@ class FrontManager extends Manager {
         return $article;
     }
 
+    // récupère les trois derniers articles pour la page d'accueil
+    public function getLastArticle() {
+        $bdd = $this->dbConnect();
+        $lastArticle = $bdd->query("SELECT id, title, extract, content, images, created_date FROM articles ORDER BY created_date DESC LIMIT 3");
+        $lastArticle = $lastArticle->fetchAll();
+        return $lastArticle;
+    }
+
 }

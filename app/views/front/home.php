@@ -5,6 +5,10 @@ $description = "JeuxVascript le jeux pour les joueurs 100% javascript, profiter 
     plusieurs jeux et d'un tas de fonctionnalité 100% gratuite";
 require_once 'app/views/front/layouts/head.php'; 
 include_once 'app/views/front/layouts/header.php';
+
+$displayLastArticle = new \Project\controllers\ControllerFront();
+$lastArticles = $displayLastArticle->getLastArticleHome(); 
+
 ?>
     <main id="home">
 
@@ -43,7 +47,21 @@ include_once 'app/views/front/layouts/header.php';
                 <h2>Consulter les derniers articles et <span class="strong2">commentaires</span> de la <span
                         class="strong2">communautee</span></h2>
             </header>
+
+
+
+            <?php foreach ($lastArticles as $lastArticle): ?>
             <article class="article">
+                <img src="app/public/images/articles/<?= $lastArticle['images'] ?>" alt="<?= $lastArticle['images'] ?>" class="imgArticle">
+                <h2 class="articleTitle"><?= $lastArticle['title'] ?></h2>
+                <p class="para"><?= $lastArticle['extract'] ?></p>
+                <a href="#">Read more...</a>
+            </article>
+            <?php endforeach ; ?>
+
+
+
+            <!-- <article class="article">
                 <img src="app/public/images/image/pixel-art.jpg" alt="pixel-art" class="imgArticle">
                 <h2 class="articleTitle">Lorem ipsum dolor <span class="strong2">sit amet.</span></h2>
                 <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi esse doloribus maiores!
@@ -60,16 +78,11 @@ include_once 'app/views/front/layouts/header.php';
                     aut debitis facilis obcaecati est itaque rerum nobis, sequi minima ullam aliquam asperiores, impedit
                     totam! Iusto et iste voluptatem rem dicta nulla at iure similique.</p>
                 <a href="#">Read more...</a>
-            </article>
-            <article class="article">
-                <img src="app/public/images/image/pixel-art.jpg" alt="pixel-art" class="imgArticle">
-                <h2 class="articleTitle">Lorem ipsum dolor <span class="strong2">sit amet.</span></h2>
-                <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi esse doloribus maiores!
-                    Nostrum veritatis odit suscipit quia. Quod blanditiis expedita dolor distinctio praesentium sed quo
-                    aut debitis facilis obcaecati est itaque rerum nobis, sequi minima ullam aliquam asperiores, impedit
-                    totam! Iusto et iste voluptatem rem dicta nulla at iure similique.</p>
-                <a href="#">Read more...</a>
-            </article>
+            </article> -->
+
+
+
+
         </section>
 
         <section class="homeQuote">
