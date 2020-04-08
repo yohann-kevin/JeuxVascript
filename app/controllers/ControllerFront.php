@@ -290,4 +290,11 @@ class ControllerFront {
         return $articleInde;
     }
 
+    // affiche les derniers articles rédiger par l'utilisateur sur ça page mon compte
+    function displayLastUsersArticle() {
+        $usersLastArticle = new \Project\models\FrontManager();
+        $lastArticleUsers = $usersLastArticle->getLastUsersArticle();
+        return $lastArticleUsers;
+    }
+
 } 

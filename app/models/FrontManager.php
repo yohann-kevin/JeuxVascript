@@ -106,4 +106,13 @@ class FrontManager extends Manager {
         return $articleInde;
     }
 
+    // récupere les derniers articles rédiger par l'utilisateur qui est connecté
+    public function getLastUsersArticle() {
+        $bdd = $this->dbConnect();
+        $lastUsersArticles = $bdd->prepare("SELECT articles.* FROM articles INNER JOIN users ON articles.users_id = users.id AND articles.users_id = ? ORDER BY created_date DESC");
+        $lastUsersArticles->execute([$_SESSION['user']]);
+        $lastUsersArticles = $lastUsersArticles->fetchAll();
+        return $lastUsersArticles;
+    }
+
 }
