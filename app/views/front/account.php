@@ -11,6 +11,9 @@ $infos = $usersInfo->displayInfo();
 
 $welcomes = new \Project\controllers\ControllerFront();
 $welcome = $welcomes->welcome();
+
+$lastArticleUsers = new \Project\controllers\ControllerFront();
+$usersLastArticles = $lastArticleUsers->displayLastUsersArticle();
 ?>
     <main id="account">
         <section id="pageAccount">
@@ -28,6 +31,22 @@ $welcome = $welcomes->welcome();
 
             <article id="lastArticle">
                 <h3>Consulter vos derniers articles :</h3>
+
+                <?php foreach ($usersLastArticles as $usersLastArticle): ?>
+                <div class="lastArticle">
+                    <div class="usersLastArticle">
+                        <h4><?= $usersLastArticle['title']?></h4>
+                        <p><?= $usersLastArticle['extract']?></p>
+                    </div>
+                    <div class="usersLastArticleOption">
+                        <a href="index.php?action=article&id=<?=$usersLastArticle['id'] ?>">Voir plus...</a>
+                        <a href="#">Modifier...</a>
+                        <a href="#">Supprimer...</a>
+                    </div>
+                </div>
+                <?php endforeach ; ?>
+
+
             </article>
 
             <article id="lastComment">
