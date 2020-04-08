@@ -98,4 +98,12 @@ class FrontManager extends Manager {
         return $lastArticle;
     }
 
+    //récupère les dernier articles de la cétgories indépendant
+    public function getArticleInde() {
+        $bdd = $this->dbConnect();
+        $articleInde = $bdd->query("SELECT id, title, category_id, extract, content, images, created_date FROM articles WHERE category_id = 2 LIMIT 2");
+        $articleInde = $articleInde->fetchAll();
+        return $articleInde;
+    }
+
 }

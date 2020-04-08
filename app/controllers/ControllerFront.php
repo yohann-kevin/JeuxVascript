@@ -276,10 +276,18 @@ class ControllerFront {
         return $results;
     }
 
+    // affiche les trois derniers articles sur la page home
     function getLastArticleHome() {
         $displayLastArticle = new \Project\models\FrontManager();
         $lastArticle = $displayLastArticle->getLastArticle();
         return $lastArticle;
+    }
+
+    // affiche les derniers articles de la catégories indépendant
+    function displayArticleInde() {
+        $displayArticleInde = new \Project\models\FrontManager();
+        $articleInde = $displayArticleInde->getArticleInde();
+        return $articleInde;
     }
 
 } 

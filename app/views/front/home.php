@@ -9,6 +9,9 @@ include_once 'app/views/front/layouts/header.php';
 $displayLastArticle = new \Project\controllers\ControllerFront();
 $lastArticles = $displayLastArticle->getLastArticleHome(); 
 
+$displayArticleInde = new \Project\controllers\ControllerFront();
+$articleIndes = $displayArticleInde->displayArticleInde(); 
+
 ?>
     <main id="home">
 
@@ -172,22 +175,21 @@ $lastArticles = $displayLastArticle->getLastArticleHome();
                 <h2>Les dernieres annonces dans le jeux video indepandants</h2>
             </header>
 
-            <article class="advert">
-                <h3 class="advertTitle">Lorem ipsum doloret</h3>
-                <div class="advertImg">
-                    <img src="app/public/images/image/pac-man.png" alt="pac-man">
-                </div>
-                <p class="advertPara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed sit eaque sapiente
-                    architecto cum dicta inventore. Et amet distinctio deleniti repellendus saepe ullam nostrum
-                    incidunt, nam sit ipsum, nihil ab earum aspernatur dolores quae ratione ea eius. Temporibus, minus
-                    consequuntur fugiat repudiandae dolore sequi numquam.</p><br>
-                <p class="advertPara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed sit eaque sapiente
-                    architecto cum dicta inventore. Et amet distinctio deleniti repellendus saepe ullam nostrum
-                    incidunt, nam sit ipsum, nihil ab earum aspernatur dolores quae ratione ea eius. Temporibus, minus
-                    consequuntur fugiat repudiandae dolore sequi numquam.</p>
-            </article>
+
+            <?php foreach ($articleIndes as $articleInde): ?>
 
             <article class="advert">
+                <h3 class="advertTitle"><?= $articleInde['title'] ?></h3>
+                <div class="advertImg">
+                    <img src="app/public/images/articles/<?= $articleInde['images'] ?>" alt="<?= $articleInde['images'] ?>">
+                </div>
+                <p class="advertPara"><?= $articleInde['extract'] ?></p>
+            </article>
+            <?php endforeach ; ?>
+
+
+
+            <!-- <article class="advert">
                 <h3 class="advertTitle">Lorem ipsum doloret</h3>
                 <div class="advertImg">
                     <img src="app/public/images/image/pac-man.png" alt="pac-man">
@@ -200,7 +202,10 @@ $lastArticles = $displayLastArticle->getLastArticleHome();
                     architecto cum dicta inventore. Et amet distinctio deleniti repellendus saepe ullam nostrum
                     incidunt, nam sit ipsum, nihil ab earum aspernatur dolores quae ratione ea eius. Temporibus, minus
                     consequuntur fugiat repudiandae dolore sequi numquam.</p>
-            </article>
+            </article> -->
+
+
+
 
         </section>
 
