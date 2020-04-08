@@ -273,8 +273,13 @@ class ControllerFront {
     function dateFormating($publication) {
         setlocale(LC_TIME,"fr_FR.utf-8");
         $results = strftime("%A %d %B %G", strtotime($publication));
-
         return $results;
+    }
+
+    function getLastArticleHome() {
+        $displayLastArticle = new \Project\models\FrontManager();
+        $lastArticle = $displayLastArticle->getLastArticle();
+        return $lastArticle;
     }
 
 } 
