@@ -84,6 +84,11 @@ class ControllerFront {
         require 'app/views/front/usersWrite.php';
     }
 
+    function pageDeleteArticle() {
+
+        require 'app/views/front/deleteArticle.php';
+    }
+
 
     // erreur 404 temporaire
     function error404() {
@@ -295,6 +300,15 @@ class ControllerFront {
         $usersLastArticle = new \Project\models\FrontManager();
         $lastArticleUsers = $usersLastArticle->getLastUsersArticle();
         return $lastArticleUsers;
+    }
+
+    function deleteArticle() {
+        $article = new \Project\models\FrontManager();
+        $image = $article->deleteArticleImg();
+        unlink("app/public/images/articles/".$image);
+        $article = new \Project\models\FrontManager();
+        $delete = $article->deleteArticle();
+        return $delete;
     }
 
 } 

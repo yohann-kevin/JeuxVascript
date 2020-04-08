@@ -115,4 +115,21 @@ class FrontManager extends Manager {
         return $lastUsersArticles;
     }
 
+    public function deleteArticleImg() {
+        $bdd = $this->dbConnect();
+        $id = (int)$_GET['id'];
+        $image = $bdd->prepare("SELECT images FROM articles WHERE id = ?");
+        $image->execute([$id]);
+        $image = $image->fetch()["images"];
+        return $image;
+    }
+
+    public function deleteArticle() {
+        $bdd = $this->dbConnect();
+        $id = (int)$_GET['id'];
+        $delete = $bdd->prepare("DELETE articles.* FROM articles WHERE id = ?");
+        $delete->execute([$id]);
+        return $delete;
+    }
+
 }
