@@ -56,6 +56,8 @@ try{
             $controllerFront -> statsFront();
         } elseif ($_GET['action'] == 'usersWrite') {
             $controllerFront -> usersWriteFront();
+        } elseif ($_GET['action'] == 'usersModify') {
+            $controllerFront -> usersModifyFront();
         }
 
         //erreur 404 temporaire

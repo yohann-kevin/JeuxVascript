@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="app/public/style/userSettings.css">
     <link rel="stylesheet" href="app/public/style/stats.css">
     <link rel="stylesheet" href="app/public/style/usersWrite.css">
+    <link rel="stylesheet" href="app/public/style/usersModify.css">
     <link rel="stylesheet" href="app/public/style/error404.css">
     <link rel="stylesheet" href="app/public/style/legalNotice.css">
     <link rel="stylesheet" href="app/public/style/sitemap.css">

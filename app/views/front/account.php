@@ -40,7 +40,7 @@ $usersLastArticles = $lastArticleUsers->displayLastUsersArticle();
                     </div>
                     <div class="usersLastArticleOption">
                         <a href="index.php?action=article&id=<?=$usersLastArticle['id'] ?>">Voir plus...</a>
-                        <a href="#">Modifier...</a>
+                        <a href="index.php?action=usersModify&id=<?=$usersLastArticle['id'] ?>">Modifier...</a>
                         <a href="index.php?action=deleteArticle&id=<?=$usersLastArticle['id'] ?>">Supprimer...</a>
                     </div>
                 </div>

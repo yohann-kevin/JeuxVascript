@@ -40,6 +40,7 @@
                         <!-- lien temporaire  -->
                         <li><a href="index.php?action=article">article.php</a></li>
                         <li><a href="index.php?action=error404">error404.php</a></li>
+                        <li><a href="index.php?action=usersModify">usersModify.php</a></li>
                     </ul>
                 </li>
                 <li class="fromLeft menu">

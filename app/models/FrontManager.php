@@ -132,4 +132,19 @@ class FrontManager extends Manager {
         return $delete;
     }
 
+    public function modifyArticle($title,$category_id,$content,$image) {
+        $bdd = $this->dbConnect();
+        $id = (int)$_GET['id'];
+        $articleModify = $bdd->prepare("UPDATE articles SET title = :title, category_id = :category_id, extract = :extract, content = :content, images = :image WHERE id = :id");
+        $articleModify->execute([ 
+            "title" => htmlentities($title),
+            "category_id" => $category_id,
+            "extract" => substr(htmlentities($content),0 ,150),
+            "content" => nl2br(htmlentities($content)),
+            "image" => htmlentities($image),
+            "id" => $id
+        ]);
+        return $articleModify;
+    }
+
 }

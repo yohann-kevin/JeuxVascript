@@ -20,11 +20,9 @@ if(!empty($_POST)){
 
     <form id="formUsersWrite" method="post" action="" enctype="multipart/form-data">
 
-        <?php
-            if(isset($errors)) :
+        <?php if(isset($errors)) :
                 if($errors):
-            foreach($errors as $error) :
-        ?>
+            foreach($errors as $error) : ?>
 
         <h3><?= $error ?><h3>
                 
