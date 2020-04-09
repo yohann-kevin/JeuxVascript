@@ -1,0 +1,151 @@
+#pageUsersModify {
+    padding-top: 155px;
+    background-color: #efefef;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#usersModifyTitle {
+    width: 100%;
+    text-align: center;
+}
+
+#formUsersModify {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+
+#usersModifyName {
+    width: 25%;
+    padding: 25px;
+}
+
+#usersModifyName label {
+    width: 100%;
+}
+
+#usersModifyName input {
+    width: 100%;
+    margin-top: 35px;
+    height: 35px;
+    border: 1px solid #efefef;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+#usersModifyName input:focus {
+    transform: scale(1.15);
+    -webkit-transform: scale(1.15);
+    -moz-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    -o-transform: scale(1.15);
+    transition: transform 250ms ease;
+    -webkit-transition: transform 250ms ease;
+    -moz-transition: transform 250ms ease;
+    -ms-transition: transform 250ms ease;
+    -o-transition: transform 250ms ease;
+}
+
+#usersSelectImg {
+    width: 25%;
+    padding: 25px;
+}
+
+#usersSelectImg label {
+    width: 100%;
+}
+
+#usersSelectImg input {
+    width: 100%;
+    margin-top: 35px;
+    padding-left: 35px;
+}
+
+#usersModifyContent {
+    width: 70%;
+    margin-top: 45px;
+}
+
+#usersModifyContent label {
+    width: 100%;
+}
+
+#usersModifyContent textarea {
+    width: 100%;
+    height: 150px;
+    margin-top: 35px;
+    border: 1px solid #efefef;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+#usersModifyContent textarea:focus {
+    transform: scale(1.15);
+    -webkit-transform: scale(1.15);
+    -moz-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    -o-transform: scale(1.15);
+    transition: transform 250ms ease;
+    -webkit-transition: transform 250ms ease;
+    -moz-transition: transform 250ms ease;
+    -ms-transition: transform 250ms ease;
+    -o-transition: transform 250ms ease; 
+    height: 300px;
+    transition: height 250ms ease;
+    -webkit-transition: height 250ms ease;
+    -moz-transition: height 250ms ease;
+    -ms-transition: height 250ms ease;
+    -o-transition: height 250ms ease;
+}
+
+#buttonUsersModify {
+    margin-top: 75px;
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#buttonUsersModify button {
+    width: 20%;
+    height: 30px;
+    border: 1px solid #efefef;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    background-color: #545454;
+    color: white;
+}
+
+#buttonUsersModify button:hover {
+    cursor: pointer;
+    color: #ff9d00;
+    transform: scale(1.15);
+    -webkit-transform: scale(1.15);
+    -moz-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    -o-transform: scale(1.15);
+    transition: color 250ms ease;
+    -webkit-transition: color 250ms ease;
+    -moz-transition: color 250ms ease;
+    -ms-transition: color 250ms ease;
+    -o-transition: color 250ms ease;
+    transition: transform 250ms ease;
+    -webkit-transition: transform 250ms ease;
+    -moz-transition: transform 250ms ease;
+    -ms-transition: transform 250ms ease;
+    -o-transition: transform 250ms ease;
+}

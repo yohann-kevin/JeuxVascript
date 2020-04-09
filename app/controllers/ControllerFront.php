@@ -84,6 +84,11 @@ class ControllerFront {
         require 'app/views/front/usersWrite.php';
     }
 
+    function usersModifyFront() {
+
+        require 'app/views/front/usersModify.php';
+    }
+
     function pageDeleteArticle() {
 
         require 'app/views/front/deleteArticle.php';
@@ -309,6 +314,35 @@ class ControllerFront {
         $article = new \Project\models\FrontManager();
         $delete = $article->deleteArticle();
         return $delete;
+    }
+
+    function usersModifyArticle(){
+        if(isset($_SESSION['user'])) {
+            extract($_POST);
+            $validation = true;
+            $errors = [];
+        
+            if(empty($title) || empty($category_id) || empty($content)){
+                $validation = false;
+                $errors[] = 'Tous les champs sont obligatoires !';
+            }
+        
+            if(empty($_FILES["file"]) || $_FILES['file']['error'] > 0){
+                $validation = false;
+                $errors[] = "L'image est obligatoire !";
+            }
+
+            if($validation){
+                $image = basename($_FILES['file']['name']);
+                $modifyArticle = new \Project\models\FrontManager();
+                $articleModify = $modifyArticle->modifyArticle($title,$category_id,$content,$image);
+                move_uploaded_file($_FILES['file']['tmp_name'],'app/public/images/articles/' .$image);
+                    
+                unset($_POST['title']);
+                unset($_POST['content']);   
+            }
+            return $errors; 
+        }
     }
 
 } 
