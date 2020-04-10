@@ -94,6 +94,11 @@ class ControllerFront {
         require 'app/views/front/deleteArticle.php';
     }
 
+    function pageDeleteComment() {
+
+        require 'app/views/front/deleteComment.php';
+    }
+
 
     // erreur 404 temporaire
     function error404() {
@@ -374,6 +379,13 @@ class ControllerFront {
         $displayLastCom = new \Project\models\FrontManager();
         $lastUsersCom = $displayLastCom->getLastUsersComment();
         return $lastUsersCom;
+    }
+
+    // 
+    function deleteComment() {
+        $comment = new \Project\models\FrontManager();
+        $comment = $comment->deleteCom();
+        return $comment;
     }
 
 } 
