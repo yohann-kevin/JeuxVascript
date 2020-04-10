@@ -26,6 +26,25 @@ $date = new \Project\controllers\ControllerFront();
                 <div>
             </div>
         </section>
+
+        <div id="sectionComment">
+            <section id="spaceComment">
+                <h2>Commentaires :</h2>
+                <article class="comment">
+                    <h3>posté par plop le : 04/03/2001</h3>
+                    <p>Content</p>
+                </article>
+            </section>
+            
+
+            <section id="postComment">
+                <h2>Réagisser à cette article en postant un commentaire</h2>
+                <form method="post" action="" id="writeComment">
+                    <textarea name="comment" placeholder="Votre commentaire *"></textarea>
+                    <input type="submit" value="Commenter">
+                </form>
+            </section>
+        </div>
     </main>
     <?php endif ; ?>
 
