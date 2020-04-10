@@ -11,7 +11,8 @@ $article = $singleArticle->article();
 
 $date = new \Project\controllers\ControllerFront();
 
-
+$comment = new \Project\controllers\ControllerFront();
+$comments = $comment->displayCom(); 
 
 if(!empty($_POST)){
     $commentPost = new \Project\controllers\ControllerFront();
@@ -37,10 +38,12 @@ if(!empty($_POST)){
         <div id="sectionComment">
             <section id="spaceComment">
                 <h2>Commentaires :</h2>
+                <?php foreach ($comments as $comment): ?>
                 <article class="comment">
-                    <h3>posté par plop le : 04/03/2001</h3>
-                    <p>Content</p>
+                    <h3>posté par <?= $comment['pseudo'] ?> le : <?= $date->dateFormating($comment['created_date'])?></h3>
+                    <p><?= $comment['content']?></p>
                 </article>
+                <?php endforeach ?>
             </section>
             
 

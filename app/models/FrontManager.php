@@ -150,6 +150,7 @@ class FrontManager extends Manager {
         return $articleModify;
     }
 
+    // fonction permettant d'envoyer un commentaire en base de données
     public function addComment($contentComment) {
         $bdd = $this->dbConnect();
         $id_article = (int)$_GET['id'];
@@ -160,6 +161,16 @@ class FrontManager extends Manager {
             'content' => nl2br(htmlentities($contentComment))
         ]);
         return $comment;
+    }
+
+    // fonction permettant de récupérer tout les commentaires d'un articles
+    public function getComment() {
+        $bdd = $this->dbConnect();
+        $id_article = (int)$_GET['id'];
+        $comments = $bdd->prepare('SELECT comment.*, users.pseudo FROM comment INNER JOIN users ON comment.users_id = users.id AND comment.article_id = ? ORDER BY created_date DESC');
+        $comments->execute([$id_article]);
+        $comments = $comments->fetchAll();
+        return $comments;
     }
 
 }

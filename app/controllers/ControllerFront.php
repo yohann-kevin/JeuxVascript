@@ -347,6 +347,7 @@ class ControllerFront {
         }
     }
 
+    // fonction permettant de poster un commentaire
     function postCom() {
         if(isset($_SESSION['user'])) {
             extract($_POST);
@@ -359,6 +360,13 @@ class ControllerFront {
             }
             return $error;
         }
+    }
+
+    // affiche les derniers commentaires d'un article
+    function displayCom() {
+        $displayCom = new \Project\models\FrontManager();
+        $comments = $displayCom->getComment();
+        return $comments;
     }
 
 } 
