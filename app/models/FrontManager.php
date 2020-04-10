@@ -173,4 +173,13 @@ class FrontManager extends Manager {
         return $comments;
     }
 
+    // récupère les derniers com d'un utilisateur 
+    public function getLastUsersComment() {
+        $bdd = $this->dbConnect();
+        $lastUsersComment = $bdd->prepare("SELECT comment.* FROM comment INNER JOIN users ON comment.users_id = users.id AND comment.users_id = ? ORDER BY created_date DESC");
+        $lastUsersComment->execute([$_SESSION['user']]);
+        $lastUsersComment = $lastUsersComment->fetchAll();
+        return $lastUsersComment;
+    }
+
 }

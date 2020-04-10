@@ -368,5 +368,12 @@ class ControllerFront {
         $comments = $displayCom->getComment();
         return $comments;
     }
+    
+    // affiche les dernier com d'un utilisateur sur sa page mon compte
+    function displayLastCom() {
+        $displayLastCom = new \Project\models\FrontManager();
+        $lastUsersCom = $displayLastCom->getLastUsersComment();
+        return $lastUsersCom;
+    }
 
 } 
