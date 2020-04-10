@@ -150,4 +150,16 @@ class FrontManager extends Manager {
         return $articleModify;
     }
 
+    public function addComment($contentComment) {
+        $bdd = $this->dbConnect();
+        $id_article = (int)$_GET['id'];
+        $comment = $bdd->prepare("INSERT INTO comment(users_id, article_id, content) VALUES (:users_id, :article_id, :content)");
+        $comment->execute([
+            'users_id' => $_SESSION['user'],
+            'article_id' => $id_article,
+            'content' => nl2br(htmlentities($contentComment))
+        ]);
+        return $comment;
+    }
+
 }

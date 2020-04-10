@@ -11,6 +11,13 @@ $article = $singleArticle->article();
 
 $date = new \Project\controllers\ControllerFront();
 
+
+
+if(!empty($_POST)){
+    $commentPost = new \Project\controllers\ControllerFront();
+    $error = $commentPost->postCom(); 
+}
+
 ?>
     <?php if(!empty($article)) : ?>
     <main id="pageArticle">
@@ -26,7 +33,7 @@ $date = new \Project\controllers\ControllerFront();
                 <div>
             </div>
         </section>
-
+        <?php if(isset($_SESSION['user'])) : ?>
         <div id="sectionComment">
             <section id="spaceComment">
                 <h2>Commentaires :</h2>
@@ -40,11 +47,24 @@ $date = new \Project\controllers\ControllerFront();
             <section id="postComment">
                 <h2>Réagisser à cette article en postant un commentaire</h2>
                 <form method="post" action="" id="writeComment">
-                    <textarea name="comment" placeholder="Votre commentaire *"></textarea>
-                    <input type="submit" value="Commenter">
+                    <?php if(isset($error)) : 
+                        if($error) : 
+                    ?>
+                    <h3><?= $error ?></h3>
+                    <?php
+                    else :
+                    ?>
+                    <h3>Votre Commentaire a bien été ajouter</h3>
+                    <?php
+                    endif;
+                    endif
+                    ?>
+                    <textarea name="contentComment" placeholder="Votre commentaire *"></textarea>
+                    <input type="submit" value="commenter">
                 </form>
             </section>
         </div>
+        <?php endif ; ?>
     </main>
     <?php endif ; ?>
 
