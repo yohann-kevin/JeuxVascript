@@ -347,4 +347,18 @@ class ControllerFront {
         }
     }
 
+    function postCom() {
+        if(isset($_SESSION['user'])) {
+            extract($_POST);
+            $error = '';
+            if(!empty($contentComment)) {
+                $commentPost = new \Project\models\FrontManager();
+                $comment = $commentPost->addComment($contentComment);
+            } else {
+                $error .= 'Vous devez écrire du texte';
+            }
+            return $error;
+        }
+    }
+
 } 
