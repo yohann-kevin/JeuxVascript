@@ -307,6 +307,7 @@ class ControllerFront {
         return $lastArticleUsers;
     }
 
+    // permet de supprimer un article
     function deleteArticle() {
         $article = new \Project\models\FrontManager();
         $image = $article->deleteArticleImg();
@@ -316,6 +317,7 @@ class ControllerFront {
         return $delete;
     }
 
+    // permet de modifier un article
     function usersModifyArticle(){
         if(isset($_SESSION['user'])) {
             extract($_POST);

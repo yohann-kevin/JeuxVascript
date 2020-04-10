@@ -115,6 +115,7 @@ class FrontManager extends Manager {
         return $lastUsersArticles;
     }
 
+    // permet de supprimer une image d'un article
     public function deleteArticleImg() {
         $bdd = $this->dbConnect();
         $id = (int)$_GET['id'];
@@ -124,6 +125,7 @@ class FrontManager extends Manager {
         return $image;
     }
 
+    // permet de supprimer un article
     public function deleteArticle() {
         $bdd = $this->dbConnect();
         $id = (int)$_GET['id'];
@@ -132,6 +134,7 @@ class FrontManager extends Manager {
         return $delete;
     }
 
+    // permet de modifier un article
     public function modifyArticle($title,$category_id,$content,$image) {
         $bdd = $this->dbConnect();
         $id = (int)$_GET['id'];
