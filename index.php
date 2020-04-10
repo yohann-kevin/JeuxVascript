@@ -42,6 +42,8 @@ try{
             $controllerFront -> sitemap();
         } elseif ($_GET['action'] == 'deleteArticle') {
             $controllerFront -> pageDeleteArticle();
+        } elseif ($_GET['action'] == 'deleteComment') {
+            $controllerFront -> pageDeleteComment();
         }
         
         

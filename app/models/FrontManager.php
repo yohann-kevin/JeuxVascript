@@ -182,4 +182,12 @@ class FrontManager extends Manager {
         return $lastUsersComment;
     }
 
+    public function deleteCom() {
+        $bdd = $this->dbConnect();
+        $id = (int)$_GET['id'];
+        $deleteCom = $bdd->prepare("DELETE comment.* FROM comment WHERE id = ?");
+        $deleteCom->execute([$id]);
+        return $deleteCom;
+    }
+
 }

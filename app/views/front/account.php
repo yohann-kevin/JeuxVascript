@@ -63,7 +63,7 @@ $date = new \Project\controllers\ControllerFront();
                         <p><?= $usersLastComment['content']?></p>
                     </div>
                     <div class="usersLastCommentOption">
-                        <a href="#">Supprimer...</a>
+                        <a href="index.php?action=deleteComment&id=<?=$usersLastComment['id'] ?>">Supprimer...</a>
                     </div>
                 </div>
                 <?php endforeach ; ?>
