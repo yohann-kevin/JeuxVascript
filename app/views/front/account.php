@@ -14,6 +14,11 @@ $welcome = $welcomes->welcome();
 
 $lastArticleUsers = new \Project\controllers\ControllerFront();
 $usersLastArticles = $lastArticleUsers->displayLastUsersArticle();
+
+$lastCommentUsers = new \Project\controllers\ControllerFront();
+$usersLastComments = $lastCommentUsers->displayLastCom();
+
+$date = new \Project\controllers\ControllerFront();
 ?>
     <main id="account">
         <section id="pageAccount">
@@ -51,6 +56,17 @@ $usersLastArticles = $lastArticleUsers->displayLastUsersArticle();
 
             <article id="lastComment">
                 <h3>Consulter vos dernier Commentaires :</h3>
+                <?php foreach ($usersLastComments as $usersLastComment): ?>
+                <div class="lastComment">
+                    <div class="usersLastComment">
+                        <h4>posté le <?= $date->dateFormating($usersLastComment['created_date'])?></h4>
+                        <p><?= $usersLastComment['content']?></p>
+                    </div>
+                    <div class="usersLastCommentOption">
+                        <a href="#">Supprimer...</a>
+                    </div>
+                </div>
+                <?php endforeach ; ?>
             </article>
         </section>
 
