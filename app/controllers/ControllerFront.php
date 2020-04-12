@@ -381,7 +381,7 @@ class ControllerFront {
         return $lastUsersCom;
     }
 
-    // 
+    // permet a l'utilisteur de supprimer un commentaire qu'il a poster
     function deleteComment() {
         $comment = new \Project\models\FrontManager();
         $comment = $comment->deleteCom();
