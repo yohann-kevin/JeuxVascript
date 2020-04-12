@@ -1,6 +1,5 @@
 #userSettings {
     padding-top: 155px;
-    height: 600px;
     /* background-color: rgba(239, 239, 239, 0.7); */
     background-color: #efefef;
     display: flex;
@@ -14,4 +13,153 @@
 
 #userSettingsTitle {
     text-align: center;
+}
+
+#accountSettings {
+    width: 80%;
+    padding: 25px;
+    margin: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #ffffff;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+#modifyInfo {
+    width: 49%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-right: 3px solid #efefef;
+}
+
+#modifyInfo label{
+    width: 80%;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#modifyInfo input{
+    width: 60%;
+    height: 35px;
+    border: 1px solid #efefef;
+    background-color: #efefef;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+#modifyInfo input:focus {
+    transform: scale(1.15);
+    -webkit-transform: scale(1.15);
+    -moz-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    -o-transform: scale(1.15);
+    transition: transform 250ms ease;
+    -webkit-transition: transform 250ms ease;
+    -moz-transition: transform 250ms ease;
+    -ms-transition: transform 250ms ease;
+    -o-transition: transform 250ms ease;
+}
+
+#modifyPassword {
+    width: 49%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-left: 3px solid #efefef;
+}
+
+#modifyPassword label{
+    width: 100%;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#modifyPassword input {
+    width: 60%;
+    height: 35px;
+    border: 1px solid #efefef;
+    background-color: #efefef;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+#modifyPassword input:focus {
+    transform: scale(1.15);
+    -webkit-transform: scale(1.15);
+    -moz-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    -o-transform: scale(1.15);
+    transition: transform 250ms ease;
+    -webkit-transition: transform 250ms ease;
+    -moz-transition: transform 250ms ease;
+    -ms-transition: transform 250ms ease;
+    -o-transition: transform 250ms ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.buttonSettings {
+    margin-top: 75px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.buttonSettings button {
+    width: 20%;
+    height: 30px;
+    border: 1px solid #efefef;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    background-color: #545454;
+    color: white;
+}
+
+.buttonSettings button:hover {
+    cursor: pointer;
+    color: #ff9d00;
+    transform: scale(1.15);
+    -webkit-transform: scale(1.15);
+    -moz-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    -o-transform: scale(1.15);
+    transition: color 250ms ease;
+    -webkit-transition: color 250ms ease;
+    -moz-transition: color 250ms ease;
+    -ms-transition: color 250ms ease;
+    -o-transition: color 250ms ease;
+    transition: transform 250ms ease;
+    -webkit-transition: transform 250ms ease;
+    -moz-transition: transform 250ms ease;
+    -ms-transition: transform 250ms ease;
+    -o-transition: transform 250ms ease;
 }

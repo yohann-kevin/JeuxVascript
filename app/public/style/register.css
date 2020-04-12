@@ -82,8 +82,8 @@
 }
 
 #passwordRegister input {
-    height: 35px;
     width: 50%;
+    height: 35px;
     border: 1px solid #efefef;
     border-radius: 5px;
     -webkit-border-radius: 5px;
