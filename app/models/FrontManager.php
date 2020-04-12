@@ -182,12 +182,33 @@ class FrontManager extends Manager {
         return $lastUsersComment;
     }
 
+    // permet de supprimer un commentaire
     public function deleteCom() {
         $bdd = $this->dbConnect();
         $id = (int)$_GET['id'];
         $deleteCom = $bdd->prepare("DELETE comment.* FROM comment WHERE id = ?");
         $deleteCom->execute([$id]);
         return $deleteCom;
+    }
+
+    public function usersModifyInfo($pseudo,$email) {
+        $bdd = $this->dbConnect();
+        $modifyInfo = $bdd->prepare("UPDATE users SET pseudo = :pseudo, email = :email WHERE id = :id");
+        $modifyInfo->execute([
+            'id' => $_SESSION['user'],
+            'pseudo' => htmlentities($pseudo),
+            'email' => htmlentities($email)
+        ]);
+        return $modifyInfo;
+    }
+
+    public function usersModifyPassword($password) {
+        $bdd = $this->dbConnect();
+        $modifyPassword = $bdd->prepare("UPDATE users SET password = :password WHERE id = id");
+        $modifyPassword->execute([
+            'id' => $_SESSION['user'],
+            'password' =>  password_hash($password, PASSWORD_DEFAULT)
+        ]);
     }
 
 }
