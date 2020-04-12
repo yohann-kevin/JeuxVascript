@@ -202,13 +202,14 @@ class FrontManager extends Manager {
         return $modifyInfo;
     }
 
-    public function usersModifyPassword($password) {
+    public function usersModifyPassword($newPassword) {
         $bdd = $this->dbConnect();
-        $modifyPassword = $bdd->prepare("UPDATE users SET password = :password WHERE id = id");
+        $modifyPassword = $bdd->prepare("UPDATE users SET password = :password WHERE id = :id");
         $modifyPassword->execute([
-            'id' => $_SESSION['user'],
-            'password' =>  password_hash($password, PASSWORD_DEFAULT)
+            'password' =>  password_hash($newPassword, PASSWORD_DEFAULT),
+            'id' => $_SESSION['user']
         ]);
+        return $modifyPassword;
     }
 
 }

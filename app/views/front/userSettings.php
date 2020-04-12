@@ -9,9 +9,14 @@ $description = "Modifier vos paramètres et personnaliser votre éxperience Jeux
 $usersInfo = new \Project\controllers\ControllerFront();
 $infos = $usersInfo->displayInfo();
 
-if(!empty($_POST)){ 
+if(!empty($_POST['email']) || !empty($_POST['pseudo'])){ 
     $usersModifyInfo = new \Project\controllers\ControllerFront();
     $modifyInfos = $usersModifyInfo->modifyInfo();  
+}
+
+if(!empty($_POST['password']) || !empty($_POST['newPassword']) || !empty($_POST['verifyNewPassword'])){ 
+    $usersModifyPassword = new \Project\controllers\ControllerFront();
+    $modifyPassword = $usersModifyPassword->modifyPassword();  
 }
 ?>
 
@@ -24,7 +29,7 @@ if(!empty($_POST)){
         </section>
         <section id="accountSettings">
 
-            <form id="modifyInfo" method="post" action="">
+            <form id="modifyInfo" method="post" action="" name="modifyInfo">
             <?php if(isset($errors)) :
                 if($errors):
             foreach($errors as $error) : ?>
@@ -45,13 +50,23 @@ if(!empty($_POST)){
                 </div>
             </form>
 
-            <form id="modifyPassword">
+            <form id="modifyPassword" method="post" action="" name="modifyPassword">
+            <?php if(isset($errors)) :
+                if($errors):
+            foreach($errors as $error) : ?>
+             <h3><?= $error ?><h3>
+                
+            <?php endforeach; else : ?>
+                        
+            <h3>youpi ça marche<h3>
+                        
+            <?php endif; endif ?>
                 <label from="oldPassword">Taper votre ancien mot de passe</label>
                 <input id="oldPassword" name="password" type="password" placeholder="Votre ancien mot de passe">   
                 <label from="newPassword">Taper votre nouveau mot de passe</label>
-                <input id="newPassword" name="password" type="password" placeholder="Votre nouveau mot de passe">
+                <input id="newPassword" name="newPassword" type="password" placeholder="Votre nouveau mot de passe">
                 <label from="verifyNewPassword">Confirmer votre nouveau mot de passe</label>
-                <input id="verifyNewPassword" name="password" type="password" placeholder="Confirmer le mot de passe">
+                <input id="verifyNewPassword" name="verifyNewPassword" type="password" placeholder="Confirmer le mot de passe">
                 <div class="buttonSettings">
                     <button type="submit">Modifier</button>
                     <button type="reset">Annuler</button>

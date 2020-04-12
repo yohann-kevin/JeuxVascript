@@ -44,6 +44,10 @@ try{
             $controllerFront -> pageDeleteArticle();
         } elseif ($_GET['action'] == 'deleteComment') {
             $controllerFront -> pageDeleteComment();
+        } elseif ($_GET['action'] == 'modifyInfo') {
+            $controllerFront -> modifyInfo();
+        } elseif ($_GET['action'] == 'modifyPassword') {
+            $controllerFront -> modifyPassword();
         }
         
         
