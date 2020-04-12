@@ -152,3 +152,51 @@
     -ms-transition: transform 250ms ease;
     -o-transition: transform 250ms ease;
 }
+
+#deleteAccount {
+    width: 80%;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#deleteAccount p {
+    width: 100%;
+}
+
+#deleteAccount a {
+    width: 20%;
+    text-decoration: none;
+    margin-top: 20px;
+    padding-top: 10px;
+    height: 30px;
+    border: 1px solid #efefef;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    background-color: #545454;
+    color: white;
+}
+
+#deleteAccount a:hover {
+    cursor: pointer;
+    color: #ff9d00;
+    transform: scale(1.15);
+    -webkit-transform: scale(1.15);
+    -moz-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    -o-transform: scale(1.15);
+    transition: color 250ms ease;
+    -webkit-transition: color 250ms ease;
+    -moz-transition: color 250ms ease;
+    -ms-transition: color 250ms ease;
+    -o-transition: color 250ms ease;
+    transition: transform 250ms ease;
+    -webkit-transition: transform 250ms ease;
+    -moz-transition: transform 250ms ease;
+    -ms-transition: transform 250ms ease;
+    -o-transition: transform 250ms ease;
+}

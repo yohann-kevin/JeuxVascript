@@ -99,6 +99,11 @@ class ControllerFront {
         require 'app/views/front/deleteComment.php';
     }
 
+    function pageDeleteUsers() {
+
+        require 'app/views/front/deleteUsers.php';
+    }
+
 
     // erreur 404 temporaire
     function error404() {
@@ -454,6 +459,15 @@ class ControllerFront {
             }
             return $errors;
         }    
+    }
+
+    // permet a l'utilisateur de supprimer son compte
+    function deleteUsers() {
+        $users = new \Project\models\FrontManager();
+        $usersDelete = $users->deleteUsers();
+        unset($_SESSION['user']);
+        session_destroy();
+        return $usersDelete;
     }
 
 } 

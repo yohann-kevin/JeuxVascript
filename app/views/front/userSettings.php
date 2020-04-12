@@ -75,6 +75,12 @@ if(!empty($_POST['password']) || !empty($_POST['newPassword']) || !empty($_POST[
                 
            
         </section>
+
+        <section id="deleteAccount">
+            <p>Si vous le souhaitez vous pouvez supprimer votre 
+            compte, l'intégralité de vos information seront supprimer</p>
+            <a href="index.php?action=deleteUsers&id=<?=$infos['id'] ?>">Supprimer mon compte</a>
+        </section>
     </main>
 
 <?php include_once 'app/views/front/layouts/footer.php'; ?>
