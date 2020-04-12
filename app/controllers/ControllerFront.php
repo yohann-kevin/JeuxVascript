@@ -412,12 +412,39 @@ class ControllerFront {
             if($validation){
                 $modifyInfo = new \Project\models\FrontManager();
                 $infoModify = $modifyInfo->usersModifyInfo($pseudo,$email);
-                    
+                require 'app/views/front/account.php';
                 unset($_POST['email']);
                 unset($_POST['pseudo']);   
             }
             return $errors; 
         }
+    }
+
+    // permet de modifier le mot de passe
+    function modifyPassword() {
+        if(isset($_SESSION['user'])) {
+            extract($_POST);
+            $validation = true;
+            $errors = [];
+        
+            if(empty($password) || empty($newPassword) || empty($verifyNewPassword)){
+                $validation = false;
+                $errors[] = 'Tous les champs sont obligatoires !!!'; 
+            }
+
+            if($verifyNewPassword != $newPassword){
+                $validation = false;
+                $errors[] = 'le mot de passe de confirmation est incorrect !!!';
+            }
+
+
+            if($validation){
+                $modifyPassword = new \Project\models\FrontManager();
+                $passwordModify = $modifyPassword->usersModifyPassword($newPassword);
+                require 'app/views/front/account.php';
+            }
+            return $errors;
+        }    
     }
 
 } 
