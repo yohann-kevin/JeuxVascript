@@ -388,4 +388,36 @@ class ControllerFront {
         return $comment;
     }
 
+    // permet de modifier un article
+    function modifyInfo(){
+        if(isset($_SESSION['user'])) {
+            extract($_POST);
+            $validation = true;
+            $errors = [];
+        
+            if(empty($pseudo) || empty($email)){
+                $validation = false;
+                $errors[] = 'Tous les champs sont obligatoires !';
+            }
+
+            if($pseudo) {
+                $testPseudo = new \Project\models\FrontManager();
+                $usersPseudo = $testPseudo->pseudoCheck($pseudo);
+                if($usersPseudo) {
+                     $validation = false;
+                    $errors[] = 'Ce pseudo est déjà pris !';
+                }
+            }
+
+            if($validation){
+                $modifyInfo = new \Project\models\FrontManager();
+                $infoModify = $modifyInfo->usersModifyInfo($pseudo,$email);
+                    
+                unset($_POST['email']);
+                unset($_POST['pseudo']);   
+            }
+            return $errors; 
+        }
+    }
+
 } 

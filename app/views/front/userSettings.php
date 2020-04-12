@@ -5,6 +5,15 @@ $description = "Modifier vos paramètres et personnaliser votre éxperience Jeux
 ?>
 <?php require_once 'app/views/front/layouts/head.php'; ?>
 <?php include_once 'app/views/front/layouts/header.php'; ?>
+<?php  
+$usersInfo = new \Project\controllers\ControllerFront();
+$infos = $usersInfo->displayInfo();
+
+if(!empty($_POST)){ 
+    $usersModifyInfo = new \Project\controllers\ControllerFront();
+    $modifyInfos = $usersModifyInfo->modifyInfo();  
+}
+?>
 
     <main id="userSettings">
         <section id="pageUserSettings">
@@ -15,11 +24,21 @@ $description = "Modifier vos paramètres et personnaliser votre éxperience Jeux
         </section>
         <section id="accountSettings">
 
-            <form id="modifyInfo">
+            <form id="modifyInfo" method="post" action="">
+            <?php if(isset($errors)) :
+                if($errors):
+            foreach($errors as $error) : ?>
+             <h3><?= $error ?><h3>
+                
+            <?php endforeach; else : ?>
+                        
+            <h3>youpi ça marche<h3>
+                        
+            <?php endif; endif ?>
                 <label from="changeEmail">taper votre nouvelle email</label>
-                <input id="changeEmail" name="changeEmail" type="email" placeholder="Email" values="">
+                <input id="changeEmail" name="email" type="email" placeholder="<?= $infos['email']?>" values="<?php if(isset($_POST['email']))echo $_POST['email'] ?>">
                 <label from="newPseudo">Taper votre nouveau pseudo</label>
-                <input id="newPseudo" name="newPseudo" type="text" placeholder="First name" values="">
+                <input id="newPseudo" name="pseudo" type="text" placeholder="<?= $infos['pseudo']?>" values="<?php if(isset($_POST['Pseudo']))echo $_POST['Pseudo'] ?>">
                 <div class="buttonSettings">
                     <button type="submit">Modifier</button>
                     <button type="reset">Annuler</button>
@@ -28,11 +47,11 @@ $description = "Modifier vos paramètres et personnaliser votre éxperience Jeux
 
             <form id="modifyPassword">
                 <label from="oldPassword">Taper votre ancien mot de passe</label>
-                <input id="oldPassword" name="oldPassword" type="password" placeholder="Votre ancien mot de passe">   
+                <input id="oldPassword" name="password" type="password" placeholder="Votre ancien mot de passe">   
                 <label from="newPassword">Taper votre nouveau mot de passe</label>
-                <input id="newPassword" name="newPassword" type="password" placeholder="password">
+                <input id="newPassword" name="password" type="password" placeholder="Votre nouveau mot de passe">
                 <label from="verifyNewPassword">Confirmer votre nouveau mot de passe</label>
-                <input id="verifyNewPassword" name="verifyNewPassword" type="password" placeholder="password">
+                <input id="verifyNewPassword" name="password" type="password" placeholder="Confirmer le mot de passe">
                 <div class="buttonSettings">
                     <button type="submit">Modifier</button>
                     <button type="reset">Annuler</button>
