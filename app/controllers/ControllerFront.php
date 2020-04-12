@@ -412,7 +412,8 @@ class ControllerFront {
             if($validation){
                 $modifyInfo = new \Project\models\FrontManager();
                 $infoModify = $modifyInfo->usersModifyInfo($pseudo,$email);
-                require 'app/views/front/account.php';
+                // require 'app/views/front/account.php';
+                $this->accountFront();
                 unset($_POST['email']);
                 unset($_POST['pseudo']);   
             }
@@ -437,6 +438,14 @@ class ControllerFront {
                 $errors[] = 'le mot de passe de confirmation est incorrect !!!';
             }
 
+            if(!empty($password)) {
+                $testPassword = new \Project\models\FrontManager();
+                $passwordCheck = $testPassword->passwordCheck();
+                if($passwordCheck === $password) {
+                    $validation = false;
+                    $errors[] = "Ce mot de passe n'est pas le bon !";
+                }
+            }
 
             if($validation){
                 $modifyPassword = new \Project\models\FrontManager();
