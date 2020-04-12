@@ -43,7 +43,7 @@ class FrontManager extends Manager {
     // récupere les informations de l'utilisateur
     public function usersInfo() {
         $bdd = $this->dbConnect();
-        $infos = $bdd->prepare('SELECT email, pseudo FROM users WHERE id = ?');
+        $infos = $bdd->prepare('SELECT id, email, pseudo FROM users WHERE id = ?');
         $infos->execute([$_SESSION['user']]);
         $infos = $infos->fetch();
         return $infos;
@@ -191,6 +191,7 @@ class FrontManager extends Manager {
         return $deleteCom;
     }
 
+    // permet a l'utilisateur de modifier ses information type email, pseudo
     public function usersModifyInfo($pseudo,$email) {
         $bdd = $this->dbConnect();
         $modifyInfo = $bdd->prepare("UPDATE users SET pseudo = :pseudo, email = :email WHERE id = :id");
@@ -202,6 +203,7 @@ class FrontManager extends Manager {
         return $modifyInfo;
     }
 
+    // permet a l'utilisateur de modifier son mot de passe
     public function usersModifyPassword($newPassword) {
         $bdd = $this->dbConnect();
         $modifyPassword = $bdd->prepare("UPDATE users SET password = :password WHERE id = :id");
@@ -212,13 +214,20 @@ class FrontManager extends Manager {
         return $modifyPassword;
     }
 
-    // 
-    public function passwordCheck(){
-        $bdd = $this->dbConnect();
-        $passwordCheck = $bdd->prepare('SELECT password FROM users WHERE id = ?');
-        $passwordCheck->execute([$_SESSION['user']]);
-        $passwordCheck = $passwordCheck->fetch();
-        return $passwordCheck;
-    }
+    // public function passwordCheck(){
+    //     $bdd = $this->dbConnect();
+    //     $passwordCheck = $bdd->prepare('SELECT password FROM users WHERE id = ?');
+    //     $passwordCheck->execute([$_SESSION['user']]);
+    //     $passwordCheck = $passwordCheck->fetch();
+    //     return $passwordCheck;
+    // }
 
+    // permet de supprimer un compte utilisateur
+    public function deleteUsers() {
+        $bdd = $this->dbConnect();
+        $id = (int)$_GET['id'];
+        $usersDelete = $bdd->prepare("DELETE users.* FROM users WHERE id = ?");
+        $usersDelete->execute([$id]);
+        return $usersDelete;
+    }
 }

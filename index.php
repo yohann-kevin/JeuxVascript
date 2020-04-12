@@ -48,6 +48,8 @@ try{
             $controllerFront -> modifyInfo();
         } elseif ($_GET['action'] == 'modifyPassword') {
             $controllerFront -> modifyPassword();
+        } elseif ($_GET['action'] == 'deleteUsers') {
+            $controllerFront -> pageDeleteUsers();
         }
         
         
