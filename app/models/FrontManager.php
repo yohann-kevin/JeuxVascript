@@ -212,4 +212,13 @@ class FrontManager extends Manager {
         return $modifyPassword;
     }
 
+    // 
+    public function passwordCheck(){
+        $bdd = $this->dbConnect();
+        $passwordCheck = $bdd->prepare('SELECT password FROM users WHERE id = ?');
+        $passwordCheck->execute([$_SESSION['user']]);
+        $passwordCheck = $passwordCheck->fetch();
+        return $passwordCheck;
+    }
+
 }
