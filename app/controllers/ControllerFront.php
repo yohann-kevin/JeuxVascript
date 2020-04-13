@@ -149,10 +149,12 @@ class ControllerFront {
         if($validation){
         $register = new \Project\models\FrontManager();
         $usersRegister = $register->usersRegister($pseudo,$email,$password);
-
+        $loginUsers = new \Project\models\FrontManager();
+        $login = $loginUsers->usersLogin($pseudo,$password);
+        $_SESSION['user'] = $login['id'];
+        require 'app/views/front/account.php';
         unset($_POST['pseudo']);
         unset($_POST['email']);
-        require 'app/views/front/account.php';
         }
     
         return $errors;
@@ -469,5 +471,4 @@ class ControllerFront {
         session_destroy();
         return $usersDelete;
     }
-
 } 
