@@ -230,4 +230,15 @@ class FrontManager extends Manager {
         $usersDelete->execute([$id]);
         return $usersDelete;
     }
+
+    // ---------test----------------
+
+    public function scoreSavedBattleship($data) {
+        $bdd = $this->dbConnect();
+        $score = $bdd->prepare("INSERT INTO score_battleship(data) VALUES (:score_battleship)");
+        $score->execute([
+            'score_battleship' => htmlentities($data)
+        ]);
+        return $score;
+    }
 }

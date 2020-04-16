@@ -56,9 +56,13 @@ try{
             $controllerFront -> pageLabyrinth();
         }
         
-        
-        
 
+        //data test
+        elseif ($_GET['action'] == 'playingBattleship') {
+            $controllerFront -> saveScoreBattleship();
+        }
+
+        
         // users (temporaire)
         elseif ($_GET['action'] == 'account') {
             $controllerFront -> accountFront();
