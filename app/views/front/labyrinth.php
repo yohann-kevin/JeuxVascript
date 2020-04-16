@@ -7,9 +7,13 @@ include_once 'app/views/front/layouts/header.php';
 ?>
 
 <main id="pageLabyrinth">
+    <section id="labyrinthGame">
+        <article id="labyrinthe"></article>
 
-
+        <article id="alertLabyrinth"></article>
+    </section> 
 </main>
+
 
 
 
