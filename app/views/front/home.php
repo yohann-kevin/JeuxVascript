@@ -110,7 +110,6 @@ $articleIndes = $displayArticleInde->displayArticleInde();
             <header id="homeGameTitle">
                 <h3>Nos Jeux</h3>
             </header>
-
             <article id="articleSnake">
                 <div class="gameTitle">
                     <h4>Snake</h4>
@@ -136,7 +135,6 @@ $articleIndes = $displayArticleInde->displayArticleInde();
                     <a href="index.php?action=snake" class="buttonPlayHome">Play</a>
                 </div>
             </article>
-
             <article id="articleBattleship">
                 <div class="gameTitle">
                     <h4>Battleship</h4>
@@ -159,11 +157,59 @@ $articleIndes = $displayArticleInde->displayArticleInde();
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                         Molestias deserunt nulla culpa!
                     </p>
-                    <a href="" class="buttonPlayHome">Play</a>
+                    <a href="index.php?action=battleship" class="buttonPlayHome">Play</a>
                 </div>
             </article>
-
-
+            <article id="articlePower4">
+                <div class="gameTitle">
+                    <h4>Puissance 4</h4>
+                </div>
+                <div class="gameImg">
+                    <img src="app/public/images/gameplay/puissance4.png">
+                </div>
+                <div id="gameContent3">
+                    <p class="gameParaHome">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Molestias deserunt nulla culpa!
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Molestias deserunt nulla culpa!
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Molestias deserunt nulla culpa!
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Molestias deserunt nulla culpa!
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Molestias deserunt nulla culpa!
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Molestias deserunt nulla culpa!
+                    </p>
+                    <a href="index.php?action=power4" class="buttonPlayHome">Play</a>
+                </div>
+            </article>
+            <article id="articleLabyrinth">
+                <div class="gameTitle">
+                    <h4>Labyrinthe</h4>
+                </div>
+                <div class="gameImg">
+                    <img src="app/public/images/gameplay/labyrinth.png">
+                </div>
+                <div id="gameContent4">
+                    <p class="gameParaHome">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Molestias deserunt nulla culpa!
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Molestias deserunt nulla culpa!
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Molestias deserunt nulla culpa!
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Molestias deserunt nulla culpa!
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Molestias deserunt nulla culpa!
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Molestias deserunt nulla culpa!
+                    </p>
+                    <a href="index.php?action=labyrinth" class="buttonPlayHome">Play</a>
+                </div>
+            </article>
         </section>
 
         <section class="homeQuote">

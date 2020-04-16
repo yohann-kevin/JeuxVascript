@@ -32,6 +32,9 @@
     <link rel="stylesheet" href="app/public/style/error404.css">
     <link rel="stylesheet" href="app/public/style/legalNotice.css">
     <link rel="stylesheet" href="app/public/style/sitemap.css">
+    <link rel="stylesheet" href="app/public/style/battleship.css">
+    <link rel="stylesheet" href="app/public/style/power4.css">
+    <link rel="stylesheet" href="app/public/style/labyrinth.css">
     <link rel="stylesheet" href="app/public/style/mediaQueries.css">
     <!-- icône -->
     <link rel="icon" href="app/public/images/logo/icone.png">
