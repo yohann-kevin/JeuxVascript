@@ -121,15 +121,10 @@ class ControllerFront {
         require 'app/views/front/error404.php';
     }
 
-    
-
     // permet a l'utilisateur de se connecter
     function registerUsers() {
-
         extract($_POST);
-
         $validation = true;
-    
         $errors = [];
         
         if(empty($pseudo) || empty($email) || empty($password) ){
@@ -480,5 +475,19 @@ class ControllerFront {
         unset($_SESSION['user']);
         session_destroy();
         return $usersDelete;
+    }
+
+
+
+    //-------------test----------------------
+
+
+    function saveScoreBattleship() {
+        if(isset($_SESSION['user'])) {
+            extract($_POST);
+            $save = new \Project\models\FrontManager();
+            $score = $save->scoreSavedBattleship($data);
+            return $score;
+        }
     }
 } 

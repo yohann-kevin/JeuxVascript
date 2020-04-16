@@ -17,6 +17,7 @@ function playCase(line,column) {
         battleship.displayGrid();
         if(battleship.verifyEndGame(playerTurn)) {
             manageEndGame();
+            battleshipSaveScore();
         }
         if(playerTurn===1) {
             playerTurn = 2;
@@ -118,3 +119,22 @@ addEventListener("click", function(event) {
         }
     }
 })
+
+function battleshipSaveScore() {
+    var data = {
+       score_battleship: 2 
+    }
+
+    fetch('index.php?action=playingBattleship', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json;charset=utf-8'
+        },
+        body: JSON.stringify(data)
+    }
+    ).then( res => {
+
+    }).then( json => {
+
+    })
+}

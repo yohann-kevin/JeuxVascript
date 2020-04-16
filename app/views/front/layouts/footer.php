@@ -41,7 +41,7 @@
 
     <script tyê="text/javascript" src="app/public/script/IAPower4.js"></script>
     <script tyê="text/javascript" src="app/public/script/power4.js"></script>
-    <script tyê="text/javascript" src="app/public/script/mainPower4.js"></script>
+    <!-- <script tyê="text/javascript" src="app/public/script/mainPower4.js"></script> -->
 
     <script tyê="text/javascript" src="app/public/script/labyrinthLevel.js"></script>
     <script tyê="text/javascript" src="app/public/script/labyrinth.js"></script>
