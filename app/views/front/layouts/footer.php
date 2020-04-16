@@ -34,9 +34,10 @@
     <script type="text/javascript" src="app/public/script/jquery.js"></script>
     <script type="text/javascript" src="app/public/script/snake.js"></script>
     <script type="text/javascript" src="app/public/script/about.js"></script>
-    <!-- charge mes sprites -->
-    <script type="text/javascript" src="app/public/script/sprite.js"></script>
-    <script type="text/javascript" src="app/public/script/spaceInvaders.js"></script>
+
+    <script type="text/javascript" src="app/public/script/IABattleship.js"></script>
+    <script type="text/javascript" src="app/public/script/battleship.js"></script>
+    <script type="text/javascript" src="app/public/script/mainBattleship.js"></script>
     <!-- charge mon diagramme pour stats -->
     <script type="text/javascript" src="app/public/script/stats.js"></script>
     <!-- script api google connect -->
