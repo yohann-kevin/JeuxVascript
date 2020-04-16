@@ -57,6 +57,21 @@ class ControllerFront {
         require 'app/views/front/sitemap.php';
     }
 
+    function pageBattleship() {
+
+        require 'app/views/front/battleship.php';
+    }
+
+    function pagePower4() {
+
+        require 'app/views/front/power4.php';
+    }
+
+    function pageLabyrinth() {
+
+        require 'app/views/front/labyrinth.php';
+    }
+
     // fonction users lien temporaire
 
     function accountFront() {

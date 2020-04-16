@@ -48,6 +48,12 @@ try{
             $controllerFront -> modifyPassword();
         } elseif ($_GET['action'] == 'deleteUsers') {
             $controllerFront -> pageDeleteUsers();
+        } elseif ($_GET['action'] == 'battleship') {
+            $controllerFront -> pageBattleship();
+        } elseif ($_GET['action'] == 'power4') {
+            $controllerFront -> pagePower4();
+        } elseif ($_GET['action'] == 'labyrinth') {
+            $controllerFront -> pageLabyrinth();
         }
         
         
