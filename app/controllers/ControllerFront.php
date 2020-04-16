@@ -47,11 +47,6 @@ class ControllerFront {
         require 'app/views/front/article.php';
     }
 
-    function spaceInvadersFront() {
-
-        require 'app/views/front/spaceInvaders.php';
-    }
-
     function legalNotice() {
 
         require 'app/views/front/legalNotice.php';

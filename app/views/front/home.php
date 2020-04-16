@@ -110,31 +110,6 @@ $articleIndes = $displayArticleInde->displayArticleInde();
             <header id="homeGameTitle">
                 <h3>Nos Jeux</h3>
             </header>
-            <article id="articleSpace">
-                <div class="gameTitle">
-                    <h4>Space Invaders</h4>
-                </div>
-                <div class="gameImg">
-                    <img src="app/public/images/gameplay/spaceInvaders2.png">
-                </div>
-                <div id="gameContent1">
-                    <p class="gameParaHome">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                        Molestias deserunt nulla culpa!
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                        Molestias deserunt nulla culpa!
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                        Molestias deserunt nulla culpa!
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                        Molestias deserunt nulla culpa!
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                        Molestias deserunt nulla culpa!
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                        Molestias deserunt nulla culpa!
-                    </p>
-                    <a href="index.php?action=spaceInvaders" class="buttonPlayHome">Play</a>
-                </div>
-            </article>
 
             <article id="articleSnake">
                 <div class="gameTitle">
@@ -143,7 +118,7 @@ $articleIndes = $displayArticleInde->displayArticleInde();
                 <div class="gameImg">
                     <img src="app/public/images/gameplay/snake.png">
                 </div>
-                <div id="gameContent2">
+                <div id="gameContent1">
                     <p class="gameParaHome">
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                         Molestias deserunt nulla culpa!
@@ -161,6 +136,34 @@ $articleIndes = $displayArticleInde->displayArticleInde();
                     <a href="index.php?action=snake" class="buttonPlayHome">Play</a>
                 </div>
             </article>
+
+            <article id="articleBattleship">
+                <div class="gameTitle">
+                    <h4>Battleship</h4>
+                </div>
+                <div class="gameImg">
+                    <img src="app/public/images/gameplay/battleship1.png">
+                </div>
+                <div id="gameContent2">
+                    <p class="gameParaHome">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Molestias deserunt nulla culpa!
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Molestias deserunt nulla culpa!
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Molestias deserunt nulla culpa!
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Molestias deserunt nulla culpa!
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Molestias deserunt nulla culpa!
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Molestias deserunt nulla culpa!
+                    </p>
+                    <a href="" class="buttonPlayHome">Play</a>
+                </div>
+            </article>
+
+
         </section>
 
         <section class="homeQuote">
