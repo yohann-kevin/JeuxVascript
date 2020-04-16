@@ -28,8 +28,6 @@ try{
             $controllerFront -> registerFront();
         } elseif ($_GET['action'] == 'article') {
             $controllerFront -> articleFront();
-        } elseif ($_GET['action'] == 'spaceInvaders') {
-            $controllerFront -> spaceInvadersFront();
         } elseif ($_GET['action'] == 'registerUsers') {
             $controllerFront -> registerUsers();
         } elseif ($_GET['action'] == 'login') {
