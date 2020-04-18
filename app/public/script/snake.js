@@ -1,5 +1,11 @@
 window.onload = function () {
 
+    // script temporaire 
+    new Counter('c1', 0, 25, 100);
+    new Counter('c2', 0, 50, 50);
+    new Counter('c3', 0, 100, 24);
+
+
     var canvasWidth = 900; //taille du canvas
     var canvasHeight = 600; //taille du canvas
     var blockSize = 30; //taille d'un block

@@ -31,6 +31,8 @@
 <footer>
 
 </body>
+    <script type="text/javascript" src="app/public/script/index.js"></script>
+
     <script type="text/javascript" src="app/public/script/jquery.js"></script>
     <script type="text/javascript" src="app/public/script/snake.js"></script>
     <script type="text/javascript" src="app/public/script/about.js"></script>
@@ -39,12 +41,12 @@
     <script type="text/javascript" src="app/public/script/battleship.js"></script>
     <script type="text/javascript" src="app/public/script/mainBattleship.js"></script>
 
-    <script tyê="text/javascript" src="app/public/script/IAPower4.js"></script>
-    <script tyê="text/javascript" src="app/public/script/power4.js"></script>
+    <script type="text/javascript" src="app/public/script/IAPower4.js"></script>
+    <script type="text/javascript" src="app/public/script/power4.js"></script>
     <!-- <script tyê="text/javascript" src="app/public/script/mainPower4.js"></script> -->
 
-    <script tyê="text/javascript" src="app/public/script/labyrinthLevel.js"></script>
-    <script tyê="text/javascript" src="app/public/script/labyrinth.js"></script>
+    <script type="text/javascript" src="app/public/script/labyrinthLevel.js"></script>
+    <script type="text/javascript" src="app/public/script/labyrinth.js"></script>
 
     <!-- charge mon diagramme pour stats -->
     <script type="text/javascript" src="app/public/script/stats.js"></script>

@@ -93,6 +93,7 @@ $articleIndes = $displayArticleInde->displayArticleInde();
             <h2 class="author">Albert <span class="strong">Einstein</span></h2>
         </section>
 
+
         <section id="counter">
             <h3 id="counterTitle">Quelque chiffre</h3>
             <article class="counter">
@@ -105,6 +106,7 @@ $articleIndes = $displayArticleInde->displayArticleInde();
                 <p>Score total: <br><span id="c3">x</span><br></p>
             </article>
         </section>
+        
 
         <section id="homeGame">
             <header id="homeGameTitle">

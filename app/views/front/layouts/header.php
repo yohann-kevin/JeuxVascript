@@ -6,7 +6,6 @@
 ?>
 <body>
     <header id="header">
-        <!-- <img src="Jeuxvacsript.png" alt="Jeuxvacsript"> -->
         <div id="logo">
             <a href="index.php?action=home">
                 <img src="app/public/images/logo/Jeuxvacsript2.png" alt="Jeuxvacsript">
@@ -46,9 +45,7 @@
                 </li>
             </ul>
         </nav>
-        <div id="buttonHeader">
-
-            
+        <div id="buttonHeader"> 
             <?php if(isset($_SESSION['user'])) : ?>
             <a href="index.php?action=account">Mon compte</a>
             <a href="index.php?action=disconnect">Déconnexion</a>
