@@ -40,7 +40,7 @@ $description = "Découvrez nos jeux 100% JavaScript";
 
             <article id="power4Article">
                 <div class="gameTitle">
-                    <h4>Snake</h4>
+                    <h4>Power 4</h4>
                 </div>
                 <div class="gameImg">
                     <img src="app/public/images/gameplay/puissance4.png">
@@ -66,7 +66,7 @@ $description = "Découvrez nos jeux 100% JavaScript";
 
             <article id="battleshipArticle">
                 <div class="gameTitle">
-                    <h4>Snake</h4>
+                    <h4>Battleship</h4>
                 </div>
                 <div class="gameImg">
                     <img src="app/public/images/gameplay/battleship1.png">
