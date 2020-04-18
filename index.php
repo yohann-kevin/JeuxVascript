@@ -52,9 +52,7 @@ try{
             $controllerFront -> pageBattleship();
         } elseif ($_GET['action'] == 'power4') {
             $controllerFront -> pagePower4();
-        } elseif ($_GET['action'] == 'labyrinth') {
-            $controllerFront -> pageLabyrinth();
-        }
+        } 
         
 
         //data test
