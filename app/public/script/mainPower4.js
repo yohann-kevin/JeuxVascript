@@ -10,17 +10,17 @@ var scoreJ2 = 0;
 
 var iaOn = false;
 
-initTab();
+initTabPower4();
 
 // fonction premettant de jouer 
-function playCase(column) { 
+function playCasePower4(column) { 
     if(!endGame) {
         var lineEmpty = power4.returnLineCaseEmpty(column);
         if(lineEmpty !== -1) {
             power4.playCase(playerTurn, lineEmpty, column);
             power4.displayTab();
             if(power4.verifyEndGame(playerTurn)) {
-                manageEndGame();
+                manageEndGamePower4();
             }
 
             if(playerTurn === 1) {
@@ -35,7 +35,7 @@ function playCase(column) {
 }
 
 // initialise le tableau
-function initTab() {
+function initTabPower4() {
     endGame = false;
     playerTurn = 1;
     success.style.display = "none";
@@ -52,11 +52,11 @@ function initTab() {
 }
 
 // gere la fin du jeux
-function manageEndGame() {
+function manageEndGamePower4() {
     endGame = true;
     success.style.display = "block";
     success.innerHTML = "<p id='msgSuccess'>Partie terminé le gagnant est : J" + playerTurn + "</p>";
-    success.innerHTML += "<button type='button' class='btnPower4' onclick='initTab()'>Restart</button> ";
+    success.innerHTML += "<button type='button' class='btnPower4' onclick='initTabPower4()'>Restart</button> ";
     if(playerTurn===1) {
         scoreJ1++;
     } else {
@@ -71,10 +71,10 @@ function startIA() {
 
 // permet a l'ia de jouer
 function playing(column) {
-    playCase(column);
+    playCasePower4(column);
     if(iaOn) {
        
         columnIA = IA.columnChoice();
-        playCase(columnIA);
+        playCasePower4(columnIA);
     }
 }

@@ -16,7 +16,7 @@ function playCase(line,column) {
         battleship.playCase(line,column);
         battleship.displayGrid();
         if(battleship.verifyEndGame(playerTurn)) {
-            manageEndGame();
+            manageEndGameBattleship();
             battleshipSaveScore();
         }
         if(playerTurn===1) {
@@ -30,7 +30,7 @@ function playCase(line,column) {
 }
 
 // initialise un tableau
-function initTab(numberBoat) {
+function initTabBattleship(numberBoat) {
     battleship.nbCaseJ1 = 0;
     battleship.nbCaseJ2 = 0;
     endGame = false;
@@ -48,10 +48,10 @@ function initTab(numberBoat) {
 }
 
 // gere la fin du jeux
-function manageEndGame(){
+function manageEndGameBattleship(){
     endGame = true;
     var contentAlert = "<p id='msg'>Partie terminé le gagnant est : J" + playerTurn + "</p>";
-    contentAlert += "<button type='button' class='btnBattleship' onclick='initTab("+writeNumberBoat+")'>Restart</button>";
+    contentAlert += "<button type='button' class='btnBattleship' onclick='initTabBattleship("+writeNumberBoat+")'>Restart</button>";
     displayAlert(contentAlert,1);
     if(playerTurn===1){
         scoreJ1++;
@@ -85,7 +85,7 @@ function startBattleship() {
     writeNumberBoat = parseInt(document.getElementById('numberBoat').value);
     if(writeNumberBoat < 2) displayAlert("le nombre de bateau doit être supérieur à 1",2);
     if(writeNumberBoat > 4) displayAlert("le nombre de bateau doit être inférieur à 5",2);
-    if(writeNumberBoat >= 2 && writeNumberBoat <= 4) initTab(writeNumberBoat);
+    if(writeNumberBoat >= 2 && writeNumberBoat <= 4) initTabBattleship(writeNumberBoat);
 }
 
 // lance une animation d'explosion au click sur la target
