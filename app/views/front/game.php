@@ -11,12 +11,13 @@ $description = "Découvrez nos jeux 100% JavaScript";
             <header id="pageGameTitle">
                 <h3>Nos Jeux</h3>
             </header>
-            <article id="articleSpaceGame">
+
+            <article id="snakeArticle">
                 <div class="gameTitle">
-                    <h4>Space Invaders</h4>
+                    <h4>Snake</h4>
                 </div>
                 <div class="gameImg">
-                    <img src="app/public/images/gameplay/spaceInvaders2.png">
+                    <img src="app/public/images/gameplay/snake.png">
                 </div>
                 <div id="contentGame1">
                     <p class="gamePara">
@@ -33,16 +34,16 @@ $description = "Découvrez nos jeux 100% JavaScript";
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                         Molestias deserunt nulla culpa!
                     </p>
-                    <a href="index.php?action=spaceInvaders" class="buttonPlayGame">Play</a>
+                    <a href="index.php?action=snake" class="buttonPlayGame">Play</a>
                 </div>
             </article>
 
-            <article id="articleSnake">
+            <article id="power4Article">
                 <div class="gameTitle">
                     <h4>Snake</h4>
                 </div>
                 <div class="gameImg">
-                    <img src="app/public/images/gameplay/snake.png">
+                    <img src="app/public/images/gameplay/puissance4.png">
                 </div>
                 <div id="contentGame2">
                     <p class="gamePara">
@@ -59,7 +60,33 @@ $description = "Découvrez nos jeux 100% JavaScript";
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                         Molestias deserunt nulla culpa!
                     </p>
-                    <a href="index.php?action=snake" class="buttonPlayGame">Play</a>
+                    <a href="index.php?action=power4" class="buttonPlayGame">Play</a>
+                </div>
+            </article>
+
+            <article id="battleshipArticle">
+                <div class="gameTitle">
+                    <h4>Snake</h4>
+                </div>
+                <div class="gameImg">
+                    <img src="app/public/images/gameplay/battleship1.png">
+                </div>
+                <div id="contentGame3">
+                    <p class="gamePara">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Molestias deserunt nulla culpa!
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Molestias deserunt nulla culpa!
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Molestias deserunt nulla culpa!
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Molestias deserunt nulla culpa!
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Molestias deserunt nulla culpa!
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Molestias deserunt nulla culpa!
+                    </p>
+                    <a href="index.php?action=battleship" class="buttonPlayGame">Play</a>
                 </div>
             </article>
         </section>

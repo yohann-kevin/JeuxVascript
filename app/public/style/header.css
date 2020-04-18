@@ -153,7 +153,7 @@ li.fromLeft:after {
 }
 
 
-.sous {
+.under {
     display: none;
     box-shadow: 0px 1px 2px #cccccc;
     background-color: #545445;
@@ -162,36 +162,36 @@ li.fromLeft:after {
     z-index: 500;
 }
 
-.sous a {
+.under a {
     background-color: #545454;
 }
 
-.sous a:hover {
+.under a:hover {
     background-color: white;
 }
 
-nav>ul li:hover .sous {
+nav>ul li:hover .under {
     display: block;
 }
 
-.sous li {
+.under li {
     float: none;
     width: 100%;
     text-align: left;
 }
 
-.sous a {
+.under a {
     font-size: 1rem;
     padding: 10px;
     border-bottom: none;
 }
 
-.sous a:hover {
+.under a:hover {
     border-bottom: none;
     background-color: white;
 }
 
-.deroulant>a::after {
+.drop>a::after {
     font-size: 12px;
 }
 

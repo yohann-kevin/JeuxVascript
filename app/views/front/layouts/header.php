@@ -27,21 +27,16 @@
                 <li class="fromLeft menu">
                     <a href="index.php?action=home" class="<?= $page === 'home' ? 'active' : '' ?>">Accueil</a>
                 </li>
-                <li class="deroulant fromLeft menu">
+                <li class="drop fromLeft menu">
                     <a href="index.php?action=game" class="<?= $page === 'game' ? 'active' : '' ?>">Jeux</a>
-                    <ul class="sous">
-                        <li><a href="index.php?action=spaceInvaders" >Space Invaders</a></li>
+                    <ul class="under">
                         <li><a href="index.php?action=snake">Snake</a></li>
+                        <li><a href="index.php?action=battleship">Battleship</a></li>
+                        <li><a href="index.php?action=power4">Power 4</a></li>
                     </ul>
                 </li>
-                <li class="deroulant fromLeft menu">
+                <li class="drop fromLeft menu">
                     <a href="index.php?action=news"  class="<?= $page === 'news' ? 'active' : '' ?>">News</a>
-                    <ul class="sous">
-                        <!-- lien temporaire  -->
-                        <li><a href="index.php?action=article">article.php</a></li>
-                        <li><a href="index.php?action=error404">error404.php</a></li>
-                        <li><a href="index.php?action=usersModify">usersModify.php</a></li>
-                    </ul>
                 </li>
                 <li class="fromLeft menu">
                     <a href="index.php?action=about"  class="<?= $page === 'about' ? 'active' : '' ?>">A propos</a>
