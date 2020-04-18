@@ -29,6 +29,8 @@ include_once 'app/views/front/layouts/header.php';
 
         <section id=""></section>
 
+        <button onClick="battleshipSaveScore()">plop</button>
+
 </main>
 
 

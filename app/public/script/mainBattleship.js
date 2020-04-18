@@ -122,7 +122,7 @@ addEventListener("click", function(event) {
 
 function battleshipSaveScore() {
     var data = {
-       score_battleship: 2 
+       score_battleship: 2
     }
 
     fetch('index.php?action=playingBattleship', {
