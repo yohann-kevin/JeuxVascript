@@ -310,6 +310,13 @@ class ControllerFront {
         return $lastArticle;
     }
 
+    // affiche les six derniers articles sur la page home
+    function getLastArticleHome2() {
+        $displayLastArticle = new \Project\models\FrontManager();
+        $lastArticle = $displayLastArticle->getLastArticle2();
+        return $lastArticle;
+    }
+
     // affiche les derniers articles de la catégories indépendant
     function displayArticleInde() {
         $displayArticleInde = new \Project\models\FrontManager();

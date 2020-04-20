@@ -6,6 +6,9 @@ $infos = $adminInfos->displayInfo();
 
 $welcomes = new \Project\controllers\ControllerFront();
 $welcome = $welcomes->welcome();
+
+$displayLastArticle = new \Project\controllers\ControllerFront();
+$lastArticles = $displayLastArticle->getLastArticleHome2(); 
 ?>
     <main id="admin">
 
@@ -15,59 +18,17 @@ $welcome = $welcomes->welcome();
         </section>
         
         <section id="lastArticle"> 
+
+            <?php foreach ($lastArticles as $lastArticle): ?>
             <article class="adminArticle">
-                <img src="app/public/images/image/space.png" alt="space invaders" class="adminImg">
-                <h4 class="adminTitle">Lorem ipsum dolor sit</h4>
-                <p class="adminContent">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                    Similique ut nesciunt, dolores odio, 
-                    earum quidem praesentium impedit nam 
-                    fugiat odit quasi nulla veritatis blanditiis 
-                    obcaecati. Recusandae possimus fugiat veniam natus 
-                    ipsum, itaque assumenda laborum molestias...</p>
+                <img src="app/public/images/articles/<?= $lastArticle['images'] ?>" alt="<?= $lastArticle['images'] ?>" class="adminImg">
+                <h4 class="adminTitle"><?= $lastArticle['title'] ?></h4>
+                <p class="adminContent"><?= $lastArticle['extract'] ?></p>
                 <div class="buttonAdminArticle">
                     <a href="#" class="articleAdminLink">Read more...</a>
                 </div>
             </article>
-            <article class="adminArticle">
-                <img src="app/public/images/image/space.png" alt="space invaders" class="adminImg">
-                <h4 class="adminTitle">Lorem ipsum dolor sit</h4>
-                <p class="adminContent">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                    Similique ut nesciunt, dolores odio, 
-                    earum quidem praesentium impedit nam 
-                    fugiat odit quasi nulla veritatis blanditiis 
-                    obcaecati. Recusandae possimus fugiat veniam natus 
-                    ipsum, itaque assumenda laborum molestias...</p>
-                <div class="buttonAdminArticle">
-                    <a href="#" class="articleAdminLink">Read more...</a>
-                </div>
-            </article>
-            <article class="adminArticle">
-                <img src="app/public/images/image/space.png" alt="space invaders" class="adminImg">
-                <h4 class="adminTitle">Lorem ipsum dolor sit</h4>
-                <p class="adminContent">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                    Similique ut nesciunt, dolores odio, 
-                    earum quidem praesentium impedit nam 
-                    fugiat odit quasi nulla veritatis blanditiis 
-                    obcaecati. Recusandae possimus fugiat veniam natus 
-                    ipsum, itaque assumenda laborum molestias...</p>
-                <div class="buttonAdminArticle">
-                    <a href="#" class="articleAdminLink">Read more...</a>
-                </div>
-            </article>
-            <article class="adminArticle">
-                <img src="app/public/images/image/space.png" alt="space invaders" class="adminImg">
-                <h4 class="adminTitle">Lorem ipsum dolor sit</h4>
-                <p class="adminContent">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                    Similique ut nesciunt, dolores odio, 
-                    earum quidem praesentium impedit nam 
-                    fugiat odit quasi nulla veritatis blanditiis 
-                    obcaecati. Recusandae possimus fugiat veniam natus 
-                    ipsum, itaque assumenda laborum molestias...</p>
-                <div class="buttonAdminArticle">
-                    <a href="#" class="articleAdminLink">Read more...</a>
-                </div>
-            </article>
-        </section>
+            <?php endforeach ; ?>
 
         <section>
             <h3>Consulter les dernier commentaire de la communautée</h3>

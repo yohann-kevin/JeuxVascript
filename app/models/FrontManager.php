@@ -98,6 +98,14 @@ class FrontManager extends Manager {
         return $lastArticle;
     }
 
+    // récupère les six derniers articles pour la page d'accueil
+    public function getLastArticle2() {
+        $bdd = $this->dbConnect();
+        $lastArticle = $bdd->query("SELECT id, title, extract, content, images, created_date FROM articles ORDER BY created_date DESC LIMIT 6");
+        $lastArticle = $lastArticle->fetchAll();
+        return $lastArticle;
+    }
+
     //récupère les dernier articles de la cétgories indépendant
     public function getArticleInde() {
         $bdd = $this->dbConnect();
