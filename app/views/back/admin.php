@@ -1,10 +1,16 @@
 <?php include_once 'app/views/back/layouts/headAdmin.php'; ?>
 <?php include_once 'app/views/back/layouts/headerAdmin.php'; ?>
+<?php  
+$adminInfos = new \Project\controllers\ControllerBack();
+$infos = $adminInfos->displayInfo();
 
+$welcomes = new \Project\controllers\ControllerFront();
+$welcome = $welcomes->welcome();
+?>
     <main id="admin">
 
         <section>
-            <h2>Bienvenue</h2>
+            <h2><?= $welcome ?> <?= $infos['pseudo']?></h2>
             <h3>Consulter les derniers articles de la communauté</h3>
         </section>
         
