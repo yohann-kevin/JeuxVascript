@@ -48,4 +48,10 @@ class ControllerBack {
         }
     }
 
+    function displayInfo() {
+        $adminInfos = new \Project\models\BackManager();
+        $infos = $adminInfos->adminInfo();
+        return $infos;
+    }
+
 } 

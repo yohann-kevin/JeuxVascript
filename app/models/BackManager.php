@@ -17,4 +17,12 @@ class BackManager extends Manager {
         $login = $login->fetch();
         return $login;
     }
+
+    public function adminInfo() {
+        $bdd = $this->dbConnect();
+        $infos = $bdd->prepare('SELECT id, email, pseudo FROM admin WHERE id = ?');
+        $infos->execute([$_SESSION['admin']]);
+        $infos = $infos->fetch();
+        return $infos;        
+    }
 }
