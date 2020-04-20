@@ -18,6 +18,8 @@ try{
              $controllerBack -> writeBack();
         } elseif ($_GET['action'] == 'modify') {
             $controllerBack -> modifyBack();
+        } elseif ($_GET['action'] == 'adminLogin') {
+            $controllerBack -> loginAdmin();
         } 
 
     } else {
