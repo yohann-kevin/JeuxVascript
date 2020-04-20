@@ -9,6 +9,11 @@ $welcome = $welcomes->welcome();
 
 $displayLastArticle = new \Project\controllers\ControllerFront();
 $lastArticles = $displayLastArticle->getLastArticleHome2(); 
+
+$displayCom = new \Project\controllers\ControllerBack();
+$comments = $displayCom->displayCom(); 
+
+$date = new \Project\controllers\ControllerFront();
 ?>
     <main id="admin">
 
@@ -35,7 +40,20 @@ $lastArticles = $displayLastArticle->getLastArticleHome2();
         </section>
 
         <section id="adminCom"> 
+
+
+            <?php foreach ($comments as $comment): ?>
             <article class="adminComment">
+                <h4 class="adminComTitle">posté par <?= $comment['pseudo'] ?> le <?= $date->dateFormating($comment['created_date'])?></h4>
+                <p class="adminComContent"><?= $comment['content']?></p>
+                <div class="buttonAdminArticle">
+                    <a href="#" class="articleAdminLink">Read more...</a>
+                </div>
+            </article>
+            <?php endforeach ; ?>
+
+
+            <!-- <article class="adminComment">
                 <h4 class="adminComTitle">posté par plop le 24 mars 2020</h4>
                 <p class="adminComContent">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, tempora? 
                     Reiciendis omnis cum assumenda hic tempora suscipit fuga provident nihil libero!</p>
@@ -74,15 +92,7 @@ $lastArticles = $displayLastArticle->getLastArticleHome2();
                 <div class="buttonAdminArticle">
                     <a href="#" class="articleAdminLink">Read more...</a>
                 </div>
-            </article>
-            <article class="adminComment">
-                <h4 class="adminComTitle">posté par plop le 24 mars 2020</h4>
-                <p class="adminComContent">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, tempora? 
-                    Reiciendis omnis cum assumenda hic tempora suscipit fuga provident nihil libero!</p>
-                <div class="buttonAdminArticle">
-                    <a href="#" class="articleAdminLink">Read more...</a>
-                </div>
-            </article>
+            </article> -->
         </section>
     </main>
 

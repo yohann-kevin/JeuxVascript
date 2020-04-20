@@ -54,4 +54,10 @@ class ControllerBack {
         return $infos;
     }
 
+    function displayCom() {
+        $displayCom = new \Project\models\BackManager();
+        $comments = $displayCom->getComment();
+        return $comments;
+    }
+
 } 
