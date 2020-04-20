@@ -25,4 +25,11 @@ class BackManager extends Manager {
         $infos = $infos->fetch();
         return $infos;        
     }
+
+    public function getComment() {
+        $bdd = $this->dbConnect();
+        $comments = $bdd->query('SELECT comment.*, users.pseudo FROM comment INNER JOIN users ON comment.users_id = users.id ORDER BY created_date DESC LIMIT 9');
+        $comments = $comments->fetchAll();
+        return $comments;
+    }
 }
