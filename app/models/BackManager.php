@@ -9,4 +9,12 @@ class BackManager extends Manager {
         $req->execute(array());
         return $req;
     }
+
+    public function adminLogin($pseudo,$password) {
+        $bdd = $this->dbConnect();
+        $login = $bdd->prepare('SELECT id, password FROM admin WHERE pseudo = ?');
+        $login->execute([$pseudo]);
+        $login = $login->fetch();
+        return $login;
+    }
 }
