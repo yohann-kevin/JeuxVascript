@@ -41,4 +41,23 @@ class BackManager extends Manager {
         $article = $article->fetch();
         return $article;
     }
+
+    // permet de supprimer une image d'un article
+    public function deleteArticleImg() {
+        $bdd = $this->dbConnect();
+        $id = (int)$_GET['id'];
+        $image = $bdd->prepare("SELECT images FROM articles WHERE id = ?");
+        $image->execute([$id]);
+        $image = $image->fetch()["images"];
+        return $image;
+    }
+
+    // permet de supprimer un article
+    public function deleteArticle() {
+        $bdd = $this->dbConnect();
+        $id = (int)$_GET['id'];
+        $delete = $bdd->prepare("DELETE articles.* FROM articles WHERE id = ?");
+        $delete->execute([$id]);
+        return $delete;
+    }
 }

@@ -41,3 +41,42 @@
 #articlePara {
     padding: 15px;
 }
+
+#buttonArticleDelete {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+#buttonArticleDelete a {
+    padding: 10px;
+    width: 40%;
+    /* height: 40px; */
+    background-color: transparent;
+    color: #545454;
+    font-size: 1rem;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+}
+
+#buttonArticleDelete a:hover {
+    cursor: pointer;
+    color: white;
+    transition: color 1000ms ease;
+    -webkit-transition: color 1000ms ease;
+    -moz-transition: color 1000ms ease;
+    -ms-transition: color 1000ms ease;
+    -o-transition: color 1000ms ease;
+    background-color: #545454;
+    transition: background-color 1000ms ease;
+    -webkit-transition: background-color 1000ms ease;
+    -moz-transition: background-color 1000ms ease;
+    -ms-transition: background-color 1000ms ease;
+    -o-transition: background-color 1000ms ease;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
