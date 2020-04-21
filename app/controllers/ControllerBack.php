@@ -37,7 +37,7 @@ class ControllerBack {
     }
 
     function pageDeleteArticle() {
-        
+
         require 'app/views/back/deleteArticle.php';
     }
 
@@ -78,7 +78,6 @@ class ControllerBack {
     function article() {
         $displayArticle = new \Project\models\BackManager();
         $article = $displayArticle->getArticle();
-       
         if(empty($article)) { 
             require 'app/views/back/error404.php';
         } elseif(!empty($article)) {
@@ -87,10 +86,10 @@ class ControllerBack {
     }
 
     function deleteArticle() {
-        $article = new \Project\models\FrontManager();
+        $article = new \Project\models\BackManager();
         $image = $article->deleteArticleImg();
         unlink("app/public/images/articles/".$image);
-        $article = new \Project\models\FrontManager();
+        $article = new \Project\models\BackManager();
         $delete = $article->deleteArticle();
         return $delete;
     }
