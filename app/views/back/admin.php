@@ -23,7 +23,6 @@ $date = new \Project\controllers\ControllerFront();
         </section>
         
         <section id="lastArticle"> 
-
             <?php foreach ($lastArticles as $lastArticle): ?>
             <article class="adminArticle">
                 <img src="app/public/images/articles/<?= $lastArticle['images'] ?>" alt="<?= $lastArticle['images'] ?>" class="adminImg">
@@ -34,14 +33,13 @@ $date = new \Project\controllers\ControllerFront();
                 </div>
             </article>
             <?php endforeach ; ?>
-
+        </section>
+        
         <section>
             <h3>Consulter les dernier commentaire de la communautée</h3>
         </section>
 
         <section id="adminCom"> 
-
-
             <?php foreach ($comments as $comment): ?>
             <article class="adminComment">
                 <h4 class="adminComTitle">posté par <?= $comment['pseudo'] ?> le <?= $date->dateFormating($comment['created_date'])?></h4>
@@ -51,48 +49,6 @@ $date = new \Project\controllers\ControllerFront();
                 </div>
             </article>
             <?php endforeach ; ?>
-
-
-            <!-- <article class="adminComment">
-                <h4 class="adminComTitle">posté par plop le 24 mars 2020</h4>
-                <p class="adminComContent">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, tempora? 
-                    Reiciendis omnis cum assumenda hic tempora suscipit fuga provident nihil libero!</p>
-                <div class="buttonAdminArticle">
-                    <a href="#" class="articleAdminLink">Read more...</a>
-                </div>
-            </article>
-            <article class="adminComment">
-                <h4 class="adminComTitle">posté par plop le 24 mars 2020</h4>
-                <p class="adminComContent">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, tempora? 
-                    Reiciendis omnis cum assumenda hic tempora suscipit fuga provident nihil libero!</p>
-                <div class="buttonAdminArticle">
-                    <a href="#" class="articleAdminLink">Read more...</a>
-                </div>
-            </article>
-            <article class="adminComment">
-                <h4 class="adminComTitle">posté par plop le 24 mars 2020</h4>
-                <p class="adminComContent">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, tempora? 
-                    Reiciendis omnis cum assumenda hic tempora suscipit fuga provident nihil libero!</p>
-                <div class="buttonAdminArticle">
-                    <a href="#" class="articleAdminLink">Read more...</a>
-                </div>
-            </article>
-            <article class="adminComment">
-                <h4 class="adminComTitle">posté par plop le 24 mars 2020</h4>
-                <p class="adminComContent">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, tempora? 
-                    Reiciendis omnis cum assumenda hic tempora suscipit fuga provident nihil libero!</p>
-                <div class="buttonAdminArticle">
-                    <a href="#" class="articleAdminLink">Read more...</a>
-                </div>
-            </article>
-            <article class="adminComment">
-                <h4 class="adminComTitle">posté par plop le 24 mars 2020</h4>
-                <p class="adminComContent">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, tempora? 
-                    Reiciendis omnis cum assumenda hic tempora suscipit fuga provident nihil libero!</p>
-                <div class="buttonAdminArticle">
-                    <a href="#" class="articleAdminLink">Read more...</a>
-                </div>
-            </article> -->
         </section>
     </main>
 

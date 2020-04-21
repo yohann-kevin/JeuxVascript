@@ -20,6 +20,8 @@ try{
             $controllerBack -> modifyBack();
         } elseif ($_GET['action'] == 'adminLogin') {
             $controllerBack -> loginAdmin();
+        } elseif ($_GET['action'] == 'read') {
+            $controllerBack -> articleAdmin();
         } 
 
     } else {
