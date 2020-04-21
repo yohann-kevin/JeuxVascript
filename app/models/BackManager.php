@@ -60,4 +60,13 @@ class BackManager extends Manager {
         $delete->execute([$id]);
         return $delete;
     }
+
+    // permet de supprimer un commentaire
+    public function deleteCom() {
+        $bdd = $this->dbConnect();
+        $id = (int)$_GET['id'];
+        $deleteCom = $bdd->prepare("DELETE comment.* FROM comment WHERE id = ?");
+        $deleteCom->execute([$id]);
+        return $deleteCom;
+    }
 }

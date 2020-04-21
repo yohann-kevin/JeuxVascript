@@ -41,6 +41,11 @@ class ControllerBack {
         require 'app/views/back/deleteArticle.php';
     }
 
+    function pageDeleteComment() {
+
+        require 'app/views/back/deleteComment.php';
+    }
+
     function loginAdmin() {
         extract($_POST);
         $error = 'Les identifiants ne corespondent pas à nos enregistrements !';
@@ -92,6 +97,13 @@ class ControllerBack {
         $article = new \Project\models\BackManager();
         $delete = $article->deleteArticle();
         return $delete;
+    }
+
+    // permet a l'admin de supprimer un commentaire qu'il a poster
+    function deleteComment() {
+        $comment = new \Project\models\BackManager();
+        $comment = $comment->deleteCom();
+        return $comment;
     }
 
 } 

@@ -45,7 +45,7 @@ $date = new \Project\controllers\ControllerFront();
                 <h4 class="adminComTitle">posté par <?= $comment['pseudo'] ?> le <?= $date->dateFormating($comment['created_date'])?></h4>
                 <p class="adminComContent"><?= $comment['content']?></p>
                 <div class="buttonAdminArticle">
-                    <a href="#" class="articleAdminLink">Read more...</a>
+                    <a href="indexAdmin.php?action=deleteComment&id=<?= $comment['id'] ?>" class="articleAdminLink">Supprimer...</a>
                 </div>
             </article>
             <?php endforeach ; ?>
