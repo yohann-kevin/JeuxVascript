@@ -32,4 +32,13 @@ class BackManager extends Manager {
         $comments = $comments->fetchAll();
         return $comments;
     }
+
+    public function getArticle() {
+        $bdd = $this->dbConnect();
+        $id = (int)$_GET['id'];
+        $article = $bdd->prepare("SELECT articles.*, users.pseudo FROM articles INNER JOIN users ON articles.users_id = users.id WHERE articles.id = ? ");
+        $article->execute([$id]);
+        $article = $article->fetch();
+        return $article;
+    }
 }

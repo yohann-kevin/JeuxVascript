@@ -65,4 +65,15 @@ class ControllerBack {
         return $comments;
     }
 
+    function article() {
+        $displayArticle = new \Project\models\BackManager();
+        $article = $displayArticle->getArticle();
+       
+        if(empty($article)) { 
+            require 'app/views/front/error404.php';
+        } elseif(!empty($article)) {
+            return $article;     
+        }
+    }
+
 } 
