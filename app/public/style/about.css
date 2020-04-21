@@ -84,6 +84,29 @@
     cursor: pointer;
 }
 
+.imgAbout5 {
+    position: absolute;
+    margin-right: 75px;
+    right: 0;
+    z-index: 0;
+}
+
+.imgAbout5:hover {
+    cursor: pointer;
+}
+
+.imgAbout6 {
+    position: absolute;
+    margin-right: 75px;
+    right: 0;
+    z-index: 1;
+    display: none;
+}
+
+.imgAbout6:hover {
+    cursor: pointer;
+}
+
 
 
 /* .header {
