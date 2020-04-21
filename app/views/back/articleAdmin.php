@@ -18,6 +18,9 @@ $date = new \Project\controllers\ControllerFront();
                     <h4 id="articleTitle">posté par <?= $article['pseudo'] ?> le <?= $date->dateFormating($article['created_date'])?></h4>
                     <p id="articlePara"><?= $article['content'] ?></p>
                 </div>
+                <div id="buttonArticleDelete">
+                    <a href="indexAdmin.php?action=deleteArticle&id=<?=$article['id'] ?>">Supprimer...</a>
+                </div>
             </div>
         </section>
     </main>

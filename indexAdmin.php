@@ -22,6 +22,8 @@ try{
             $controllerBack -> loginAdmin();
         } elseif ($_GET['action'] == 'read') {
             $controllerBack -> articleAdmin();
+        } elseif ($_GET['action'] == 'deleteArticle') {
+            $controllerBack -> pageDeleteArticle();
         } 
 
     } else {

@@ -36,6 +36,11 @@ class ControllerBack {
         require 'app/views/back/error404.php';
     }
 
+    function pageDeleteArticle() {
+        
+        require 'app/views/back/deleteArticle.php';
+    }
+
     function loginAdmin() {
         extract($_POST);
         $error = 'Les identifiants ne corespondent pas à nos enregistrements !';
@@ -79,6 +84,15 @@ class ControllerBack {
         } elseif(!empty($article)) {
             return $article;     
         }
+    }
+
+    function deleteArticle() {
+        $article = new \Project\models\FrontManager();
+        $image = $article->deleteArticleImg();
+        unlink("app/public/images/articles/".$image);
+        $article = new \Project\models\FrontManager();
+        $delete = $article->deleteArticle();
+        return $delete;
     }
 
 } 
