@@ -26,6 +26,11 @@ class ControllerBack {
         require 'app/views/back/adminWrite.php';
     }
 
+    function articleAdmin() {
+
+        require 'app/views/back/articleAdmin.php';
+    }
+
     function loginAdmin() {
         extract($_POST);
         $error = 'Les identifiants ne corespondent pas à nos enregistrements !';

@@ -18,7 +18,6 @@ if(!empty($_POST)){
     $commentPost = new \Project\controllers\ControllerFront();
     $error = $commentPost->postCom(); 
 }
-
 ?>
     <?php if(!empty($article)) : ?>
     <main id="pageArticle">

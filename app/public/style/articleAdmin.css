@@ -1,0 +1,43 @@
+#pageArticleAdmin {
+    padding-top: 155px;
+    background-color: #efefef;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#adminArticleSingle {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 35px;
+}
+
+#articleSingle {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#articleImg {
+    width: 40%;
+    height: 300px;
+    margin-bottom: 35px;
+}
+
+#articleImg:hover {
+    cursor: pointer;
+}
+
+#articleContent {
+    width: 40%;
+}
+
+#articleTitle {
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+#articlePara {
+    padding: 15px;
+}

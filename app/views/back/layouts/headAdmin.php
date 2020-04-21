@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="app/public/style/admin.css">
     <link rel="stylesheet" href="app/public/style/adminWrite.css">
     <link rel="stylesheet" href="app/public/style/adminModify.css">
+    <link rel="stylesheet" href="app/public/style/articleAdmin.css">
     <!-- <link rel="stylesheet" href="app/public/style/home.css"> -->
     <link rel="stylesheet" href="app/public/style/footer.css">
     <!-- icône -->
