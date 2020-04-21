@@ -24,6 +24,8 @@ try{
             $controllerBack -> articleAdmin();
         } elseif ($_GET['action'] == 'deleteArticle') {
             $controllerBack -> pageDeleteArticle();
+        } elseif ($_GET['action'] == 'deleteComment') {
+            $controllerBack -> pageDeleteComment();
         } 
 
     } else {
