@@ -31,6 +31,11 @@ class ControllerBack {
         require 'app/views/back/articleAdmin.php';
     }
 
+    function error404() {
+        
+        require 'app/views/back/error404.php';
+    }
+
     function loginAdmin() {
         extract($_POST);
         $error = 'Les identifiants ne corespondent pas à nos enregistrements !';
@@ -70,7 +75,7 @@ class ControllerBack {
         $article = $displayArticle->getArticle();
        
         if(empty($article)) { 
-            require 'app/views/front/error404.php';
+            require 'app/views/back/error404.php';
         } elseif(!empty($article)) {
             return $article;     
         }
