@@ -22,8 +22,8 @@ $description = "Vous souhaitez en savoir plus surun de nos jeux ? Ou sur JeuxVas
             <article class="articleAbout">
                 <div class="headerArticleAbout">
                     <h1 class="articleAboutTitle">Lorem ipsum dolor sit amet </h1>
-                    <img class="imgAbout1" src="app/public/images/logo/bottom.png" onclick="displayAbout()">
-                    <img class="imgAbout2" src="app/public/images/logo/left.png" onclick="displayAbout2()">
+                    <img class="imgAbout1" src="app/public/images/logo/bottom.png">
+                    <img class="imgAbout2" src="app/public/images/logo/left.png">
                 </div>
                 <p class="paraAbout1">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Laboriosam non debitis assumenda! Deleniti accusantium eaque
@@ -58,10 +58,46 @@ $description = "Vous souhaitez en savoir plus surun de nos jeux ? Ou sur JeuxVas
             <article class="articleAbout">
                 <div class="headerArticleAbout">
                     <h1 class="articleAboutTitle">Lorem ipsum dolor sit amet </h1>
-                    <img class="imgAbout3" src="app/public/images/logo/bottom.png" onclick="displayAbout3()">
-                    <img class="imgAbout4" src="app/public/images/logo/left.png" onclick="displayAbout4()">
+                    <img class="imgAbout3" src="app/public/images/logo/bottom.png">
+                    <img class="imgAbout4" src="app/public/images/logo/left.png">
                 </div>
                 <p class="paraAbout2">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Laboriosam non debitis assumenda! Deleniti accusantium eaque
+                optio ullam natus laudantium qui, laborum officiis provident
+                est necessitatibus.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Laboriosam non debitis assumenda! Deleniti accusantium eaque
+                optio ullam natus laudantium qui, laborum officiis provident
+                est necessitatibus.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Laboriosam non debitis assumenda! Deleniti accusantium eaque
+                optio ullam natus laudantium qui, laborum officiis provident
+                est necessitatibus.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Laboriosam non debitis assumenda! Deleniti accusantium eaque
+                optio ullam natus laudantium qui, laborum officiis provident
+                est necessitatibus.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Laboriosam non debitis assumenda! Deleniti accusantium eaque
+                optio ullam natus laudantium qui, laborum officiis provident
+                est necessitatibus.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Laboriosam non debitis assumenda! Deleniti accusantium eaque
+                optio ullam natus laudantium qui, laborum officiis provident
+                est necessitatibus.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Laboriosam non debitis assumenda! Deleniti accusantium eaque
+                optio ullam natus laudantium qui, laborum officiis provident
+                est necessitatibus.</p>
+            </article>
+
+            <article class="articleAbout">
+                <div class="headerArticleAbout">
+                    <h1 class="articleAboutTitle">Lorem ipsum dolor sit amet </h1>
+                    <img class="imgAbout5" src="app/public/images/logo/bottom.png">
+                    <img class="imgAbout6" src="app/public/images/logo/left.png">
+                </div>
+                <p class="paraAbout3">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Laboriosam non debitis assumenda! Deleniti accusantium eaque
                 optio ullam natus laudantium qui, laborum officiis provident
                 est necessitatibus.
