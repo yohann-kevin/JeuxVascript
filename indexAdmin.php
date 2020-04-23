@@ -23,6 +23,8 @@ try{
             $controllerBack -> pageDeleteArticle();
         } elseif ($_GET['action'] == 'deleteComment') {
             $controllerBack -> pageDeleteComment();
+        } elseif ($_GET['action'] == 'registerAdmin') {
+            $controllerBack -> registerAdmin();
         } 
 
     } else {

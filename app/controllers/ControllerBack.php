@@ -48,12 +48,12 @@ class ControllerBack {
         $loginAdmin = new \Project\models\BackManager();
         $login = $loginAdmin->adminLogin($pseudo,$password);
 
-        // if(password_verify($password, $login['password'])) {
-        //     $_SESSION['admin'] = $login['id'];
-        //     require 'app/views/back/admin.php';
-        // } else {
-        //     return $error;
-        // }
+        if(password_verify($password, $login['password'])) {
+            $_SESSION['admin'] = $login['id'];
+            require 'app/views/back/admin.php';
+        } else {
+            return $error;
+        }
 
         if($password && $pseudo) {
             $_SESSION['admin'] = $login['id'];
@@ -99,6 +99,30 @@ class ControllerBack {
         $comment = new \Project\models\BackManager();
         $comment = $comment->deleteCom();
         return $comment;
+    }
+
+    function registerAdmin() {
+        extract($_POST);
+        $validation = true;
+        $errors = [];
+
+        if(empty($pseudo) || empty($email) || empty($password) ){
+            $validation = false;
+            $errors[] = 'Tous les champs sont obligatoires !!!'; 
+        }
+
+        if($verifyPassword != $password){
+            $validation = false;
+            $errors[] = 'le mot de passe de confirmation est incorrect !!!';
+        }
+
+        if($validation){
+            $register = new \Project\models\BackManager();
+            $usersRegister = $register->adminRegister($email,$pseudo,$password);
+            $this->login();
+            unset($_POST['pseudo']);
+            unset($_POST['email']);
+        }
     }
 
 } 
