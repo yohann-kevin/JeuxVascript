@@ -9,8 +9,7 @@
     <link rel="stylesheet" href="app/public/style/headerAdmin.css">
     <link rel="stylesheet" href="app/public/style/login.css">
     <link rel="stylesheet" href="app/public/style/admin.css">
-    <link rel="stylesheet" href="app/public/style/adminWrite.css">
-    <link rel="stylesheet" href="app/public/style/adminModify.css">
+    <link rel="stylesheet" href="app/public/style/settingsAdmin.css">
     <link rel="stylesheet" href="app/public/style/articleAdmin.css">
     <link rel="stylesheet" href="app/public/style/error404.css">
     <!-- <link rel="stylesheet" href="app/public/style/home.css"> -->

@@ -40,17 +40,17 @@ include_once 'app/views/front/layouts/header.php';
                 <?php endif; endif ?>
                 
                 <div id="pseudoRegister">
-                    <label from="emailContact">Votre email</label>
+                    <label for="emailContact">Votre email</label>
                     <input id="emailContact" name="email" type="email" placeholder="Email" values="<?php if(isset($_POST['email']))echo $_POST['email'] ?>">
-                    <label from="firstNameContact">Votre pseudo</label>
+                    <label for="firstNameContact">Votre pseudo</label>
                     <input id="firstNameContact" name="pseudo" type="text" placeholder="First name" values="<?php if(isset($_POST['Pseudo']))echo $_POST['Pseudo'] ?>">
                    
                 </div>
 
                 <div id="passwordRegister">
-                    <label from="passwordRegister">Votre mot de passe</label>
+                    <label for="passwordRegister">Votre mot de passe</label>
                     <input id="passwordRegister" name="password" type="password" placeholder="password">
-                    <label from="verifyPasswordRegister">Confirmer votre mot de passe</label>
+                    <label for="verifyPasswordRegister">Confirmer votre mot de passe</label>
                     <input id="verifyPasswordRegister" name="verifyPassword" type="password" placeholder="password">
                 </div>
 
