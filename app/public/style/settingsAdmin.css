@@ -1,37 +1,54 @@
-#pageAdminWrite {
-    padding-top: 155px;
+#settings {
+    padding-top: 120px;
     background-color: #efefef;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    width: 100%;
 }
 
-#adminWriteTitle {
-    width: 100%;
+#settings section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#headerSettings {
+    width: 70%;
+    padding: 25px;
     text-align: center;
 }
 
-#formAdminWrite {
-    width: 100%;
+#headerSettings h1 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+
+#headerSettings h2 {
+    font-size: 1.1rem;
+}
+
+#newAdmin {
+    width: 70%;
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
-    margin-top: 45px;
-    margin-bottom: 45px;
+    justify-content: space-around;
 }
 
-#adminWriteName {
-    width: 25%;
-    padding: 25px;
+#addAdmin {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-#adminWriteName label {
-    width: 100%;
+#addAdmin label{
+    width: 80%;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
-#adminWriteName input {
-    width: 100%;
-    margin-top: 35px;
+#addAdmin input {
+    width: 50%;
     height: 35px;
     border: 1px solid #efefef;
     border-radius: 5px;
@@ -41,7 +58,7 @@
     -o-border-radius: 5px;
 }
 
-#adminWriteName input:focus {
+#addAdmin input:focus {
     transform: scale(1.15);
     -webkit-transform: scale(1.15);
     -moz-transform: scale(1.15);
@@ -54,71 +71,16 @@
     -o-transition: transform 250ms ease;
 }
 
-#adminSelectImg {
-    width: 25%;
-    padding: 25px;
-}
-
-#adminSelectImg label {
+#settingsButton {
     width: 100%;
-}
-
-#adminSelectImg input {
-    width: 100%;
-    margin-top: 35px;
-    padding-left: 35px;
-}
-
-#adminWriteContent {
-    width: 70%;
-    margin-top: 45px;
-}
-
-#adminWriteContent label {
-    width: 100%;
-}
-
-#adminWriteContent textarea {
-    width: 100%;
-    height: 150px;
-    margin-top: 35px;
-    border: 1px solid #efefef;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-}
-
-#adminWriteContent textarea:focus {
-    transform: scale(1.15);
-    -webkit-transform: scale(1.15);
-    -moz-transform: scale(1.15);
-    -ms-transform: scale(1.15);
-    -o-transform: scale(1.15);
-    transition: transform 250ms ease;
-    -webkit-transition: transform 250ms ease;
-    -moz-transition: transform 250ms ease;
-    -ms-transition: transform 250ms ease;
-    -o-transition: transform 250ms ease; 
-    height: 300px;
-    transition: height 250ms ease;
-    -webkit-transition: height 250ms ease;
-    -moz-transition: height 250ms ease;
-    -ms-transition: height 250ms ease;
-    -o-transition: height 250ms ease;
-}
-
-#buttonAdminWrite {
-    margin-top: 75px;
-    width: 60%;
+    margin: 20px;
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-#buttonAdminWrite button {
-    width: 20%;
+#settingsButton button {
+    width: 25%;
     height: 30px;
     border: 1px solid #efefef;
     border-radius: 5px;
@@ -130,9 +92,53 @@
     color: white;
 }
 
-#buttonAdminWrite button:hover {
+#settingsButton button:hover {
     cursor: pointer;
     color: #ff9d00;
+    transform: scale(1.15);
+    -webkit-transform: scale(1.15);
+    -moz-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    -o-transform: scale(1.15);
+    transition: color 250ms ease;
+    -webkit-transition: color 250ms ease;
+    -moz-transition: color 250ms ease;
+    -ms-transition: color 250ms ease;
+    -o-transition: color 250ms ease;
+    transition: transform 250ms ease;
+    -webkit-transition: transform 250ms ease;
+    -moz-transition: transform 250ms ease;
+    -ms-transition: transform 250ms ease;
+    -o-transition: transform 250ms ease;
+}
+
+#deleteAdmin {
+    width: 70%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-top: 3px solid #545454;
+}
+
+#deleteAdmin button{
+    width: 25%;
+    height: 30px;
+    border: 1px solid #efefef;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    background-color: #ff9d00;
+    color: #545454;
+}
+
+#deleteAdmin button:hover {
+    cursor: pointer;
+    color: #ffffff;
     transform: scale(1.15);
     -webkit-transform: scale(1.15);
     -moz-transform: scale(1.15);

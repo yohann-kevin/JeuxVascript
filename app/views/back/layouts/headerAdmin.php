@@ -19,8 +19,7 @@
         <nav id="navAdmin">
             <ul>
                 <li class="fromLeft"><a href="indexAdmin.php?action=admin">Admin</a></li>
-                <li class="fromLeft"><a href="indexAdmin.php?action=write">Rédiger</a></li>
-                <li class="fromLeft"><a href="indexAdmin.php?action=modify">Modifier</a></li>
+                <li class="fromLeft"><a href="indexAdmin.php?action=settings">Settings</a></li>
             </ul>
         </nav>
         

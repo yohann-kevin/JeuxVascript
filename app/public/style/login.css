@@ -1,6 +1,7 @@
 #adminLogin {
     width: 100%;
-    padding-top: 155px;
+    height: 100vh;
+    /* padding-top: 155px; */
     background-color: #ff9d00;
     display: flex;
     justify-content: space-around;

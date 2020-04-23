@@ -10,9 +10,10 @@
 }
 
 #navAdmin {
-    width: 40%;
+    width: 30%;
 }
 
 #navAdmin li {
-    width: 30%;
+    width: 45%;
+    margin-left: 10px;
 }

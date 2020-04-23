@@ -16,14 +16,9 @@ class ControllerBack {
         require 'app/views/back/admin.php';
     }
 
-    function modifyBack() {
+    function pageSettings() {
 
-        require 'app/views/back/adminModify.php';
-    }
-
-    function writeBack() {
-
-        require 'app/views/back/adminWrite.php';
+        require 'app/views/back/settings.php';
     }
 
     function articleAdmin() {
