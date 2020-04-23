@@ -50,14 +50,13 @@ class ControllerBack {
 
         if(password_verify($password, $login['password'])) {
             $_SESSION['admin'] = $login['id'];
-            require 'app/views/back/admin.php';
+            $this->adminBack();
         } else {
             return $error;
         }
 
         if($password && $pseudo) {
             $_SESSION['admin'] = $login['id'];
-            $this->adminBack();
         } else {
             return $error;
         }
@@ -123,6 +122,13 @@ class ControllerBack {
             unset($_POST['pseudo']);
             unset($_POST['email']);
         }
+    }
+
+    // déconnecte l'administrateur
+    function logout() {
+        unset($_SESSION['admin']);
+        session_destroy();
+        $this->login();
     }
 
 } 

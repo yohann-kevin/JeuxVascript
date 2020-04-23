@@ -25,6 +25,8 @@ try{
             $controllerBack -> pageDeleteComment();
         } elseif ($_GET['action'] == 'registerAdmin') {
             $controllerBack -> registerAdmin();
+        } elseif ($_GET['action'] == 'disconnect') {
+            $controllerBack -> logout();
         } 
 
     } else {
