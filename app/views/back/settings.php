@@ -1,10 +1,8 @@
 <?php include_once 'app/views/back/layouts/headAdmin.php'; ?>
 <?php include_once 'app/views/back/layouts/headerAdmin.php'; ?>
 <?php
-// if(!empty($_POST)){
-//     $register = new \Project\controllers\ControllerBack();
-//     $errors = $register->registerAdmin();
-// }
+$adminInfos = new \Project\controllers\ControllerBack();
+$infos = $adminInfos->displayInfo();
 ?>
 
 <main id="settings">
@@ -48,7 +46,7 @@
             </form>
         </article>
         <article id="deleteAdmin">
-            <button>Supprimer mon compte</button>
+            <a href="indexAdmin.php?action=deleteAdmin&id=<?=$infos['id'] ?>">Supprimer mon compte</a>
         </article>
     </section>
 </main>

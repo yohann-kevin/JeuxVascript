@@ -27,6 +27,8 @@ try{
             $controllerBack -> registerAdmin();
         } elseif ($_GET['action'] == 'disconnect') {
             $controllerBack -> logout();
+        } elseif ($_GET['action'] == 'deleteAdmin') {
+            $controllerBack -> pageDeleteAdmin();
         } 
 
     } else {

@@ -41,6 +41,11 @@ class ControllerBack {
         require 'app/views/back/deleteComment.php';
     }
 
+    function pageDeleteAdmin() {
+        
+        require 'app/views/back/deleteAdmin.php';
+    }
+
     function loginAdmin() {
         extract($_POST);
         $error = 'Les identifiants ne corespondent pas à nos enregistrements !';
@@ -129,6 +134,14 @@ class ControllerBack {
         unset($_SESSION['admin']);
         session_destroy();
         $this->login();
+    }
+
+    function deleteAdmin() {
+        $admin = new \Project\models\BackManager();
+        $adminDelete = $admin->deleteAdmin();
+        unset($_SESSION['admin']);
+        session_destroy();
+        return $adminDelete;
     }
 
 } 
