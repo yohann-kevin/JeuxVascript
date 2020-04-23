@@ -1,6 +1,5 @@
 <body>
     <header id="headerAdmin">
-        <!-- <img src="Jeuxvacsript.png" alt="Jeuxvacsript"> -->
         <div id="logo">
             <a href="indexAdmin.php?action=admin">
                 <img src="app/public/images/logo/admin.png" alt="Jeuxvacsript">
@@ -20,6 +19,7 @@
             <ul>
                 <li class="fromLeft"><a href="indexAdmin.php?action=admin">Admin</a></li>
                 <li class="fromLeft"><a href="indexAdmin.php?action=settings">Settings</a></li>
+                <li class="fromLeft"><a href="indexAdmin.php?action=disconnect">déconnexion</a></li>
             </ul>
         </nav>
         
