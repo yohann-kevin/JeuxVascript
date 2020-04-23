@@ -80,4 +80,12 @@ class BackManager extends Manager {
         ]);
         return $register;
     }
+
+    public function deleteAdmin() {
+        $bdd = $this->dbConnect();
+        $id = (int)$_GET['id'];
+        $deleteAdmin = $bdd->prepare("DELETE admin.* FROM admin WHERE id = ?");
+        $deleteAdmin->execute([$id]);
+        return $deleteAdmin;
+    }
 }

@@ -123,9 +123,12 @@
     border-top: 3px solid #545454;
 }
 
-#deleteAdmin button{
+#deleteAdmin a{
     width: 25%;
     height: 30px;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 10px;
     border: 1px solid #efefef;
     border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -136,7 +139,7 @@
     color: #545454;
 }
 
-#deleteAdmin button:hover {
+#deleteAdmin a:hover {
     cursor: pointer;
     color: #ffffff;
     transform: scale(1.15);
