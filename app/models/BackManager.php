@@ -69,4 +69,15 @@ class BackManager extends Manager {
         $deleteCom->execute([$id]);
         return $deleteCom;
     }
+
+    public function adminRegister($email,$pseudo,$password) {
+        $bdd = $this->dbConnect();
+        $register = $bdd->prepare('INSERT INTO admin(email, pseudo, password) VALUES (:email, :pseudo, :password)');
+        $register->execute([
+            'email' => htmlentities($email),
+            'pseudo' => htmlentities($pseudo),
+            'password' => password_hash($password, PASSWORD_DEFAULT)
+        ]);
+        return $register;
+    }
 }
