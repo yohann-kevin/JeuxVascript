@@ -16,8 +16,6 @@ function Counter(id, index, speed, limit) {
 
 }
 
-window.onload = function () {
-    new Counter('c1', 0, 25, 100);
-    new Counter('c2', 0, 50, 50);
-    new Counter('c3', 0, 100, 24);
-}
+new Counter('c1', 0, 25, 100);
+new Counter('c2', 0, 50, 50);
+new Counter('c3', 0, 100, 24);
