@@ -17,16 +17,16 @@ include_once 'app/views/front/layouts/header.php';
             
     </section>
 
-    <section id="successPower4">
-        
-    </section>
-
     <section id="j1"></section>
         
     <section id="power4"></section>
 
     <section id="j2"></section> 
 
+    <section id="successPower4">
+        
+    </section>
+    
 </main>
 
 

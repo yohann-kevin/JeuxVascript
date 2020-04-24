@@ -5,9 +5,8 @@ window.onload = function () {
     startSnake();    
 }
 
-
 var canvasWidth = 900; //taille du canvas
-var canvasHeight = 600; //taille du canvas
+var canvasHeight = 500; //taille du canvas
 var blockSize = 30; //taille d'un block
 var ctx;
 var delay = 100; //delay de rafraichissement de la page
@@ -38,8 +37,8 @@ function startSnake() {
     ctx.strokeText("Game Over", centerX, centerY - 180);
     ctx.fillText("Game Over", centerX, centerY - 180);
     ctx.font = "bold 30px Verdana";
-    ctx.strokeText("Appuyer sur la touche espace pour jouer", centerX, centerY - 120);
-    ctx.fillText("Appuyer sur la touche espace pour jouer", centerX, centerY - 120);
+    ctx.strokeText("Appuyer sur la touche entrée pour jouer", centerX, centerY - 120);
+    ctx.fillText("Appuyer sur la touche entrée pour jouer", centerX, centerY - 120);
     ctx.restore();
 }
 
@@ -101,8 +100,8 @@ function gameOver() {
     ctx.strokeText("Game Over", centerX, centerY - 180);
     ctx.fillText("Game Over", centerX, centerY - 180);
     ctx.font = "bold 30px Verdana";
-    ctx.strokeText("Appuyer sur la touche espace pour rejouer", centerX, centerY - 120)
-    ctx.fillText("Appuyer sur la touche espace pour rejouer", centerX, centerY - 120)
+    ctx.strokeText("Appuyer sur la touche entrée pour rejouer", centerX, centerY - 120)
+    ctx.fillText("Appuyer sur la touche entrée pour rejouer", centerX, centerY - 120)
     ctx.restore();
 }
 
@@ -280,6 +279,7 @@ function Apple(position) {
 //associe les touches a des directions
 document.onkeydown = function handleKeyDown(e) {
     var key = e.keyCode;
+    console.log(e.keyCode);
     var newDirection;
     switch (key) {
         case 81:
@@ -294,7 +294,7 @@ document.onkeydown = function handleKeyDown(e) {
         case 83:
             newDirection = "down";      //déplacement bas
             break;
-        case 32:
+        case 13:
             restart();
             return;
         default:
