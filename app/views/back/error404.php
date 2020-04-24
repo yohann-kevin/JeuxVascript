@@ -1,3 +1,4 @@
+<?php $page = 'error404' ?>
 <?php require_once 'app/views/back/layouts/headAdmin.php'; ?>
 <?php include_once 'app/views/back/layouts/headerAdmin.php'; ?>
 
