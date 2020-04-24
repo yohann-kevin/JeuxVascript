@@ -17,3 +17,8 @@
     width: 30%;
     margin-left: 10px;
 }
+
+.active {
+    color: #545454;
+    font-weight: bold;
+}
