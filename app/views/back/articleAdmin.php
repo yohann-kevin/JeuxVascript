@@ -1,3 +1,4 @@
+<?php $page = 'article' ?>
 <?php include_once 'app/views/back/layouts/headAdmin.php'; ?>
 <?php include_once 'app/views/back/layouts/headerAdmin.php'; ?>
 <?php  
