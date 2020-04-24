@@ -17,8 +17,8 @@
         </script>
         <nav id="navAdmin">
             <ul>
-                <li class="fromLeft"><a href="indexAdmin.php?action=admin">Admin</a></li>
-                <li class="fromLeft"><a href="indexAdmin.php?action=settings">Settings</a></li>
+                <li class="fromLeft"><a href="indexAdmin.php?action=admin" class="<?= $page === 'admin' ? 'active' : '' ?>">Admin</a></li>
+                <li class="fromLeft"><a href="indexAdmin.php?action=settings" class="<?= $page === 'settings' ? 'active' : '' ?>">Settings</a></li>
                 <li class="fromLeft"><a href="indexAdmin.php?action=disconnect">déconnexion</a></li>
             </ul>
         </nav>
