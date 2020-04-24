@@ -10,8 +10,7 @@
 
 #headerPower4 {
     width: 100%;
-    background-color: rgb(37, 37, 88);
-    color: white;
+    color: #545454;
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -28,7 +27,7 @@
 }
 
 #headerPower4 input {
-    color: white;
+    color: #545454;
 }
 
 #successPower4 {
@@ -54,7 +53,7 @@
 }
 
 #j1, #j2 {
-    width: 20%;
+    width: 10%;
     text-align: center;
     padding-top: 225px;
     font-size: 2rem;
@@ -62,7 +61,7 @@
 }
 
 #power4 {
-    width: 60%;
+    width: 55%;
     display: flex;
     justify-content: center;
     margin-top: 25px;

@@ -10,8 +10,7 @@
 
 #headerBattleship {
     width: 100%;
-    background-color: rgb(35, 190, 118);
-    color: white;
+    color: #545454;
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
