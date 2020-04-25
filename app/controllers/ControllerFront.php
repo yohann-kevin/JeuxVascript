@@ -8,7 +8,8 @@ class ControllerFront {
 
         $homeFront = new \Project\models\FrontManager();
         $accueil = $homeFront->viewFront();
-
+        $lastArticles = $this->getLastArticleHome(); 
+        $articleIndes = $this->displayArticleInde(); 
         require 'app/views/front/home.php';
     }
 
@@ -19,6 +20,7 @@ class ControllerFront {
 
     function newsFront() {
 
+        $articles = $this->displayArticles(); 
         require 'app/views/front/news.php';
     }
     
@@ -44,6 +46,9 @@ class ControllerFront {
 
     function articleFront() {
 
+        $comments = $this->displayCom(); 
+        $article = $this->article(); 
+        $date = new \Project\controllers\ControllerFront();
         require 'app/views/front/article.php';
     }
 
@@ -76,11 +81,17 @@ class ControllerFront {
 
     function accountFront() {
 
+        $infos = $this->displayInfo();
+        $welcome = $this->welcome();
+        $usersLastArticles = $this->displayLastUsersArticle();
+        $usersLastComments = $this->displayLastCom();
+        $date = new \Project\controllers\ControllerFront();
         require 'app/views/front/account.php';
     }
 
     function userSettingsFront() {
 
+        $infos = $this->displayInfo();
         require 'app/views/front/userSettings.php';
     }
 
@@ -96,6 +107,7 @@ class ControllerFront {
 
     function usersModifyFront() {
 
+        $article = $this->article(); 
         require 'app/views/front/usersModify.php';
     }
 

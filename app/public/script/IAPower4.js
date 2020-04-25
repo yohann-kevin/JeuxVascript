@@ -77,33 +77,33 @@ var IA = {
      */
     verifyWinLine : function(line,column,players) {
         var counter = 1;
-        // if(power4.puissance4[line][column + 1] === players) {
-        //     counter++;
-        //     if(power4.puissance4[line][column + 2] === players) {
-        //         counter++;
-        //         if(power4.puissance4[line][column + 3] === players) {
-        //             counter++;
-        //         }
-        //     }
-        // }
-        // if(power4.puissance4[line][column - 1] === players) {
-        //     counter++;
-        //     if(power4.puissance4[line][column - 2] === players) {
-        //         counter++;
-        //         if(power4.puissance4[line][column - 3] === players) {
-        //             counter++;
-        //         }
-        //     }
-        // }
-        if(power4.puissance4[line][column + 1] === players || power4.puissance4[line][column - 1] === players) {
+        if(power4.puissance4[line][column + 1] === players) {
             counter++;
-            if(power4.puissance4[line][column + 2] === players || power4.puissance4[line][column - 2] === players) {
+            if(power4.puissance4[line][column + 2] === players) {
                 counter++;
-                if(power4.puissance4[line][column + 3] === players || power4.puissance4[line][column - 3] === players) {
+                if(power4.puissance4[line][column + 3] === players) {
                     counter++;
                 }
             }
         }
+        if(power4.puissance4[line][column - 1] === players) {
+            counter++;
+            if(power4.puissance4[line][column - 2] === players) {
+                counter++;
+                if(power4.puissance4[line][column - 3] === players) {
+                    counter++;
+                }
+            }
+        }
+        // if(power4.puissance4[line][column + 1] === players || power4.puissance4[line][column - 1] === players) {
+        //     counter++;
+        //     if(power4.puissance4[line][column + 2] === players || power4.puissance4[line][column - 2] === players) {
+        //         counter++;
+        //         if(power4.puissance4[line][column + 3] === players || power4.puissance4[line][column - 3] === players) {
+        //             counter++;
+        //         }
+        //     }
+        // }
 
         if( counter > 3 ) return true;
     },
@@ -138,62 +138,62 @@ var IA = {
      */
     verifyWinDiagonal : function(line,column,players) {
         var counter = 1;
-        // if((line-1 >=0) && (column+1 <= power4.nbColumn) && power4.puissance4[line-1][column+1] === players){
-        //     counter++;
-        //     if((line-2 >=0) && (column+2 <= power4.nbColumn) && power4.puissance4[line-2][column+2] === players){
-        //         counter++;
-        //         if((line-3 >=0) && (column+3 <= power4.nbColumn) && power4.puissance4[line-3][column+3] === players){
-        //             counter++;
-        //         }
-        //     }
-        // }
-        // if((line+1 < power4.nbLine) && (column-1 >= 0) && power4.puissance4[line+1][column-1] === players){
-        //     counter++;
-        //     if((line+2 < power4.nbLine) && (column-2 >= 0) && power4.puissance4[line+2][column-2] === players){
-        //         counter++;
-        //         if((line+3 < power4.nbLine) && (column-3 >= 0) && power4.puissance4[line+3][column-3] === players){
-        //             counter++;
-        //         }
-        //     }
-        // }
-        if(((line-1 >=0) && (column+1 <= power4.nbColumn) && power4.puissance4[line-1][column+1] === players) || ((line+1 < power4.nbLine) && (column-1 >= 0) && power4.puissance4[line+1][column-1] === players)) {
+        if((line-1 >=0) && (column+1 <= power4.nbColumn) && power4.puissance4[line-1][column+1] === players){
             counter++;
-            if(((line-2 >=0) && (column+2 <= power4.nbColumn) && power4.puissance4[line-2][column+2] === players) || ((line+2 < power4.nbLine) && (column-2 >= 0) && power4.puissance4[line+2][column-2] === players)) {
+            if((line-2 >=0) && (column+2 <= power4.nbColumn) && power4.puissance4[line-2][column+2] === players){
                 counter++;
-                if(((line-3 >=0) && (column+3 <= power4.nbColumn) && power4.puissance4[line-3][column+3] === players) || ((line+3 < power4.nbLine) && (column-3 >= 0) && power4.puissance4[line+3][column-3] === players)) {
+                if((line-3 >=0) && (column+3 <= power4.nbColumn) && power4.puissance4[line-3][column+3] === players){
                     counter++;
                 }
             }
         }
+        if((line+1 < power4.nbLine) && (column-1 >= 0) && power4.puissance4[line+1][column-1] === players){
+            counter++;
+            if((line+2 < power4.nbLine) && (column-2 >= 0) && power4.puissance4[line+2][column-2] === players){
+                counter++;
+                if((line+3 < power4.nbLine) && (column-3 >= 0) && power4.puissance4[line+3][column-3] === players){
+                    counter++;
+                }
+            }
+        }
+        // if(((line-1 >=0) && (column+1 <= power4.nbColumn) && power4.puissance4[line-1][column+1] === players) || ((line+1 < power4.nbLine) && (column-1 >= 0) && power4.puissance4[line+1][column-1] === players)) {
+        //     counter++;
+        //     if(((line-2 >=0) && (column+2 <= power4.nbColumn) && power4.puissance4[line-2][column+2] === players) || ((line+2 < power4.nbLine) && (column-2 >= 0) && power4.puissance4[line+2][column-2] === players)) {
+        //         counter++;
+        //         if(((line-3 >=0) && (column+3 <= power4.nbColumn) && power4.puissance4[line-3][column+3] === players) || ((line+3 < power4.nbLine) && (column-3 >= 0) && power4.puissance4[line+3][column-3] === players)) {
+        //             counter++;
+        //         }
+        //     }
+        // }
         if( counter > 3 ) return true;
         counter = 1;
-        // if((line-1 >=0) && (column-1 >= 0) && power4.puissance4[line-1][column-1] === players){
-        //     counter++;
-        //     if((line-2 >=0) && (column-2 >= 0) && power4.puissance4[line-2][column-2] === players){
-        //         counter++;
-        //         if((line-3 >=0) && (column-3 >= 0) && power4.puissance4[line-3][column-3] === players){
-        //             counter++;
-        //         }
-        //     }
-        // }
-        // if((line+1 < power4.nbLine) && (column+1 <= power4.nbColumn) && power4.puissance4[line+1][column+1] === players){
-        //     counter++;
-        //     if((line+2 < power4.nbLine) && (column+2 <= power4.nbColumn) && power4.puissance4[line+2][column+2] === players){
-        //         counter++;
-        //         if((line+3 < power4.nbLine) && (column+3 <= power4.nbColumn) && power4.puissance4[line+3][column+3] === players){
-        //             counter++;
-        //         }
-        //     }
-        // }
-        if(((line-1 >=0) && (column-1 >= 0) && power4.puissance4[line-1][column-1] === players) || ((line+1 < power4.nbLine) && (column+1 <= power4.nbColumn) && power4.puissance4[line+1][column+1] === players)) {
+        if((line-1 >=0) && (column-1 >= 0) && power4.puissance4[line-1][column-1] === players){
             counter++;
-            if(((line-2 >=0) && (column-2 >= 0) && power4.puissance4[line-2][column-2] === players) || ((line+2 < power4.nbLine) && (column+2 <= power4.nbColumn) && power4.puissance4[line+2][column+2] === players)) {
+            if((line-2 >=0) && (column-2 >= 0) && power4.puissance4[line-2][column-2] === players){
                 counter++;
-                if(((line-3 >=0) && (column-3 >= 0) && power4.puissance4[line-3][column-3] === players) || ((line+3 < power4.nbLine) && (column+3 <= power4.nbColumn) && power4.puissance4[line+3][column+3] === players)) {
+                if((line-3 >=0) && (column-3 >= 0) && power4.puissance4[line-3][column-3] === players){
                     counter++;
                 }
             }
         }
+        if((line+1 < power4.nbLine) && (column+1 <= power4.nbColumn) && power4.puissance4[line+1][column+1] === players){
+            counter++;
+            if((line+2 < power4.nbLine) && (column+2 <= power4.nbColumn) && power4.puissance4[line+2][column+2] === players){
+                counter++;
+                if((line+3 < power4.nbLine) && (column+3 <= power4.nbColumn) && power4.puissance4[line+3][column+3] === players){
+                    counter++;
+                }
+            }
+        }
+        // if(((line-1 >=0) && (column-1 >= 0) && power4.puissance4[line-1][column-1] === players) || ((line+1 < power4.nbLine) && (column+1 <= power4.nbColumn) && power4.puissance4[line+1][column+1] === players)) {
+        //     counter++;
+        //     if(((line-2 >=0) && (column-2 >= 0) && power4.puissance4[line-2][column-2] === players) || ((line+2 < power4.nbLine) && (column+2 <= power4.nbColumn) && power4.puissance4[line+2][column+2] === players)) {
+        //         counter++;
+        //         if(((line-3 >=0) && (column-3 >= 0) && power4.puissance4[line-3][column-3] === players) || ((line+3 < power4.nbLine) && (column+3 <= power4.nbColumn) && power4.puissance4[line+3][column+3] === players)) {
+        //             counter++;
+        //         }
+        //     }
+        // }
 
         if( counter > 3 ) return true;
     },
@@ -247,19 +247,19 @@ var IA = {
      */
     defenseAndAttack : function(line,column,players) {
         var counter = 1;
-        // if(power4.puissance4[line][column+1] === players) {
-        //     counter++;
-        //     if(power4.puissance4[line][column+2] === players && power4.puissance4[line][column+3] === 0) counter++;
-        // }
-
-        // if(power4.puissance4[line][column-1] === players) {
-        //     counter++;
-        //     if(power4.puissance4[line][column-2] === players && power4.puissance4[line][column-3] === 0) counter++;
-        // }
-        if((power4.puissance4[line][column+1] === players) || (power4.puissance4[line][column-1] === players)) {
+        if(power4.puissance4[line][column+1] === players) {
             counter++;
-            if((power4.puissance4[line][column+2] === players && power4.puissance4[line][column+3] === 0) || (power4.puissance4[line][column-2] === players && power4.puissance4[line][column-3] === 0)) counter++;
+            if(power4.puissance4[line][column+2] === players && power4.puissance4[line][column+3] === 0) counter++;
         }
+
+        if(power4.puissance4[line][column-1] === players) {
+            counter++;
+            if(power4.puissance4[line][column-2] === players && power4.puissance4[line][column-3] === 0) counter++;
+        }
+        // if((power4.puissance4[line][column+1] === players) || (power4.puissance4[line][column-1] === players)) {
+        //     counter++;
+        //     if((power4.puissance4[line][column+2] === players && power4.puissance4[line][column+3] === 0) || (power4.puissance4[line][column-2] === players && power4.puissance4[line][column-3] === 0)) counter++;
+        // }
            
         if(counter > 2) return true;
     },

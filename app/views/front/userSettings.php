@@ -6,8 +6,6 @@ $description = "Modifier vos paramètres et personnaliser votre éxperience Jeux
 <?php require_once 'app/views/front/layouts/head.php'; ?>
 <?php include_once 'app/views/front/layouts/header.php'; ?>
 <?php  
-$usersInfo = new \Project\controllers\ControllerFront();
-$infos = $usersInfo->displayInfo();
 
 if(!empty($_POST['email']) || !empty($_POST['pseudo'])){ 
     $usersModifyInfo = new \Project\controllers\ControllerFront();
