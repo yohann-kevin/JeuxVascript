@@ -6,14 +6,6 @@ $description = "";
 <?php require_once 'app/views/front/layouts/head.php'; ?>
 <?php include_once 'app/views/front/layouts/header.php'; ?>
 <?php
-$singleArticle = new \Project\controllers\ControllerFront();
-$article = $singleArticle->article(); 
-
-$date = new \Project\controllers\ControllerFront();
-
-$comment = new \Project\controllers\ControllerFront();
-$comments = $comment->displayCom(); 
-
 if(!empty($_POST)){
     $commentPost = new \Project\controllers\ControllerFront();
     $error = $commentPost->postCom(); 

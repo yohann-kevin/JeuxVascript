@@ -5,11 +5,6 @@ $description = "Consulter les derniers articles de la communauté JeuxVascript";
 ?>
 <?php require_once 'app/views/front/layouts/head.php'; ?>
 <?php require_once 'app/views/front/layouts/header.php'; ?>
-<?php
-$allArticles = new \Project\controllers\ControllerFront();
-$articles = $allArticles->displayArticles(); 
-
-?>
         <main id="news">
 
             <section class="pageTitle">

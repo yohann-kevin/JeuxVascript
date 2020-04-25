@@ -5,21 +5,7 @@ $description = "Accèder à votre compte afin de profiter de toute les fonctionn
 ?>
 <?php require_once 'app/views/front/layouts/head.php'; ?>
 <?php include_once 'app/views/front/layouts/header.php'; ?>
-<?php 
-$usersInfo = new \Project\controllers\ControllerFront();
-$infos = $usersInfo->displayInfo();
 
-$welcomes = new \Project\controllers\ControllerFront();
-$welcome = $welcomes->welcome();
-
-$lastArticleUsers = new \Project\controllers\ControllerFront();
-$usersLastArticles = $lastArticleUsers->displayLastUsersArticle();
-
-$lastCommentUsers = new \Project\controllers\ControllerFront();
-$usersLastComments = $lastCommentUsers->displayLastCom();
-
-$date = new \Project\controllers\ControllerFront();
-?>
     <main id="account">
         <section id="pageAccount">
             <aside id="usersLink">

@@ -51,6 +51,8 @@ try{
             $controllerFront -> pageBattleship();
         } elseif ($_GET['action'] == 'power4') {
             $controllerFront -> pagePower4();
+        } elseif ($_GET['action'] == 'postComment') {
+            $controllerFront -> postCom();
         } 
         
 

@@ -5,13 +5,6 @@ $description = "JeuxVascript le jeux pour les joueurs 100% javascript, profiter 
     plusieurs jeux et d'un tas de fonctionnalité 100% gratuite";
 require_once 'app/views/front/layouts/head.php'; 
 include_once 'app/views/front/layouts/header.php';
-
-$displayLastArticle = new \Project\controllers\ControllerFront();
-$lastArticles = $displayLastArticle->getLastArticleHome(); 
-
-$displayArticleInde = new \Project\controllers\ControllerFront();
-$articleIndes = $displayArticleInde->displayArticleInde(); 
-
 ?>
     <main id="home">
 
@@ -33,8 +26,7 @@ $articleIndes = $displayArticleInde->displayArticleInde();
                     juste de <a class="strong2" href="index.php?action=register">s'inscrire.</a></p>
                 <h4>De l'actualite</h4>
                 <p>JeuxVascript est aussi une source <span class="strong2">d'information </span>sur l'actualite
-                    du monde du jeux video <span class="strong2">independant</span> et de la programmation en
-                    javascript.</p>
+                    du monde du jeux video <span class="strong2">independant</span>.</p>
                 <h4>Des jeux des jeux et encore des jeux</h4>
                 <p>Et bien evidemment JeuxVascript vous propose de vous <span class="strong2">amusez</span>
                     en passsant un moment sur un de nos <span class="strong2">jeux</span> 100% javascript</p>

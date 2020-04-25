@@ -4,9 +4,6 @@ $title = "Writing";
 $description = "Rédiger vos propres articles et poster les sur JeuxVascript afin que tout le monde puisse les voirs";
 include_once 'app/views/front/layouts/head.php'; 
 include_once 'app/views/front/layouts/header.php'; 
-// $usersCategory = new \Project\controllers\ControllerFront();
-// $categorys = $usersCategory->displayCategory(); 
-
 if(!empty($_POST)){ 
     $postArticle = new \Project\controllers\ControllerFront();
     $errors = $postArticle->usersPostArticle();  
