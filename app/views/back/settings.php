@@ -1,11 +1,6 @@
 <?php $page = 'settings' ?>
 <?php include_once 'app/views/back/layouts/headAdmin.php'; ?>
 <?php include_once 'app/views/back/layouts/headerAdmin.php'; ?>
-<?php
-$adminInfos = new \Project\controllers\ControllerBack();
-$infos = $adminInfos->displayInfo();
-?>
-
 <main id="settings">
     <section>
         <header id="headerSettings">

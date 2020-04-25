@@ -1,12 +1,7 @@
 <?php $page = 'article' ?>
 <?php include_once 'app/views/back/layouts/headAdmin.php'; ?>
 <?php include_once 'app/views/back/layouts/headerAdmin.php'; ?>
-<?php  
-$singleArticle = new \Project\controllers\ControllerBack();
-$article = $singleArticle->article(); 
 
-$date = new \Project\controllers\ControllerFront();
-?>
     <?php if(!empty($article)) : ?>
     <main id="pageArticleAdmin">
         <section id="adminArticle">
