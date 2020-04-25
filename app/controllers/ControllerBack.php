@@ -13,16 +13,31 @@ class ControllerBack {
 
     function adminBack() {
 
+        $infos = $this->displayInfo();
+
+        $welcomes = new \Project\controllers\ControllerFront();
+        $welcome = $welcomes->welcome();
+
+        $displayLastArticle = new \Project\controllers\ControllerFront();
+        $lastArticles = $displayLastArticle->getLastArticleHome2(); 
+        
+        $comments = $this->displayCom();
+
+        $date = new \Project\controllers\ControllerFront();
+
         require 'app/views/back/admin.php';
     }
 
     function pageSettings() {
 
+        $infos = $this->displayInfo();
         require 'app/views/back/settings.php';
     }
 
     function articleAdmin() {
 
+        $article = $this->article();
+        $date = new \Project\controllers\ControllerFront();
         require 'app/views/back/articleAdmin.php';
     }
 

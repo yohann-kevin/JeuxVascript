@@ -1,21 +1,6 @@
 <?php $page = 'admin' ?>
 <?php include_once 'app/views/back/layouts/headAdmin.php'; ?>
 <?php include_once 'app/views/back/layouts/headerAdmin.php'; ?>
-<?php  
-$adminInfos = new \Project\controllers\ControllerBack();
-$infos = $adminInfos->displayInfo();
-
-$welcomes = new \Project\controllers\ControllerFront();
-$welcome = $welcomes->welcome();
-
-$displayLastArticle = new \Project\controllers\ControllerFront();
-$lastArticles = $displayLastArticle->getLastArticleHome2(); 
-
-$displayCom = new \Project\controllers\ControllerBack();
-$comments = $displayCom->displayCom(); 
-
-$date = new \Project\controllers\ControllerFront();
-?>
     <main id="admin">
 
         <section>
