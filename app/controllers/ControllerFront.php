@@ -187,7 +187,7 @@ class ControllerFront {
 
         if(password_verify($password, $login['password'])){
             $_SESSION['user'] = $login['id'];
-            require 'app/views/front/account.php';
+            $this->accountFront();
         }else{
             return $error;
         }
@@ -276,6 +276,11 @@ class ControllerFront {
                 $errors[] = "L'image est obligatoire !";
             }
 
+            if(substr($_FILES["file"]["name"],-4) !== ".jpg" && substr($_FILES["file"]["name"],-4) !== ".png" && substr($_FILES["file"]["name"],-4) !== ".gif") {
+                $validation = false;
+                $errors[] = "Ce type de fichier n'est pas accepter";
+            }
+
             if($validation){
                 $image = basename($_FILES['file']['name']);
                 $postArticle = new \Project\models\FrontManager();
@@ -285,6 +290,7 @@ class ControllerFront {
                 unset($_POST['title']);
                 unset($_POST['content']);   
             }
+            echo substr($_FILES["file"]["name"],-4);
             return $errors; 
         }
     }
