@@ -8,7 +8,7 @@
 
         <section id="adminLog">
             <img src="app/public/images/logo/admin.png" alt="JeuxVascript">
-            <form id="" method="post" action="indexAdmin.php?action=adminLogin">
+            <form id="logFormAdmin" method="post" action="indexAdmin.php?action=adminLogin">
             <?php if(isset($error)) : ?>
             <?= $error ?>
             <?php endif ?>
@@ -17,9 +17,9 @@
                     value='<?php if(isset($_POST['Pseudo']))echo $_POST['Pseudo'] ?>'>
                 <label from="">Votre mot de passe</label>
                 <input id="" name="password" type="password" placeholder="password">
-                <div id="buttonConnect">
-                    <button type="submit" id="btnSubConnect">Connecter</button>
-                    <button type="reset" id="btnResConnect">Annuler</button>
+                <div id="btnConnectAdmin">
+                    <button type="submit">Connecter</button>
+                    <button type="reset">Annuler</button>
                 </div>
                 <!-- <ul>
                     <li><a href="indexAdmin.php?action=admin">Admin</a></li>
@@ -30,6 +30,3 @@
         </section>
 
     </main>
-
-
-<?php //include_once 'app/views/back/layouts/footerAdmin.php'; ?>

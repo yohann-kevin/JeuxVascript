@@ -265,7 +265,8 @@ class ControllerFront {
             extract($_POST);
             $validation = true;
             $errors = [];
-        
+            
+
             if(empty($title) || empty($category_id) || empty($content)){
                 $validation = false;
                 $errors[] = 'Tous les champs sont obligatoires !';
@@ -281,19 +282,24 @@ class ControllerFront {
                 $errors[] = "Ce type de fichier n'est pas accepter";
             }
 
-            if($validation){
+            if($validation){         
                 $image = basename($_FILES['file']['name']);
                 $postArticle = new \Project\models\FrontManager();
                 $articlePost = $postArticle->postArticle($title,$category_id,$content,$image);
                 move_uploaded_file($_FILES['file']['tmp_name'],'app/public/images/articles/' .$image);
-                    
+
                 unset($_POST['title']);
                 unset($_POST['content']);   
             }
-            echo substr($_FILES["file"]["name"],-4);
             return $errors; 
         }
     }
+
+    // function resizeImage($image) {
+    //     $chemin = 'app/public/images/articles/'.$image;
+    //     $size = getimagesize($chemin);
+    //     echo $size;
+    // }
 
     // permet d'afficher tout les articles
     function displayArticles() {
