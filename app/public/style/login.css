@@ -65,6 +65,7 @@
 }
 
 #btnConnectAdmin button {
+    margin-top: 15px;
     width: 35%;
     height: 30px;
     border: none;

@@ -21,11 +21,6 @@
                     <button type="submit">Connecter</button>
                     <button type="reset">Annuler</button>
                 </div>
-                <!-- <ul>
-                    <li><a href="indexAdmin.php?action=admin">Admin</a></li>
-                    <li><a href="indexAdmin.php?action=write">Rédiger</a></li>
-                    <li><a href="indexAdmin.php?action=modify">Modifier</a></li>
-                </ul> -->
             </form>
         </section>
 

@@ -26,7 +26,7 @@
         margin-top: -40px;
     }
 
-    nav>ul li:hover .sous {
+    nav>ul li:hover .under {
         display: none;
     }
 
@@ -45,6 +45,16 @@
 
     #buttonHeader button {
         margin-bottom: 15px;
+    }
+
+    /* modal header */
+
+    #modalContent {
+        width: 90%;
+    }
+
+    #buttonConnect {
+        width: 100%;
     }
 
     /*  *home*  */
@@ -102,6 +112,10 @@
     /* *game* */
     #games {
         padding-top: 25px;
+    }
+
+    #snakeArticle {
+        display: none;
     }
 
     .gamePara {
@@ -195,6 +209,103 @@
     #buttonRegister {
         width: 100%;
     }
+
+    /* account */
+
+    #account {
+       padding-top: 10px;
+    }
+
+    #usersLink {
+        width: 100%;
+    }
+
+    #welcomeUsers {
+        width: 100%;
+        background-color: transparent !important;
+    }
+
+    #lastArticle {
+        width: 100%;
+    }
+
+    .usersLastArticleOption {
+        width: 100%;
+    }
+
+    #lastComment {
+        width: 100%;
+    }
+
+    .usersLastCommentOption {
+        width: 100%;
+    }
+
+    /* usersSettings */
+
+    #userSettings {
+        padding-top: 25px;
+    }
+
+    #userSettings form {
+        width: 100%;
+        border: none;
+        margin-bottom: 45px;
+    }
+
+    #deleteAccount {
+        width: 100%;
+        padding-bottom: 25px;
+    }
+
+    #deleteAccount a {
+        width: 80%;
+    }
+
+    /* usersWrite */
+
+    #pageUsersWrite {
+        padding-top: 20px;
+    }
+
+    /* power 4 */
+
+    #pagePower4 {
+        padding-top: 25px;
+    }
+
+    #j1, #j2 {
+        width: 65%;
+        padding-top: 25px;
+    }
+
+    #power4 {
+        width: 100%;
+    }
+
+    #successPower4 {
+        width: 100%;
+    }
+
+    /* battleship */
+
+    #pageBattleship {
+        padding-top: 25px;
+    }
+
+    #successBattleship {
+        width: 100%;
+    }
+
+    #j1Battleship, #j2Battleship {
+        width: 65%;
+        padding-top: 25px;
+    }
+    
+    #battleship {
+        width: 100%;
+    }
+
 }
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
