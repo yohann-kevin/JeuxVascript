@@ -359,6 +359,14 @@
     margin-top: 125px;
 }
 
+.buttonInfoHome {
+    width: 20%;
+    margin-top: 330px;
+    color: yellow;
+    font-size: 2rem;
+    font-family: 'arcadeNormal';
+}
+
 .buttonPlayHome {
     width: 20%;
     margin-top: 330px;

@@ -34,6 +34,7 @@ $description = "Découvrez nos jeux 100% JavaScript";
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                         Molestias deserunt nulla culpa!
                     </p>
+                    <a href="index.php?action=about" class="buttonInfoGame">Plus...</a>
                     <a href="index.php?action=snake" class="buttonPlayGame">Play</a>
                 </div>
             </article>
@@ -60,6 +61,7 @@ $description = "Découvrez nos jeux 100% JavaScript";
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                         Molestias deserunt nulla culpa!
                     </p>
+                    <a href="index.php?action=about" class="buttonInfoGame">Plus...</a>
                     <a href="index.php?action=power4" class="buttonPlayGame">Play</a>
                 </div>
             </article>
@@ -86,6 +88,7 @@ $description = "Découvrez nos jeux 100% JavaScript";
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                         Molestias deserunt nulla culpa!
                     </p>
+                    <a href="index.php?action=about" class="buttonInfoGame">Plus...</a>
                     <a href="index.php?action=battleship" class="buttonPlayGame">Play</a>
                 </div>
             </article>
