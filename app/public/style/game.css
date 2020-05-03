@@ -126,3 +126,11 @@
     font-size: 2rem;
     font-family: 'arcadeNormal';
 }
+
+.buttonInfoGame {
+    width: 20%;
+    margin-top: 330px;
+    color: red;
+    font-size: 2rem;
+    font-family: 'arcadeNormal';
+}

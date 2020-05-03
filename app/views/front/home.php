@@ -126,6 +126,7 @@ include_once 'app/views/front/layouts/header.php';
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                         Molestias deserunt nulla culpa!
                     </p>
+                    <a href="index.php?action=about" class="buttonInfoHome">Plus...</a>
                     <a href="index.php?action=snake" class="buttonPlayHome">Play</a>
                 </div>
             </article>
@@ -151,6 +152,7 @@ include_once 'app/views/front/layouts/header.php';
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                         Molestias deserunt nulla culpa!
                     </p>
+                    <a href="index.php?action=about" class="buttonInfoHome">Plus...</a>
                     <a href="index.php?action=battleship" class="buttonPlayHome">Play</a>
                 </div>
             </article>
@@ -176,6 +178,7 @@ include_once 'app/views/front/layouts/header.php';
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                         Molestias deserunt nulla culpa!
                     </p>
+                    <a href="index.php?action=about" class="buttonInfoHome">Plus...</a>
                     <a href="index.php?action=power4" class="buttonPlayHome">Play</a>
                 </div>
             </article>
