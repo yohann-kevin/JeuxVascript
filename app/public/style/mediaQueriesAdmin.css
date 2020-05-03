@@ -1,0 +1,83 @@
+/* format grand écran */
+@media screen and (min-width: 1200px) {}
+
+/* format tablette */
+@media screen and (min-width: 768px) and (max-width: 1200px) {}
+
+/* format smartphone */
+@media screen and (max-width: 768px) {
+    /* login */
+    #adminLog {
+        width: 100%;
+    }
+
+    #adminLog img {
+        width: 100%;
+    }
+
+    /* headerAdmin */
+    #headerAdmin {
+        background-image: none;
+        background-color: #ff9d00; 
+        position: initial;
+    }
+
+    #logo{
+        width: 100%;
+    }
+
+    #navAdmin {
+        width: 80%;
+        margin-top: -5px;
+        padding-bottom: 5px;
+    }
+
+    /* admin */
+    #admin {
+        padding-top: 25px;
+    }
+
+    .adminArticle {
+        width: 100%;
+    }
+
+    .adminComment {
+        width: 100%;
+    }
+
+    /* footer */
+    .social {
+        width: 100%;
+    }
+
+    /* articleAdmin */
+    #pageArticleAdmin {
+        padding-top: 25px;
+    }
+
+    #adminArticle img, #articleContent {
+        width: 100%;
+    }
+
+    /* settings */
+    #settings {
+        padding-top: 25px;
+    }
+
+    #addAdmin input, label{
+        width: 100%;
+    }
+
+    #settingsButton {
+        width: 100%;
+    }
+
+    #settingsButton button{
+        width: 40%;
+    }
+
+    #deleteAdmin a{
+        width: 70%;
+    }
+
+}

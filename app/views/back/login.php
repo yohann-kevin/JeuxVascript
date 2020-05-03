@@ -1,9 +1,4 @@
 <?php include_once 'app/views/back/layouts/headAdmin.php'; ?>
-<?php //include_once 'app/views/back/layouts/headerAdmin.php'; ?>
-<?php 
-
-?>
-
     <main id="adminLogin">
 
         <section id="adminLog">
