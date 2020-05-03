@@ -1,9 +1,3 @@
-<?php
-// if(!empty($_POST)){
-//     $login = new \Project\controllers\ControllerFront();
-//     $errors = $login->loginUsers();
-// }
-?>
 <body>
     <header id="header">
         <div id="logo">
