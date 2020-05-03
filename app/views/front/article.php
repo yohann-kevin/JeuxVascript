@@ -5,12 +5,6 @@ $description = "";
 ?>
 <?php require_once 'app/views/front/layouts/head.php'; ?>
 <?php include_once 'app/views/front/layouts/header.php'; ?>
-<?php
-if(!empty($_POST)){
-    $commentPost = new \Project\controllers\ControllerFront();
-    $error = $commentPost->postCom(); 
-}
-?>
     <?php if(!empty($article)) : ?>
     <main id="pageArticle">
         <section>

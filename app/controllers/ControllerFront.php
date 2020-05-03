@@ -31,6 +31,10 @@ class ControllerFront {
 
     function contactFront() {
 
+        if(!empty($_POST)){
+            $contact = new \Project\controllers\ControllerFront();
+            $errors = $contact->contact();
+        }
         require 'app/views/front/contact.php';
     }
 
@@ -45,10 +49,15 @@ class ControllerFront {
     }
 
     function articleFront() {
-
         $comments = $this->displayCom(); 
         $article = $this->article(); 
         $date = new \Project\controllers\ControllerFront();
+
+        if(!empty($_POST)){
+            $commentPost = new \Project\controllers\ControllerFront();
+            $error = $commentPost->postCom(); 
+        }
+
         require 'app/views/front/article.php';
     }
 
@@ -90,8 +99,18 @@ class ControllerFront {
     }
 
     function userSettingsFront() {
-
         $infos = $this->displayInfo();
+
+        if(!empty($_POST['email']) || !empty($_POST['pseudo'])){ 
+            $usersModifyInfo = new \Project\controllers\ControllerFront();
+            $modifyInfos = $usersModifyInfo->modifyInfo();  
+        }
+
+        if(!empty($_POST['password']) || !empty($_POST['newPassword']) || !empty($_POST['verifyNewPassword'])){ 
+            $usersModifyPassword = new \Project\controllers\ControllerFront();
+            $modifyPassword = $usersModifyPassword->modifyPassword();  
+        }
+
         require 'app/views/front/userSettings.php';
     }
 
@@ -101,13 +120,22 @@ class ControllerFront {
     }
 
     function usersWriteFront() {
+        if(!empty($_POST)){ 
+            $postArticle = new \Project\controllers\ControllerFront();
+            $errors = $postArticle->usersPostArticle();  
+        }
 
         require 'app/views/front/usersWrite.php';
     }
 
     function usersModifyFront() {
-
         $article = $this->article(); 
+
+        if(!empty($_POST)){ 
+            $modifyArticle = new \Project\controllers\ControllerFront();
+            $errors = $modifyArticle->usersModifyArticle();  
+        }
+
         require 'app/views/front/usersModify.php';
     }
 
@@ -164,14 +192,14 @@ class ControllerFront {
         }
     
         if($validation){
-        $register = new \Project\models\FrontManager();
-        $usersRegister = $register->usersRegister($pseudo,$email,$password);
-        $loginUsers = new \Project\models\FrontManager();
-        $login = $loginUsers->usersLogin($pseudo,$password);
-        $_SESSION['user'] = $login['id'];
-        require 'app/views/front/account.php';
-        unset($_POST['pseudo']);
-        unset($_POST['email']);
+            $register = new \Project\models\FrontManager();
+            $usersRegister = $register->usersRegister($pseudo,$email,$password);
+            $loginUsers = new \Project\models\FrontManager();
+            $login = $loginUsers->usersLogin($pseudo,$password);
+            $_SESSION['user'] = $login['id'];
+            $this->accountFront();
+            unset($_POST['pseudo']);
+            unset($_POST['email']);
         }
     
         return $errors;
@@ -189,6 +217,7 @@ class ControllerFront {
             $_SESSION['user'] = $login['id'];
             $this->accountFront();
         }else{
+            $this->home();
             return $error;
         }
     }
