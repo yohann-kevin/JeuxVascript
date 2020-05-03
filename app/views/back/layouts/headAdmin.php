@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="app/public/style/settingsAdmin.css">
     <link rel="stylesheet" href="app/public/style/articleAdmin.css">
     <link rel="stylesheet" href="app/public/style/error404.css">
-    <!-- <link rel="stylesheet" href="app/public/style/home.css"> -->
     <link rel="stylesheet" href="app/public/style/footer.css">
+    <link rel="stylesheet" href="app/public/style/mediaQueriesAdmin.css">
     <!-- icône -->
     <link rel="icon" href="app/public/images/logo/icone.png">
     
