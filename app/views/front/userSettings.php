@@ -5,19 +5,6 @@ $description = "Modifier vos paramètres et personnaliser votre éxperience Jeux
 ?>
 <?php require_once 'app/views/front/layouts/head.php'; ?>
 <?php include_once 'app/views/front/layouts/header.php'; ?>
-<?php  
-
-if(!empty($_POST['email']) || !empty($_POST['pseudo'])){ 
-    $usersModifyInfo = new \Project\controllers\ControllerFront();
-    $modifyInfos = $usersModifyInfo->modifyInfo();  
-}
-
-if(!empty($_POST['password']) || !empty($_POST['newPassword']) || !empty($_POST['verifyNewPassword'])){ 
-    $usersModifyPassword = new \Project\controllers\ControllerFront();
-    $modifyPassword = $usersModifyPassword->modifyPassword();  
-}
-?>
-
     <main id="userSettings">
         <section id="pageUserSettings">
             <header id="userSettingsTitle">

@@ -5,12 +5,6 @@ $description = "Vous avez quelques choses a nous dire ? N'hesitez pas,contacter 
 ?>
 <?php require_once 'app/views/front/layouts/head.php'; ?>
 <?php require_once 'app/views/front/layouts/header.php'; ?>
-<?php 
-if(!empty($_POST)){
-    $contact = new \Project\controllers\ControllerFront();
-    $errors = $contact->contact();
-}
-?>
     <main id="contact">
 
         <section class="pageTitle">
