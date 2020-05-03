@@ -1,3 +1,152 @@
+/* pour les grands écran */
+@media screen and (min-width: 1200px) {
+    #homeGame img {
+        height: 600px;
+    }
+} 
+
+/* format tablette */
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    /* header */
+    #header {
+        position: initial;
+    }
+
+    #home {
+        padding-top: 25px;
+    }
+
+    #logo {
+        width: 25%;
+    }
+
+    #nav {
+        width: 70%;
+    }
+
+    #buttonHeader {
+        width: 100%;
+    }
+
+    .under li{
+        display: none;
+    }
+
+    /* home */
+    #presentationImg {
+        display: none;
+    }
+
+    .article {
+        width: 60%;
+    }
+
+    .gameParaHome {
+        font-family: fantasy;
+    }
+    
+    #articleSnake {
+        display: none;
+    }
+
+    .advert a {
+        height: 35px;
+    }
+
+    /* game */
+    #games {
+        padding-top: 25px;
+    }
+
+    .gamePara {
+        font-family: fantasy;
+    }
+
+    #snakeArticle {
+        display: none;
+    }
+
+    /* news */
+    #news {
+        padding-top: 25px;
+    }
+
+    .newsArticle {
+        width: 70%;
+    }
+
+    /* page article */
+    #pageArticle {
+        padding-top: 25px;
+    }
+
+    /* about */
+    #about {
+        padding-top: 25px;
+    }
+
+    /* contact */
+    #contact {
+        padding-top: 25px;
+    }
+
+    /* usersWrite */
+
+    #pageUsersWrite {
+        padding-top: 25px;
+    }
+
+    #usersWriteName, 
+    #usersSelectCategory,
+    #usersWriteContent,
+    #buttonUsersWrite{
+        width: 100%;
+    }
+
+    #usersSelectImg {
+        width: 50%;
+    }
+
+    /* usersSettings */
+
+    #usersSettigns {
+        padding-top: 25px;
+    }
+
+    #modifyInfo,
+    #modifyPassword {
+        width: 100%;
+        border: none;
+    }
+
+    #deleteAccount a{
+        width: 70%;
+        margin-bottom: 25px;
+    }
+
+    /* usersModify */
+
+    #pageUsersModify {
+        padding-top: 25px;
+    }
+
+    /* battleship */
+
+    #pageBattleship {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    /* power 4 */
+
+    #pagePower4 {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+}
+
+/* format smartphone */
 @media screen and (max-width: 768px) {
 
     /*  *****header*****  */
@@ -307,77 +456,3 @@
     }
 
 }
-
-@media screen and (min-width: 768px) and (max-width: 1200px) {
-    /* header */
-    #header {
-        position: initial;
-    }
-
-    #home {
-        padding-top: 25px;
-    }
-
-    #logo {
-        width: 25%;
-    }
-
-    #nav {
-        width: 70%;
-    }
-
-    #buttonHeader {
-        width: 100%;
-    }
-
-    /* home */
-    #presentationImg {
-        display: none;
-    }
-
-    .article {
-        width: 60%;
-    }
-
-    .gameParaHome {
-        font-family: fantasy;
-    }
-
-    /* game */
-    #games {
-        padding-top: 25px;
-    }
-
-    .gamePara {
-        font-family: fantasy;
-    }
-
-    /* news */
-    #news {
-        padding-top: 25px;
-    }
-
-    .newsArticle {
-        width: 70%;
-    }
-
-    /* page article */
-    #pageArticle {
-        padding-top: 25px;
-    }
-
-    /* about */
-    #about {
-        padding-top: 25px;
-    }
-
-    /* contact */
-    #contact {
-        padding-top: 25px;
-    }
-
-}
-
-
-
-@media screen and (min-width: 1200px) {} 
