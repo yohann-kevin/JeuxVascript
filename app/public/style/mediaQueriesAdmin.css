@@ -1,8 +1,21 @@
-/* format grand écran */
-@media screen and (min-width: 1200px) {}
-
 /* format tablette */
-@media screen and (min-width: 768px) and (max-width: 1200px) {}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    /* header */
+    #logo {
+        width: 35%;
+    }
+
+    /* admin */
+    .adminArticle, .adminComment {
+        width: 80%;
+    }
+
+    /* settings */
+    #deleteAdmin a{
+        width: 50%;
+    }
+
+}
 
 /* format smartphone */
 @media screen and (max-width: 768px) {
