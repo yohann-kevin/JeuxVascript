@@ -34,11 +34,38 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'robotobold';
+    src: url('../font/roboto/roboto-bold-webfont.woff2') format('woff2'),
+         url('../font/roboto/roboto-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotoregular';
+    src: url('../font/arcade/roboto-regular-webfont.woff2') format('woff2'),
+         url('../font/roboto/roboto-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotothin';
+    src: url('../font/roboto/roboto-thin-webfont.woff2') format('woff2'),
+         url('../font/roboto/roboto-thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 /* Mise en page global */
 * {
     margin: 0;
     padding: 0;
-    font-family: fantasy;
+    font-family: 'robotothin';
 }
 
 body {
@@ -103,6 +130,7 @@ nav ul::after {
 }
 
 nav a {
+    font-family: 'robotoregular';
     font-size: 1.4rem;
     display: block;
     text-decoration: none;
@@ -203,13 +231,15 @@ nav>ul li:hover .under {
 }
 
 #buttonHeader a {
+    font-family: 'robotoregular';
+    font-size: 1.1rem;
     margin-top: 10px;
     padding-top: 5px;
     width: 40%;
     height: 30px;
     background-color: transparent;
     color: #545454;
-    font-size: 1.2rem;
+    /* font-size: 1.2rem; */
     border: none;
     text-align: center;
     text-decoration: none;

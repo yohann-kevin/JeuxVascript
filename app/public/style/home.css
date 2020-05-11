@@ -130,7 +130,7 @@
 }
 
 .articleTitle {
-    font-family: 'arcadeRounded';
+    font-family: 'robotoregular';
     font-size: 1rem;
     padding: 5px;
     color: #545454;
@@ -404,7 +404,7 @@
     margin-top: 20px;
     text-align: center;
     color: #ff9d00;
-    font-family: 'arcadeNormal';
+    font-family: 'robotoregular';
 }
 
 .advertImg {
@@ -426,8 +426,8 @@
 .advertPara {
     padding-top: 10px;
     color: #545454;
-    font-family: 'arcadeRounded';
-    font-size: 0.8rem;
+    font-family: 'robotothin';
+    font-size: 1rem;
 }
 
 .advert a {
