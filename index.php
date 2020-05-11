@@ -54,12 +54,6 @@ try{
         } elseif ($_GET['action'] == 'postComment') {
             $controllerFront -> postCom();
         } 
-        
-
-        //data test
-        elseif ($_GET['action'] == 'playingBattleship') {
-            $controllerFront -> saveScoreBattleship();
-        }
 
         
         // users (temporaire)
