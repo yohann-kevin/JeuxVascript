@@ -67,8 +67,6 @@ try{
             $controllerFront -> accountFront();
         } elseif ($_GET['action'] == 'userSettings') {
             $controllerFront -> userSettingsFront();
-        } elseif ($_GET['action'] == 'stats') {
-            $controllerFront -> statsFront();
         } elseif ($_GET['action'] == 'usersWrite') {
             $controllerFront -> usersWriteFront();
         } elseif ($_GET['action'] == 'usersModify') {

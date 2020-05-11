@@ -6,7 +6,6 @@
             <aside id="usersLink">
                 <ul id="navBarUsers">
                     <li><a href="index.php?action=usersWrite" class="usersLink">Rédiger</a></li>
-                    <li><a href="index.php?action=stats" class="usersLink">Stats</a></li>
                     <li><a href="index.php?action=userSettings" class="usersLink">Settings</a></li>
                 </ul>
             </aside>
