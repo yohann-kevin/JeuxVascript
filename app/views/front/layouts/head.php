@@ -15,8 +15,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!-- Charge la bibliothèque jQuery ui -->
     <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js" integrity="sha256-0YPKAwZP7Mp3ALMRVB2i8GXeEndvCq3eSl/WsAl1Ryk=" crossorigin="anonymous"></script>
-    <!-- charge la biblitoheque chart js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.js"></script>
     <!-- lien vers les feuilles de style -->
     <link rel="stylesheet" href="app/public/style/header.css">
     <link rel="stylesheet" href="app/public/style/home.css">

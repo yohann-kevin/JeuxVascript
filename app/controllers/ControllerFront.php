@@ -156,11 +156,6 @@ class ControllerFront {
         require 'app/views/front/userSettings.php';
     }
 
-    function statsFront() {
-
-        require 'app/views/front/stats.php';
-    }
-
     function usersWriteFront() {
         $page = "";
         $title = "Writing";
@@ -590,19 +585,5 @@ class ControllerFront {
         unset($_SESSION['user']);
         session_destroy();
         return $usersDelete;
-    }
-
-
-
-    //-------------test----------------------
-
-
-    function saveScoreBattleship() {
-        if(isset($_SESSION['user'])) {
-            extract($_POST);
-            $save = new \Project\models\FrontManager();
-            $score = $save->scoreSavedBattleship($data);
-            return $score;
-        }
     }
 } 
