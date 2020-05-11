@@ -1,7 +1,4 @@
 <?php
-$page = "";
-$title = "Register";
-$description = "Inscrivez-vous afin de profiter de l'intégralié des fonctionnalités de JeuxVascript";
 include_once 'app/views/front/layouts/head.php'; 
 include_once 'app/views/front/layouts/header.php'; 
 ?>

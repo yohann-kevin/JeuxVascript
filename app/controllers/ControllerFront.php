@@ -7,6 +7,10 @@ class ControllerFront {
     function home() {
 
         $homeFront = new \Project\models\FrontManager();
+        $page = "home";
+        $title = "Home";
+        $description = "JeuxVascript le jeux pour les joueurs 100% javascript, profiter de 
+            plusieurs jeux et d'un tas de fonctionnalité 100% gratuite";
         $accueil = $homeFront->viewFront();
         $lastArticles = $this->getLastArticleHome(); 
         $articleIndes = $this->displayArticleInde(); 
@@ -14,22 +18,34 @@ class ControllerFront {
     }
 
     function gameFront() {
+        $page = 'game';
+        $title = "Games";
+        $description = "Découvrez nos jeux 100% JavaScript"; 
 
         require 'app/views/front/game.php';
     }
 
     function newsFront() {
+        $page = 'news';
+        $title = "News";
+        $description = "Consulter les derniers articles de la communauté JeuxVascript";
 
         $articles = $this->displayArticles(); 
         require 'app/views/front/news.php';
     }
     
     function aboutFront() {
+        $page = 'about';
+        $title = "About";
+        $description = "Vous souhaitez en savoir plus surun de nos jeux ? Ou sur JeuxVascript ? Vous trouverez toutes vos réponses ici";
 
         require 'app/views/front/about.php';
     }
 
     function contactFront() {
+        $page = 'contact';
+        $title = "Contact";
+        $description = "Vous avez quelques choses a nous dire ? N'hesitez pas,contacter nous.";
 
         if(!empty($_POST)){
             $contact = new \Project\controllers\ControllerFront();
@@ -39,16 +55,27 @@ class ControllerFront {
     }
 
     function snakeFront() {
+        $page = "";
+        $title = "Snake";
+        $description = "Jouer au célèbre jeux d'arcade snake";
 
         require 'app/views/front/snake.php';
     }
 
     function registerFront() {
+        $page = "";
+        $title = "Register";
+        $description = "Inscrivez-vous afin de profiter de l'intégralié des fonctionnalités de JeuxVascript";
+
 
         require 'app/views/front/register.php';
     }
 
     function articleFront() {
+        $page = "";
+        $title = "Article";
+        $description = "";
+
         $comments = $this->displayCom(); 
         $article = $this->article(); 
         $date = new \Project\controllers\ControllerFront();
@@ -62,34 +89,44 @@ class ControllerFront {
     }
 
     function legalNotice() {
+        $page = "";
+        $title = "Mentions Légale";
+        $description = "Mentions Légale JeuxVascript";
 
         require 'app/views/front/legalNotice.php';
     }
 
     function sitemap() {
+        $page = "";
+        $title = "Sitemap";
+        $description = "Consulter le plan du site de JeuxVascript";
+
 
         require 'app/views/front/sitemap.php';
     }
 
     function pageBattleship() {
+        $page = "";
+        $title = "Battleship";
+        $description = "Jouer aux célebre jeux de société bataille navale";
 
         require 'app/views/front/battleship.php';
     }
 
     function pagePower4() {
+        $page = "";
+        $title = "Puissance 4";
+        $description = "Jouer aux célebre jeux de société ";
 
         require 'app/views/front/power4.php';
-    }
-
-    function pageLabyrinth() {
-
-        require 'app/views/front/labyrinth.php';
     }
 
     // fonction users lien temporaire
 
     function accountFront() {
-
+        $page = ""; 
+        $title = "Account";
+        $description = "Accèder à votre compte afin de profiter de toute les fonctionnalité de JeuxVascript";
         $infos = $this->displayInfo();
         $welcome = $this->welcome();
         $usersLastArticles = $this->displayLastUsersArticle();
@@ -99,6 +136,11 @@ class ControllerFront {
     }
 
     function userSettingsFront() {
+        $page = "";
+        $title = "Settings";
+        $description = "Modifier vos paramètres et personnaliser votre éxperience JeuxVascript";
+        
+
         $infos = $this->displayInfo();
 
         if(!empty($_POST['email']) || !empty($_POST['pseudo'])){ 
@@ -120,6 +162,11 @@ class ControllerFront {
     }
 
     function usersWriteFront() {
+        $page = "";
+        $title = "Writing";
+        $description = "Rédiger vos propres articles et poster les sur JeuxVascript afin que tout le monde puisse les voirs";
+
+
         if(!empty($_POST)){ 
             $postArticle = new \Project\controllers\ControllerFront();
             $errors = $postArticle->usersPostArticle();  
@@ -129,6 +176,11 @@ class ControllerFront {
     }
 
     function usersModifyFront() {
+        $page = "";
+        $title = "Modifier";
+        $description = "Modifier vos propres articles et poster les sur JeuxVascript afin que tout le monde puisse les voirs";
+
+
         $article = $this->article(); 
 
         if(!empty($_POST)){ 
@@ -157,7 +209,10 @@ class ControllerFront {
 
     // erreur 404 temporaire
     function error404() {
-
+        $page = "";
+        $title = "ERROR404";
+        $description = "ERREUR 404 La page que vous cherchez n'éxiste pas ou plus !";
+        
         require 'app/views/front/error404.php';
     }
 
@@ -226,7 +281,7 @@ class ControllerFront {
     function logoutUsers() {
         unset($_SESSION['user']);
         session_destroy();
-        require 'app/views/front/home.php';
+        $this->home();
     }
 
     // affiche les info de l'utilisateur
@@ -343,7 +398,7 @@ class ControllerFront {
         $article = $displayArticle->getArticle();
        
         if(empty($article)) { 
-            require 'app/views/front/error404.php';
+            $this->error404();
         } elseif(!empty($article)) {
             return $article;     
         }

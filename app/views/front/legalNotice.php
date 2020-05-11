@@ -1,8 +1,3 @@
-<?php  
-$page = "";
-$title = "Mentions Légale";
-$description = "Mentions Légale JeuxVascript";
-?>
 <?php require_once 'app/views/front/layouts/head.php'; ?>
 <?php include_once 'app/views/front/layouts/header.php'; ?>
 

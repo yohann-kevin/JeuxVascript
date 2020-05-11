@@ -1,8 +1,3 @@
-<?php 
-$page = 'game';
-$title = "Games";
-$description = "Découvrez nos jeux 100% JavaScript"; 
-?>
 <?php require_once 'app/views/front/layouts/head.php'; ?>
 <?php require_once 'app/views/front/layouts/header.php'; ?>
     <main id="games">

@@ -1,8 +1,3 @@
-<?php 
-$page = ""; 
-$title = "Account";
-$description = "Accèder à votre compte afin de profiter de toute les fonctionnalité de JeuxVascript";
-?>
 <?php require_once 'app/views/front/layouts/head.php'; ?>
 <?php include_once 'app/views/front/layouts/header.php'; ?>
 
