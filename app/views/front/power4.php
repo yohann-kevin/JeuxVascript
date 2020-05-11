@@ -1,7 +1,4 @@
 <?php 
-$page = "";
-$title = "Battleship";
-$description = "Jouer aux célebre jeux de société ";
 require_once 'app/views/front/layouts/head.php'; 
 include_once 'app/views/front/layouts/header.php'; 
 ?>

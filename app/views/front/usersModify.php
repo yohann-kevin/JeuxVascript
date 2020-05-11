@@ -1,7 +1,4 @@
 <?php 
-$page = "";
-$title = "Modifier";
-$description = "Modifier vos propres articles et poster les sur JeuxVascript afin que tout le monde puisse les voirs";
 include_once 'app/views/front/layouts/head.php'; 
 include_once 'app/views/front/layouts/header.php'; 
 ?>

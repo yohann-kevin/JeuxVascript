@@ -1,8 +1,4 @@
 <?php 
-$page = "home";
-$title = "Home";
-$description = "JeuxVascript le jeux pour les joueurs 100% javascript, profiter de 
-    plusieurs jeux et d'un tas de fonctionnalité 100% gratuite";
 require_once 'app/views/front/layouts/head.php'; 
 include_once 'app/views/front/layouts/header.php';
 ?>

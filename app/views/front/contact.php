@@ -1,8 +1,3 @@
-<?php 
-$page = 'contact';
-$title = "Contact";
-$description = "Vous avez quelques choses a nous dire ? N'hesitez pas,contacter nous.";
-?>
 <?php require_once 'app/views/front/layouts/head.php'; ?>
 <?php require_once 'app/views/front/layouts/header.php'; ?>
     <main id="contact">

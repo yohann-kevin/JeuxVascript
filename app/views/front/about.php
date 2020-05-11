@@ -1,8 +1,3 @@
-<?php 
-$page = 'about';
-$title = "About";
-$description = "Vous souhaitez en savoir plus surun de nos jeux ? Ou sur JeuxVascript ? Vous trouverez toutes vos réponses ici";
-?>
 <?php require_once 'app/views/front/layouts/head.php'; ?>
 <?php require_once 'app/views/front/layouts/header.php'; ?>
 

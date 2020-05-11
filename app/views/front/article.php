@@ -1,8 +1,3 @@
-<?php  
-$page = "";
-$title = "Article";
-$description = "";
-?>
 <?php require_once 'app/views/front/layouts/head.php'; ?>
 <?php include_once 'app/views/front/layouts/header.php'; ?>
     <?php if(!empty($article)) : ?>

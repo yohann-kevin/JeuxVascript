@@ -1,8 +1,3 @@
-<?php 
-$page = 'news';
-$title = "News";
-$description = "Consulter les derniers articles de la communauté JeuxVascript";
-?>
 <?php require_once 'app/views/front/layouts/head.php'; ?>
 <?php require_once 'app/views/front/layouts/header.php'; ?>
         <main id="news">

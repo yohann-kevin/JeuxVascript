@@ -1,8 +1,3 @@
-<?php  
-$page = "";
-$title = "Sitemap";
-$description = "Consulter le plan du site de JeuxVascript";
-?>
 <?php require_once 'app/views/front/layouts/head.php'; ?>
 <?php include_once 'app/views/front/layouts/header.php'; ?>
 
