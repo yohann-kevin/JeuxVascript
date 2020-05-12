@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 namespace Project\controllers;
 
@@ -20,7 +20,7 @@ class ControllerFront {
     function gameFront() {
         $page = 'game';
         $title = "Games";
-        $description = "Découvrez nos jeux 100% JavaScript"; 
+        $description = "Découvrez nos jeux 100% JavaScript";
 
         require 'app/views/front/game.php';
     }
@@ -366,7 +366,9 @@ class ControllerFront {
                 $postArticle = new \Project\models\FrontManager();
                 $articlePost = $postArticle->postArticle($title,$category_id,$content,$image);
                 move_uploaded_file($_FILES['file']['tmp_name'],'app/public/images/articles/' .$image);
-
+                // $images = 'app/public/images/articles/' .$image;
+                // $finalImage = $this->resizeImage($images);
+                // move_uploaded_file($_FILES['file']['tmp_name'],'app/public/images/articles/resize' .$finalImage);
                 unset($_POST['title']);
                 unset($_POST['content']);   
             }
@@ -374,11 +376,17 @@ class ControllerFront {
         }
     }
 
-    // function resizeImage($image) {
-    //     $chemin = 'app/public/images/articles/'.$image;
-    //     $size = getimagesize($chemin);
-    //     echo $size;
-    // }
+    function resizeImage($images) {
+        $image = imagecreatefrompng($images);
+        $sizex = 760;
+        $sizey = 300;
+        $newImage = imagecrop($image, ['x' => 0, 'y' => 0, 'width' => $sizex, 'height' => $sizey]);
+        if ($newImage !== FALSE) {
+            // $finalImage = imagepng($newImage, 'example-cropped.png');
+            // return $finalImage;
+        }
+        
+    }
 
     // permet d'afficher tout les articles
     function displayArticles() {
@@ -576,14 +584,5 @@ class ControllerFront {
             }
             return $errors;
         }    
-    }
-
-    // permet a l'utilisateur de supprimer son compte
-    function deleteUsers() {
-        $users = new \Project\models\FrontManager();
-        $usersDelete = $users->deleteUsers();
-        unset($_SESSION['user']);
-        session_destroy();
-        return $usersDelete;
     }
 } 

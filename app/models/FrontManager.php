@@ -222,14 +222,6 @@ class FrontManager extends Manager {
         return $modifyPassword;
     }
 
-    // public function passwordCheck(){
-    //     $bdd = $this->dbConnect();
-    //     $passwordCheck = $bdd->prepare('SELECT password FROM users WHERE id = ?');
-    //     $passwordCheck->execute([$_SESSION['user']]);
-    //     $passwordCheck = $passwordCheck->fetch();
-    //     return $passwordCheck;
-    // }
-
     // permet de supprimer un compte utilisateur
     public function deleteUsers() {
         $bdd = $this->dbConnect();
@@ -237,16 +229,5 @@ class FrontManager extends Manager {
         $usersDelete = $bdd->prepare("DELETE users.* FROM users WHERE id = ?");
         $usersDelete->execute([$id]);
         return $usersDelete;
-    }
-
-    // ---------test----------------
-
-    public function scoreSavedBattleship($data) {
-        $bdd = $this->dbConnect();
-        $score = $bdd->prepare("INSERT INTO score_battleship(data) VALUES (:score_battleship)");
-        $score->execute([
-            'score_battleship' => htmlentities($data)
-        ]);
-        return $score;
     }
 }
