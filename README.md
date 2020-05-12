@@ -1,4 +1,6 @@
-# JeuxVascript
+<div align="center">
+    # JeuxVascript
+</div>
 
 <div align="center">
     <img src="app/public/images/logo/Jeuxvacsript2.png">
