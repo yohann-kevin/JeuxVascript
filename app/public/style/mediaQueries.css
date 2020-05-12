@@ -3,6 +3,10 @@
     #homeGame img {
         height: 600px;
     }
+
+    #pageArticle {
+        min-height: 60vh;
+    }
 } 
 
 /* format tablette */
