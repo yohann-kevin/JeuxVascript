@@ -331,7 +331,7 @@ class ControllerFront {
         return $errors;
     }
 
-    // affiche les info d'une catégories
+    // affiche les info d'une catégorie
     // function displayCategory() {
     //     $displayCategory = new \Project\models\FrontManager();
     //     $categorys = $displayCategory->category();
