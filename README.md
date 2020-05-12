@@ -1,5 +1,5 @@
 <div align="center">
-    # JeuxVascript
+# JeuxVascript
 </div>
 
 <div align="center">
