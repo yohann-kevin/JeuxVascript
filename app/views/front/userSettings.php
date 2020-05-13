@@ -21,11 +21,13 @@
                         
             <?php endif; endif ?>
                 <label from="changeEmail">taper votre nouvelle email</label>
-                <input id="changeEmail" name="email" type="email" placeholder="<?= $infos['email']?>" values="<?php if(isset($_POST['email']))echo $_POST['email'] ?>">
+                <input id="changeEmail" name="email" type="email" placeholder="<?= $infos['email']?>" values="<?php if(isset($_POST['email']))echo $_POST['email'] ?>" required>
+                <span id="forgetNewEmail"></span>
                 <label from="newPseudo">Taper votre nouveau pseudo</label>
-                <input id="newPseudo" name="pseudo" type="text" placeholder="<?= $infos['pseudo']?>" values="<?php if(isset($_POST['Pseudo']))echo $_POST['Pseudo'] ?>">
+                <input id="newPseudo" name="pseudo" type="text" placeholder="<?= $infos['pseudo']?>" values="<?php if(isset($_POST['Pseudo']))echo $_POST['Pseudo'] ?>" required>
+                <span id="forgetNewPseudo"></span>
                 <div class="buttonSettings">
-                    <button type="submit">Modifier</button>
+                    <button type="submit" id="btnModifyInfo">Modifier</button>
                     <button type="reset">Annuler</button>
                 </div>
             </form>
@@ -42,13 +44,16 @@
                         
             <?php endif; endif ?>
                 <label from="oldPassword">Taper votre ancien mot de passe</label>
-                <input id="oldPassword" name="password" type="password" placeholder="Votre ancien mot de passe">   
+                <input id="oldPassword" name="password" type="password" placeholder="Votre ancien mot de passe" required>   
+                <span id="forgetOldPassword"></span>
                 <label from="newPassword">Taper votre nouveau mot de passe</label>
-                <input id="newPassword" name="newPassword" type="password" placeholder="Votre nouveau mot de passe">
+                <input id="newPassword" name="newPassword" type="password" placeholder="Votre nouveau mot de passe" required>
+                <span id="forgetNewPassword"></span>
                 <label from="verifyNewPassword">Confirmer votre nouveau mot de passe</label>
-                <input id="verifyNewPassword" name="verifyNewPassword" type="password" placeholder="Confirmer le mot de passe">
+                <input id="verifyNewPassword" name="verifyNewPassword" type="password" placeholder="Confirmer le mot de passe" required>
+                <span id="forgetNewPassConf"></span>
                 <div class="buttonSettings">
-                    <button type="submit">Modifier</button>
+                    <button type="submit" id="btnSubPass">Modifier</button>
                     <button type="reset">Annuler</button>
                 </div>
             </form>

@@ -35,6 +35,7 @@
     <script type="text/javascript" src="app/public/script/index.js"></script>
     <script type="text/javascript" src="app/public/script/jquery.js"></script>
     <script type="text/javascript" src="app/public/script/about.js"></script>
+    <script type="text/javascript" src="app/public/script/regex.js" defer></script>
 
     <!-- script du jeux snake -->
     <script type="text/javascript" src="app/public/script/snake.js"></script>

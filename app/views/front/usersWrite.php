@@ -25,7 +25,7 @@ include_once 'app/views/front/layouts/header.php';
 
         <div id="usersWriteName">
             <label for="title">Titre :</label>
-            <input type="text" name="title" placeholder="title" value="<?php if(isset($_POST['title']))echo $_POST['title'] ?>">
+            <input type="text" name="title" placeholder="title" value="<?php if(isset($_POST['title']))echo $_POST['title'] ?>" required>
         </div>
         <div id="usersSelectCategory">
             <label for="selectCategory">Choisisser une catégories:</label>
@@ -42,11 +42,11 @@ include_once 'app/views/front/layouts/header.php';
         </div>
         <div id="usersSelectImg">
             <label for="img">Choisisser une image</label>
-            <input type="file" name="file" placeholder="Parcourir...">
+            <input type="file" name="file" placeholder="Parcourir..." required>
         </div>
         <div id="usersWriteContent">
             <label for="content">Rédiger votre article</label>
-            <textarea name="content" value="<?php if(isset($_POST['content']))echo $_POST['content'] ?>"></textarea>
+            <textarea name="content" value="<?php if(isset($_POST['content']))echo $_POST['content'] ?>" required></textarea>
         </div>
         <div id="buttonUsersWrite">
             <button type="submit" id="btnSubUsersWrite">Envoyer</button>

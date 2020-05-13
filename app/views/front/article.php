@@ -43,7 +43,7 @@
                     endif
                     ?>
                     <textarea name="contentComment" placeholder="Votre commentaire *"></textarea>
-                    <input type="submit" value="commenter">
+                    <input type="submit" value="commenter" required>
                 </form>
             </section>
         </div>
