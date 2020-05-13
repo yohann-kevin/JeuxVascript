@@ -33,18 +33,22 @@ include_once 'app/views/front/layouts/header.php';
                 <?php endif; endif ?>
                 
                 <div id="pseudoRegister">
-                    <label for="emailContact">Votre email</label>
-                    <input id="emailContact" name="email" type="email" placeholder="Email" values="<?php if(isset($_POST['email']))echo $_POST['email'] ?>">
-                    <label for="firstNameContact">Votre pseudo</label>
-                    <input id="firstNameContact" name="pseudo" type="text" placeholder="First name" values="<?php if(isset($_POST['Pseudo']))echo $_POST['Pseudo'] ?>">
-                   
+                    <label for="emailRegister">Votre email</label>
+                    <input id="emailRegister" name="email" type="email" placeholder="Email" values="<?php if(isset($_POST['email']))echo $_POST['email'] ?>" required>
+                    <span id="forgetEmailRegister"></span>
+                    <label for="firstNameRegister">Votre pseudo</label>
+                    <input id="firstNameRegister" name="pseudo" type="text" placeholder="First name" values="<?php if(isset($_POST['Pseudo']))echo $_POST['Pseudo'] ?>" required>
+                    <span id="forgetPseudoRegister"></span>
+
                 </div>
 
                 <div id="passwordRegister">
                     <label for="passwordRegister">Votre mot de passe</label>
-                    <input id="passwordRegister" name="password" type="password" placeholder="password">
+                    <input id="passwordRegister" name="password" type="password" placeholder="password" required>
+                    <span id="forgetPasswordRegister"></span>
                     <label for="verifyPasswordRegister">Confirmer votre mot de passe</label>
-                    <input id="verifyPasswordRegister" name="verifyPassword" type="password" placeholder="password">
+                    <input id="verifyPasswordRegister" name="verifyPassword" type="password" placeholder="password" required>
+                    <span id="forgetPassConfRegister"></span>
                 </div>
 
                 <div id="buttonRegister">

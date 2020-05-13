@@ -34,16 +34,18 @@
                 <div id="nameContact">
                     <label from="firstNameContact">Votre prenom</label>
                     <input id="firstNameContact" name="name" type="text" placeholder="First name" 
-                        value='<?php if(isset($_POST['name']))echo $_POST['name'] ?>'>
+                        value='<?php if(isset($_POST['name']))echo $_POST['name'] ?>' required>
+                    <span id="forgetPseudoContact"></span>
                     <label from="emailContact">Votre email</label>
                     <input id="emailContact" name="email" type="text" placeholder="Email"
-                        value='<?php if(isset($_POST['email']))echo $_POST['email'] ?>'>
+                        value='<?php if(isset($_POST['email']))echo $_POST['email'] ?>' required>
+                    <span id="forgetEmailContact"></span>
                 </div>
                 <div id="messageContact">
                     <label from="message">Votre message</label>
-                    <input type="text" name="objetMessage" placeholder="objet" id="objetMessage">
+                    <input type="text" name="objetMessage" placeholder="objet" id="objetMessage" required>
                     <textarea name="content" id="message" placeholder="Your message..."
-                        value='<?php if(isset($_POST['content']))echo $_POST['content'] ?>'></textarea>
+                        value='<?php if(isset($_POST['content']))echo $_POST['content'] ?>' required></textarea>
                 </div>
                 <div id="buttonContact">
                     <button type="submit" id="btnSubContact">Envoyer</button>

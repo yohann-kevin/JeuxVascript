@@ -59,10 +59,12 @@
                     <?= $error ?>
                     <?php endif ?>
                         <label from="pseudoConnect">Votre pseudo</label>
-                        <input id="pseudoConnect" name="pseudo" type="text" placeholder="Pseudo">
+                        <span id="forgetPseudoConnect"></span>
+                        <input id="pseudoConnect" name="pseudo" type="text" placeholder="Pseudo" required>
                         <label from="passwordConnect">Votre mot de passe</label>
                         <input id="passwordConnect" name="password" type="password" placeholder="password"
-                            value='<?php if(isset($_POST['Pseudo']))echo $_POST['Pseudo'] ?>'>
+                            value='<?php if(isset($_POST['Pseudo']))echo $_POST['Pseudo'] ?>' required>
+                        <span id="forgetPasswordConnect"></span>
                         <div id="btnGoogle" class="g-signin2" data-onsuccess="onSignIn"></div>
                         <div id="buttonConnect">
                             <button type="submit" id="btnSubConnect">Envoyer</button>
