@@ -83,6 +83,18 @@
     margin: 15px;
 }
 
+#postComment span {
+    width: 100%;
+    text-align: center;
+    color: red;
+}
+
+#postComment h3 {
+    width: 100%;
+    text-align: center;
+    color: green;
+}
+
 #writeComment {
     width: 100%;
     display: flex;

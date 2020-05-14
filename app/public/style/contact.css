@@ -45,6 +45,12 @@
     margin-bottom: 15px;
 }
 
+#nameContact span {
+    width: 100%;
+    text-align: center;
+    color: red;
+}
+
 #nameContact input {
     height: 35px;
     width: 50%;

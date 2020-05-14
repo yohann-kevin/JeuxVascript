@@ -368,6 +368,13 @@ nav>ul li:hover .under {
     -o-border-radius: 5px;
 }
 
+#forgetPseudoConnect,
+#forgetPasswordConnect{
+    width: 100%;
+    text-align: center;
+    color: red;
+}
+
 #idConnect input:focus {
     transform: scale(1.15);
     -webkit-transform: scale(1.15);

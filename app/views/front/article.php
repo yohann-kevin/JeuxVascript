@@ -33,7 +33,7 @@
                     <?php if(isset($error)) : 
                         if($error) : 
                     ?>
-                    <h3><?= $error ?></h3>
+                    <span><?= $error ?></span>
                     <?php
                     else :
                     ?>

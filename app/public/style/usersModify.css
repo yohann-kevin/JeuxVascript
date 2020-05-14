@@ -20,8 +20,13 @@
     margin-bottom: 45px;
 }
 
+#modifyError {
+    width: 100%;
+    text-align: center;
+}
+
 #usersModifyName {
-    width: 25%;
+    width: 80%;
     padding: 25px;
 }
 

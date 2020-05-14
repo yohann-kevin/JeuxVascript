@@ -46,6 +46,12 @@
     margin-bottom: 15px;
 }
 
+#modifyInfo span {
+    width: 100%;
+    color: red;
+    text-align: center;
+}
+
 #modifyInfo input{
     width: 60%;
     height: 35px;
@@ -85,6 +91,12 @@
     text-align: center;
     margin-top: 15px;
     margin-bottom: 15px;
+}
+
+#modifyPassword span {
+    width: 100%;
+    text-align: center;
+    color: red;
 }
 
 #modifyPassword input {
