@@ -140,6 +140,27 @@
     cursor: pointer;
 }
 
+.contentAbout3 {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.contentAbout3 p {
+    padding: 15px;
+}
+
+#textBattleship {
+    width: 60%;
+    margin-bottom: 25px;
+}
+
+#retroBattleship {
+    width: 25%;
+    height: 120px;
+}
+
 .imgAbout7 {
     position: absolute;
     margin-right: 75px;
@@ -163,6 +184,31 @@
     cursor: pointer;
 }
 
+.contentAbout4 {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.contentAbout4 p {
+    padding: 15px;
+}
+
+#textPower4 {
+    width: 60%;
+    margin-bottom: 25px;
+}
+
+#retroPower4 {
+    width: 25%;
+    height: 120px;
+}
+
 .contentCenter {
     text-align: center;
+}
+
+.lastArticleAbout {
+    padding-bottom: 25px;
 }
