@@ -187,17 +187,17 @@ class ControllerFront {
     }
 
     function pageDeleteArticle() {
-
-        require 'app/views/front/deleteArticle.php';
+        $this->deleteArticle(); 
+        $this->accountFront();
     }
 
     function pageDeleteComment() {
-
-        require 'app/views/front/deleteComment.php';
+        $this->deleteComment();
+        $this->accountFront();
     }
 
     function pageDeleteUsers() {
-
+        $this->deleteUsers();
         require 'app/views/front/deleteUsers.php';
     }
 
