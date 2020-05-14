@@ -102,73 +102,53 @@
                     <img class="imgAbout6" src="app/public/images/logo/left.png">
                 </div>
                 <div class="contentAbout3">
-                    <p class="paraAbout3">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Laboriosam non debitis assumenda! Deleniti accusantium eaque
-                    optio ullam natus laudantium qui, laborum officiis provident
-                    est necessitatibus.
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Laboriosam non debitis assumenda! Deleniti accusantium eaque
-                    optio ullam natus laudantium qui, laborum officiis provident
-                    est necessitatibus.
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Laboriosam non debitis assumenda! Deleniti accusantium eaque
-                    optio ullam natus laudantium qui, laborum officiis provident
-                    est necessitatibus.
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Laboriosam non debitis assumenda! Deleniti accusantium eaque
-                    optio ullam natus laudantium qui, laborum officiis provident
-                    est necessitatibus.
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Laboriosam non debitis assumenda! Deleniti accusantium eaque
-                    optio ullam natus laudantium qui, laborum officiis provident
-                    est necessitatibus.
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Laboriosam non debitis assumenda! Deleniti accusantium eaque
-                    optio ullam natus laudantium qui, laborum officiis provident
-                    est necessitatibus.
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Laboriosam non debitis assumenda! Deleniti accusantium eaque
-                    optio ullam natus laudantium qui, laborum officiis provident
-                    est necessitatibus.</p>
+                    <p id="textBattleship">Le Battleship , de l'anglais signifiant "Battaille navale", 
+                        appelée aussi touché-coulé, est un jeu de 
+                        société dans lequel deux joueurs doivent placer des  "navires"  
+                        sur une grille tenue secrète et tenter de  "toucher"  les navires 
+                        adverses. Le gagnant est celui qui parvient à couler tous les navires 
+                        de l'adversaire avant que tous les siens ne le soient. On dit qu'un 
+                        navire est coulé si chacune de ses cases a été touchées par un coup de 
+                        l'adversaire
+                    </p>
+                    <img src="app/public/images/about/retroBattleship.jpg" alt="battleship" id="retroBattleship">
+                    <p class="contentCenter">Ce jeux très populaires et indémodable, est connu sous de très nombreuses variantes dans le jeux 
+                        vidéo depuis des années les développeur aime s'inspirer de jeux simple afin de le refaire découvrir
+                        au grand public sous une nouvelle forme, une nouvelle éxperience du battleship ...  
+                    </p>
+                    <p class="contentCenter">Chez JeuxVascript nous vous proposons, nous aussi une nouvelles éxperiences du battleship.
+                        Nous avons voulu vous proposez une éxperience qui se rapproche le plus possible de celle du jeux
+                        de société de base à savoir une grille des bateaux et c'est tout, entièrement fait en JavaScript.
+                        Vous vous retrouverez face à l'imbattable IA de JeuxVascript.
+                    <p><br>
                 </div>
 
             </article>
 
-            <article class="articleAbout">
+            <article class="articleAbout lastArticleAbout">
                 <div class="headerArticleAbout">
                     <h1 class="articleAboutTitle">Power4</h1>
                     <img class="imgAbout7" src="app/public/images/logo/bottom.png">
                     <img class="imgAbout8" src="app/public/images/logo/left.png">
                 </div>
                 <div class="contentAbout4">
-                    <p class="paraAbout4">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Laboriosam non debitis assumenda! Deleniti accusantium eaque
-                    optio ullam natus laudantium qui, laborum officiis provident
-                    est necessitatibus.
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Laboriosam non debitis assumenda! Deleniti accusantium eaque
-                    optio ullam natus laudantium qui, laborum officiis provident
-                    est necessitatibus.
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Laboriosam non debitis assumenda! Deleniti accusantium eaque
-                    optio ullam natus laudantium qui, laborum officiis provident
-                    est necessitatibus.
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Laboriosam non debitis assumenda! Deleniti accusantium eaque
-                    optio ullam natus laudantium qui, laborum officiis provident
-                    est necessitatibus.
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Laboriosam non debitis assumenda! Deleniti accusantium eaque
-                    optio ullam natus laudantium qui, laborum officiis provident
-                    est necessitatibus.
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Laboriosam non debitis assumenda! Deleniti accusantium eaque
-                    optio ullam natus laudantium qui, laborum officiis provident
-                    est necessitatibus.
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Laboriosam non debitis assumenda! Deleniti accusantium eaque
-                    optio ullam natus laudantium qui, laborum officiis provident
-                    est necessitatibus.</p>
+                    <p id="textPower4">Le Power 4 , de l'anglais signifiant "Puissance 4", appelé aussi parfois 4 en ligne 
+                        est un jeu de stratégie combinatoire abstrait, commercialisé pour la première 
+                        fois en 1974 par la Milton Bradley Company, plus connue sous le nom de MB et détenue 
+                        depuis 1984 par la société Hasbro.
+                    </p>
+                    <img src="app/public/images/about/power4.jpg" alt="power 4" id="retroPower4">
+                    <p class="contentCenter">Ce jeux de société, (comparer au battleship) n'a eu que très peut d'exportation au format
+                        jeux vidéo mais il est quand même possible de trouver certaine version du jeux sur internet
+                    </p>
+                    <p class="contentCenter">Quand à nous, nous vous proposons de revivre vos meileur partie de power 4.
+                        La version du power 4 sur JeuxVascript ce rapproche énormément de la versionde base du jeux
+                        vous devrez être le premier joueur à aligné quatre piont.
+                        Vous avez la possibilité de jouer avec un ami présent avec vous, vous n'aurez cas jouer chacun
+                        votre tour et que le meilleur gagne ! 
+                        Pour les joueurs solo JeuxVascript vous a concocter une petite IA (entièrement en javascript)
+                        qui se révèle être un vrai défi ! serez vous de taille à l'affronter ?
+                    </p>
                 </div>
 
             </article>
