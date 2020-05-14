@@ -9,20 +9,15 @@ include_once 'app/views/front/layouts/header.php';
     <section>
 
     <form id="formUsersModify" method="post" action="" enctype="multipart/form-data">
-
-        <?php if(isset($errors)) :
-                if($errors):
+        <div id="modifyError">
+            <?php if(isset($errors)) :
+                    if($errors):
             foreach($errors as $error) : ?>
-             <h3><?= $error ?><h3>
-                
-            <?php endforeach; else : ?>
-                        
-            <h3>youpi ça marche<h3>
-                        
+            <h3><?= $error ?><h3>  
+            <?php endforeach; else : ?>      
+            <h3>Votre article à bien été modifier<h3>  
             <?php endif; endif ?>
-    
-
-
+        </div>
         <div id="usersModifyName">
             <label for="title">Titre :</label>
             <input type="text" name="title" placeholder="title" value="<?php echo($article['title']); if(isset($_POST['title']))echo $_POST['title'] ?>" required>

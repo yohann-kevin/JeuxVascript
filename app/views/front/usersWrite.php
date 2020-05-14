@@ -9,19 +9,15 @@ include_once 'app/views/front/layouts/header.php';
     <section>
 
     <form id="formUsersWrite" method="post" action="" enctype="multipart/form-data">
-
-        <?php if(isset($errors)) :
-                if($errors):
-            foreach($errors as $error) : ?>
-
-        <h3><?= $error ?><h3>
-                
-        <?php endforeach; else : ?>
-                
-        <h3>youpi ça marche<h3>
-                
-        <?php endif; endif ?>
-
+        <div id="writeError">
+            <?php if(isset($errors)) :
+                    if($errors):
+                foreach($errors as $error) : ?>
+            <h3><?= $error ?><h3>
+            <?php endforeach; else : ?>
+            <h3>Votre article a bien été envoyer<h3>
+            <?php endif; endif ?>
+        </div>
 
         <div id="usersWriteName">
             <label for="title">Titre :</label>
