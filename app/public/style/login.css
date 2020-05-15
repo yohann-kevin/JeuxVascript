@@ -32,6 +32,12 @@
     font-size: 1.5rem;
 }
 
+#logFormAdmin span {
+    width: 100%;
+    color: red;
+    text-align: center;
+}
+
 #logFormAdmin input {
     height: 25px;
     width: 50%;
