@@ -568,19 +568,19 @@ class ControllerFront {
                 $errors[] = 'le mot de passe de confirmation est incorrect !!!';
             }
 
-            if(!empty($password)) {
-                $testPassword = new \Project\models\FrontManager();
-                $passwordCheck = $testPassword->passwordCheck();
-                if($passwordCheck === $password) {
-                    $validation = false;
-                    $errors[] = "Ce mot de passe n'est pas le bon !";
-                }
-            }
+            // if(!empty($password)) {
+            //     $testPassword = new \Project\models\FrontManager();
+            //     $passwordCheck = $testPassword->passwordCheck();
+            //     if($passwordCheck === $password) {
+            //         $validation = false;
+            //         $errors[] = "Ce mot de passe n'est pas le bon !";
+            //     }
+            // }
 
             if($validation){
                 $modifyPassword = new \Project\models\FrontManager();
                 $passwordModify = $modifyPassword->usersModifyPassword($newPassword);
-                require 'app/views/front/account.php';
+                $this->accountFront();
             }
             return $errors;
         }    
