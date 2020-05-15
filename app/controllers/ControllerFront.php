@@ -198,7 +198,7 @@ class ControllerFront {
 
     function pageDeleteUsers() {
         $this->deleteUsers();
-        require 'app/views/front/deleteUsers.php';
+        $this->home();
     }
 
 
@@ -207,7 +207,7 @@ class ControllerFront {
         $page = "";
         $title = "ERROR404";
         $description = "ERREUR 404 La page que vous cherchez n'éxiste pas ou plus !";
-        
+    
         require 'app/views/front/error404.php';
     }
 
@@ -277,6 +277,15 @@ class ControllerFront {
         unset($_SESSION['user']);
         session_destroy();
         $this->home();
+    }
+
+    // permet a l'utilisateur de supprimer son compte
+    function deleteUsers() {
+        $users = new \Project\models\FrontManager();
+        $usersDelete = $users->deleteUsers();
+        unset($_SESSION['user']);
+        session_destroy();
+        return $usersDelete;
     }
 
     // affiche les info de l'utilisateur
