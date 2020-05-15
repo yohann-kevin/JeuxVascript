@@ -40,6 +40,11 @@
     justify-content: space-around;
 }
 
+#addAdmin h3 {
+    width: 100%;
+    text-align: center;
+}
+
 #addAdmin label{
     width: 80%;
     text-align: center;

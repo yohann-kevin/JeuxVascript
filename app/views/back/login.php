@@ -7,16 +7,19 @@
             <?php if(isset($error)) : ?>
             <?= $error ?>
             <?php endif ?>
-                <label from="">Votre identifiant</label>
-                <input id="" name="pseudo" type="text" placeholder="Pseudo" 
-                    value='<?php if(isset($_POST['Pseudo']))echo $_POST['Pseudo'] ?>'>
-                <label from="">Votre mot de passe</label>
-                <input id="" name="password" type="password" placeholder="password">
+                <label from="adminPseudo">Votre identifiant</label>
+                <input id="adminPseudo" name="pseudo" type="text" placeholder="Pseudo" 
+                    value='<?php if(isset($_POST['Pseudo']))echo $_POST['Pseudo'] ?>' required>
+                    <span id="forgetAdminPseudo"></span>
+                <label from="adminPassword">Votre mot de passe</label>
+                <input id="adminPassword" name="password" type="password" placeholder="password" required>
+                <span id="forgetAdminPass"></span>
                 <div id="btnConnectAdmin">
-                    <button type="submit">Connecter</button>
+                    <button type="submit" id="btnAdminLog">Connecter</button>
                     <button type="reset">Annuler</button>
                 </div>
             </form>
         </section>
 
     </main>
+    <script type="text/javascript" src="app/public/script/regexBack.js"></script>

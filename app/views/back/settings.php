@@ -23,20 +23,24 @@
                     <h3>youpi ça marche<h3>
                 
                 <?php endif; endif ?>
-                <label for="email">Email du nouvelle admin</label>
-                <input type="email" value="<?php if(isset($_POST['email']))echo $_POST['email'] ?>" name="email">
+                <label for="adminEmail">Email du nouvelle admin</label>
+                <input id="adminEmail" type="email" value="<?php if(isset($_POST['email']))echo $_POST['email'] ?>" name="email" required>
+                <span id="forgetAdminEmail"></span>
 
-                <label for="pseudo">Pseudo du nouvelle admin</label>
-                <input type="text" value="<?php if(isset($_POST['Pseudo']))echo $_POST['Pseudo'] ?>" name="pseudo">
+                <label for="pseudoNewAdmin">Pseudo du nouvelle admin</label>
+                <input id="pseudoNewAdmin" type="text" value="<?php if(isset($_POST['Pseudo']))echo $_POST['Pseudo'] ?>" name="pseudo" required>
+                <span id="forgetNewAdminPseudo"></span>
 
-                <label for="password">Mot de passe</label>
-                <input type="password" value="password" name="password">
+                <label for="passNewAdmin">Mot de passe</label>
+                <input id="passNewAdmin" type="password" name="password" required>
+                <span id="forgetPassNewAdmin"></span>
 
-                <label for="verifyPassword">Confirmer le mot de passe</label>
-                <input type="password" value="verifyPassword" name="verifyPassword">
+                <label for="verifyPassAdmin">Confirmer le mot de passe</label>
+                <input id="verifyPassAdmin" type="password" name="verifyPassword" required>
+                <span id="forgetVerifyPasAdmin"></span>
 
                 <div id="settingsButton">
-                    <button type="submit">Ajouter</button>
+                    <button type="submit" id="btnNewAdmin">Ajouter</button>
                     <button type="reset">Annuler</button>
                 </div>
             </form>
