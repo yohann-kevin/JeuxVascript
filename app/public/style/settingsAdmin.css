@@ -45,6 +45,12 @@
     text-align: center;
 }
 
+#addAdmin span {
+    width: 100%;
+    color: red;
+    text-align: center;
+}
+
 #addAdmin label{
     width: 80%;
     text-align: center;
