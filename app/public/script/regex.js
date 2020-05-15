@@ -38,12 +38,12 @@ var forgetNewPseudo = document.getElementById('forgetNewPseudo');
 
 // variable page settings section password
 var btnSubPass = document.getElementById('btnSubPass');
-var oldPassword = document.getElementById('oldPassword');
+
 var forgetOldPassword = document.getElementById('forgetOldPassword');
 
-var newPassword = document.getElementById('newPassword');
+
 var forgetNewPassword = document.getElementById('forgetNewPassword');
-var verifyNewPassword = document.getElementById('verifyNewPassword');
+
 var forgetNewPassConf = document.getElementById('forgetNewPassConf');
 
 
@@ -60,7 +60,7 @@ function regex(name, value, span, regex) {
 
 // vérifie si le mot de passe et le mot de passe de confirmation sont bien identique
 function passwordConf(password,verify,span) {
-    if (password.value != verify) {
+    if (password !== verify) {
         event.preventDefault();
         span.textContent = 'Les mot de passe ne sont pas identiques';
     }
@@ -82,10 +82,12 @@ if (btnModifyInfo === null && btnContact === null) {
             regex('Email',emailRegister,forgetEmailRegister,regMail);
             regex('Pseudo',pseudoRegister,forgetPseudoRegister,regName);
 
-            regex('Mot de passe',passwordRegister,forgetPasswordRegister,regMdp);
-            regex('Mot de passe de confirmation',verifyPasswordRegister,forgetPassConfRegister,regMdp);
+            var verifyPassRegister = document.getElementById('passwordRegister').value;
+            var verifyPassConfRegister = document.getElementById('verifyPasswordRegister').value;
 
-            passwordConf(passwordRegister,verifyPasswordRegister,forgetPassConfRegister);
+            regex('Mot de passe',verifyPassRegister,forgetPasswordRegister,regMdp);
+            regex('Mot de passe de confirmation',verifyPassConfRegister,forgetPassConfRegister,regMdp);
+            passwordConf(verifyPassRegister,verifyPassConfRegister,forgetPassConfRegister);
         }
     })
 }
@@ -98,7 +100,7 @@ if (btnRegister === null && btnModifyInfo === null) {
             regex('Email',emailContact,forgetEmailContact,regMail);
         }
     })
-} else if (btnContact === null) {
+} else if (btnContact === null && btnRegister === null) {
     // gère la page settings (info)
     btnModifyInfo.addEventListener("click", function(event) {
         if (event) {
@@ -109,11 +111,17 @@ if (btnRegister === null && btnModifyInfo === null) {
     // gère la page settings (password)
     btnSubPass.addEventListener("click", function(event) {
         if (event) {
+            var oldPassword = document.getElementById('oldPassword');
+            var newPassword = document.getElementById('newPassword');
+            var verifyNewPassword = document.getElementById('verifyNewPassword');
+
+            var verifyPass = document.getElementById('newPassword').value;
+            var passVerify = document.getElementById('verifyNewPassword').value;
+
             regex('Ancien mot de passe',oldPassword,forgetOldPassword,regMdp);
             regex('Nouveau mot de passe',newPassword,forgetNewPassword,regMdp);
             regex('Mot de passe de confirmation',verifyNewPassword,forgetNewPassConf,regMdp);
-        
-            passwordConf(newPassword,verifyNewPassword,forgetNewPassConf);
+            passwordConf(verifyPass,passVerify,forgetNewPassConf);
         }
     })
 }
