@@ -207,7 +207,7 @@ class ControllerFront {
         $page = "";
         $title = "ERROR404";
         $description = "ERREUR 404 La page que vous cherchez n'éxiste pas ou plus !";
-        
+    
         require 'app/views/front/error404.php';
     }
 
