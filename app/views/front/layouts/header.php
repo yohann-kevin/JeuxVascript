@@ -6,15 +6,8 @@
             </a>
         </div>
         <div id="smartphone">
-            <img src="app/public/images/logo/menu.png" onclick="displayMenu()">
+            <img src="app/public/images/logo/menu.png" onClick="burger()">
         </div>
-        <!-- script temporaire -->
-        <script type="text/javascript">   
-            function displayMenu() {
-                var menu = document.getElementById("nav");
-                menu.style.display = "block";
-            }
-        </script>
         <nav id="nav">
             <ul id="navBar">
                 <li class="fromLeft menu">
