@@ -19,3 +19,10 @@ function Counter(id, index, speed, limit) {
 new Counter('c1', 0, 25, 100);
 new Counter('c2', 0, 50, 50);
 new Counter('c3', 0, 100, 24);
+
+function burger() {
+    var menu = document.getElementById("nav");
+    if(menu.style.display==""){menu.style.display="block"};
+    if (menu.style.display=="none") {menu.style.display="block" ; }
+    else {menu.style.display="none" ;}
+}
