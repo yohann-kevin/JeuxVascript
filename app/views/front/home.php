@@ -46,7 +46,7 @@ include_once 'app/views/front/layouts/header.php';
                 <img src="app/public/images/articles/<?= $lastArticle['images'] ?>" alt="<?= $lastArticle['images'] ?>" class="imgArticle">
                 <h2 class="articleTitle"><?= $lastArticle['title'] ?></h2>
                 <p class="para"><?= $lastArticle['extract'] ?></p>
-                <a href="index.php?action=article&id=<?=$lastArticle['id'] ?>">Read more...</a>
+                <a href="index.php?action=article&id=<?=$lastArticle['id'] ?>">Voir plus...</a>
             </article>
             <?php endforeach ; ?>
 
@@ -201,7 +201,7 @@ include_once 'app/views/front/layouts/header.php';
                     <img src="app/public/images/articles/<?= $articleInde['images'] ?>" alt="<?= $articleInde['images'] ?>">
                 </div>
                 <p class="advertPara"><?= $articleInde['extract'] ?></p>
-                <a href="index.php?action=article&id=<?=$articleInde['id'] ?>">Read more...</a>
+                <a href="index.php?action=article&id=<?=$articleInde['id'] ?>">Voir plus...</a>
             </article>
             <?php endforeach ; ?>
 
