@@ -47,18 +47,18 @@ class ControllerBack {
     }
 
     function pageDeleteArticle() {
-
-        require 'app/views/back/deleteArticle.php';
+        $this->deleteArticle();
+        $this->adminBack();
     }
 
     function pageDeleteComment() {
-
-        require 'app/views/back/deleteComment.php';
+        $this->deleteComment();
+        $this->adminBack();
     }
 
     function pageDeleteAdmin() {
-        
-        require 'app/views/back/deleteAdmin.php';
+        $this->deleteAdmin();
+        $this->adminBack();
     }
 
     function loginAdmin() {
