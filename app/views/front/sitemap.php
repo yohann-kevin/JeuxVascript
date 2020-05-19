@@ -8,7 +8,8 @@
                 <li class="fromLeft"> - <a href="index.php?action=home">Accueil</a></li>
                 <li class="margin1 fromLeft"> - <a href="index.php?action=game">Jeux</a></li>
                 <li class="margin2 fromLeft"> - <a href="index.php?action=snake">Snake</a></li>
-                <li class="margin2 fromLeft"> - <a href="index.php?action=spaceInvaders">Space Invaders</a></li>
+                <li class="margin2 fromLeft"> - <a href="index.php?action=battleship">Battleship</a></li>
+                <li class="margin2 fromLeft"> - <a href="index.php?action=power4">Power 4</a></li>
                 <li class="margin1 fromLeft"> - <a href="index.php?action=news">News</a></li>
                 <li class="margin1 fromLeft"> - <a href="index.php?action=about">A propos</a></li>
                 <li class="margin1 fromLeft"> - <a href="index.php?action=contact">Contact</a></li>
