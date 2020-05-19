@@ -40,7 +40,6 @@
             <a id="btnModalConnect">Connexion</a>
             <a href="index.php?action=register">Inscription</a>
             <?php endif ?>
-            <input type="text" name="search" placeholder="Search.." id="search">
             <!-- The Modal -->
             <div id="modalConnect">
                 <!-- Modal content -->
