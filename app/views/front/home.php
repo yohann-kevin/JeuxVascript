@@ -14,13 +14,13 @@ include_once 'app/views/front/layouts/header.php';
                 <h3>Presentation</h3>
             </header>
             <article id="presentationArticle">
-                <h4>Une communaute</h4>
+                <h4>Une communautée</h4>
                 <p><span class="strong2">JeuxVascript</span> est principalement une plateforme
                     <span class="strong2">communautaire</span> vous avez la possibilite de commente des articles
                     les <span class="strong2">jeux</span> de laisse des <span class="strong2">notes</span> et meme de
                     poste des <span class="strong2">articles</span>, suffit
                     juste de <a class="strong2" href="index.php?action=register">s'inscrire.</a></p>
-                <h4>De l'actualite</h4>
+                <h4>De l'actualité</h4>
                 <p>JeuxVascript est aussi une source <span class="strong2">d'information </span>sur l'actualite
                     du monde du jeux video <span class="strong2">independant</span>.</p>
                 <h4>Des jeux des jeux et encore des jeux</h4>
