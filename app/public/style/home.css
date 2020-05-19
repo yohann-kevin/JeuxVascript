@@ -13,6 +13,7 @@
 .strong2 {
     color: #ff9d00;
     font-family: 'robotoregular';
+    font-size: 1.4rem;
 }
 
 /* section titre */
@@ -69,14 +70,14 @@
     margin-top: 20px;
     margin-bottom: 30px;
     font-family: 'robotoregular';
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: #545454;
 }
 
 #presentationArticle h4 {
     font-family: 'robotoregular';
     color: #545454;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
 }
 
 #presentationImg {
@@ -111,6 +112,7 @@
 
 #homeStickyTitle h2 {
     font-family: 'robotoregular';
+    font-size: 1.4rem;
     font-size: 1.5rem;
     color: #545454;
 }
