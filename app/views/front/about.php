@@ -142,7 +142,7 @@
                         jeux vidéo mais il est quand même possible de trouver certaine version du jeux sur internet
                     </p>
                     <p class="contentCenter">Quand à nous, nous vous proposons de revivre vos meileur partie de power 4.
-                        La version du power 4 sur JeuxVascript ce rapproche énormément de la versionde base du jeux
+                        La version du power 4 sur JeuxVascript ce rapproche énormément de la version de base du jeux
                         vous devrez être le premier joueur à aligné quatre piont.
                         Vous avez la possibilité de jouer avec un ami présent avec vous, vous n'aurez cas jouer chacun
                         votre tour et que le meilleur gagne ! 

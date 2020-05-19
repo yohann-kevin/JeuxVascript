@@ -15,7 +15,7 @@
                 <h4 class="adminTitle"><?= $lastArticle['title'] ?></h4>
                 <p class="adminContent"><?= $lastArticle['extract'] ?></p>
                 <div class="buttonAdminArticle">
-                    <a href="indexAdmin.php?action=read&id=<?=$lastArticle['id'] ?>" class="articleAdminLink">Read more...</a>
+                    <a href="indexAdmin.php?action=read&id=<?=$lastArticle['id'] ?>" class="articleAdminLink">Voir plus...</a>
                 </div>
             </article>
             <?php endforeach ; ?>
