@@ -30,10 +30,10 @@
                 <input type="text" value="<?php if(isset($_POST['Pseudo']))echo $_POST['Pseudo'] ?>" name="pseudo">
 
                 <label for="password">Mot de passe</label>
-                <input type="password" value="password" name="password">
+                <input type="password" name="password">
 
                 <label for="verifyPassword">Confirmer le mot de passe</label>
-                <input type="password" value="verifyPassword" name="verifyPassword">
+                <input type="password" name="verifyPassword">
 
                 <div id="settingsButton">
                     <button type="submit">Ajouter</button>
