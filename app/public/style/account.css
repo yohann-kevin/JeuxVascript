@@ -9,6 +9,7 @@
 
 #pageAccount {
     width: 80%;
+    min-height: 60vh;
 }
 
 #pageAccount article {

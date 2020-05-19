@@ -5,6 +5,7 @@
 
 #sectionRegister {
     width: 100%;
+    min-height: 50vh;
     padding-bottom: 25px;
     background-color: #efefef;
     display: flex;

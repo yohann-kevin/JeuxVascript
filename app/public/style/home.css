@@ -12,7 +12,7 @@
 
 .strong2 {
     color: #ff9d00;
-    font-family: 'arcadeRounded';
+    font-family: 'robotoregular';
 }
 
 /* section titre */
@@ -68,14 +68,15 @@
 #presentationArticle p {
     margin-top: 20px;
     margin-bottom: 30px;
-    font-family: 'arcadeRounded';
-    font-size: 0.8rem;
+    font-family: 'robotoregular';
+    font-size: 1.5rem;
     color: #545454;
 }
 
 #presentationArticle h4 {
-    font-family: 'arcadeRounded';
+    font-family: 'robotoregular';
     color: #545454;
+    font-size: 1.6rem;
 }
 
 #presentationImg {
@@ -109,8 +110,8 @@
 }
 
 #homeStickyTitle h2 {
-    font-family: 'arcadeRounded';
-    font-size: 1rem;
+    font-family: 'robotoregular';
+    font-size: 1.5rem;
     color: #545454;
 }
 

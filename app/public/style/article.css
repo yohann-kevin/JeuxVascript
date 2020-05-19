@@ -26,10 +26,6 @@
     margin-bottom: 35px;
 }
 
-#articleImg:hover {
-    cursor: pointer;
-}
-
 #articleContent {
     width: 40%;
 }
