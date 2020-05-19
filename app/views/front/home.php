@@ -39,8 +39,6 @@ include_once 'app/views/front/layouts/header.php';
                         class="strong2">communautée</span></h2>
             </header>
 
-
-
             <?php foreach ($lastArticles as $lastArticle): ?>
             <article class="article">
                 <img src="app/public/images/articles/<?= $lastArticle['images'] ?>" alt="<?= $lastArticle['images'] ?>" class="imgArticle">
