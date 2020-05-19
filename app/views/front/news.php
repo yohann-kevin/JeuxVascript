@@ -19,7 +19,7 @@
                     <h4 class="newsTitle"><?= $article['title']?><h4>
                     <p class="newsContent"><?=$article['extract']?>...</p>
                     <div class="buttonNews">
-                        <a href="index.php?action=article&id=<?=$article['id'] ?>" class="newsLink">Read more...</a>
+                        <a href="index.php?action=article&id=<?=$article['id'] ?>" class="newsLink">Voir plus...</a>
                     </div>
                 </article>
                 <?php endforeach ?>
