@@ -8,11 +8,12 @@
 
 #pageError404 {
     width: 80%;
+    height: 60vh;
     text-align: center;
 }
 
 #imgError404 {
-    height: 300px;
+    height: 500px;
     margin-bottom: 45px;
     border-radius: 5px;
     -webkit-border-radius: 5px;
