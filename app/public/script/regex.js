@@ -63,6 +63,7 @@ function passwordConf(password,verify,span) {
     if (password !== verify) {
         event.preventDefault();
         span.textContent = 'Les mot de passe ne sont pas identiques';
+        
     }
 }
 
@@ -81,10 +82,10 @@ if (btnModifyInfo === null && btnContact === null) {
         if (event) {
             regex('Email',emailRegister,forgetEmailRegister,regMail);
             regex('Pseudo',pseudoRegister,forgetPseudoRegister,regName);
-
+    
             var verifyPassRegister = document.getElementById('passwordRegister').value;
             var verifyPassConfRegister = document.getElementById('verifyPasswordRegister').value;
-
+    
             regex('Mot de passe',verifyPassRegister,forgetPasswordRegister,regMdp);
             regex('Mot de passe de confirmation',verifyPassConfRegister,forgetPassConfRegister,regMdp);
             passwordConf(verifyPassRegister,verifyPassConfRegister,forgetPassConfRegister);
