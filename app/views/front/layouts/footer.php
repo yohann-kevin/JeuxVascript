@@ -32,23 +32,26 @@
 
 </body>
     <!-- script général du site -->
-    <script type="text/javascript" src="app/public/script/index.js"></script>
-    <script type="text/javascript" src="app/public/script/jquery.js"></script>
-    <script type="text/javascript" src="app/public/script/regex.js" defer></script>
-
-    <!-- script du jeux snake -->
-    <script type="text/javascript" src="app/public/script/snake.js"></script>
-
-    <!-- script du jeux battlehsip -->
-    <script type="text/javascript" src="app/public/script/IABattleship.js"></script>
-    <script type="text/javascript" src="app/public/script/battleship.js"></script>
-    <script type="text/javascript" src="app/public/script/mainBattleship.js"></script>
-
-    <!-- script du jeux puissance 4 -->
-    <script type="text/javascript" src="app/public/script/IAPower4.js"></script>
-    <script type="text/javascript" src="app/public/script/power4.js"></script>
-    <script tyê="text/javascript" src="app/public/script/mainPower4.js"></script>
+    <!-- <script type="text/javascript" src="app/public/script/index.js"></script>
+    <script type="text/javascript" src="app/public/script/jquery.js"></script> -->
     
+    <!-- script du jeux battlehsip -->
+    <!-- <script type="text/javascript" src="app/public/script/IABattleship.js"></script>
+    <script type="text/javascript" src="app/public/script/battleship.js"></script>
+    <script type="text/javascript" src="app/public/script/mainBattleship.js"></script> -->
+    
+    <!-- script du jeux puissance 4 -->
+    <!-- <script type="text/javascript" src="app/public/script/IAPower4.js"></script>
+    <script type="text/javascript" src="app/public/script/power4.js"></script>
+    <script type="text/javascript" src="app/public/script/mainPower4.js"></script> -->
+    
+    <!-- script optimisé -->
+    <script type="text/javascript" src="app/public/script/optiMain.js"></script>
+    <script type="text/javascript" src="app/public/script/regex.js"></script>
+    <script type="text/javascript" src="app/public/script/snake.js"></script>
+    <script type="text/javascript" src="app/public/script/optiBattleship.js"></script>
+    <script type="text/javascript" src="app/public/script/optiPower4.js"></script>
+
     <!-- script api google connect -->
     <script src="https://apis.google.com/js/platform.js" async defer></script>
 
