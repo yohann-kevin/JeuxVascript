@@ -10,6 +10,7 @@
     };
 })(jQuery);
 
+
 $('.imgAbout1').hideElement('.imgAbout1','.contentAbout1','.imgAbout2');
 $('.imgAbout3').hideElement('.imgAbout3','.contentAbout2','.imgAbout4');
 $('.imgAbout5').hideElement('.imgAbout5','.contentAbout3','.imgAbout6');
