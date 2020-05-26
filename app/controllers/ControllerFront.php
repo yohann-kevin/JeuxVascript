@@ -5,7 +5,7 @@ namespace Project\controllers;
 class ControllerFront {
     // fonction liens
     function home() {
-
+        // charge mes variables et mes différentes fonctions 
         $homeFront = new \Project\models\FrontManager();
         $page = "home";
         $title = "Home";
@@ -14,6 +14,7 @@ class ControllerFront {
         $accueil = $homeFront->viewFront();
         $lastArticles = $this->getLastArticleHome(); 
         $articleIndes = $this->displayArticleInde(); 
+        // charge la vue home
         require 'app/views/front/home.php';
     }
 
@@ -340,13 +341,6 @@ class ControllerFront {
         return $errors;
     }
 
-    // affiche les info d'une catégorie
-    // function displayCategory() {
-    //     $displayCategory = new \Project\models\FrontManager();
-    //     $categorys = $displayCategory->category();
-    //     return $categorys;
-    // }
-
     // permet a l'utilisateur de poster un articles
     function usersPostArticle(){
         if(isset($_SESSION['user'])) {
@@ -576,15 +570,6 @@ class ControllerFront {
                 $validation = false;
                 $errors[] = 'le mot de passe de confirmation est incorrect !!!';
             }
-
-            // if(!empty($password)) {
-            //     $testPassword = new \Project\models\FrontManager();
-            //     $passwordCheck = $testPassword->passwordCheck();
-            //     if($passwordCheck === $password) {
-            //         $validation = false;
-            //         $errors[] = "Ce mot de passe n'est pas le bon !";
-            //     }
-            // }
 
             if($validation){
                 $modifyPassword = new \Project\models\FrontManager();
