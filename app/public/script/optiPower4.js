@@ -489,6 +489,7 @@ function playCasePower4(column) {
     }   
 }
 
+
 // initialise le tableau
 function initTabPower4() {
     endGame = false;

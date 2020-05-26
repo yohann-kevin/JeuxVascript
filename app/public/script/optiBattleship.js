@@ -23,6 +23,7 @@ var iaBattleship = {
         }
         return caseEmpty;
     },
+    
 
     // recupere le poid de chaque case
     getCaseWeight : function(line,column) {
