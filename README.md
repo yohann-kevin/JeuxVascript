@@ -44,6 +44,7 @@ Les fonctionnalités à venir :
 
 * Mise en place d'une api google connect (en attente du réponse des services de google)
 * Mise en place d'une page stats qui permmetra aux utilisateurs de consulter leur score et leur statistique sur différent jeux
+* Mise en place d'une fonction permettant de retailler les images
 
 ### démarrer le projet
 
@@ -88,3 +89,5 @@ class Manager {
 ```
 Et pour finir vous n'aurez qu'a lancer phpMyAdmin 
 aller sur votre navigateur et taper localhost vous y trouverez le projet
+
+[a link](https://jeuxvascript.fr/)
