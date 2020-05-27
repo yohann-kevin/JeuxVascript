@@ -13,8 +13,8 @@
 
 
 -- Listage de la structure de la base pour jeuxvascript
-CREATE DATABASE IF NOT EXISTS `jeuxvascript` /*!40100 DEFAULT CHARACTER SET latin1 */;
-USE `jeuxvascript`;
+CREATE DATABASE IF NOT EXISTS `peyo4811_jeuxvascript` /*!40100 DEFAULT CHARACTER SET latin1 */;
+USE `peyo4811_jeuxvascript`;
 
 -- Listage de la structure de la table jeuxvascript. admin
 CREATE TABLE IF NOT EXISTS `admin` (

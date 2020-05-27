@@ -53,11 +53,7 @@ try{
             $controllerFront -> pagePower4();
         } elseif ($_GET['action'] == 'postComment') {
             $controllerFront -> postCom();
-        } 
-
-        
-        // users (temporaire)
-        elseif ($_GET['action'] == 'account') {
+        } elseif ($_GET['action'] == 'account') {
             $controllerFront -> accountFront();
         } elseif ($_GET['action'] == 'userSettings') {
             $controllerFront -> userSettingsFront();
@@ -65,10 +61,7 @@ try{
             $controllerFront -> usersWriteFront();
         } elseif ($_GET['action'] == 'usersModify') {
             $controllerFront -> usersModifyFront();
-        }
-
-        //erreur 404 temporaire
-        elseif($_GET['action'] == 'error404') {
+        } elseif($_GET['action'] == 'error404') {
             $controllerFront -> error404();
         }
 

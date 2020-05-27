@@ -1,13 +1,16 @@
 <body>
     <header id="header">
+        <!-- logo -->
         <div id="logo">
             <a href="index.php?action=home">
                 <img src="app/public/images/logo/Jeuxvacsript2.png" alt="Jeuxvacsript">
             </a>
         </div>
+        <!-- menu burger pour smartphone -->
         <div id="smartphone">
             <img src="app/public/images/logo/menu.png" onClick="burger()">
         </div>
+        <!-- barre de navigation avec les liens -->
         <nav id="nav">
             <ul id="navBar">
                 <li class="fromLeft menu">
@@ -32,6 +35,7 @@
                 </li>
             </ul>
         </nav>
+        <!-- bouton connexion inscription -->
         <div id="buttonHeader"> 
             <?php if(isset($_SESSION['user'])) : ?>
             <a href="index.php?action=account">Mon compte</a>
@@ -40,9 +44,8 @@
             <a id="btnModalConnect">Connexion</a>
             <a href="index.php?action=register">Inscription</a>
             <?php endif ?>
-            <!-- The Modal -->
+            <!-- modal connexion -->
             <div id="modalConnect">
-                <!-- Modal content -->
                 <div id="modalContent">
                     <span id="closeConnect">&times;</span>
                     <h1 id="modalConnectTitle">De retour parmi nous ?</h1>
@@ -65,7 +68,5 @@
                     </form>
                 </div>
             </div>
-
-
         </div>
     </header>

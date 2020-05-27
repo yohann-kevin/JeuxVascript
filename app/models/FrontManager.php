@@ -49,15 +49,7 @@ class FrontManager extends Manager {
         return $infos;
     }
 
-    // récupere les noms de category
-    // public function category() {
-    //     $bdd = $this->dbConnect();
-    //     $category = $bdd->prepare('SELECT id, name FROM category');
-    //     $category->execute(array());
-    //     $category = $category->fetchAll();
-    //     return $category;
-    // }
-
+    // permet de poster un article
     public function postArticle($title,$category_id,$content,$image) {
         $bdd = $this->dbConnect();
         $postArticle = $bdd->prepare("INSERT INTO articles(users_id, title, category_id, extract, content, images) VALUES (:users_id, :title, :category_id, :extract, :content, :image)");

@@ -120,6 +120,7 @@ addEventListener("click", function(event) {
     }
 })
 
+// fonction test qui n'est pas terminer !
 function battleshipSaveScore() {
     var data = {
        score_battleship: 2

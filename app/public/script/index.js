@@ -1,4 +1,4 @@
-
+// petit compteur pour la page home
 function Counter(id, index, speed, limit) {
     var counterId = document.getElementById(id);
     var timer;
@@ -20,6 +20,7 @@ new Counter('c1', 0, 25, 100);
 new Counter('c2', 0, 50, 50);
 new Counter('c3', 0, 100, 24);
 
+// gère le menu burger pour smartphone
 function burger() {
     var menu = document.getElementById("nav");
     if(menu.style.display==""){menu.style.display="block"};

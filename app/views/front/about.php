@@ -1,19 +1,18 @@
 <?php require_once 'app/views/front/layouts/head.php'; ?>
 <?php require_once 'app/views/front/layouts/header.php'; ?>
-
+    <!-- page a propos -->
     <main id="about">
-
+        <!-- section titre -->
         <section class="pageTitle">
             <h1 class="title">Vous souhaitez en savoir plus sur <span class="strong">un de nos jeux ?</span></h1>
             <h2 class="subtitle">Ou sur <span class="strong">JeuxVascript ?</span></h2>
         </section>
-
+        <!-- début de la section about qui présente les different jeux de la plateforme -->
         <section id="sectionAbout">
             <header id="aboutTitle">
                 <h3>Vous trouverez toutes vos réponses en dessous<h3>
             </header>
-
-
+            <!-- article qui parle de jeuxvascript en général -->
             <article class="articleAbout">
                 <div class="headerArticleAbout">
                     <h1 class="articleAboutTitle">JeuxVascript</h1>
@@ -52,7 +51,7 @@
                     </p>
                 </div>
             </article>
-
+            <!-- article qui parle du jeux snake -->
             <article class="articleAbout">
                 <div class="headerArticleAbout">
                     <h1 class="articleAboutTitle">Le jeux snake</h1>
@@ -94,7 +93,7 @@
                     </div>
                 </div>
             </article>
-
+            <!-- article qui parle du jeux batlleship -->
             <article class="articleAbout">
                 <div class="headerArticleAbout">
                     <h1 class="articleAboutTitle">Battleship</h1>
@@ -122,9 +121,8 @@
                         Vous vous retrouverez face à l'imbattable IA de JeuxVascript.
                     <p><br>
                 </div>
-
             </article>
-
+            <!-- article qui parle du jeux power 4 -->
             <article class="articleAbout lastArticleAbout">
                 <div class="headerArticleAbout">
                     <h1 class="articleAboutTitle">Power4</h1>
@@ -150,11 +148,7 @@
                         qui se révèle être un vrai défi ! serez vous de taille à l'affronter ?
                     </p>
                 </div>
-
             </article>
-
         </section>
     </main>
-
-
 <?php require_once 'app/views/front/layouts/footer.php'; ?>

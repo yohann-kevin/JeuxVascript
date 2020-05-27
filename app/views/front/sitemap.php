@@ -1,7 +1,8 @@
 <?php require_once 'app/views/front/layouts/head.php'; ?>
 <?php include_once 'app/views/front/layouts/header.php'; ?>
-
+    <!-- page sitemap -->
     <main id="sitemap">
+        <!-- section sitemap avec liens vers toute les pages -->
         <section id="pageSitemap">
             <h3 id="sitemapTitle">Plan du site :</h3>
             <ul id="sitemapList">
@@ -17,5 +18,4 @@
             </ul>
         </section>
     </main>
-
 <?php include_once 'app/views/front/layouts/footer.php'; ?>

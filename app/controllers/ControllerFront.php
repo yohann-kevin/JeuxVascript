@@ -379,6 +379,7 @@ class ControllerFront {
         }
     }
 
+    // permet de retailler une image (!fonction non terminer)
     function resizeImage($images) {
         $image = imagecreatefrompng($images);
         $sizex = 760;

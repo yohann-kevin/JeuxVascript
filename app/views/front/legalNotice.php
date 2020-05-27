@@ -1,6 +1,6 @@
 <?php require_once 'app/views/front/layouts/head.php'; ?>
 <?php include_once 'app/views/front/layouts/header.php'; ?>
-
+    <!-- page des mentions légales -->
     <main id="legalNotice">
         <section id="pagelegalNotice">
             <h2>Informations légales</h2>

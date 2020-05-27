@@ -1,6 +1,4 @@
-// script temporaire 
-
-
+// petit jeux snake fait avec canvas
 window.onload = function () {
     startSnake();    
 }

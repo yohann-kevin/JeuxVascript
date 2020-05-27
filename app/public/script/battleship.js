@@ -1,3 +1,4 @@
+// script du jeux battleship
 var battleship = {
     nbColumn : 5,
     nbLine : 5,

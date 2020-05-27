@@ -40,5 +40,6 @@
     <link rel="stylesheet" href="app/public/style/opti.css">
     <!-- icône -->
     <link rel="icon" href="app/public/images/logo/icone.png">
+    <!-- titre -->
     <title>JeuxVascript | <?= $title ?> </title>
 </head>

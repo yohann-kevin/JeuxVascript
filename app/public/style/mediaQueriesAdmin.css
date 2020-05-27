@@ -1,3 +1,4 @@
+/* css pour les smartphone coté back comprend trois point de rupture */
 /* format tablette */
 @media screen and (min-width: 768px) and (max-width: 1200px) {
     /* header */

@@ -1,3 +1,4 @@
+// fonction permettant de gérer l'affichage des élément sur la page about
 (function($) {
     $.fn.hideElement = function(event,element,element2) {
         $(event).click(function() {

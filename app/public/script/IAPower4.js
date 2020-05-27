@@ -1,7 +1,12 @@
+// script de l'IA du power 4
+// lIA contionne avec un systeme de poid
+// la colonne est pleine le poids a renvoyer sera de 0
+// si on peut gagner retourne un poid de 100
+// verifier si on peut perdre (le joueur 1 peut gagne) retourne un poids de 99
+// plus la case est lourde plus la case est intéréssante a jouer
+// lIA va tout le temp jouer la case la plus lourde
 var IA = {
-    /**
-     * choisi une colonne
-     */
+    // choisi une colonne
     columnChoice() {
         var tabColumn = this.getTabCaseEmpty();
         var bestColumn = 0;
@@ -18,9 +23,7 @@ var IA = {
         return tabBestColumn[Math.floor(Math.random() * tabBestColumn.length)];
     },
 
-    /**
-     * permet de vérifier si une case est vide 
-     */
+    // permet de vérifier si une case est vide 
     getTabCaseEmpty : function() {
         var tabColumn = [];
         for( var i = 0; i < power4.nbColumn; i++) {
@@ -29,11 +32,7 @@ var IA = {
         return tabColumn;
     },
 
-    /**
-     * calcul le poids d'une cellule 
-     * @param {number} line 
-     * @param {number} column 
-     */
+    // calcul le poids d'une cellule 
     getCaseWeight : function(line,column) {
         if(line === -1)  return 0;
         if(this.verifyWin(line,column,2)) return 100;
@@ -46,35 +45,16 @@ var IA = {
 
         return weight;
 
-        // la colonne est pleine le poids a renvoyer sera de 0
-        // verifie si on peut gagner
-        // si on peut gagner return poid 100
-        // verifier si on peut perdre ou gagner (le joueur 1 peut gagne) return poids 99
-        // autres cas
-        // eviter de faire un coup perdant 
-        // defendre ( 2 jetons adverse a coté = le bloquer)
-        // attaquer ( 2 jetons de l'IA a coté )
-        // additionner les poids 
     },
 
-    /**
-     * utilise les différente fonction qui vérifie si l'on a gagner
-     * @param {number} line 
-     * @param {number} column 
-     * @param {number} players 
-     */
+    // utilise les différente fonction qui vérifie si l'on a gagner
     verifyWin : function(line,column,players) {
         if(this.verifyWinLine(line,column,players)) return true;
         if(this.verifyWinColumn(line,column,players)) return true;
         if(this.verifyWinDiagonal(line,column,players)) return true;
     },
 
-    /**
-     * retourne true si on peut gagner en ligne
-     * @param {number} line 
-     * @param {number} column 
-     * @param {number} players 
-     */
+    // retourne true si on peut gagner en ligne
     verifyWinLine : function(line,column,players) {
         var counter = 1;
         if(power4.puissance4[line][column + 1] === players) {
@@ -95,25 +75,11 @@ var IA = {
                 }
             }
         }
-        // if(power4.puissance4[line][column + 1] === players || power4.puissance4[line][column - 1] === players) {
-        //     counter++;
-        //     if(power4.puissance4[line][column + 2] === players || power4.puissance4[line][column - 2] === players) {
-        //         counter++;
-        //         if(power4.puissance4[line][column + 3] === players || power4.puissance4[line][column - 3] === players) {
-        //             counter++;
-        //         }
-        //     }
-        // }
 
         if( counter > 3 ) return true;
     },
 
-    /**
-     * retourne true si on peut gagner en colonne
-     * @param {number} line 
-     * @param {number} column 
-     * @param {number} players 
-     */
+    // retourne true si on peut gagner en colonne
     verifyWinColumn : function(line,column,players) {
         var counter = 1;
         if( line < 3 ) {
@@ -130,12 +96,7 @@ var IA = {
         if( counter > 3) return true;
     },
 
-    /**
-     * retourne true si on peut gagner en diagonal 
-     * @param {number} line 
-     * @param {number} column 
-     * @param {number} players 
-     */
+    // retourne true si on peut gagner en diagonal
     verifyWinDiagonal : function(line,column,players) {
         var counter = 1;
         if((line-1 >=0) && (column+1 <= power4.nbColumn) && power4.puissance4[line-1][column+1] === players){
@@ -156,15 +117,7 @@ var IA = {
                 }
             }
         }
-        // if(((line-1 >=0) && (column+1 <= power4.nbColumn) && power4.puissance4[line-1][column+1] === players) || ((line+1 < power4.nbLine) && (column-1 >= 0) && power4.puissance4[line+1][column-1] === players)) {
-        //     counter++;
-        //     if(((line-2 >=0) && (column+2 <= power4.nbColumn) && power4.puissance4[line-2][column+2] === players) || ((line+2 < power4.nbLine) && (column-2 >= 0) && power4.puissance4[line+2][column-2] === players)) {
-        //         counter++;
-        //         if(((line-3 >=0) && (column+3 <= power4.nbColumn) && power4.puissance4[line-3][column+3] === players) || ((line+3 < power4.nbLine) && (column-3 >= 0) && power4.puissance4[line+3][column-3] === players)) {
-        //             counter++;
-        //         }
-        //     }
-        // }
+
         if( counter > 3 ) return true;
         counter = 1;
         if((line-1 >=0) && (column-1 >= 0) && power4.puissance4[line-1][column-1] === players){
@@ -185,24 +138,12 @@ var IA = {
                 }
             }
         }
-        // if(((line-1 >=0) && (column-1 >= 0) && power4.puissance4[line-1][column-1] === players) || ((line+1 < power4.nbLine) && (column+1 <= power4.nbColumn) && power4.puissance4[line+1][column+1] === players)) {
-        //     counter++;
-        //     if(((line-2 >=0) && (column-2 >= 0) && power4.puissance4[line-2][column-2] === players) || ((line+2 < power4.nbLine) && (column+2 <= power4.nbColumn) && power4.puissance4[line+2][column+2] === players)) {
-        //         counter++;
-        //         if(((line-3 >=0) && (column-3 >= 0) && power4.puissance4[line-3][column-3] === players) || ((line+3 < power4.nbLine) && (column+3 <= power4.nbColumn) && power4.puissance4[line+3][column+3] === players)) {
-        //             counter++;
-        //         }
-        //     }
-        // }
+
 
         if( counter > 3 ) return true;
     },
 
-    /**
-     * permet de définir un poid de base pour chaque case
-     * @param {number} line 
-     * @param {number} column 
-     */
+    // permet de définir un poid de base pour chaque case
     getDefaultWeight : function(line,column) {
         var weightLine = 0;
         var weightColumn = 0;
@@ -239,12 +180,7 @@ var IA = {
         return weightColumn * weightLine;
     },
 
-    /**
-     * permet a l'ia de se défendre et d'attaquer
-     * @param {number} line 
-     * @param {number} column 
-     * @param {number} players 
-     */
+    //  permet a l'ia de se défendre et d'attaquer
     defenseAndAttack : function(line,column,players) {
         var counter = 1;
         if(power4.puissance4[line][column+1] === players) {
@@ -256,20 +192,11 @@ var IA = {
             counter++;
             if(power4.puissance4[line][column-2] === players && power4.puissance4[line][column-3] === 0) counter++;
         }
-        // if((power4.puissance4[line][column+1] === players) || (power4.puissance4[line][column-1] === players)) {
-        //     counter++;
-        //     if((power4.puissance4[line][column+2] === players && power4.puissance4[line][column+3] === 0) || (power4.puissance4[line][column-2] === players && power4.puissance4[line][column-3] === 0)) counter++;
-        // }
            
         if(counter > 2) return true;
     },
-
-    /**
-     * éviter de faire un coup perdant
-     * @param {number} line 
-     * @param {number} column 
-     * @param {number} players 
-     */
+    
+    // éviter de faire un coup perdant
     avoidLosingTurn : function(line,column,players) {
         if(line-1 > 0) {
             if(this.verifyWin(line-1,column,1)) return true;  
