@@ -78,7 +78,7 @@ class Manager {
     // gère la connection a la base de donnée
     protected function dbConnect() {
         try {
-            $bdd = new \PDO('mysql:host=localhost;dbname=Mon_nom_de_base_de_donnée;charset=utf8', 'root', '');
+            $bdd = new \PDO('mysql:host=localhost;dbname=Votre_nom_de_base_de_donnée;charset=utf8', 'root', '');
             return $bdd;
         } catch (Exception $e){
             die('Erreur : ' . $e->getMessage());
