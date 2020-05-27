@@ -90,4 +90,5 @@ class Manager {
 Et pour finir vous n'aurez qu'a lancer phpMyAdmin 
 aller sur votre navigateur et taper localhost vous y trouverez le projet
 
-[a link](https://jeuxvascript.fr/)
+Sinon vous pouvez directement voir le projet sur :
+[JeuxVascript.fr](https://jeuxvascript.fr/)
