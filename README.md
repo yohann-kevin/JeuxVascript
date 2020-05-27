@@ -25,6 +25,10 @@ JeuxVascript
 
 PERRIGUEY Yohann
 
+### note codeClimate
+
+[![Maintainability](https://api.codeclimate.com/v1/badges/cd8f2081e102fa9bc10b/maintainability)](https://codeclimate.com/github/yohann-kevin/JeuxVascript/maintainability)
+
 ### Aperçu du projet
 
 JeuxVascript est une plateforme communautaire
