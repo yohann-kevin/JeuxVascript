@@ -1,10 +1,10 @@
 // script de l'IA du power 4
-// lIA contionne avec un systeme de poid
+// l'IA fonctionne avec un systeme de poid
 // la colonne est pleine le poids a renvoyer sera de 0
 // si on peut gagner retourne un poid de 100
 // verifier si on peut perdre (le joueur 1 peut gagne) retourne un poids de 99
 // plus la case est lourde plus la case est intéréssante a jouer
-// lIA va tout le temp jouer la case la plus lourde
+// l'IA va tout le temp jouer la case la plus lourde
 var IA = {
     // choisi une colonne
     columnChoice() {
