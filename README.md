@@ -30,7 +30,7 @@ PERRIGUEY Yohann
 JeuxVascript est une plateforme communautaire
 principalement orienté vers les jeux indépendant nous 
 mettons a disposition de la communauté un éspace blog pour que les utilisateurs 
-puissies s'éxprimer librement et discuter de leur jeux vidéo indépendant préféré.
+puisses s'éxprimer librement et discuter de leur jeux vidéo indépendant préféré.
 
 Le site possède aussi ces propres jeux entièrement fait en javascript.
 
