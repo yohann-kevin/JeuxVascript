@@ -1,3 +1,4 @@
+// script de l'ia de battleship
 var iaBattleship = {
     // recupere une case
     getCase : function() {

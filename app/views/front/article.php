@@ -1,11 +1,15 @@
 <?php require_once 'app/views/front/layouts/head.php'; ?>
 <?php include_once 'app/views/front/layouts/header.php'; ?>
+    <!-- page article -->
     <?php if(!empty($article)) : ?>
     <main id="pageArticle">
+        <!-- affiche l'article -->
         <section>
+            <!-- affiche le titre -->
             <header id="articleHeader">
                 <h2 id="articleTitle"><?= $article['title'] ?><h2>
             </header>
+            <!-- affiche le contenu -->
             <div id="article">
                 <img src="app/public/images/articles/<?= $article['images'] ?>" alt="<?= $article['images'] ?>" id="articleImg">
                 <div id="articleContent">
@@ -14,6 +18,8 @@
                 <div>
             </div>
         </section>
+        <!-- affiche les commentaires de l'article -->
+        <!-- disponible que pour les utilisateur inscrit -->
         <?php if(isset($_SESSION['user'])) : ?>
         <div id="sectionComment">
             <section id="spaceComment">
@@ -25,23 +31,17 @@
                 </article>
                 <?php endforeach ?>
             </section>
-            
-
+            <!-- section permettant de poster des commentaires -->
             <section id="postComment">
                 <h2>Réagisser à cette article en postant un commentaire</h2>
                 <form method="post" action="" id="writeComment">
                     <?php if(isset($error)) : 
-                        if($error) : 
-                    ?>
+                        if($error) : ?>
                     <span><?= $error ?></span>
-                    <?php
-                    else :
-                    ?>
+                    <?php else : ?>
                     <h3>Votre Commentaire a bien été ajouter</h3>
-                    <?php
-                    endif;
-                    endif
-                    ?>
+                    <?php endif;
+                    endif ?>
                     <textarea name="contentComment" placeholder="Votre commentaire *"></textarea>
                     <input type="submit" value="commenter" required>
                 </form>
@@ -50,5 +50,4 @@
         <?php endif ; ?>
     </main>
     <?php endif ; ?>
-
 <?php include_once 'app/views/front/layouts/footer.php'; ?>

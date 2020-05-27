@@ -1,14 +1,13 @@
-<?php 
-require_once 'app/views/front/layouts/head.php'; 
-include_once 'app/views/front/layouts/header.php';
-?>
+<?php require_once 'app/views/front/layouts/head.php'; 
+include_once 'app/views/front/layouts/header.php'; ?>
+    <!-- page d'accueil (home) -->
     <main id="home">
-
+        <!-- section titre -->
         <section class="pageTitle">
             <h1 class="title">Bienvenue sur <span class="strong">JeuxVascript</span></h1>
             <h2 class="subtitle">Le site pour les joueurs 100% <span class="strong">JavaScript</span></h2>
         </section>
-
+        <!-- section présentation -->
         <section id="presentation">
             <header id="presentationTitle">
                 <h3>Presentation</h3>
@@ -33,12 +32,12 @@ include_once 'app/views/front/layouts/header.php';
                 <img src="app/public/images/gameplay/snake.png" alt="snake">
             </article>
         </section>
+        <!-- section qui affiche les dernier article -->
         <section id="homeSticky">
             <header id="homeStickyTitle">
                 <h2>Consulter les derniers articles et <span class="strong2">commentaires</span> de la <span
                         class="strong2">communautée</span></h2>
             </header>
-
             <?php foreach ($lastArticles as $lastArticle): ?>
             <article class="article">
                 <img src="app/public/images/articles/<?= $lastArticle['images'] ?>" alt="<?= $lastArticle['images'] ?>" class="imgArticle">
@@ -47,15 +46,13 @@ include_once 'app/views/front/layouts/header.php';
                 <a href="index.php?action=article&id=<?=$lastArticle['id'] ?>">Voir plus...</a>
             </article>
             <?php endforeach ; ?>
-
         </section>
-
+        <!-- section citation sert à décorer -->
         <section class="homeQuote">
             <h1 class="quote">Le jeu est la forme <span class="strong"> la plus elevee de la recherche.</span></h1>
             <h2 class="author">Albert <span class="strong">Einstein</span></h2>
         </section>
-
-
+        <!-- section compteur (n est pas relié a la bdd) -->
         <section id="counter">
             <h3 id="counterTitle">Quelque chiffre</h3>
             <article class="counter">
@@ -68,12 +65,13 @@ include_once 'app/views/front/layouts/header.php';
                 <p>Score total: <br><span id="c3">x</span><br></p>
             </article>
         </section>
-        
-
+        <!-- section qui affiche les jeux sur la page home -->
         <section id="homeGame">
+            <!-- titre de la section -->
             <header id="homeGameTitle">
                 <h3>Nos Jeux</h3>
             </header>
+            <!-- article du jeux snake -->
             <article id="articleSnake">
                 <div class="gameTitle">
                     <h4>Snake</h4>
@@ -91,6 +89,7 @@ include_once 'app/views/front/layouts/header.php';
                     <a href="index.php?action=snake" class="buttonPlayHome">Play</a>
                 </div>
             </article>
+            <!-- article du jeux battleship -->
             <article id="articleBattleship">
                 <div class="gameTitle">
                     <h4>Battleship</h4>
@@ -108,6 +107,7 @@ include_once 'app/views/front/layouts/header.php';
                     <a href="index.php?action=battleship" class="buttonPlayHome">Play</a>
                 </div>
             </article>
+            <!-- article du jeux power 4 -->
             <article id="articlePower4">
                 <div class="gameTitle">
                     <h4>Puissance 4</h4>
@@ -128,22 +128,18 @@ include_once 'app/views/front/layouts/header.php';
                 </div>
             </article>
         </section>
-
+        <!-- section citation -->
         <section class="homeQuote">
             <h1 class="quote">Les rudiments de la connaissance
                 <span class="strong"> sont assimiles au fil des jeux.</span></h1>
             <h2 class="author">Mahatma <span class="strong">Gandhi</span></h2>
         </section>
-
+        <!-- section qui affiche les derniers articles de la catégories indé -->
         <section id="advert">
-
             <header id="headerAdvert">
                 <h2>Les dernieres annonces dans le jeux video indepandants</h2>
             </header>
-
-
             <?php foreach ($articleIndes as $articleInde): ?>
-
             <article class="advert">
                 <h3 class="advertTitle"><?= $articleInde['title'] ?></h3>
                 <div class="advertImg">
@@ -154,11 +150,6 @@ include_once 'app/views/front/layouts/header.php';
             </article>
             <?php endforeach ; ?>
         </section>
-
-
-
-
     </main>
-
-    <?php include_once 'app/views/front/layouts/footer.php'; ?>
+<?php include_once 'app/views/front/layouts/footer.php'; ?>
 

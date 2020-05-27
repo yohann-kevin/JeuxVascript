@@ -2,6 +2,7 @@ const turnPower4 = document.getElementById("turnPower4");
 const success = document.getElementById("successPower4");
 const messagej1Power4 = document.getElementById("j1");
 const messagej2Power4 = document.getElementById("j2");
+
 var playerTurn = 1;
 var endGame = false;
 

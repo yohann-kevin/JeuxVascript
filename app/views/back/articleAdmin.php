@@ -3,6 +3,7 @@
 <?php include_once 'app/views/back/layouts/headerAdmin.php'; ?>
     <?php if(!empty($article)) : ?>
     <main id="pageArticleAdmin">
+        <!-- section article coté admin -->
         <section id="adminArticle">
             <header id="adminArticleSingle">
                 <h2><?= $article['title'] ?></h2>
@@ -13,6 +14,7 @@
                     <h4 id="articleTitle">posté par <?= $article['pseudo'] ?> le <?= $date->dateFormating($article['created_date'])?></h4>
                     <p id="articlePara"><?= $article['content'] ?></p>
                 </div>
+                <!-- boutton permettant de supprimer un article -->
                 <div id="buttonArticleDelete">
                     <a href="indexAdmin.php?action=deleteArticle&id=<?=$article['id'] ?>">Supprimer...</a>
                 </div>

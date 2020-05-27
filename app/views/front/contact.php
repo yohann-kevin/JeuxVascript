@@ -1,36 +1,28 @@
 <?php require_once 'app/views/front/layouts/head.php'; ?>
 <?php require_once 'app/views/front/layouts/header.php'; ?>
+    <!-- page contact -->
     <main id="contact">
-
+        <!-- section titre -->
         <section class="pageTitle">
             <h1 class="title">Vous avez quelques <span class="strong">choses a nous dire ?</span></h1>
             <h2 class="subtitle">N'hesitez pas, <span class="strong">contacter nous.</span></h2>
         </section>
-
+        <!-- section contact permùettant de m'envoyer un mail -->
         <section id="sectionContact">
             <p id="paraContact">Vous avez une suggestion à nous faire ? Ou alors vous avez trouver un bug dans un de nos jeux ?
                  Ou bien vous voulez juste papoter comme ça entre deux partie de snake ! 
                  Eh bien, allez-y envoyer nous votre message via le formulaire ci-dessous, 
-                 nous tacherons de vous répondre au plus vite !</p>
-
-            
-            
+                 nous tacherons de vous répondre au plus vite !</p> 
             <form id="contactForm" method="post" action="">
-
             <?php
                 if(isset($errors)) :
                     if($errors):
                 foreach($errors as $error) :
             ?>
-
             <?= $error ?>
-
             <?php endforeach; else : ?>
-
             <p>votre message a bien été envoyer</p>
-
             <?php endif; endif ?>
-
                 <div id="nameContact">
                     <label from="firstNameContact">Votre prenom</label>
                     <input id="firstNameContact" name="name" type="text" placeholder="First name" 
@@ -52,13 +44,8 @@
                     <button type="reset" id="btnResContact">Annuler</button>
                 </div>
             </form>
-
-            
-
-
-
         </section>
-
+        <!-- section nous trouver -->
         <section id="findUs">
             <header id="findUsTitle">
                 <h3>Nous trouver<h3>
@@ -72,7 +59,5 @@
                     <a href="tel:+33297466666">02 97 46 66 66 </a><br>
                 </address>
         </section>
-
     </main>
-
 <?php require_once 'app/views/front/layouts/footer.php'; ?>

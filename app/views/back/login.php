@@ -1,12 +1,13 @@
 <?php include_once 'app/views/back/layouts/headAdmin.php'; ?>
     <main id="adminLogin">
-
+        <!-- page login pour admin -->
         <section id="adminLog">
             <img src="app/public/images/logo/admin.png" alt="JeuxVascript">
+            <!-- formulaire de connexion coté admin -->
             <form id="logFormAdmin" method="post" action="indexAdmin.php?action=adminLogin">
-            <?php if(isset($error)) : ?>
-            <?= $error ?>
-            <?php endif ?>
+                <?php if(isset($error)) : ?>
+                <?= $error ?>
+                <?php endif ?>
                 <label from="adminPseudo">Votre identifiant</label>
                 <input id="adminPseudo" name="pseudo" type="text" placeholder="Pseudo" 
                     value='<?php if(isset($_POST['Pseudo']))echo $_POST['Pseudo'] ?>' required>
@@ -20,6 +21,5 @@
                 </div>
             </form>
         </section>
-
     </main>
     <script type="text/javascript" src="app/public/script/regexBack.js"></script>

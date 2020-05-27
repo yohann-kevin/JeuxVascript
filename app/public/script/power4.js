@@ -10,12 +10,7 @@ var power4 = {
         this.puissance4 = this.initTab(this.nbLine, this.nbColumn, 0);
     },
 
-    /**
-     * permet d'initialiser un tab en fonction des ligne et des colonnes
-     * @param {number} nbLine 
-     * @param {number} nbColumn
-     * @param {*} char 
-     */
+    // permet d'initialiser un tab en fonction des ligne et des colonnes
     initTab: function(nbLine, nbColumn, char = '') {
         var tab = [];
         for (var i = 0; i < nbLine; i++) {
@@ -67,11 +62,8 @@ var power4 = {
         this.puissance4[line][column] = players;
     },
 
-    /**
-     * fonction permettant de retourner la premiere ligne vide d'une colonne
-     * retourne -1 si la colonne est pleine
-     * @param {Number} column 
-     */
+    // fonction permettant de retourner la premiere ligne vide d'une colonne
+    // retourne -1 si la colonne est pleine
     returnLineCaseEmpty: function (column) {
         for (var i = this.nbLine - 1; i >= 0; i--) {
             if (this.verifyCaseEmpty(i, column)) return i;
@@ -79,19 +71,12 @@ var power4 = {
         return -1;
     },
 
-    /**
-     * Fonction premettant de retourner si une case est vide
-     * @param {number} line 
-     * @param {number} column 
-     */
+    // Fonction premettant de retourner si une case est vide
     verifyCaseEmpty: function (line, column) {
         return this.puissance4[line][column] === 0;
     },
 
-    /**
-     * fonction permettant de vérifier si un joueur a gagné 
-     * @param {number} players 
-     */
+    // fonction permettant de vérifier si un joueur a gagné 
     verifyEndGame: function (players) {
         if (this.verifyLineEndGame(players) || this.verifyColumnEndGame(players) ||
             this.verifyDiagonalEndGame(players)) {
@@ -100,10 +85,7 @@ var power4 = {
         return false;
     },
 
-    /**
-     * fonction permettant de vérifier si un joueur a gagné sur une ligne
-     * @param {number} players 
-     */
+    // fonction permettant de vérifier si un joueur a gagné sur une ligne
     verifyLineEndGame: function (players) {
         for (var i = this.nbLine - 1; i >= 0; i--) {
             for (var j = 0; j < this.nbColumn - 3; j++) {
@@ -117,10 +99,7 @@ var power4 = {
         return false;
     },
 
-    /**
-     * fonction permettant de vérifier si un joueur a gagné sur une colonne
-     * @param {number} players 
-     */
+    // fonction permettant de vérifier si un joueur a gagné sur une colonne
     verifyColumnEndGame: function (players) {
         for (var i = 0; i < this.nbColumn; i++) {
             for (var j = this.nbLine - 4; j >= 0; j--) {
@@ -133,30 +112,8 @@ var power4 = {
         }
     },
 
-    
-    // verifyDiagonalEndGame: function (players) {
-    //     for (var i = this.nbLine - 1; i >= 3; i--) {
-    //         for (var j = 0; j < this.nbColumn; j++) {
-    //             if (this.puissance4[i][j] === players &&
-    //                 this.puissance4[i - 1][j + 1] === players &&
-    //                 this.puissance4[i - 2][j + 2] === players &&
-    //                 this.puissance4[i - 3][j + 3] === players
-    //             ) return true;
-    //             if (this.puissance4[i][j] === players &&
-    //                 this.puissance4[i - 1][j - 1] === players &&
-    //                 this.puissance4[i - 2][j - 2] === players &&
-    //                 this.puissance4[i - 3][j - 3] === players
-    //             ) return true;
-    //         }
-    //     }
-    //     return false;
-    // },
 
-
-    /**
-     * fonction permettant de vérifier si un joueur a gagné sur une diagonale
-     * @param {number} players 
-     */
+    // fonction permettant de vérifier si un joueur a gagné sur une diagonale
     verifyDiagonalEndGame: function (players) {
         for (var i = this.nbLine - 1; i >= 3; i--) {
             for (var j = 0; j < this.nbColumn; j++) {

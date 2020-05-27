@@ -2,12 +2,12 @@
 <?php include_once 'app/views/back/layouts/headAdmin.php'; ?>
 <?php include_once 'app/views/back/layouts/headerAdmin.php'; ?>
     <main id="admin">
-
+        <!-- section welcome -->
         <section>
             <h2><?= $welcome ?> <?= $infos['pseudo']?></h2>
             <h3>Consulter les derniers articles de la communauté</h3>
         </section>
-        
+        <!-- section article -->
         <section id="lastArticle"> 
             <?php foreach ($lastArticles as $lastArticle): ?>
             <article class="adminArticle">
@@ -20,11 +20,11 @@
             </article>
             <?php endforeach ; ?>
         </section>
-        
+            <!-- section titre de la section com -->
         <section>
             <h3>Consulter les dernier commentaire de la communautée</h3>
         </section>
-
+        <!-- section commentaire -->
         <section id="adminCom"> 
             <?php foreach ($comments as $comment): ?>
             <article class="adminComment">
@@ -37,6 +37,4 @@
             <?php endforeach ; ?>
         </section>
     </main>
-
-
 <?php include_once 'app/views/back/layouts/footerAdmin.php'; ?>

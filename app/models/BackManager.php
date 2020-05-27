@@ -10,6 +10,7 @@ class BackManager extends Manager {
         return $req;
     }
 
+    // permet a l'admin de se connecter
     public function adminLogin($pseudo,$password) {
         $bdd = $this->dbConnect();
         $login = $bdd->prepare('SELECT id, password FROM admin WHERE pseudo = ?');
@@ -18,6 +19,7 @@ class BackManager extends Manager {
         return $login;
     }
 
+    // récupere les info de l'admin
     public function adminInfo() {
         $bdd = $this->dbConnect();
         $infos = $bdd->prepare('SELECT id, email, pseudo FROM admin WHERE id = ?');
@@ -26,6 +28,7 @@ class BackManager extends Manager {
         return $infos;        
     }
 
+    // récupere les commentaires
     public function getComment() {
         $bdd = $this->dbConnect();
         $comments = $bdd->query('SELECT comment.*, users.pseudo FROM comment INNER JOIN users ON comment.users_id = users.id ORDER BY created_date DESC LIMIT 9');
@@ -33,6 +36,7 @@ class BackManager extends Manager {
         return $comments;
     }
 
+    // récupere les articles
     public function getArticle() {
         $bdd = $this->dbConnect();
         $id = (int)$_GET['id'];
@@ -70,6 +74,7 @@ class BackManager extends Manager {
         return $deleteCom;
     }
 
+    // permet d'enregistrer un admin en db
     public function adminRegister($email,$pseudo,$password) {
         $bdd = $this->dbConnect();
         $register = $bdd->prepare('INSERT INTO admin(email, pseudo, password) VALUES (:email, :pseudo, :password)');
@@ -81,6 +86,7 @@ class BackManager extends Manager {
         return $register;
     }
 
+    // permet de supprimer un admin de la db
     public function deleteAdmin() {
         $bdd = $this->dbConnect();
         $id = (int)$_GET['id'];

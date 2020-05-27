@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <!-- encodage -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- lien vers les feuilles de style -->
@@ -16,7 +17,6 @@
     <link rel="stylesheet" href="app/public/style/mediaQueriesAdmin.css">
     <!-- icône -->
     <link rel="icon" href="app/public/images/logo/icone.png">
-    
     <!-- Charge la bibliothèque jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <title>Admin</title>

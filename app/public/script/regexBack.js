@@ -1,3 +1,4 @@
+// gere les formulaire coté back
 // regex
 var regName = /^[a-zA-ZéèîïÉÈÎÏ][a-zéèêàçîï]+([-'\s][a-zA-ZéèîïÉÈÎÏ][a-zéèêàçîï]+)?$/;
 var regMdp = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,10}/;

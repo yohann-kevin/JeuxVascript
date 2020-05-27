@@ -3,11 +3,12 @@
 namespace Project\controllers;
 
 class ControllerBack {
+    // fonction liens
     function login() {
-
+        // charge mes variables et mes différentes fonctions
         $loginBack = new \Project\models\BackManager();
         $login = $loginBack->viewBack();
-
+        // charge la vue login
         require 'app/views/back/login.php';
     }
 
@@ -61,6 +62,7 @@ class ControllerBack {
         $this->adminBack();
     }
 
+    // permet a l'admin de se connecter
     function loginAdmin() {
         extract($_POST);
         $error = 'Les identifiants ne corespondent pas à nos enregistrements !';
@@ -82,18 +84,21 @@ class ControllerBack {
         }
     }
 
+    // affiche les info de l'admin
     function displayInfo() {
         $adminInfos = new \Project\models\BackManager();
         $infos = $adminInfos->adminInfo();
         return $infos;
     }
 
+    // affiche les commentaires
     function displayCom() {
         $displayCom = new \Project\models\BackManager();
         $comments = $displayCom->getComment();
         return $comments;
     }
 
+    // affiche les articles
     function article() {
         $displayArticle = new \Project\models\BackManager();
         $article = $displayArticle->getArticle();
@@ -104,6 +109,7 @@ class ControllerBack {
         }
     }
 
+    // permet a l'admin de supprimer un article
     function deleteArticle() {
         $article = new \Project\models\BackManager();
         $image = $article->deleteArticleImg();
@@ -113,13 +119,14 @@ class ControllerBack {
         return $delete;
     }
 
-    // permet a l'admin de supprimer un commentaire qu'il a poster
+    // permet a l'admin de supprimer un commentaire 
     function deleteComment() {
         $comment = new \Project\models\BackManager();
         $comment = $comment->deleteCom();
         return $comment;
     }
 
+    // permet d'enregistrer un nouvel admin
     function registerAdmin() {
         extract($_POST);
         $validation = true;
@@ -151,6 +158,7 @@ class ControllerBack {
         $this->login();
     }
 
+    // permet a l'admin de supprimer son compte
     function deleteAdmin() {
         $admin = new \Project\models\BackManager();
         $adminDelete = $admin->deleteAdmin();
