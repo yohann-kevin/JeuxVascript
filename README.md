@@ -46,7 +46,7 @@ Nos jeux :
 
 Les fonctionnalités à venir : 
 
-* Mise en place d'une api google connect (en attente du réponse des services de google)
+* Mise en place d'une api google connect (en attente d'une réponse des services de google)
 * Mise en place d'une page stats qui permmetra aux utilisateurs de consulter leur score et leur statistique sur différent jeux
 * Mise en place d'une fonction permettant de retailler les images
 
@@ -62,8 +62,10 @@ git clone
 ```
 
 Ensuite vous devrez faire un import de la base de donnée présente dans le dossier (sql)
+vous y trouvez aussi un diagramme vous éxpliquants comment fonctionne la base de donnée
 
-=> app/public/sql/db-jxs.sql
+=> [BDD](app/public/sql/db-jxs.sql)
+=> [diagramme](app/public/sql/diagramDB.jpg)
 
 Vous y trouverez le fichier (db-jxs.sql). Vous n'avez plus qu'a l'importer sur 
 votre phpMyAdmin (ou autre application de gestion de base de donnée sql ex: laragon) 
@@ -73,7 +75,7 @@ votre phpMyAdmin (ou autre application de gestion de base de donnée sql ex: lar
 Si vous modifier le nom de la base de donnée de base vous devrez le modifier aussi
 dans le fichier manager.php qui se trouve dans le dossier (models)
 
-=> app/public/models/manager.php
+=> [manager.php](app/public/models/manager.php)
 
 ``` php
 
