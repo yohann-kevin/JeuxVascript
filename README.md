@@ -76,7 +76,7 @@ votre phpMyAdmin (ou autre application de gestion de base de donnée sql ex: lar
 Si vous modifier le nom de la base de donnée de base vous devrez le modifier aussi
 dans le fichier manager.php qui se trouve dans le dossier (models)
 
-=> [manager.php](app/models/manager.php)
+=> [Manager.php](app/models/Manager.php)
 
 ``` php
 
