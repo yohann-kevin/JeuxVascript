@@ -62,6 +62,18 @@ git clone
 
 ```
 
+!! Attention !!
+
+Pour pouvoir lancer le projet vous devez avoir le composer d'installer sur votre machine !
+
+si ce n'est pas le cas aller dans votre terminal à la racine du projet et entrer cette ligne de commande :
+
+```
+
+composer install
+
+```
+
 Ensuite vous devrez faire un import de la base de donnée présente dans le dossier (sql)
 vous y trouvez aussi un diagramme vous éxpliquants comment fonctionne la base de donnée
 
