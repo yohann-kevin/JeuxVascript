@@ -66,7 +66,7 @@ git clone
 
 Pour pouvoir lancer le projet vous devez avoir le composer d'installer sur votre machine !
 
-si ce n'est pas le cas aller dans votre terminal à la racine du projet et entrer cette ligne de commande :
+si ce n'est pas le cas aller dans votre terminal à la racine du projet et entrer cette commande :
 
 ```
 
