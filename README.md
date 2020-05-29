@@ -95,7 +95,7 @@ dans le fichier manager.php qui se trouve dans le dossier (models)
 
 namespace Project\models;
 class Manager {
-    // gère la connection a la base de donnée
+    // gère la connexion a la base de donnée
     protected function dbConnect() {
         try {
             $bdd = new \PDO('mysql:host=localhost;dbname=Votre_nom_de_base_de_donnée;charset=utf8', 'root', '');
