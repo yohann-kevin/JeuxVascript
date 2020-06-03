@@ -141,7 +141,6 @@ class ControllerFront {
         $title = "Settings";
         $description = "Modifier vos paramètres et personnaliser votre éxperience JeuxVascript";
         
-
         $infos = $this->displayInfo();
 
         if(!empty($_POST['email']) || !empty($_POST['pseudo'])){ 
@@ -150,8 +149,9 @@ class ControllerFront {
         }
 
         if(!empty($_POST['password']) || !empty($_POST['newPassword']) || !empty($_POST['verifyNewPassword'])){ 
-            $usersModifyPassword = new \Project\controllers\ControllerFront();
-            $modifyPassword = $usersModifyPassword->modifyPassword();  
+            // $usersModifyPassword = new \Project\controllers\ControllerFront();
+            // $modifyPassword = $usersModifyPassword->modifyPassword(); 
+            $this->modifyPassword(); 
         }
 
         require 'app/views/front/userSettings.php';

@@ -13,7 +13,7 @@
                     <h4>Snake</h4>
                 </div>
                 <div class="gameImg">
-                    <img src="app/public/images/gameplay/snake.png">
+                    <img src="app/public/images/gameplay/snake.png" alt="snake">
                 </div>
                 <div id="contentGame1">
                     <p class="gamePara">
@@ -31,7 +31,7 @@
                     <h4>Power 4</h4>
                 </div>
                 <div class="gameImg">
-                    <img src="app/public/images/gameplay/puissance4.png">
+                    <img src="app/public/images/gameplay/puissance4.png" alt="puissance4">
                 </div>
                 <div id="contentGame2">
                     <p class="gamePara">
@@ -51,7 +51,7 @@
                     <h4>Battleship</h4>
                 </div>
                 <div class="gameImg">
-                    <img src="app/public/images/gameplay/battleship1.png">
+                    <img src="app/public/images/gameplay/battleship1.png" alt="battleship">
                 </div>
                 <div id="contentGame3">
                     <p class="gamePara">

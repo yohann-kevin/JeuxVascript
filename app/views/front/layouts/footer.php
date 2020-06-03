@@ -15,7 +15,7 @@
         <div class="link">
             <ul>
                 <li class="fromLeftLink"><a href="index.php?action=contact">Contact</a></li>
-                <li class="fromLeftLink"><a href="index.php?action=legalNotice">Mention légale</a></li>
+                <li class="fromLeftLink"><a href="index.php?action=legalNotice">Mention légales</a></li>
                 <li class="fromLeftLink"><a href="index.php?action=sitemap">Sitemap</a></li>
             </ul>
         </div>
@@ -27,8 +27,6 @@
     </aside>
     <p class="mention">&copy;kercode 2020</p>
 <footer>
-
-</body>
     <!-- script général du site -->
     <script type="text/javascript" src="app/public/script/index.js"></script>
     <script type="text/javascript" src="app/public/script/jquery.js"></script>
@@ -50,5 +48,6 @@
 
     <!-- script api google connect -->
     <script src="https://apis.google.com/js/platform.js" async defer></script>
+</body>
 
 </html>
