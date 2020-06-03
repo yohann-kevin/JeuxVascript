@@ -27,7 +27,7 @@
                     </p><br>
                     <p>Nous éssayons d'éxclure un maximum les articles traitant 
                         des jeux triple AAA de notre blog. Nous souhaitons donner un maximum
-                        de visibilité au développeur et créteur de jeux indépendant.
+                        de visibilité aux développeurs et créateurs de jeux indépendants.
                     </p><br>
                     <p>Pour les développeur et créteur de jeux indépendant 
                         Nous vous invitons à venir présenter vos projet à la communauté 

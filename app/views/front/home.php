@@ -13,7 +13,7 @@ include_once 'app/views/front/layouts/header.php'; ?>
                 <h3>Presentation</h3>
             </header>
             <article id="presentationArticle">
-                <h4>Une communautée</h4>
+                <h4>Une communauté</h4>
                 <p><span class="strong2">JeuxVascript</span> est principalement une plateforme
                     <span class="strong2">communautaire</span> vous avez la possibilite de commenter des articles
                     de <span class="strong2">jouer</span> et meme de
@@ -42,7 +42,7 @@ include_once 'app/views/front/layouts/header.php'; ?>
             <article class="article">
                 <img src="app/public/images/articles/<?= $lastArticle['images'] ?>" alt="<?= $lastArticle['images'] ?>" class="imgArticle">
                 <h2 class="articleTitle"><?= $lastArticle['title'] ?></h2>
-                <p class="para"><?= $lastArticle['extract'] ?></p>
+                <p class="para"><?= $lastArticle['extract'] ?>...</p>
                 <a href="index.php?action=article&id=<?=$lastArticle['id'] ?>">Voir plus...</a>
             </article>
             <?php endforeach ; ?>
@@ -54,12 +54,12 @@ include_once 'app/views/front/layouts/header.php'; ?>
         </section>
         <!-- section compteur (n est pas relié a la bdd) -->
         <section id="counter">
-            <h3 id="counterTitle">Quelque chiffre</h3>
+            <h3 id="counterTitle">Quelques chiffres</h3>
             <article class="counter">
-                <p>Joueur: <br><span id="c1">x</span><br></p>
+                <p>Joueurs: <br><span id="c1">x</span><br></p>
             </article>
             <article class="counter">
-                <p>Article poste: <br><span id="c2">x</span><br></p>
+                <p>Articles: <br><span id="c2">x</span><br></p>
             </article>
             <article class="counter">
                 <p>Score total: <br><span id="c3">x</span><br></p>
@@ -77,7 +77,7 @@ include_once 'app/views/front/layouts/header.php'; ?>
                     <h4>Snake</h4>
                 </div>
                 <div class="gameImg">
-                    <img src="app/public/images/gameplay/snake.png">
+                    <img src="app/public/images/gameplay/snake.png" alt="snake">
                 </div>
                 <div id="gameContent1">
                     <p class="gameParaHome">
@@ -91,11 +91,11 @@ include_once 'app/views/front/layouts/header.php'; ?>
             </article>
             <!-- article du jeux battleship -->
             <article id="articleBattleship">
-                <div class="gameTitle">
+                <div class="battleshipTitle">
                     <h4>Battleship</h4>
                 </div>
                 <div class="gameImg">
-                    <img src="app/public/images/gameplay/battleship1.png">
+                    <img src="app/public/images/gameplay/battleship1.png" alt="battleship">
                 </div>
                 <div id="gameContent2">
                     <p class="gameParaHome">
@@ -113,7 +113,7 @@ include_once 'app/views/front/layouts/header.php'; ?>
                     <h4>Puissance 4</h4>
                 </div>
                 <div class="gameImg">
-                    <img src="app/public/images/gameplay/puissance4.png">
+                    <img src="app/public/images/gameplay/puissance4.png" alt="puissance 4">
                 </div>
                 <div id="gameContent3">
                     <p class="gameParaHome">
@@ -145,7 +145,7 @@ include_once 'app/views/front/layouts/header.php'; ?>
                 <div class="advertImg">
                     <img src="app/public/images/articles/<?= $articleInde['images'] ?>" alt="<?= $articleInde['images'] ?>">
                 </div>
-                <p class="advertPara"><?= $articleInde['extract'] ?></p>
+                <p class="advertPara"><?= $articleInde['extract'] ?>...</p>
                 <a href="index.php?action=article&id=<?=$articleInde['id'] ?>">Voir plus...</a>
             </article>
             <?php endforeach ; ?>

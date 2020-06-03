@@ -38,13 +38,9 @@ var newPseudo = document.getElementById('newPseudo');
 var forgetNewPseudo = document.getElementById('forgetNewPseudo');
 
 // variable page settings section password
-var btnSubPass = document.getElementById('btnSubPass');
-
+var verifyNewPassword = document.getElementById('verifyNewPassword');
 var forgetOldPassword = document.getElementById('forgetOldPassword');
-
-
 var forgetNewPassword = document.getElementById('forgetNewPassword');
-
 var forgetNewPassConf = document.getElementById('forgetNewPassConf');
 
 
@@ -108,22 +104,6 @@ if (btnRegister === null && btnModifyInfo === null) {
         if (event) {
             regex('Email',emailModify,forgetNewEmail,regMail);
             regex('Pseudo',newPseudo,forgetNewPseudo,regName)
-        }
-    })
-    // gère la page settings (password)
-    btnSubPass.addEventListener("click", function(event) {
-        if (event) {
-            var oldPassword = document.getElementById('oldPassword');
-            var newPassword = document.getElementById('newPassword');
-            var verifyNewPassword = document.getElementById('verifyNewPassword');
-
-            var verifyPass = document.getElementById('newPassword').value;
-            var passVerify = document.getElementById('verifyNewPassword').value;
-
-            regex('Ancien mot de passe',oldPassword,forgetOldPassword,regMdp);
-            regex('Nouveau mot de passe',newPassword,forgetNewPassword,regMdp);
-            regex('Mot de passe de confirmation',verifyNewPassword,forgetNewPassConf,regMdp);
-            passwordConf(verifyPass,passVerify,forgetNewPassConf);
         }
     })
 }

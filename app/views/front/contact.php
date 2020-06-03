@@ -5,7 +5,7 @@
         <!-- section titre -->
         <section class="pageTitle">
             <h1 class="title">Vous avez quelques <span class="strong">choses a nous dire ?</span></h1>
-            <h2 class="subtitle">N'hesitez pas, <span class="strong">contacter nous.</span></h2>
+            <h2 class="subtitle">N'hesitez pas, <span class="strong"> contactez-nous.</span></h2>
         </section>
         <!-- section contact permùettant de m'envoyer un mail -->
         <section id="sectionContact">
