@@ -48,8 +48,6 @@ Les fonctionnalités à venir :
 
 * Mise en place d'une api google connect (en attente d'une réponse des services de google)
 * Mise en place d'une page stats qui permmetra aux utilisateurs de consulter leur score et leur statistique sur différent jeux
-* Mise en place d'une fonction permettant de retailler les images
-* Rédaction du fichier .htaccess
 
 ### démarrer le projet
 
