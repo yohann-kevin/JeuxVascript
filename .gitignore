@@ -3,3 +3,5 @@
 app/public/script/optiMain.js
 app/public/script/optiBattleship.js
 app/public/script/optiPower4.js
+
+app/public/style/opti.css
