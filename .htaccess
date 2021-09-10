@@ -1,8 +1,8 @@
-RewriteEngine on
-RewriteCond %{SERVER_PORT} ^80$ [OR]
-RewriteCond %{HTTPS} =off
-RewriteRule ^(.*)$ https://jeuxvascript.fr/$1 [R=301,L]
+#RewriteEngine on
+#RewriteCond %{SERVER_PORT} ^80$ [OR]
+#RewriteCond %{HTTPS} =off
+#RewriteRule ^(.*)$ https://jeuxvascript.fr/$1 [R=301,L]
 #RewriteRule ^([^/]+)/?  index.php?action=$1 [L]
 
 #redirection 404
-ErrorDocument 404 /index.php?action=error404
+#ErrorDocument 404 /index.php?action=error404
